@@ -1,0 +1,1764 @@
+{
+ "chapter": "vendelshtein-auto",
+ "tasks": [
+  {
+   "id": "vendelshtein-auto.n01#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n01",
+   "claim_ids": [
+    "vendelshtein-auto.n01#c4"
+   ],
+   "prompt": "Каким зондом на производстве чаще всего делают повторные замеры?",
+   "explanation": "Так указано на с. 9.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Экранированным зондом БК",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Гамма-методом",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Акустическим зондом",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n01#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n01",
+   "claim_ids": [
+    "vendelshtein-auto.n01#c7"
+   ],
+   "prompt": "Почему повторные замеры не работают на нефильтрующемся растворе?",
+   "explanation": "Нет фильтрации в пласт — нет и признаков коллектора.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Раствор не проникает в коллектор, зоны проникновения нет",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Прибор не проходит по стволу",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Сопротивление пласта становится нулевым",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n01#t3",
+   "type": "order",
+   "step_id": "vendelshtein-auto.n01",
+   "claim_ids": [
+    "vendelshtein-auto.n01#c3"
+   ],
+   "prompt": "Расставьте действия при выделении коллектора по повторным замерам.",
+   "explanation": "Сначала два замера одной аппаратурой, затем общий масштаб и поиск расхождений.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Записать первый замер",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Повторить замер той же аппаратурой",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Привести диаграммы к одному логарифмическому масштабу",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Найти интервалы с расхождением",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n02#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n02",
+   "claim_ids": [
+    "vendelshtein-auto.n02#c9"
+   ],
+   "prompt": "Чему равна K*пр для нефтеносных коллекторов Южного Мангышлака?",
+   "explanation": "3–5 мД — для разных районов в целом, 1 мД — прежний традиционный порог.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "10 мД",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "1 мД",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "3–5 мД",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n02#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n02",
+   "claim_ids": [
+    "vendelshtein-auto.n02#c7"
+   ],
+   "prompt": "На какой срок автор допускает считать граничные значения постоянными?",
+   "explanation": "Граничные значения условны и меняются с техникой и экономикой.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "На ближайшие 3–5 лет",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Навсегда",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только на время одного испытания",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n02#t3",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n02",
+   "claim_ids": [
+    "vendelshtein-auto.n02#c6"
+   ],
+   "prompt": "Впишите слово. Граничное K*пр является {{1}}: оно соответствует принятому рентабельному дебиту.",
+   "explanation": "Оно отражает технический уровень и экономику.",
+   "kind": "recall",
+   "answer": [
+    "условным"
+   ],
+   "accepted": [
+    [
+     "условным",
+     "условное"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n02#t4",
+   "type": "multiple",
+   "step_id": "vendelshtein-auto.n02",
+   "claim_ids": [
+    "vendelshtein-auto.n02#c8"
+   ],
+   "prompt": "Что верно о граничной проницаемости?",
+   "explanation": "Ни в одном районе она не равна традиционному 1 мД.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Её рассчитывают из рентабельного дебита",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Для нефти и газа она различается примерно на порядок",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Она везде равна 1 мД",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n03#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n03",
+   "claim_ids": [
+    "vendelshtein-auto.n03#c2"
+   ],
+   "prompt": "Как получено граничное Kп = 16 % в примере автора?",
+   "explanation": "Это результат регрессии с вероятным диапазоном ±1 %.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "По уравнению регрессии Kпр–Kп при K*пр = 1 мД",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Прямым измерением на образцах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "По сейсмике",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n03#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n03",
+   "claim_ids": [
+    "vendelshtein-auto.n03#c7"
+   ],
+   "prompt": "Какие пласты относят к коллекторам по акустическому методу?",
+   "explanation": "Для коллекторов ΔT > ΔT*.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Где ΔT больше порога ΔT*",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Где ΔT меньше порога ΔT*",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Где ΔT равно нулю",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n03#t3",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n03",
+   "claim_ids": [
+    "vendelshtein-auto.n03#c5"
+   ],
+   "prompt": "Впишите слово. Интервалы испытаний для построения связей должны быть достаточно {{1}} по геофизической характеристике.",
+   "explanation": "Иначе среднее значение параметра не характерно для интервала.",
+   "kind": "recall",
+   "answer": [
+    "однородными"
+   ],
+   "accepted": [
+    [
+     "однородными",
+     "однородные"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n04#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n04",
+   "claim_ids": [
+    "vendelshtein-auto.n04#c2"
+   ],
+   "prompt": "Почему порог пористости редко применяют в типичных терригенных разрезах?",
+   "explanation": "Так объясняет автор на с. 11.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Трудно учесть влияние глинистости на показания",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Там нет пор",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Методы пористости там не записывают",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n04#t2",
+   "type": "multiple",
+   "step_id": "vendelshtein-auto.n04",
+   "claim_ids": [
+    "vendelshtein-auto.n04#c1"
+   ],
+   "prompt": "Где распространён способ выделения по критической пористости?",
+   "explanation": "В типичных терригенных разрезах его применяют редко.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В карбонатных разрезах",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В уплотнённых малоглинистых терригенных породах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В типичных глинистых терригенных разрезах",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n04#t3",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n04",
+   "claim_ids": [
+    "vendelshtein-auto.n04#c4"
+   ],
+   "prompt": "Впишите название метода. Отрицательная аномалия на кривой {{1}} давно служит признаком коллектора в терригенном разрезе.",
+   "explanation": "Вместе с низкими показаниями ГМ.",
+   "kind": "recall",
+   "answer": [
+    "СП"
+   ],
+   "accepted": [
+    [
+     "СП",
+     "ПС",
+     "собственной поляризации"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n05#t1",
+   "type": "calc",
+   "step_id": "vendelshtein-auto.n05",
+   "claim_ids": [
+    "vendelshtein-auto.n05#c3"
+   ],
+   "prompt": "Числа учебные. Kгл = 0,1, Kп = 0,2. Вычислите ηгл = Kгл/(Kгл + Kп).",
+   "explanation": "0,1/(0,1 + 0,2) ≈ 0,33.",
+   "kind": "transfer",
+   "answer": 0.333,
+   "tolerance": 0.02,
+   "unit": null
+  },
+  {
+   "id": "vendelshtein-auto.n05#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n05",
+   "claim_ids": [
+    "vendelshtein-auto.n05#c1"
+   ],
+   "prompt": "При каком растворе коллекторы отмечаются отрицательной аномалией СП?",
+   "explanation": "Так при бурении на пресном глинистом растворе.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При пресном растворе (ρф > ρв)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При любом растворе",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только при нефтяной основе",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n05#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n05",
+   "claim_ids": [
+    "vendelshtein-auto.n05#c9"
+   ],
+   "prompt": "Какое граничное ηгл характерно для пород глубже 4 км?",
+   "explanation": "ηгл растёт с ростом эпигенетических преобразований.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "0,5–0,6",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "0,3–0,4",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "0,4–0,5",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n05#t4",
+   "type": "multiple",
+   "step_id": "vendelshtein-auto.n05",
+   "claim_ids": [
+    "vendelshtein-auto.n05#c2"
+   ],
+   "prompt": "От чего растёт аномалия СП?",
+   "explanation": "Колонна к величине аномалии не относится.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "От различия минерализации вод и раствора",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "От различия глинистости коллектора и вмещающей породы",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "От толщины обсадной колонны",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n06#t1",
+   "type": "calc",
+   "step_id": "vendelshtein-auto.n06",
+   "claim_ids": [
+    "vendelshtein-auto.n06#c1"
+   ],
+   "prompt": "Числа учебные. ΔUсп = 30 мВ, Emax = 60 мВ. Вычислите αсп.",
+   "explanation": "30/60 = 0,5.",
+   "kind": "transfer",
+   "answer": 0.5,
+   "tolerance": 0.01,
+   "unit": null
+  },
+  {
+   "id": "vendelshtein-auto.n06#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n06",
+   "claim_ids": [
+    "vendelshtein-auto.n06#c8"
+   ],
+   "prompt": "Какое α*сп характерно для нефтеносных коллекторов крупных провинций?",
+   "explanation": "Для газоносных — не меньше 0,4.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Не меньше 0,5",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Не меньше 0,4",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Не меньше 0,8",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n06#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n06",
+   "claim_ids": [
+    "vendelshtein-auto.n06#c10"
+   ],
+   "prompt": "Какие пласты дают максимальные αсп, но обычно не являются коллекторами?",
+   "explanation": "Их исключают по микрозондам и методам пористости.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Песчаники и алевролиты с карбонатным или силикатным цементом",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Чистые глины",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Нефтеносные песчаники",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n06#t4",
+   "type": "multiple",
+   "step_id": "vendelshtein-auto.n06",
+   "claim_ids": [
+    "vendelshtein-auto.n06#c2"
+   ],
+   "prompt": "Что исключает использование αсп вместо ΔUсп?",
+   "explanation": "Карбонатный цемент остаётся ловушкой.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Погрешность масштаба диаграммы",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Различие минерализации раствора в скважинах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Влияние карбонатного цемента",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n07#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n07",
+   "claim_ids": [
+    "vendelshtein-auto.n07#c2"
+   ],
+   "prompt": "Как найти α*сп, если η*пр для объекта не определён?",
+   "explanation": "Так описано на с. 13, рис. 11.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Продолжить график αсп = f(ηпр) до ηпр = 0",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Взять α*сп = 1",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Взять среднее αсп всех пластов",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n07#t2",
+   "type": "multiple",
+   "step_id": "vendelshtein-auto.n07",
+   "claim_ids": [
+    "vendelshtein-auto.n07#c8"
+   ],
+   "prompt": "В каких скважинах нельзя выделять коллекторы по СП?",
+   "explanation": "На пресном растворе СП как раз работает.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пробуренных с солёным раствором",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "С раствором на нефтяной основе",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Обсаженных трубами",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Пробуренных на пресном растворе",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n07#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n07",
+   "claim_ids": [
+    "vendelshtein-auto.n07#c6"
+   ],
+   "prompt": "Почему эти способы применимы лишь на поздней стадии разведки?",
+   "explanation": "Без большой выборки испытаний порог не найти.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Нужны испытания большого числа объектов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Нужна обсадная колонна",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Нужен солёный раствор",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n08#t1",
+   "type": "calc",
+   "step_id": "vendelshtein-auto.n08",
+   "claim_ids": [
+    "vendelshtein-auto.n08#c2"
+   ],
+   "prompt": "Числа учебные. Iγx = 6, Iγmin = 4, Iγmax = 12 (усл. ед.). Вычислите ΔJγ.",
+   "explanation": "(6 − 4)/(12 − 4) = 0,25.",
+   "kind": "transfer",
+   "answer": 0.25,
+   "tolerance": 0.01,
+   "unit": null
+  },
+  {
+   "id": "vendelshtein-auto.n08#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n08",
+   "claim_ids": [
+    "vendelshtein-auto.n08#c7"
+   ],
+   "prompt": "Почему полимиктовые коллекторы можно ошибочно принять за неколлекторы по ГМ?",
+   "explanation": "Повышенная радиоактивность выглядит как глинистость.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Полевой шпат и обломки пород повышают радиоактивность",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Они непроницаемы",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Они не дают сигнала ГМ",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n08#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n08",
+   "claim_ids": [
+    "vendelshtein-auto.n08#c5"
+   ],
+   "prompt": "Какой метод глинистости автор советует использовать в первую очередь?",
+   "explanation": "Связь Kпр с ηгл теснее.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "СП, а ГМ — как вспомогательный",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "ГМ, а СП — как вспомогательный",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Оба одинаково",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n08#t4",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n08",
+   "claim_ids": [
+    "vendelshtein-auto.n08#c8"
+   ],
+   "prompt": "Впишите тип отложений. Выделить коллекторы по ГМ совершенно невозможно в {{1}} отложениях.",
+   "explanation": "Их радиоактивность повышена независимо от глинистости.",
+   "kind": "recall",
+   "answer": [
+    "вулканогенных"
+   ],
+   "accepted": [
+    [
+     "вулканогенных",
+     "вулканогенные"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n09#t1",
+   "type": "multiple",
+   "step_id": "vendelshtein-auto.n09",
+   "claim_ids": [
+    "vendelshtein-auto.n09#c6"
+   ],
+   "prompt": "Когда ЯМР неприменим?",
+   "explanation": "При пресном растворе ограничений нет.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В разрезах с ферро- и парамагнитными минералами",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При кольматации глубже 2–3 см",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "При нефтяных добавках в раствор",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "При пресном растворе",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n09#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n09",
+   "claim_ids": [
+    "vendelshtein-auto.n09#c1"
+   ],
+   "prompt": "Что надёжнее всего выделяет межзерновые коллекторы в терригенном разрезе?",
+   "explanation": "Результаты методов взаимно корректируются.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Комплексная интерпретация методов пористости и глинистости",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Один гамма-метод",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только продолжительность бурения",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n09#t3",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n09",
+   "claim_ids": [
+    "vendelshtein-auto.n09#c8"
+   ],
+   "prompt": "Впишите число. Рассмотренные приёмы эффективны на глубине до 4–{{1}} км при пресном растворе.",
+   "explanation": "Глубже задача существенно усложняется.",
+   "kind": "recall",
+   "answer": [
+    "5"
+   ],
+   "accepted": [
+    [
+     "5"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n10#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n10",
+   "claim_ids": [
+    "vendelshtein-auto.n10#c7"
+   ],
+   "prompt": "Что важнейшее условие надёжного определения ρп?",
+   "explanation": "Иначе продуктивные и водоносные пласты без испытаний не разделить.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Зона проникновения мельче глубины исследования зондов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Обсаженная скважина",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Солёный раствор",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n10#t2",
+   "type": "multiple",
+   "step_id": "vendelshtein-auto.n10",
+   "claim_ids": [
+    "vendelshtein-auto.n10#c8"
+   ],
+   "prompt": "Что вызывает глубокое проникновение?",
+   "explanation": "Сильнее всего это сказывается глубже 4 км, а не на малых глубинах.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Недопустимо большие репрессии на пласт",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Раствор низкого качества с большой водоотдачей",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Несоблюдение оптимального времени исследования",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Малая глубина скважины",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n10#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n10",
+   "claim_ids": [
+    "vendelshtein-auto.n10#c1"
+   ],
+   "prompt": "Где применяют исследования с активированным раствором?",
+   "explanation": "Из-за простоя и затрат.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Только в специальных параметрических скважинах",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В каждой эксплуатационной скважине",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только в обсаженных скважинах",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n11#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n11",
+   "claim_ids": [
+    "vendelshtein-auto.n11#c3"
+   ],
+   "prompt": "Как находят ρ*п по статистике испытаний?",
+   "explanation": "Чем меньше перекрытие распределений, тем надёжнее критерий.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "По пересечению распределений ρп продуктивных и водоносных пластов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Как среднее ρп всех пластов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "По максимальному ρп",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n11#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n11",
+   "claim_ids": [
+    "vendelshtein-auto.n11#c7"
+   ],
+   "prompt": "Что происходит при водонасыщенности ниже K*в?",
+   "explanation": "Так по кривым фазовой проницаемости (рис. 23).",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Фильтруется только нефть, по воде проницаемость нулевая",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Фильтруется только вода",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Ничего не фильтруется",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n11#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n11",
+   "claim_ids": [
+    "vendelshtein-auto.n11#c5"
+   ],
+   "prompt": "Какие пороги берут для первых разведочных скважин месторождения?",
+   "explanation": "Собственной выборки испытаний ещё нет.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Установленные для аналогичных коллекторов соседних месторождений бассейна",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Любые из литературы",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Пороги не используют",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n11#t4",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n11",
+   "claim_ids": [
+    "vendelshtein-auto.n11#c8"
+   ],
+   "prompt": "Впишите слово. K*в при прочих равных тем больше, чем выше {{1}} коллектора.",
+   "explanation": "И чем меньше средний размер фильтрующихся каналов.",
+   "kind": "data",
+   "answer": [
+    "глинистость"
+   ],
+   "accepted": [
+    [
+     "глинистость"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n12#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n12",
+   "claim_ids": [
+    "vendelshtein-auto.n12#c4"
+   ],
+   "prompt": "Что служит признаком продуктивности на сопоставлении Eсп — ρпп/ρп?",
+   "explanation": "Чем больше отскок, тем надёжнее вывод.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Отскок точки вверх от линии водоносных пластов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Точка на самой линии",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Отскок вниз",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n12#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n12",
+   "claim_ids": [
+    "vendelshtein-auto.n12#c6"
+   ],
+   "prompt": "Когда отскок дают и водоносные пласты?",
+   "explanation": "Большие зонды тогда завышают ρп.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При глубоком проникновении фильтрата",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При пресном растворе",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "При мелкой зоне проникновения",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n12#t3",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n12",
+   "claim_ids": [
+    "vendelshtein-auto.n12#c1"
+   ],
+   "prompt": "Впишите число. Сопротивления продуктивных и водоносных глинистых коллекторов могут различаться не более чем в 2–{{1}} раза.",
+   "explanation": "Поэтому одного ρп мало.",
+   "kind": "recall",
+   "answer": [
+    "3"
+   ],
+   "accepted": [
+    [
+     "3"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n13#t1",
+   "type": "calc",
+   "step_id": "vendelshtein-auto.n13",
+   "claim_ids": [
+    "vendelshtein-auto.n13#c8"
+   ],
+   "prompt": "Второй замер сделан через 2 сут после крепления. Через сколько суток (наименьшее по правилу) делать третий?",
+   "explanation": "Время следующего замера в 2–3 раза больше предыдущего: не раньше 2 · 2 = 4 сут от крепления.",
+   "kind": "understanding",
+   "answer": 4,
+   "tolerance": 0.01,
+   "unit": "сут"
+  },
+  {
+   "id": "vendelshtein-auto.n13#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n13",
+   "claim_ids": [
+    "vendelshtein-auto.n13#c6"
+   ],
+   "prompt": "Какие нейтронные методы целесообразны для разделения нефтеносных и водоносных пластов?",
+   "explanation": "Им хватает минерализации 30–50 г/л против 100–150 г/л у стационарных.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Импульсные",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Стационарные",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Никакие",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n13#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n13",
+   "claim_ids": [
+    "vendelshtein-auto.n13#c4"
+   ],
+   "prompt": "Какие флюиды резче всего различаются по нейтронным свойствам?",
+   "explanation": "Нефть и пресная вода, наоборот, близки.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Вода и газ",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Нефть и пресная вода",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Нефть и газ",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n14#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n14",
+   "claim_ids": [
+    "vendelshtein-auto.n14#c6"
+   ],
+   "prompt": "Как ведут себя показания и λ, если фильтрат замещён газом?",
+   "explanation": "Так для любого нейтронного метода.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Показания растут, λ уменьшается",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Показания падают, λ растёт",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Ничего не меняется",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n14#t2",
+   "type": "order",
+   "step_id": "vendelshtein-auto.n14",
+   "claim_ids": [
+    "vendelshtein-auto.n14#c5"
+   ],
+   "prompt": "Расставьте шаги обработки двух замеров.",
+   "explanation": "Сначала контрольные пласты, затем регрессия и полоса, потом классификация.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Выделить неизменённые участки и исправить показания",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Построить график и линию регрессии",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Рассчитать σ и провести полосу ±2σ",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Нанести остальные пласты и оценить знак изменения",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n14#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n14",
+   "claim_ids": [
+    "vendelshtein-auto.n14#c7"
+   ],
+   "prompt": "Что говорит быстрое расформирование зоны проникновения?",
+   "explanation": "Обычно чем выше проницаемость, тем меньше время расформирования.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пласт, скорее всего, высокопроницаемый",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пласт непроницаемый",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Пласт газоносный",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n14#t4",
+   "type": "calc",
+   "step_id": "vendelshtein-auto.n14",
+   "claim_ids": [
+    "vendelshtein-auto.n14#c4"
+   ],
+   "prompt": "Числа учебные. a = 1, b = 0, σ = 0,1. Первый замер x = 2,0, второй y = 2,5. На сколько y выходит за верхнюю границу полосы ax + b + 2σ?",
+   "explanation": "Верхняя граница 2,0 + 0,2 = 2,2; 2,5 − 2,2 = 0,3 — пласт изменился.",
+   "kind": "transfer",
+   "answer": 0.3,
+   "tolerance": 0.02,
+   "unit": null
+  },
+  {
+   "id": "vendelshtein-auto.n15#t1",
+   "type": "multiple",
+   "step_id": "vendelshtein-auto.n15",
+   "claim_ids": [
+    "vendelshtein-auto.n15#c8"
+   ],
+   "prompt": "Где наблюдаются ложные аномалии метана?",
+   "explanation": "Нефтеносный пласт даёт аномалию тяжёлых УВ.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В покрышках прямо над газовой залежью",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В водоносных пластах с растворённым газом",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В любом нефтеносном пласте",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n15#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n15",
+   "claim_ids": [
+    "vendelshtein-auto.n15#c2"
+   ],
+   "prompt": "Как отмечается нефтенасыщенная часть на низкочастотном акустическом методе?",
+   "explanation": "Так на рис. 28.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Снижением амплитуды продольной волны при росте поперечной",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Ростом обеих амплитуд",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Никак",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n15#t3",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n15",
+   "claim_ids": [
+    "vendelshtein-auto.n15#c9"
+   ],
+   "prompt": "Впишите параметр. По КИИ определяют гидродинамический параметр Kпр hэф/{{1}} .",
+   "explanation": "μ — вязкость жидкости.",
+   "kind": "recall",
+   "answer": [
+    "μ"
+   ],
+   "accepted": [
+    [
+     "μ",
+     "мю",
+     "вязкость"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n16#t1",
+   "type": "calc",
+   "step_id": "vendelshtein-auto.n16",
+   "claim_ids": [
+    "vendelshtein-auto.n16#c7"
+   ],
+   "prompt": "Числа учебные. Пачка H = 10 м, доля глинистых прослоев χ = 0,3. Найдите Hэф = H(1 − χ).",
+   "explanation": "10 · (1 − 0,3) = 7 м.",
+   "kind": "transfer",
+   "answer": 7,
+   "tolerance": 0.01,
+   "unit": "м"
+  },
+  {
+   "id": "vendelshtein-auto.n16#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n16",
+   "claim_ids": [
+    "vendelshtein-auto.n16#c4"
+   ],
+   "prompt": "По каким диаграммам выделяют прослои-неколлекторы в неоднородном пласте?",
+   "explanation": "Глины дополнительно отмечают по СП, ГМ и каверномеру.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "По микроэлектрическим с учётом комплекса ГИС",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Только по ГМ",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "По газометрии",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n16#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n16",
+   "claim_ids": [
+    "vendelshtein-auto.n16#c10"
+   ],
+   "prompt": "Почему переход от нефти к воде в пласте постепенный?",
+   "explanation": "Капиллярные силы удерживают воду в нижней части нефтенасыщенного коллектора.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за капиллярных сил",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за обсадной колонны",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за температуры",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n17#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n17",
+   "claim_ids": [
+    "vendelshtein-auto.n17#c10"
+   ],
+   "prompt": "На сколько, по ТатНИИ, можно понизить ВНК по сопротивлениям на Ромашкинском месторождении без учёта перераспределения фильтрата?",
+   "explanation": "20–30 м — мощность переходной зоны в Западной Сибири.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "На 1–1,5 м",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "На 20–30 м",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "На 10 см",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n17#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n17",
+   "claim_ids": [
+    "vendelshtein-auto.n17#c11"
+   ],
+   "prompt": "Что позволяет избежать ошибки с ложным ВНК?",
+   "explanation": "Так указано на с. 28.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Радиометрия в колонне",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Повтор электрометрии тем же зондом",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Газометрия",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n17#t3",
+   "type": "order",
+   "step_id": "vendelshtein-auto.n17",
+   "claim_ids": [
+    "vendelshtein-auto.n17#c4"
+   ],
+   "prompt": "Расставьте шаги определения ВНК по сопротивлениям.",
+   "explanation": "Сначала границы и опорные значения, затем график и порог.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Установить границы переходной зоны",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Нанести ρmax и ρвп",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Построить график ρп = f(H)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Провести ВНК там, где ρп = ρ*п",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n17#t4",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n17",
+   "claim_ids": [
+    "vendelshtein-auto.n17#c5"
+   ],
+   "prompt": "Впишите число. В глинистых полимиктовых коллекторах Западной Сибири мощность переходной зоны достигает 20–{{1}} м.",
+   "explanation": "В чистых кварцевых коллекторах — доли метра.",
+   "kind": "recall",
+   "answer": [
+    "30"
+   ],
+   "accepted": [
+    [
+     "30"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n18#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n18",
+   "claim_ids": [
+    "vendelshtein-auto.n18#c6"
+   ],
+   "prompt": "Какие пласты считают водоносными при граничном λ*?",
+   "explanation": "Остальные считают нефтеносными.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "С λ > λ*",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "С λ < λ*",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "С λ = 0",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n18#t2",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n18",
+   "claim_ids": [
+    "vendelshtein-auto.n18#c9"
+   ],
+   "prompt": "Почему в работающей скважине ниже давления насыщения чувствительность ИНМ растёт?",
+   "explanation": "Свободный газ заметно повышает показания.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Выделяется свободный газ в прискважинной части пласта",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "К стволу подтекает солёная вода",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Растёт температура",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n18#t3",
+   "type": "gap",
+   "step_id": "vendelshtein-auto.n18",
+   "claim_ids": [
+    "vendelshtein-auto.n18#c3"
+   ],
+   "prompt": "Впишите число. В чистых высокопористых коллекторах для разделения нефти и воды нужна минерализация более {{1}} г/л.",
+   "explanation": "В низкопористых и глинистых — гораздо больше.",
+   "kind": "data",
+   "answer": [
+    "20"
+   ],
+   "accepted": [
+    [
+     "20"
+    ]
+   ]
+  },
+  {
+   "id": "vendelshtein-auto.n18#t4",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n18",
+   "claim_ids": [
+    "vendelshtein-auto.n18#c10"
+   ],
+   "prompt": "Когда делают второй замер по методике двукратных замеров?",
+   "explanation": "Первый — при работе скважины.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Через 5–10 ч после остановки скважины",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Через 1–5 суток после крепления",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Одновременно с первым",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n19#t1",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n19",
+   "claim_ids": [
+    "vendelshtein-auto.n19#c2"
+   ],
+   "prompt": "При каком давлении ГЖК в пластах без зоны проникновения находит любой нейтронный метод?",
+   "explanation": "При высоком давлении и глинистости задача осложняется.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Менее 200–300 кгс/см² при умеренной глинистости",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Свыше 500 кгс/см²",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "При любом давлении",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "vendelshtein-auto.n19#t2",
+   "type": "calc",
+   "step_id": "vendelshtein-auto.n19",
+   "claim_ids": [
+    "vendelshtein-auto.n19#c5"
+   ],
+   "prompt": "Числа учебные. Водородосодержание газа wг = 0,2. Вычислите декремент в газе λг = 4,75 wг.",
+   "explanation": "4,75 · 0,2 = 0,95 мс⁻¹.",
+   "kind": "transfer",
+   "answer": 0.95,
+   "tolerance": 0.01,
+   "unit": "мс⁻¹"
+  },
+  {
+   "id": "vendelshtein-auto.n19#t3",
+   "type": "single",
+   "step_id": "vendelshtein-auto.n19",
+   "claim_ids": [
+    "vendelshtein-auto.n19#c9"
+   ],
+   "prompt": "Что делают в особо сложных случаях?",
+   "explanation": "Так указано на с. 30.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Сравнивают замеры до и после расформирования зоны проникновения",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Отказываются от нейтронных методов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Берут любой порог",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  }
+ ]
+}

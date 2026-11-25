@@ -1,0 +1,203 @@
+{
+  "schema": "strata.layer/1",
+  "id": "vendelshtein-auto",
+  "version": "vendelshtein-auto@run1",
+  "domain": "geo",
+  "source": {
+    "md": "source.md",
+    "origin": "vendelshtein_gl1.md",
+    "key": "vendelshtein-auto",
+    "from": 9,
+    "to": 30,
+    "start": null,
+    "end": null
+  },
+  "complete": true,
+  "title": "Как по каротажу найти коллектор и нефть",
+  "subtitle": "Гл. I: косвенные признаки коллекторов, характер насыщения, эффективная мощность, ВНК и ГЖК",
+  "description": "Курс по главе о том, как по геофизическим данным отделить коллектор от неколлектора, продуктивный пласт от водоносного и найти контакты флюидов.",
+  "intro": [
+    "Скважина пробурена, каротаж записан — но где в разрезе пласт, который даст нефть? Глава учит отвечать на этот вопрос по косвенным признакам: граничным значениям параметров, аномалиям СП и гамма-метода, сопротивлению и повторным замерам.",
+    "Курс идёт за главой по порядку. В каждом шаге — суть в двух фразах, объяснение со страницами, пороги и условия автора, задания с проверкой и карточка для повторения."
+  ],
+  "book": {
+    "author": "В. М. Вендельштейн, В. Г. Резванов",
+    "authorShort": "Резванов",
+    "title": "Геофизические методы определения параметров нефтегазовых коллекторов",
+    "year": "1978",
+    "chapter": "Гл. I: косвенные количественные признаки коллекторов, характер насыщения, эффективная мощность, ВНК и ГЖК",
+    "chapterTitle": "Выделение коллекторов и оценка характера насыщения",
+    "pages": "9–30"
+  },
+  "difficulty": {
+    "М": "механизм",
+    "В": "геологическое время",
+    "И": "косвенное измерение",
+    "Ф": "формализм",
+    "П": "пространство",
+    "Пр": "процедура",
+    "Н": "неопределённость и решение",
+    "Р": "распознавание"
+  },
+  "parts": [
+    {
+      "id": "p1",
+      "title": "Гл. I, § I.1. Выделение коллекторов: повторные замеры и граничные значения",
+      "short": "§ I.1 · Пороги коллектора",
+      "sub": "Чем ограничены прямые признаки и как экономика задаёт границу коллектор — неколлектор. С. 9–11.",
+      "nodes": [
+        "vendelshtein-auto.n01",
+        "vendelshtein-auto.n02",
+        "vendelshtein-auto.n03",
+        "vendelshtein-auto.n04"
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Гл. I, § I.1. Методы глинистости: СП и гамма-метод",
+      "short": "§ I.1 · СП и ГМ",
+      "sub": "Как по аномалии СП и гамма-методу отделяют коллекторы и где эти методы ошибаются. С. 11–14.",
+      "nodes": [
+        "vendelshtein-auto.n05",
+        "vendelshtein-auto.n06",
+        "vendelshtein-auto.n07",
+        "vendelshtein-auto.n08",
+        "vendelshtein-auto.n09"
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Гл. I, § I.2. Оценка характера насыщения коллектора",
+      "short": "§ I.2 · Характер насыщения",
+      "sub": "Как отличить продуктивный пласт от водоносного по сопротивлению, нейтронным замерам и прямым методам. С. 20–25.",
+      "nodes": [
+        "vendelshtein-auto.n10",
+        "vendelshtein-auto.n11",
+        "vendelshtein-auto.n12",
+        "vendelshtein-auto.n13",
+        "vendelshtein-auto.n14",
+        "vendelshtein-auto.n15"
+      ]
+    },
+    {
+      "id": "p4",
+      "title": "Гл. I, § I.3. Эффективная мощность и контакты флюидов",
+      "short": "§ I.3 · Мощность и контакты",
+      "sub": "Как найти эффективную мощность, ВНК и ГЖК и где электрометрия ошибается. С. 25–30.",
+      "nodes": [
+        "vendelshtein-auto.n16",
+        "vendelshtein-auto.n17",
+        "vendelshtein-auto.n18",
+        "vendelshtein-auto.n19"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "vendelshtein-auto.n01",
+      "to": "vendelshtein-auto.n02",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n02",
+      "to": "vendelshtein-auto.n03",
+      "type": "example"
+    },
+    {
+      "from": "vendelshtein-auto.n03",
+      "to": "vendelshtein-auto.n04",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n02",
+      "to": "vendelshtein-auto.n05",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n05",
+      "to": "vendelshtein-auto.n06",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n06",
+      "to": "vendelshtein-auto.n07",
+      "type": "data"
+    },
+    {
+      "from": "vendelshtein-auto.n05",
+      "to": "vendelshtein-auto.n08",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n07",
+      "to": "vendelshtein-auto.n09",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n08",
+      "to": "vendelshtein-auto.n09",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n09",
+      "to": "vendelshtein-auto.n10",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n10",
+      "to": "vendelshtein-auto.n11",
+      "type": "data"
+    },
+    {
+      "from": "vendelshtein-auto.n11",
+      "to": "vendelshtein-auto.n12",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n11",
+      "to": "vendelshtein-auto.n13",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n13",
+      "to": "vendelshtein-auto.n14",
+      "type": "data"
+    },
+    {
+      "from": "vendelshtein-auto.n12",
+      "to": "vendelshtein-auto.n15",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n14",
+      "to": "vendelshtein-auto.n15",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n11",
+      "to": "vendelshtein-auto.n16",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n16",
+      "to": "vendelshtein-auto.n17",
+      "type": "base"
+    },
+    {
+      "from": "vendelshtein-auto.n13",
+      "to": "vendelshtein-auto.n18",
+      "type": "example"
+    },
+    {
+      "from": "vendelshtein-auto.n17",
+      "to": "vendelshtein-auto.n18",
+      "type": "data"
+    },
+    {
+      "from": "vendelshtein-auto.n18",
+      "to": "vendelshtein-auto.n19",
+      "type": "base"
+    }
+  ],
+  "errata": []
+}

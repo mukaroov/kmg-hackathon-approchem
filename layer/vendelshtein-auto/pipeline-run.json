@@ -1,0 +1,31 @@
+{
+  "run": 1,
+  "job": "j20261125214734-9b1d",
+  "date": "2026-11-25T22:05:18.869Z",
+  "provider": "agent",
+  "model": "агент через очередь файлов work/agent-queue",
+  "extractor": "метки страниц из md",
+  "hashes": {
+    "chapter.json": "d5eeba291e636e30",
+    "nodes/vendelshtein-auto.n01.json": "dd4851ddee98d0b7",
+    "nodes/vendelshtein-auto.n02.json": "123ab6dea51a60fc",
+    "nodes/vendelshtein-auto.n03.json": "5597b9d5a780f05e",
+    "nodes/vendelshtein-auto.n04.json": "2ebdea0eaeead9a9",
+    "nodes/vendelshtein-auto.n05.json": "b2c196ae80d53339",
+    "nodes/vendelshtein-auto.n06.json": "386dd71c8bb3610b",
+    "nodes/vendelshtein-auto.n07.json": "82f91062b11512b2",
+    "nodes/vendelshtein-auto.n08.json": "c5e6ce0faf24f81d",
+    "nodes/vendelshtein-auto.n09.json": "30873641c8f305a1",
+    "nodes/vendelshtein-auto.n10.json": "f355fa8267d75c68",
+    "nodes/vendelshtein-auto.n11.json": "efa4a484b01da4ff",
+    "nodes/vendelshtein-auto.n12.json": "d44b4c9a8ec243f4",
+    "nodes/vendelshtein-auto.n13.json": "c10cf50fcc870ae3",
+    "nodes/vendelshtein-auto.n14.json": "30fd97c74041f14e",
+    "nodes/vendelshtein-auto.n15.json": "deecb72debc7bd04",
+    "nodes/vendelshtein-auto.n16.json": "b749df7dabf115f2",
+    "nodes/vendelshtein-auto.n17.json": "12d4ea0ab417a4fd",
+    "nodes/vendelshtein-auto.n18.json": "779b4fa15ee5fd82",
+    "nodes/vendelshtein-auto.n19.json": "a359227110b25c44"
+  },
+  "links": "2026-11-25T22:05:32.499Z"
+}
