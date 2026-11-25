@@ -1,0 +1,225 @@
+{
+  "schema": "strata.layer/1",
+  "id": "kuznetsov-auto",
+  "version": "kuznetsov-auto@run3",
+  "domain": "geo",
+  "source": {
+    "md": "source.md",
+    "origin": "source.md",
+    "key": "kuznetsov-auto",
+    "from": 200,
+    "to": 222,
+    "start": null,
+    "end": null
+  },
+  "complete": true,
+  "title": "Как устроены рифовые резервуары нефти и газа",
+  "subtitle": "Гл. 10, § 10.1–10.4: природные резервуары рифов",
+  "description": "Курс по главе о рифах: из чего они сложены, где в них лучшие коллекторы, какие ловушки и залежи они образуют и как их разведывают.",
+  "intro": [
+    "Риф — древняя постройка из скелетов организмов, которая выросла над морским дном. Позже такие тела оказываются глубоко под землёй и становятся одними из самых богатых резервуаров нефти и газа. Глава объясняет, почему коллекторы в рифе распределены неравномерно и как это использовать при разведке.",
+    "Курс идёт за главой по порядку § 10.1–10.4. В каждом шаге — суть в двух фразах, объяснение со страницами, разбор рисунков и таблиц автора, задания с проверкой и карточка для повторения."
+  ],
+  "book": {
+    "author": "В. Г. Кузнецов",
+    "authorShort": "Кузнецов",
+    "title": "Литология природных резервуаров нефти и газа",
+    "year": "2012",
+    "chapter": "Глава 10, § 10.1–10.4",
+    "chapterTitle": "Природные резервуары рифов",
+    "pages": "200–222"
+  },
+  "difficulty": {
+    "М": "механизм",
+    "В": "геологическое время",
+    "И": "косвенное измерение",
+    "Ф": "формализм",
+    "П": "пространство",
+    "Пр": "процедура",
+    "Н": "неопределённость и решение",
+    "Р": "распознавание"
+  },
+  "parts": [
+    {
+      "id": "p1",
+      "title": "§ 10.1. Что такое рифы и какими они бывают",
+      "short": "§ 10.1 · Типы рифов",
+      "sub": "Органогенные постройки, определение рифа и два основных типа рифов. С. 200–202.",
+      "nodes": [
+        "kuznetsov-auto.n01",
+        "kuznetsov-auto.n02"
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "§ 10.2. Породы рифов и их коллекторские свойства",
+      "short": "§ 10.2 · Породы и пористость",
+      "sub": "Какие известняки слагают риф, как они расположены по зонам и откуда в них поры. С. 202–205.",
+      "nodes": [
+        "kuznetsov-auto.n03",
+        "kuznetsov-auto.n04",
+        "kuznetsov-auto.n05"
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "§ 10.3. Строение рифовых резервуаров",
+      "short": "§ 10.3 · Резервуары",
+      "sub": "Где в рифах разных типов лучшие коллекторы, почему резервуар неоднороден по вертикали и чем различаются резервуары разных рифов. С. 205–216.",
+      "nodes": [
+        "kuznetsov-auto.n06",
+        "kuznetsov-auto.n07",
+        "kuznetsov-auto.n08",
+        "kuznetsov-auto.n09",
+        "kuznetsov-auto.n10",
+        "kuznetsov-auto.n11"
+      ]
+    },
+    {
+      "id": "p4",
+      "title": "§ 10.4. Рифовые ловушки, залежи и их разведка",
+      "short": "§ 10.4 · Ловушки и разведка",
+      "sub": "Как риф становится ловушкой, какие бывают ловушки и залежи и где закладывать разведочные скважины. С. 216–222.",
+      "nodes": [
+        "kuznetsov-auto.n12",
+        "kuznetsov-auto.n13",
+        "kuznetsov-auto.n14",
+        "kuznetsov-auto.n15",
+        "kuznetsov-auto.n16"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "kuznetsov-auto.n01",
+      "to": "kuznetsov-auto.n02",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n02",
+      "to": "kuznetsov-auto.n03",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n01",
+      "to": "kuznetsov-auto.n04",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n03",
+      "to": "kuznetsov-auto.n04",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n03",
+      "to": "kuznetsov-auto.n05",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n04",
+      "to": "kuznetsov-auto.n06",
+      "type": "example"
+    },
+    {
+      "from": "kuznetsov-auto.n05",
+      "to": "kuznetsov-auto.n06",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n04",
+      "to": "kuznetsov-auto.n07",
+      "type": "data"
+    },
+    {
+      "from": "kuznetsov-auto.n06",
+      "to": "kuznetsov-auto.n07",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n04",
+      "to": "kuznetsov-auto.n08",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n07",
+      "to": "kuznetsov-auto.n08",
+      "type": "example"
+    },
+    {
+      "from": "kuznetsov-auto.n05",
+      "to": "kuznetsov-auto.n09",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n07",
+      "to": "kuznetsov-auto.n09",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n09",
+      "to": "kuznetsov-auto.n10",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n07",
+      "to": "kuznetsov-auto.n11",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n08",
+      "to": "kuznetsov-auto.n11",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n10",
+      "to": "kuznetsov-auto.n11",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n02",
+      "to": "kuznetsov-auto.n12",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n12",
+      "to": "kuznetsov-auto.n13",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n12",
+      "to": "kuznetsov-auto.n14",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n13",
+      "to": "kuznetsov-auto.n14",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n11",
+      "to": "kuznetsov-auto.n15",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n13",
+      "to": "kuznetsov-auto.n15",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n14",
+      "to": "kuznetsov-auto.n15",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n15",
+      "to": "kuznetsov-auto.n16",
+      "type": "base"
+    },
+    {
+      "from": "kuznetsov-auto.n07",
+      "to": "kuznetsov-auto.n15",
+      "type": "data"
+    }
+  ],
+  "errata": []
+}

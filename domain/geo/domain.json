@@ -1,0 +1,60 @@
+{
+ "id": "geo",
+ "name": "геология и геофизика нефтегаза",
+ "audience": "новичок-цифровик: программист или аналитик данных без геологического образования",
+ "notation": "Индексы пиши как в книге, но разметкой: ρ_{п}, k_{пр}, 10^{−3}. Единицы — как у автора.",
+ "hints": [
+  "Мост к данным: какие кривые, замеры или таблицы на входе, что получают на выходе, что в данных ломается (помехи, неоднозначность, условия, при которых признак врёт).",
+  "Различай измеренное прибором и выведенное интерпретатором: это частая ошибка пересказа."
+ ],
+ "difficulty": {
+  "М": "механизм",
+  "В": "геологическое время",
+  "И": "косвенное измерение",
+  "Ф": "формализм",
+  "П": "пространство",
+  "Пр": "процедура",
+  "Н": "неопределённость и решение",
+  "Р": "распознавание"
+ },
+ "misconceptions": "misconceptions.json",
+ "physicsChecklist": "physics_checklist.json",
+ "legend": "legend.json",
+ "glossary": "glossary.md",
+ "itBridges": "it_bridges.md",
+ "styleguide": "styleguide.json",
+ "videoStyle": "video_style.json",
+ "pronunciation": "pronunciation.md",
+ "stressDictionary": "stress_dictionary.md",
+ "sceneTemplates": {
+  "М": [
+   "pressure_wave_2d",
+   "formula_dynamic_plot"
+  ],
+  "В": [
+   "geological_evolution"
+  ],
+  "И": [
+   "well_log_sync",
+   "crossplot_cutoff"
+  ],
+  "Ф": [
+   "formula_dynamic_plot",
+   "pressure_wave_2d"
+  ],
+  "П": [
+   "geological_evolution",
+   "pressure_wave_2d"
+  ],
+  "Пр": [
+   "well_log_sync"
+  ],
+  "Н": [
+   "crossplot_cutoff"
+  ],
+  "Р": [
+   "well_log_sync",
+   "crossplot_cutoff"
+  ]
+ }
+}

@@ -1,0 +1,6 @@
+.env
+work/*
+!work/review/
+node_modules/
+*.tmp
+__pycache__/

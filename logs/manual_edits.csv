@@ -1,0 +1,3 @@
+time,chapter,file,what_changed,person_minutes,people,run_no,reason
+2026-11-25T21:02:34Z,basniev-auto,nodes/basniev-auto.n12.json,"route.format «видео» → «длинное видео» (недопустимое значение формата; проверка формата добавлена в checks.mjs)",1,1,1,ошибка агента в ответе шага 12
+2026-11-25T21:42:26Z,basniev-auto,chapter.json,"book.authorShort «Максимов» → «Басниев и др.» (ошибка конвейера: бралась последняя фамилия списка; исправлено в assemble.mjs)",1,1,1,ошибка конвейера

@@ -1,0 +1,290 @@
+{
+ "chapter": "basniev-auto",
+ "routes": [
+  {
+   "node_id": "basniev-auto.n01",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "pressure_wave_2d",
+   "why": "Тип трудности М и Н: волна давления невидима и расходится во времени от забоя — изменение во времени, невидимое делается видимым, причина и следствие."
+  },
+  {
+   "node_id": "basniev-auto.n02",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 2,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Ф и М: вывод простой формулы; движения во времени нет — хватит текста, формул и расчёта."
+  },
+  {
+   "node_id": "basniev-auto.n03",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Ф и В: вывод уравнения баланса; визуально нечего двигать, кроме роста зоны, который покажут следующие шаги."
+  },
+  {
+   "node_id": "basniev-auto.n04",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Ф и М: формальная постановка модели без движения во времени."
+  },
+  {
+   "node_id": "basniev-auto.n05",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Ф и М: вывод уравнения; визуально — только цепочка преобразований."
+  },
+  {
+   "node_id": "basniev-auto.n06",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "formula_dynamic_plot",
+   "why": "Тип трудности Ф и М: меняя k, μ и β*, видно, как меняется κ и скорость расхождения давления."
+  },
+  {
+   "node_id": "basniev-auto.n07",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Ф и М: формальная постановка и анализ размерностей, без движения."
+  },
+  {
+   "node_id": "basniev-auto.n08",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "formula_dynamic_plot (нужна функция erf в движке)",
+   "why": "Тип трудности Ф и П: профиль давления меняется во времени — удобно двигать t и смотреть, как кривая становится положе."
+  },
+  {
+   "node_id": "basniev-auto.n09",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "formula_dynamic_plot",
+   "why": "Тип трудности Ф и В: дебит и добыча меняются во времени; удобно двигать время и видеть 1/√t и √t."
+  },
+  {
+   "node_id": "basniev-auto.n10",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 2,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "formula_dynamic_plot",
+   "why": "Тип трудности Ф и В: давление на галерее падает как √t — удобно двигать время и увидеть момент, когда модель теряет смысл."
+  },
+  {
+   "node_id": "basniev-auto.n11",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Ф и П: постановка и анализ размерностей лучше читаются по шагам, чем смотрятся."
+  },
+  {
+   "node_id": "basniev-auto.n12",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "pressure_wave_2d",
+   "why": "Тип трудности Ф и И: невидимая волна снижения давления вокруг скважины расходится во времени; ролик показывает, как формула описывает её."
+  },
+  {
+   "node_id": "basniev-auto.n13",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "formula_dynamic_plot",
+   "why": "Тип трудности Ф и М: двигая r и t, видно, как расход на радиусе догоняет дебит скважины."
+  },
+  {
+   "node_id": "basniev-auto.n14",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 2,
+    "counterintuitive": 2,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Н и Ф: оценки точности — набор чисел и условий, удобнее читать таблицей."
+  },
+  {
+   "node_id": "basniev-auto.n15",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности М и Ф: идея метода — словесное допущение и схема из двух зон."
+  },
+  {
+   "node_id": "basniev-auto.n16",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "formula_dynamic_plot",
+   "why": "Тип трудности Ф и В: двигая время, видно, как растёт зона l(t) = √(2κt) и меняется профиль давления."
+  },
+  {
+   "node_id": "basniev-auto.n17",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "formula_dynamic_plot",
+   "why": "Тип трудности Ф и В: сравнение приближённого и точного дебита во времени удобно смотреть на графике."
+  },
+  {
+   "node_id": "basniev-auto.n18",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "formula_dynamic_plot",
+   "why": "Тип трудности Ф и П: двигая время, видно, как расширяется воронка R(t) и падает забойное давление."
+  },
+  {
+   "node_id": "basniev-auto.n19",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Н и Ф: оценка точности удобнее всего в виде сводной таблицы."
+  }
+ ]
+}

@@ -1,0 +1,245 @@
+{
+ "chapter": "kuznetsov-auto",
+ "routes": [
+  {
+   "node_id": "kuznetsov-auto.n01",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 1,
+    "scale": 2,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "geological_evolution",
+   "why": "Тип трудности Р и П; рост постройки быстрее осадков — изменение во времени, а N и n различаются в сотни раз — скачок масштаба."
+  },
+  {
+   "node_id": "kuznetsov-auto.n02",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 0,
+    "scale": 1,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Р: распознать тип рифа по форме и положению; удобнее сравнение двух схем, чем ролик."
+  },
+  {
+   "node_id": "kuznetsov-auto.n03",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 2,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Р и М; изменения во времени и скачка масштаба почти нет, но есть контринтуитивный вывод про малую долю каркаса — хватит текста, схемы и заданий."
+  },
+  {
+   "node_id": "kuznetsov-auto.n04",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "geological_evolution",
+   "why": "Тип трудности П и Р: нужно увидеть пространственное расположение зон в трёх типах рифов; рельеф → гидродинамика → осадки — причинная цепочка, удобна схема-интерактив."
+  },
+  {
+   "node_id": "kuznetsov-auto.n05",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 2,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "нужен новый: эволюция пористости во времени",
+   "why": "Тип трудности М и В: поры то сокращаются при росте рифа, то создаются выщелачиванием — изменение во времени, невидимое делается видимым, размеры от долей миллиметра до пещер."
+  },
+  {
+   "node_id": "kuznetsov-auto.n06",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "crossplot_cutoff",
+   "why": "Тип трудности П и И: по пористости и проницаемости образцов отнести их к группам и найти, где они лежат в рифе; движения во времени нет."
+  },
+  {
+   "node_id": "kuznetsov-auto.n07",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "geological_evolution",
+   "why": "Тип трудности П и В: решение на данных — по скважинам Карачаганака и Тенгиза видно, где лучшие коллекторы; контринтуитивно, что в атоллах лучшее на краю, а не в центре."
+  },
+  {
+   "node_id": "kuznetsov-auto.n08",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "crossplot_cutoff",
+   "why": "Тип трудности П и В: отнести породы к коллекторам по двум порогам рис. 10.5 и увидеть, как зона смещается с гребнем во времени."
+  },
+  {
+   "node_id": "kuznetsov-auto.n09",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "geological_evolution",
+   "why": "Тип трудности В и П: вершина рифа последовательно была плато, отмелью и островом — изменение во времени, причина и следствие, контринтуитивно для идеи «однородного массива»."
+  },
+  {
+   "node_id": "kuznetsov-auto.n10",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "well_log_sync",
+   "why": "Тип трудности П и В: чередование пачек по глубине удобно показать синхронно — разрез скважины и кривые свойств; причина — смена фаций и выщелачивание во времени."
+  },
+  {
+   "node_id": "kuznetsov-auto.n11",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности П и Н: сравнить три схемы резервуаров и выбрать систему разведки; движения во времени нет."
+  },
+  {
+   "node_id": "kuznetsov-auto.n12",
+   "format": "шортс",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "geological_evolution",
+   "why": "Тип трудности В и М: подъём моря, рост рифа, регрессия и перекрытие покрышкой — изменение во времени и цепочка причин и следствий."
+  },
+  {
+   "node_id": "kuznetsov-auto.n13",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности П и Р: распознать класс ловушки по плану и сечению; изменения во времени нет, хватит карточек и схемы."
+  },
+  {
+   "node_id": "kuznetsov-auto.n14",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "geological_evolution",
+   "why": "Тип трудности М и П: поздний наклон и изгиб меняют ловушку — изменение во времени, контринтуитивное смещение залежи вверх по восстанию."
+  },
+  {
+   "node_id": "kuznetsov-auto.n15",
+   "format": "длинное видео",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 2,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Н и Пр: решение на данных — по типу рифа выбрать место первых скважин; контринтуитивно, что у атолла бурят край, а не центр."
+  },
+  {
+   "node_id": "kuznetsov-auto.n16",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Тип трудности Пр и Н: выбрать систему разведки по типу рифа и сравнить сетки по площади и по объёму; движения во времени нет."
+  }
+ ]
+}

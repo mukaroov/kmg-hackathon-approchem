@@ -1,0 +1,14 @@
+{
+  "name": "chapter-to-course",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Конвейер «глава → учебный слой → демо-курс» и сборка курсов. Зависимостей нет, нужен только Node.js 18+.",
+  "scripts": {
+    "pipeline": "node pipeline/run.mjs",
+    "server": "node pipeline/server.mjs",
+    "build": "node build/build.mjs",
+    "check": "node build/build.mjs --check",
+    "serve": "node tools/serve.js dist 8092",
+    "import-legacy": "node build/import-legacy.mjs"
+  }
+}

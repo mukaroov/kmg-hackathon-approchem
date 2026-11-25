@@ -1,0 +1,31 @@
+{
+  "run": 3,
+  "job": "j20261125201856-2ddf",
+  "date": "2026-11-25T20:18:56.426Z",
+  "provider": "agent",
+  "model": "агент через очередь файлов work/agent-queue",
+  "extractor": "метки страниц из md",
+  "hashes": {
+    "chapter.json": "e353fdfceef05130",
+    "nodes/kuznetsov-auto.n01.json": "4dd90d7190e9e4bd",
+    "nodes/kuznetsov-auto.n02.json": "fc72c7b56343636a",
+    "nodes/kuznetsov-auto.n03.json": "4a275e6c95db21f0",
+    "nodes/kuznetsov-auto.n04.json": "4246e7fbd58b0df7",
+    "nodes/kuznetsov-auto.n05.json": "a177ad3c74f02961",
+    "nodes/kuznetsov-auto.n06.json": "9bdbe24a182715c2",
+    "nodes/kuznetsov-auto.n07.json": "1bc7309643080b7a",
+    "nodes/kuznetsov-auto.n08.json": "99162efecb6e462d",
+    "nodes/kuznetsov-auto.n09.json": "996a4ff5442c57c5",
+    "nodes/kuznetsov-auto.n10.json": "67496e18bc86fea0",
+    "nodes/kuznetsov-auto.n11.json": "530f8eb3e6c35cf9",
+    "nodes/kuznetsov-auto.n12.json": "aa7b140e34556dad",
+    "nodes/kuznetsov-auto.n13.json": "471757cf163c92cf",
+    "nodes/kuznetsov-auto.n14.json": "7d623d15174c9e66",
+    "nodes/kuznetsov-auto.n15.json": "e06471161e194575",
+    "nodes/kuznetsov-auto.n16.json": "014216b8e67ab5e0"
+  },
+  "video": {
+    "kuznetsov-auto.n12": "2026-11-25T20:35:01.093Z"
+  },
+  "links": "2026-11-25T21:39:36.394Z"
+}

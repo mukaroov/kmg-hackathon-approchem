@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Глава → курс: собрать курс из главы</title>
+<style>
+  :root { color-scheme: light dark; --ink: #1d1d1b; --muted: #6b6b66; --rule: #d9d6cf; --paper: #fbfaf7; --accent: #2E6F8E; --bad: #b3261e; --ok: #2E8B57; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #ecebe6; --muted: #a3a29c; --rule: #3a3936; --paper: #1b1b19; --accent: #7fb7d4; --bad: #f2867c; --ok: #6fcf97; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .note { color: var(--muted); margin: 0 0 24px; }
+  form { display: grid; gap: 14px; border: 1px solid var(--rule); border-radius: 8px; padding: 16px; }
+  label { display: grid; gap: 4px; font-weight: 600; }
+  label span { font-weight: 400; color: var(--muted); font-size: 14px; }
+  input, select, button { font: inherit; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: transparent; color: inherit; }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; }
+  button { background: var(--accent); color: #fff; border: 0; font-weight: 600; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: default; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .bar { height: 10px; border-radius: 5px; background: var(--rule); overflow: hidden; margin: 8px 0; }
+  .bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+  ol.stages { padding-left: 20px; } ol.stages li[data-s=done] { color: var(--ok); } ol.stages li[data-s=running] { font-weight: 700; }
+  pre { white-space: pre-wrap; font-size: 13px; max-height: 280px; overflow: auto; border: 1px solid var(--rule); border-radius: 6px; padding: 8px; }
+  .err { color: var(--bad); font-weight: 600; }
+  #result a, .courses a { color: var(--accent); }
+  .courses { list-style: none; padding: 0; } .courses li { border-top: 1px solid var(--rule); padding: 10px 0; } .courses a { font-weight: 600; } .courses span { display: block; color: var(--muted); font-size: 14px; }
+  .warn { color: var(--bad); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Собрать курс из главы</h1>
+  <p class="note">Загрузите главу книги (.md или .pdf): конвейер отправит её модели, проверит учебный слой и соберёт демо-курс. Готовые курсы — ниже на странице. Простая страница backend; полный интерфейс делает фронтенд-команда по <code>pipeline/API.md</code>.</p>
+  <form id="f">
+    <label>Файл главы <span>.md (лучше с метками страниц &lt;!-- page N --&gt;) или .pdf</span><input type="file" name="file" accept=".md,.markdown,.txt,.pdf" required></label>
+    <div class="row">
+      <label>Страницы <span>например 90-108; пусто — все</span><input name="pages" placeholder="90-108"></label>
+      <label>Первая страница PDF <span>номер в книге</span><input name="pageStart" inputmode="numeric" placeholder="1"></label>
+      <label>Идентификатор <span>пусто — из имени файла</span><input name="id" placeholder="glava-5"></label>
+    </div>
+    <div class="row">
+      <label>Автор книги <span>если его нет в тексте главы</span><input name="author" placeholder="В. Г. Кузнецов"></label>
+      <label>Название книги<input name="book" placeholder="Литология природных резервуаров"></label>
+      <label>Год<input name="year" inputmode="numeric" placeholder="2012"></label>
+    </div>
+    <div class="row">
+      <label>Доменный пакет<select name="domain" id="domain"></select></label>
+      <label>Модель<select name="provider"><option value="">из .env</option><option value="stub">заглушка без модели</option></select></label>
+      <label>Перезаписать ручные правки<select name="force"><option value="">нет</option><option value="1">да</option></select></label>
+    </div>
+    <button id="go">Собрать курс</button>
+    <p id="health" class="note" aria-live="polite"></p>
+  </form>
+  <section id="job" hidden aria-live="polite">
+    <h2 id="jt"></h2>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><i></i></div>
+    <ol class="stages" id="stages"></ol>
+    <div id="result"></div>
+    <pre id="log"></pre>
+  </section>
+  <section aria-labelledby="ch">
+    <h2 id="ch">Готовые курсы</h2>
+    <ul id="courses" class="courses"><li class="note">загрузка списка…</li></ul>
+  </section>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+fetch('/api/config').then(r => r.json()).then(c => { $('#domain').innerHTML = c.domains.map(d => `<option${d === 'geo' ? ' selected' : ''}>${esc(d)}</option>`).join(''); });
+fetch('/api/health').then(r => r.json()).then(h => {
+  $('#health').innerHTML = `Модель: ${esc(h.provider)} / ${esc(h.model)}. Ключ модели: ${h.keys.model ? 'есть' : '<b class="warn">нет</b>'}, распознавание PDF: ${h.keys.ocr ? 'есть' : 'нет (загружайте .md)'}.`;
+  if (!h.keys.model) { document.querySelector('[name=provider]').value = 'stub'; $('#health').innerHTML += ' <b class="warn">Без ключа доступна только заглушка: курс соберётся из кусков текста, это проверка, а не учебный слой.</b>'; }
+});
+function loadCourses() {
+  fetch('/api/courses').then(r => r.json()).then(cs => {
+    $('#courses').innerHTML = cs.length ? cs.map(c => `<li><a href="${c.url}" target="_blank">${esc(c.title || c.id)}</a><span>${esc([c.book?.author, c.book?.title].filter(Boolean).join('. '))}${c.book?.pages ? ', с. ' + esc(c.book.pages) : ''}</span><span>${c.byPipeline ? 'собран конвейером, прогон ' + c.byPipeline.run + ' (' + esc(c.byPipeline.model) + ')' : 'слой сделан вручную'} · не пройдено проверок: ${c.checksFailed} · <a href="${c.zip}">архив</a></span></li>`).join('') : '<li class="note">Курсов пока нет.</li>';
+  });
+}
+loadCourses();
+function render(j) {
+  $('#job').hidden = false;
+  $('#jt').textContent = `${j.name} — ${({ queued: 'в очереди', running: 'работает', done: 'готово', failed: 'ошибка' })[j.state]}`;
+  $('.bar i').style.width = j.progress + '%'; $('.bar').setAttribute('aria-valuenow', j.progress);
+  $('#stages').innerHTML = j.stages.map(s => `<li data-s="${s.state}">${esc(s.title)}</li>`).join('');
+  $('#log').textContent = j.log.join('\n'); $('#log').scrollTop = 1e9;
+  if (j.state === 'failed') $('#result').innerHTML = `<p class="err">${esc(j.error)}</p>`;
+  if (j.state === 'done') { const r = j.result; $('#result').innerHTML = `<p><a href="${r.courseUrl}" target="_blank">Открыть курс</a> · <a href="/api/jobs/${j.id}/course.zip">скачать архив</a> · <a href="/api/jobs/${j.id}/report" target="_blank">отчёт проверок</a></p><p>${r.steps} шагов, ${r.tasks} заданий, покрыто ${r.coverage.covered} из ${r.coverage.units} единиц главы; не пройдено проверок сборщика: ${r.checksFailed.length}.${r.stub ? ' <b>Работала заглушка без модели.</b>' : ''}</p>`; }
+}
+$('#f').onsubmit = async e => {
+  e.preventDefault(); $('#go').disabled = true; $('#result').innerHTML = '';
+  const fd = new FormData(e.target);
+  for (const [k, v] of [...fd]) if (v === '') fd.delete(k);
+  const r = await fetch('/api/jobs', { method: 'POST', body: fd });
+  const j = await r.json();
+  if (!r.ok) { $('#job').hidden = false; $('#result').innerHTML = `<p class="err">${esc(j.error)}</p>`; $('#go').disabled = false; return; }
+  render(j);
+  const es = new EventSource(`/api/jobs/${j.id}/events`);
+  es.addEventListener('job', ev => render(JSON.parse(ev.data)));
+  es.addEventListener('log', ev => { const l = JSON.parse(ev.data); $('#log').textContent += '\n' + l.line; $('#log').scrollTop = 1e9; });
+  es.addEventListener('end', () => { es.close(); $('#go').disabled = false; loadCourses(); });
+};
+</script>
+</body>
+</html>

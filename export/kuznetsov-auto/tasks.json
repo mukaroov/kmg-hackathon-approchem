@@ -1,0 +1,1873 @@
+{
+ "chapter": "kuznetsov-auto",
+ "tasks": [
+  {
+   "id": "kuznetsov-auto.n01#t1",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n01",
+   "claim_ids": [
+    "kuznetsov-auto.n01#c7"
+   ],
+   "prompt": "Чем биостром отличается от биогерма?",
+   "explanation": "Автор различает их по мощности относительно синхронных отложений и по выраженности в рельефе дна.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Мощность биострома примерно равна мощности синхронных отложений, а биогерм мощнее их",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Биостром выше уровня волн, а биогерм ниже",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Биостром состоит из обломков, а биогерм — из глины",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n01#t2",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n01",
+   "claim_ids": [
+    "kuznetsov-auto.n01#c1"
+   ],
+   "prompt": "Впишите диапазон через тире. Рифы содержат порядка {{1}} % мировых запасов углеводородов.",
+   "explanation": "Автор оценивает долю рифов в мировых запасах углеводородов в 10–12 %.",
+   "kind": "recall",
+   "answer": [
+    "10–12"
+   ],
+   "accepted": [
+    [
+     "10–12",
+     "10-12",
+     "10 – 12",
+     "10 - 12"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n01#t3",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n01",
+   "claim_ids": [
+    "kuznetsov-auto.n01#c6"
+   ],
+   "prompt": "Какие признаки автор называет для биогерма?",
+   "explanation": "Биогерм — холм, возвышавшийся над дном, но не выше уровня волн, поэтому обломков в нём мало.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Холмовидное тело",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Возвышался над дном бассейна",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Поднимался выше уровня действия волн",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Мощнее синхронных отложений",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Много грубых обломков",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "d"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n02#t1",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n02",
+   "claim_ids": [
+    "kuznetsov-auto.n02#c2"
+   ],
+   "prompt": "Почему риф возвышается над окружающими отложениями?",
+   "explanation": "Скорость роста рифа превышает скорость накопления окружающих осадков, поэтому он мощнее синхронных отложений.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Он растёт быстрее, чем накапливаются окружающие осадки",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Его поднимают тектонические движения после образования",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Вокруг него осадки размываются волнами",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n02#t2",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n02",
+   "claim_ids": [
+    "kuznetsov-auto.n02#c6"
+   ],
+   "prompt": "Где, по автору, формируются одиночные рифы?",
+   "explanation": "Одиночные рифы растут на локальных поднятиях дна, а перегиб дна — место асимметричных систем.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "На отмелях над консидиментационными складками",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "На затопленных барах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "На вулканических конусах",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "На крутом перегибе дна между мелководьем и глубоководьем",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n02#t3",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n02",
+   "claim_ids": [
+    "kuznetsov-auto.n02#c8"
+   ],
+   "prompt": "Впишите пропущенные слова. Асимметричные рифовые системы развиваются на {{1}} морского дна.",
+   "explanation": "Цепочки рифов систем растут на крутом перегибе дна, на границе мелководья и глубоководья.",
+   "kind": "recall",
+   "answer": [
+    "крутом перегибе"
+   ],
+   "accepted": [
+    [
+     "крутом перегибе",
+     "перегибе",
+     "крутом перегибе дна"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n03#t1",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n03",
+   "claim_ids": [
+    "kuznetsov-auto.n03#c4"
+   ],
+   "prompt": "Каких известняков больше всего в большинстве рифовых комплексов?",
+   "explanation": "Обломочных известняков часто больше 50 %, а биогермных в сложных комплексах не больше 10–20 %.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Обломочных",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Биогермных",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Оолитовых",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n03#t2",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n03",
+   "claim_ids": [
+    "kuznetsov-auto.n03#c2"
+   ],
+   "prompt": "Впишите диапазон через тире. В сложных рифовых комплексах доля биогермных известняков не превышает {{1}} %.",
+   "explanation": "Автор указывает, что в сложных рифовых комплексах биогермных известняков не больше 10–20 %.",
+   "kind": "recall",
+   "answer": [
+    "10–20"
+   ],
+   "accepted": [
+    [
+     "10–20",
+     "10-20",
+     "10 – 20",
+     "10 - 20"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n03#t3",
+   "type": "order",
+   "step_id": "kuznetsov-auto.n03",
+   "claim_ids": [
+    "kuznetsov-auto.n03#c6"
+   ],
+   "prompt": "Расставьте по порядку, как образуются брекчии предрифового шлейфа.",
+   "explanation": "Обломки пород массива скапливаются на крутых склонах, а после цементации становятся брекчиями и конгломератами.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Организмы строят каркас из биогермных известняков",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Появляются обломки пород массива",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Обломки копятся на крутом склоне рифа",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Обломки цементируются в брекчии и конгломераты",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n03#t4",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n03",
+   "claim_ids": [
+    "kuznetsov-auto.n03#c3"
+   ],
+   "prompt": "Чем, по автору, может быть заполнено пространство между организмами в биогермной породе?",
+   "explanation": "Автор называет шлам, спарит или пустоту; про глину в этом месте речи нет.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Шламом",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Спаритом — яснокристаллическим кальцитом",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Ничем, оно остаётся пустым",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Глиной",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n04#t1",
+   "type": "order",
+   "step_id": "kuznetsov-auto.n04",
+   "claim_ids": [
+    "kuznetsov-auto.n04#c22"
+   ],
+   "prompt": "Расставьте фации рифовой системы по порядку — от бассейна к лагуне.",
+   "explanation": "Профиль системы — половина профиля атолла: бассейн, предрифовые фации, ядро, тыльно-рифовые и зарифовые фации.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Депрессионные бассейновые фации",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Предрифовые фации",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Фации ядра рифа",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Тыльно-рифовые фации",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Зарифовые лагунные или мелководно-морские фации",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n04#t2",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n04",
+   "claim_ids": [
+    "kuznetsov-auto.n04#c14"
+   ],
+   "prompt": "Где в атолле лежат породы ядра рифа?",
+   "explanation": "В атоллах ядро образует кольцо или овал по периферии, а в центре — лагуна.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Кольцом или овалом по периферии",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В центре рифа",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только на тыльном склоне",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n04#t3",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n04",
+   "claim_ids": [
+    "kuznetsov-auto.n04#c4"
+   ],
+   "prompt": "Что, по автору, порождает фациальную зональность рифа?",
+   "explanation": "Расчленённый рельеф меняет гидродинамику и освещённость, а с ними условия жизни и осадки.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Мелководный гребень и резкое углубление на склонах",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Изменение гидродинамики",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Изменение освещённости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Вулканическая деятельность",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n04#t4",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n04",
+   "claim_ids": [
+    "kuznetsov-auto.n04#c19"
+   ],
+   "prompt": "Впишите слово. В атолловидных рифах зональность кольцевая, а в центре лежат {{1}} фации.",
+   "explanation": "Автор подводит итог: кольцевая зональность с лагунными фациями в центре.",
+   "kind": "recall",
+   "answer": [
+    "лагунные"
+   ],
+   "accepted": [
+    [
+     "лагунные",
+     "лагунные фации"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n05#t1",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n05",
+   "claim_ids": [
+    "kuznetsov-auto.n05#c3"
+   ],
+   "prompt": "Какие пустоты автор относит к первичным?",
+   "explanation": "Каверны выщелачивания и межкристаллические поры — вторичная пористость.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Полости внутри скелетов организмов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пространство между каркасными остатками",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Пустоты от деятельности сверлильщиков",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Каверны карстового выщелачивания",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Межкристаллические поры доломитизации",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n05#t2",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n05",
+   "claim_ids": [
+    "kuznetsov-auto.n05#c15"
+   ],
+   "prompt": "Почему скважина 4 месторождения Серро-Асуль дала уникальный дебит?",
+   "explanation": "Скважина вскрыла карстовую пещеру — с нефтью выносило даже обломки сталактитов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Она вскрыла карстовую пещеру в рифе",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пласт был полностью доломитизирован",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В рифе сохранилась вся первичная пористость",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n05#t3",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n05",
+   "claim_ids": [
+    "kuznetsov-auto.n05#c17"
+   ],
+   "prompt": "Впишите слово. Пористость, которая возникает при перекристаллизации и доломитизации, называется {{1}}.",
+   "explanation": "Автор называет её вторым типом вторичной пористости — межкристаллической.",
+   "kind": "recall",
+   "answer": [
+    "межкристаллической"
+   ],
+   "accepted": [
+    [
+     "межкристаллической",
+     "межкристаллическая",
+     "межкристаллическая пористость"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n05#t4",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n05",
+   "claim_ids": [
+    "kuznetsov-auto.n05#c10"
+   ],
+   "prompt": "Что происходит с первичной пористостью рифа?",
+   "explanation": "Её уменьшают инкрустирующие водоросли, подводная цементация, мелкие организмы и детрит.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Почти никогда не сохраняется полностью и сокращается уже при росте рифа",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Полностью сохраняется до погружения рифа",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Растёт вместе с ростом рифа",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n06#t1",
+   "type": "calc",
+   "step_id": "kuznetsov-auto.n06",
+   "claim_ids": [
+    "kuznetsov-auto.n06#c3"
+   ],
+   "prompt": "Сколько метров рифа Рейнбоу А насыщено нефтью и газом вместе?",
+   "explanation": "Нефтью насыщены 90 м и газом 60 м, вместе 150 м.",
+   "kind": "understanding",
+   "answer": 150,
+   "tolerance": 0.01,
+   "unit": "м"
+  },
+  {
+   "id": "kuznetsov-auto.n06#t2",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n06",
+   "claim_ids": [
+    "kuznetsov-auto.n06#c5"
+   ],
+   "prompt": "У какой группы коллекторов рифа Рейнбоу А проницаемость достигает 30000·10−15 м²?",
+   "explanation": "У группы II проницаемость 30–30000·10−15 м² — самая высокая.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "II",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "I",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "IV",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "V",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n06#t3",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n06",
+   "claim_ids": [
+    "kuznetsov-auto.n06#c2"
+   ],
+   "prompt": "Где лучшие коллекторы в небольших слабо дифференцированных куполовидных рифах?",
+   "explanation": "Автор называет такое распределение самым простым: лучшие коллекторы в центре.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В центральных частях массивов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "На краях рифа",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В подошве рифа",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n06#t4",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n06",
+   "claim_ids": [
+    "kuznetsov-auto.n06#c3"
+   ],
+   "prompt": "Впишите слово. Риф Рейнбоу А — островершинный риф, или {{1}}.",
+   "explanation": "Автор называет Рейнбоу А островершинным рифом — пиннаклом.",
+   "kind": "recall",
+   "answer": [
+    "пиннакл"
+   ],
+   "accepted": [
+    [
+     "пиннакл",
+     "пиннаклом"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n07#t1",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n07",
+   "claim_ids": [
+    "kuznetsov-auto.n07#c7"
+   ],
+   "prompt": "Где лучшие коллекторы в крупных плосковершинных рифах и атоллах?",
+   "explanation": "У крупных рифов и атоллов зона лучших коллекторов смещена к периферии.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "На периферии — в биогермном гребне и предрифовом шлейфе",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В центре массива",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Во внутририфовой лагуне",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n07#t2",
+   "type": "calc",
+   "step_id": "kuznetsov-auto.n07",
+   "claim_ids": [
+    "kuznetsov-auto.n07#c19"
+   ],
+   "prompt": "На Карачаганаке (пермь) средняя кавернозность ядра 31 %, склонов 16,8 %. Во сколько раз она в ядре выше?",
+   "explanation": "31 / 16,8 ≈ 1,85.",
+   "kind": "data",
+   "answer": 1.85,
+   "tolerance": 0.02,
+   "unit": "раза"
+  },
+  {
+   "id": "kuznetsov-auto.n07#t3",
+   "type": "order",
+   "step_id": "kuznetsov-auto.n07",
+   "claim_ids": [
+    "kuznetsov-auto.n07#c16"
+   ],
+   "prompt": "Расставьте фации Тенгиза по пористости — от большей к меньшей.",
+   "explanation": "У гребня пористость выше всего, на бассейновых склонах — ниже всего, лагуна посередине.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Кольцевой рифовый гребень (6–18 %)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Лагунные фации (4,5–9,5 %)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Бассейновые склоны (2–5 %)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n07#t4",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n07",
+   "claim_ids": [
+    "kuznetsov-auto.n07#c8"
+   ],
+   "prompt": "Какие пустоты автор называет для фаций рифового гребня?",
+   "explanation": "Плотные микрозернистые породы — это тыл рифа и лагуна, а не гребень.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Внутренние полости остатков организмов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пространство между остатками",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Пещеровидные пустоты",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Поры плотных микрозернистых пород лагуны",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n07#t5",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n07",
+   "claim_ids": [
+    "kuznetsov-auto.n07#c12"
+   ],
+   "prompt": "Впишите слово. Внутририфовые лагуны и зарифовые отложения могут даже обладать {{1}} свойствами.",
+   "explanation": "Плотные микрозернистые породы тыла рифа менее пористы и могут служить экраном.",
+   "kind": "data",
+   "answer": [
+    "экранирующими"
+   ],
+   "accepted": [
+    [
+     "экранирующими"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n08#t1",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n08",
+   "claim_ids": [
+    "kuznetsov-auto.n08#c2"
+   ],
+   "prompt": "Почему на Шуртанском месторождении зоны лучших коллекторов смещены?",
+   "explanation": "Автор связывает смещение зон коллекторов со смещением гребня во времени.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Биогермный гребень последовательно смещался во времени",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Риф разбит разломами на блоки",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Нефть мигрировала после образования ловушки",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n08#t2",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n08",
+   "claim_ids": [
+    "kuznetsov-auto.n08#c9"
+   ],
+   "prompt": "Какие породы по рис. 10.5 считаются коллекторами?",
+   "explanation": "Нужны оба условия сразу: пористость более 6 % и проницаемость более 0,0001 мкм².",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пористость 8 %, проницаемость 0,001 мкм²",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пористость 5 %, проницаемость 0,01 мкм²",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Пористость 10 %, проницаемость 0,00005 мкм²",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Пористость 12 %, проницаемость 0,0002 мкм²",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "d"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n08#t3",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n08",
+   "claim_ids": [
+    "kuznetsov-auto.n08#c1"
+   ],
+   "prompt": "Впишите слово. В асимметричных рифовых системах распределение коллекторов тоже {{1}}.",
+   "explanation": "Коллекторы следуют за фациальной зональностью, а она в системах асимметрична.",
+   "kind": "data",
+   "answer": [
+    "асимметрично"
+   ],
+   "accepted": [
+    [
+     "асимметрично",
+     "асимметричное"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n08#t4",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n08",
+   "claim_ids": [
+    "kuznetsov-auto.n08#c3"
+   ],
+   "prompt": "Что показывает рис. 10.4, б?",
+   "explanation": "Рис. 10.4: а — фациальная карта атолловидного рифа Тенгиз, б — карта пористости.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Карту пористости месторождения Тенгиз",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Разрез рифа Рейнбоу А",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Профиль рифа Шуртан",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n09#t1",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n09",
+   "claim_ids": [
+    "kuznetsov-auto.n09#c9"
+   ],
+   "prompt": "Какими были условия на вершине рифа на разных этапах роста, по автору?",
+   "explanation": "Автор называет три обстановки: плато, отмель и остров.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Относительно глубоководное подводное плато",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Очень мелкая отмель на уровне моря",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Остров над уровнем моря",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Пресноводное озеро в пустыне",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n09#t2",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n09",
+   "claim_ids": [
+    "kuznetsov-auto.n09#c4"
+   ],
+   "prompt": "Когда разрез рифа в первом приближении можно считать однородным массивом?",
+   "explanation": "Автор допускает массивную модель именно для биогермов и небольших рифов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Для биогермов и небольших по мощности и времени роста рифов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Для любых мощных рифовых комплексов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только для атоллов",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n09#t3",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n09",
+   "claim_ids": [
+    "kuznetsov-auto.n09#c9"
+   ],
+   "prompt": "Где, по автору, главным образом идут выветривание, выщелачивание и карст?",
+   "explanation": "Субаэральное выветривание и карст идут, когда риф поднят над морем.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "На островах, поднятых над уровнем моря",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "На глубоководном подводном плато",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В зоне ослабленной волновой активности",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n09#t4",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n09",
+   "claim_ids": [
+    "kuznetsov-auto.n09#c12"
+   ],
+   "prompt": "Впишите слово. На рис. 10.6 низкопроницаемые отложения названы {{1}}.",
+   "explanation": "В легенде рис. 10.6: низкопроницаемые отложения — полупокрышки.",
+   "kind": "recall",
+   "answer": [
+    "полупокрышками"
+   ],
+   "accepted": [
+    [
+     "полупокрышками",
+     "полупокрышки"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n10#t1",
+   "type": "calc",
+   "step_id": "kuznetsov-auto.n10",
+   "claim_ids": [
+    "kuznetsov-auto.n10#c9"
+   ],
+   "prompt": "В скв. 10 Карачаганака плотная пачка вскрыта в интервале 4020–4160 м. Какова её мощность?",
+   "explanation": "4160 − 4020 = 140 м.",
+   "kind": "understanding",
+   "answer": 140,
+   "tolerance": 0.01,
+   "unit": "м"
+  },
+  {
+   "id": "kuznetsov-auto.n10#t2",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n10",
+   "claim_ids": [
+    "kuznetsov-auto.n10#c4"
+   ],
+   "prompt": "Что делают перекристаллизация и доломитизация с вертикальной неоднородностью рифа?",
+   "explanation": "Автор пишет, что вторичные процессы усложняют неоднородность, но обычно её не ликвидируют.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Усложняют, но, как правило, не ликвидируют её",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Полностью её устраняют",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Создают её там, где её не было",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n10#t3",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n10",
+   "claim_ids": [
+    "kuznetsov-auto.n10#c9"
+   ],
+   "prompt": "Что известно о плотных пачках Карачаганака?",
+   "explanation": "Пачка в скв. 10 плотная: пористость до 2–3 %, проницаемость не более 3·10−15 м², но трещины есть во всех плотных пачках.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Во всех них установлена трещиноватость",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В скв. 10 пористость пачки до 2–3 %",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В скв. 10 матричная проницаемость не более 3·10−15 м²",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Пористость плотных пачек 15–35 %",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n10#t4",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n10",
+   "claim_ids": [
+    "kuznetsov-auto.n10#c5"
+   ],
+   "prompt": "Впишите слово с дефисом. В телах крупных рифов размещение зон коллекторов чаще всего {{1}}.",
+   "explanation": "Автор: пластовое или чаще линзовидно-пластовое размещение зон с высокими свойствами.",
+   "kind": "recall",
+   "answer": [
+    "линзовидно-пластовое"
+   ],
+   "accepted": [
+    [
+     "линзовидно-пластовое",
+     "линзовидно пластовое"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n11#t1",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n11",
+   "claim_ids": [
+    "kuznetsov-auto.n11#c6"
+   ],
+   "prompt": "Какую форму имеет зона оптимальных коллекторов в плосковершинных и атолловидных рифах?",
+   "explanation": "Лучшие породы — рифовый гребень по кольцу и верх внешнего склона.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Кольцевую",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Линейную",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Точечную в центре",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n11#t2",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n11",
+   "claim_ids": [
+    "kuznetsov-auto.n11#c9"
+   ],
+   "prompt": "Что верно для асимметричных рифовых систем?",
+   "explanation": "Зарифовые отложения плохо проницаемы и служат экранами, а не лучшими коллекторами.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Зона лучших коллекторов линейная, вдоль простирания",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Она привязана к ядрам рифов и внешним склонам",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Зарифовые отложения могут быть латеральными экранами",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Лучшие коллекторы — в зарифовой лагуне",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n11#t3",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n11",
+   "claim_ids": [
+    "kuznetsov-auto.n11#c5"
+   ],
+   "prompt": "Что может быть затруднено в мощных дифференцированных рифах?",
+   "explanation": "Пористые зоны лежат пластами и линзами, поэтому вертикальная миграция может быть затруднена.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Вертикальная миграция флюидов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Латеральная миграция по гребню",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Образование рифа",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n11#t4",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n11",
+   "claim_ids": [
+    "kuznetsov-auto.n11#c12"
+   ],
+   "prompt": "Впишите слово. На рис. 10.8 номерами скважин обозначена предлагаемая {{1}} бурения.",
+   "explanation": "Номера скважин на схемах — предлагаемая очерёдность бурения.",
+   "kind": "recall",
+   "answer": [
+    "очередность"
+   ],
+   "accepted": [
+    [
+     "очередность",
+     "очерёдность"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n12#t1",
+   "type": "order",
+   "step_id": "kuznetsov-auto.n12",
+   "claim_ids": [
+    "kuznetsov-auto.n12#c6"
+   ],
+   "prompt": "Расставьте по порядку, как риф становится ловушкой.",
+   "explanation": "Рост при трансгрессии, прекращение при регрессии, затем непроницаемые регрессивные серии замыкают объём.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Уровень моря поднимается — трансгрессия",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Риф растёт вместе с накоплением карбонатов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Уровень моря падает — рост рифа прекращается",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Риф перекрывают непроницаемые породы — возникает ловушка",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n12#t2",
+   "type": "calc",
+   "step_id": "kuznetsov-auto.n12",
+   "claim_ids": [
+    "kuznetsov-auto.n12#c11"
+   ],
+   "prompt": "Числа учебные. Риф возвышается над внерифовыми отложениями на 80 м, а внерифовые отложения — плотные, мощностью 30 м. Какова максимальная высота такой литолого-палеогеоморфологической ловушки?",
+   "explanation": "Высота ловушки растёт на мощность экранирующих отложений: 80 + 30 = 110 м.",
+   "kind": "transfer",
+   "answer": 110,
+   "tolerance": 0.01,
+   "unit": "м"
+  },
+  {
+   "id": "kuznetsov-auto.n12#t3",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n12",
+   "claim_ids": [
+    "kuznetsov-auto.n12#c5"
+   ],
+   "prompt": "Чем может оказаться слой доломитов между рифом и солями в аридном климате?",
+   "explanation": "Автор предупреждает: такие доломиты могут быть ложной покрышкой.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ложной покрышкой",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Лучшим коллектором рифа",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Подошвой рифа",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n12#t4",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n12",
+   "claim_ids": [
+    "kuznetsov-auto.n12#c8"
+   ],
+   "prompt": "Какие группы рифовых ловушек выделяет автор?",
+   "explanation": "Автор выделяет четыре группы; чисто тектонически экранированных среди них нет.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Собственно палеогеоморфологические",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Литолого-палеогеоморфологические",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Структурно-палеогеоморфологические",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "С литологическим экранированием",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Только тектонически экранированные",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n13#t1",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n13",
+   "claim_ids": [
+    "kuznetsov-auto.n13#c6"
+   ],
+   "prompt": "У ловушек какого рифа ясно выражены периферические гребни?",
+   "explanation": "Автор описывает ловушки атолловидных рифов как изометричные с гребнями по краям.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Атолловидного",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Конусовидного",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Плосковершинного",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n13#t2",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n13",
+   "claim_ids": [
+    "kuznetsov-auto.n13#c4"
+   ],
+   "prompt": "Какую форму в плане могут иметь ловушки рифов сложной формы?",
+   "explanation": "В плане это удлинённые гряды — прямые или чаще изогнутые, серповидные, подковообразные.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Прямолинейная гряда",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Серповидная",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Подковообразная",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Идеальный круг",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n13#t3",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n13",
+   "claim_ids": [
+    "kuznetsov-auto.n13#c7"
+   ],
+   "prompt": "Почему палеогеоморфологические ловушки асимметричных систем обычно невысоки?",
+   "explanation": "Высоту ловушки задаёт превышение рифа, а у систем оно невелико.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Риф мало возвышается над зарифовыми отложениями",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Покрышка над ними всегда ложная",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В таких рифах нет коллекторов",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n13#t4",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n13",
+   "claim_ids": [
+    "kuznetsov-auto.n13#c9"
+   ],
+   "prompt": "Впишите слово. Наложение тектонических движений на сложившийся риф создаёт структурно-{{1}} ловушки.",
+   "explanation": "Автор называет такой случай весьма распространённым: так образуются структурно-палеогеоморфологические ловушки.",
+   "kind": "recall",
+   "answer": [
+    "палеогеоморфологические"
+   ],
+   "accepted": [
+    [
+     "палеогеоморфологические"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n14#t1",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n14",
+   "claim_ids": [
+    "kuznetsov-auto.n14#c2"
+   ],
+   "prompt": "Что происходит с рифовой ловушкой при региональном наклоне?",
+   "explanation": "При региональном наклоне ловушка смещается вверх по восстанию.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Она смещается вверх по восстанию, и залежь занимает лишь часть рифа",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Она исчезает",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Залежь опускается к подошве рифа",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n14#t2",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n14",
+   "claim_ids": [
+    "kuznetsov-auto.n14#c8"
+   ],
+   "prompt": "От чего зависят форма залежей в плане и плотность запасов по площади?",
+   "explanation": "Автор называет план рифа, распределение коллекторов и современную гипсометрию.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "План рифа",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Размещение коллекторов в резервуаре",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Современная гипсометрия поверхности рифа",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Цвет известняка",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n14#t3",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n14",
+   "claim_ids": [
+    "kuznetsov-auto.n14#c9"
+   ],
+   "prompt": "Впишите слово. При экране в зарифовых отложениях и зональной пористости возможны «{{1}}» залежи с наклонным ВНК.",
+   "explanation": "Автор называет такие залежи «висячими»: водонефтяной контакт в них наклонный.",
+   "kind": "recall",
+   "answer": [
+    "висячие"
+   ],
+   "accepted": [
+    [
+     "висячие"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n14#t4",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n14",
+   "claim_ids": [
+    "kuznetsov-auto.n14#c6"
+   ],
+   "prompt": "Какой фактор ведущий, когда ловушка образуется над биостромом или низким биогермом?",
+   "explanation": "Первичная высота таких построек мала или её нет, поэтому ловушку создаёт тектоника.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Тектонический",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Палеогеоморфологический",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Карстовый",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n15#t1",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n15",
+   "claim_ids": [
+    "kuznetsov-auto.n15#c13"
+   ],
+   "prompt": "Сейсмика указывает на крупный атолловидный риф. Где заложить первые разведочные скважины?",
+   "explanation": "У крупных атоллов лучшие коллекторы на краях, а центр может быть экраном.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "На периферии предполагаемой ловушки, а центр — на втором этапе",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Только в центре рифа",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В тыльной зоне за рифом",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n15#t2",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n15",
+   "claim_ids": [
+    "kuznetsov-auto.n15#c6"
+   ],
+   "prompt": "Где бурить, чтобы найти залежь в небольшом одиночном куполовидном рифе?",
+   "explanation": "У небольших куполовидных рифов лучшие коллекторы в центре.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "В центральной, самой высокой части",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "На внешнем склоне",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "За пределами рифа",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n15#t3",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n15",
+   "claim_ids": [
+    "kuznetsov-auto.n15#c15"
+   ],
+   "prompt": "От чего зависит высота ловушки в асимметричной рифовой системе?",
+   "explanation": "Автор называет превышение гребня, экран и — в очень большой степени — тектонику.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "От превышения рифового гребня над зарифовыми отложениями",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "От экрана из плотных зарифовых отложений",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "От амплитуды поздних тектонических дислокаций",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "От современной глубины моря над месторождением",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n15#t4",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n15",
+   "claim_ids": [
+    "kuznetsov-auto.n15#c18"
+   ],
+   "prompt": "Впишите слово. Участок самого слабого замыкания ловушки автор называет «{{1}} направлением».",
+   "explanation": "«Критическое направление» определяет сохранность и высоту залежи.",
+   "kind": "data",
+   "answer": [
+    "критическим"
+   ],
+   "accepted": [
+    [
+     "критическим"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n15#t5",
+   "type": "order",
+   "step_id": "kuznetsov-auto.n15",
+   "claim_ids": [
+    "kuznetsov-auto.n15#c2"
+   ],
+   "prompt": "Расставьте шаги решения о размещении скважин.",
+   "explanation": "Сначала тип рифа, затем группа, затем первые и оценочные скважины.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Определить тип рифа по сейсмике",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Отнести залежь к одной из трёх групп",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Заложить первые скважины по правилу группы",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Пробурить оценочные скважины: периферия или критическое направление",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n16#t1",
+   "type": "multiple",
+   "step_id": "kuznetsov-auto.n16",
+   "claim_ids": [
+    "kuznetsov-auto.n16#c7"
+   ],
+   "prompt": "Какие выгоды даёт сетка, сгущённая в своде залежи?",
+   "explanation": "Автор называет три выгоды; цель такой сетки — равномерно осветить объём, а не площадь.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Надёжные параметры подсчёта для центра по многим скважинам",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Меньше малоэффективных приконтурных скважин",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Задел скважин для разработки в хороших условиях",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Равномерное освещение площади залежи",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n16#t2",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n16",
+   "claim_ids": [
+    "kuznetsov-auto.n16#c5"
+   ],
+   "prompt": "Почему равномерная по площади сетка плохо подходит для массивной залежи в рифе?",
+   "explanation": "Мощность и объём убывают от свода к краям, поэтому равномерная по площади сетка освещает объём неравномерно.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Объём сосредоточен в своде, и такая сетка неравномерно освещает объём",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Скважины на краях всегда сухие",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Равномерную сетку нельзя пробурить на рифе",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "kuznetsov-auto.n16#t3",
+   "type": "gap",
+   "step_id": "kuznetsov-auto.n16",
+   "claim_ids": [
+    "kuznetsov-auto.n16#c12"
+   ],
+   "prompt": "Впишите число. Куст стволов с отходами забоев на 400–500 м может осветить площадь до {{1}} км².",
+   "explanation": "Автор указывает, что такой куст может осветить до 1 км².",
+   "kind": "recall",
+   "answer": [
+    "1"
+   ],
+   "accepted": [
+    [
+     "1",
+     "одного"
+    ]
+   ]
+  },
+  {
+   "id": "kuznetsov-auto.n16#t4",
+   "type": "single",
+   "step_id": "kuznetsov-auto.n16",
+   "claim_ids": [
+    "kuznetsov-auto.n16#c14"
+   ],
+   "prompt": "Какая система разведки рациональна для залежей второй группы — плосковершинных рифов и атоллов?",
+   "explanation": "У второй группы запасы сосредоточены на периферии, поэтому бурят её по кольцу.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Кольцевая — по периферии рифа",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Одна скважина в центре",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Равномерная сетка по площади",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  }
+ ]
+}

@@ -1,0 +1,238 @@
+{
+  "schema": "strata.layer/1",
+  "id": "basniev-auto",
+  "version": "basniev-auto@run1",
+  "domain": "geo",
+  "source": {
+    "md": "source.md",
+    "origin": "source.md",
+    "key": "basniev-auto",
+    "from": 474,
+    "to": 500,
+    "start": "^#\\s*Глава XXIII",
+    "end": "^#+\\s*§2\\.\\s*Метод"
+  },
+  "complete": true,
+  "title": "Как давление расходится по упругому пласту",
+  "subtitle": "Гл. XXIII и XXIV, § 1: упругий режим, пьезопроводность, метод ПССС",
+  "description": "Курс по главам о неустановившемся движении упругой жидкости: упругий запас, уравнение пьезопроводности, точные решения для галереи и скважины и приближённый метод ПССС.",
+  "intro": [
+    "Когда скважину пускают, нефть идёт к ней не мгновенно со всего пласта: давление падает сначала рядом со скважиной, и воронка постепенно расходится. Причина — упругость жидкости и породы. Глава учит считать, как быстро идёт эта волна и что происходит с дебитом.",
+    "Курс идёт за главами по порядку. В каждом шаге — суть в двух фразах, объяснение со страницами, формулы автора с расшифровкой, задания с проверкой и карточка для повторения."
+  ],
+  "book": {
+    "author": "К. С. Басниев, Н. М. Дмитриев, Р. Д. Каневская, В. М. Максимов",
+    "authorShort": "Басниев и др.",
+    "title": "Нефтегазовая гидромеханика",
+    "year": "2005",
+    "chapter": "Главы XXIII и XXIV, § 1",
+    "chapterTitle": "Неустановившееся движение упругой жидкости в упругом пласте",
+    "pages": "474–500"
+  },
+  "difficulty": {
+    "М": "механизм",
+    "В": "геологическое время",
+    "И": "косвенное измерение",
+    "Ф": "формализм",
+    "П": "пространство",
+    "Пр": "процедура",
+    "Н": "неопределённость и решение",
+    "Р": "распознавание"
+  },
+  "parts": [
+    {
+      "id": "p1",
+      "title": "Гл. XXIII, § 1–2. Упругий режим и упругий запас",
+      "short": "§ 1–2 · Упругий режим",
+      "sub": "Откуда при упругом режиме берётся приток и сколько жидкости даёт упругость пласта. С. 474–477.",
+      "nodes": [
+        "basniev-auto.n01",
+        "basniev-auto.n02",
+        "basniev-auto.n03"
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Гл. XXIII, § 3–4. Модель и уравнение пьезопроводности",
+      "short": "§ 3–4 · Пьезопроводность",
+      "sub": "Какие уравнения описывают упругий режим и что такое коэффициент пьезопроводности. С. 477–481.",
+      "nodes": [
+        "basniev-auto.n04",
+        "basniev-auto.n05",
+        "basniev-auto.n06"
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Гл. XXIII, § 5. Точные решения: галерея и скважина",
+      "short": "§ 5 · Точные решения",
+      "sub": "Как давление и дебит меняются во времени у галереи и у скважины; основная формула упругого режима. С. 481–493.",
+      "nodes": [
+        "basniev-auto.n07",
+        "basniev-auto.n08",
+        "basniev-auto.n09",
+        "basniev-auto.n10",
+        "basniev-auto.n11",
+        "basniev-auto.n12",
+        "basniev-auto.n13",
+        "basniev-auto.n14"
+      ]
+    },
+    {
+      "id": "p4",
+      "title": "Гл. XXIV, § 1. Метод последовательной смены стационарных состояний",
+      "short": "§ XXIV.1 · Метод ПССС",
+      "sub": "Как приближённо считать упругий режим, разбивая пласт на возмущённую и невозмущённую области. С. 494–500.",
+      "nodes": [
+        "basniev-auto.n15",
+        "basniev-auto.n16",
+        "basniev-auto.n17",
+        "basniev-auto.n18",
+        "basniev-auto.n19"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "basniev-auto.n01",
+      "to": "basniev-auto.n02",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n02",
+      "to": "basniev-auto.n03",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n01",
+      "to": "basniev-auto.n04",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n04",
+      "to": "basniev-auto.n05",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n05",
+      "to": "basniev-auto.n06",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n06",
+      "to": "basniev-auto.n07",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n07",
+      "to": "basniev-auto.n08",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n08",
+      "to": "basniev-auto.n09",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n07",
+      "to": "basniev-auto.n10",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n08",
+      "to": "basniev-auto.n10",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n06",
+      "to": "basniev-auto.n11",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n11",
+      "to": "basniev-auto.n12",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n12",
+      "to": "basniev-auto.n13",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n12",
+      "to": "basniev-auto.n14",
+      "type": "example"
+    },
+    {
+      "from": "basniev-auto.n13",
+      "to": "basniev-auto.n14",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n03",
+      "to": "basniev-auto.n15",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n06",
+      "to": "basniev-auto.n15",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n15",
+      "to": "basniev-auto.n16",
+      "type": "example"
+    },
+    {
+      "from": "basniev-auto.n08",
+      "to": "basniev-auto.n16",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n16",
+      "to": "basniev-auto.n17",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n10",
+      "to": "basniev-auto.n17",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n15",
+      "to": "basniev-auto.n18",
+      "type": "example"
+    },
+    {
+      "from": "basniev-auto.n12",
+      "to": "basniev-auto.n18",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n16",
+      "to": "basniev-auto.n19",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n17",
+      "to": "basniev-auto.n19",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n18",
+      "to": "basniev-auto.n19",
+      "type": "base"
+    },
+    {
+      "from": "basniev-auto.n06",
+      "to": "basniev-auto.n12",
+      "type": "data"
+    },
+    {
+      "from": "basniev-auto.n15",
+      "to": "basniev-auto.n17",
+      "type": "example"
+    }
+  ],
+  "errata": []
+}

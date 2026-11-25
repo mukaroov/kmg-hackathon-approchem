@@ -1,0 +1,1957 @@
+{
+ "chapter": "basniev-auto",
+ "tasks": [
+  {
+   "id": "basniev-auto.n01#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n01",
+   "claim_ids": [
+    "basniev-auto.n01#c5"
+   ],
+   "prompt": "Где начинается движение жидкости после пуска скважины при упругом режиме?",
+   "explanation": "Автор пишет, что движение начинается в ближайших окрестностях забоя и постепенно охватывает дальние области.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Сначала у забоя, затем всё дальше",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Сразу во всём пласте",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Сначала на границе пласта",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n01#t2",
+   "type": "multiple",
+   "step_id": "basniev-auto.n01",
+   "claim_ids": [
+    "basniev-auto.n01#c13"
+   ],
+   "prompt": "Что верно о скорости неустановившихся процессов?",
+   "explanation": "Процессы ускоряет проницаемость и замедляют вязкость и коэффициенты упругости.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Чем больше проницаемость k, тем быстрее",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Чем больше вязкость μ, тем медленнее",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Чем больше упругость жидкости и скелета, тем медленнее",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Чем больше проницаемость k, тем медленнее",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "basniev-auto.n01#t3",
+   "type": "gap",
+   "step_id": "basniev-auto.n01",
+   "claim_ids": [
+    "basniev-auto.n01#c8"
+   ],
+   "prompt": "Впишите слово. Если приток поддерживает ещё и напор воды из области питания, режим называют {{1}}.",
+   "explanation": "Автор называет такой режим упруговодонапорным.",
+   "kind": "recall",
+   "answer": [
+    "упруговодонапорным"
+   ],
+   "accepted": [
+    [
+     "упруговодонапорным",
+     "упруговодонапорный"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n01#t4",
+   "type": "single",
+   "step_id": "basniev-auto.n01",
+   "claim_ids": [
+    "basniev-auto.n01#c7"
+   ],
+   "prompt": "Почему за счёт упругости можно извлечь много жидкости, хотя коэффициенты упругости малы?",
+   "explanation": "Малые коэффициенты умножаются на огромные объёмы пласта.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Очень велики объёмы пласта и флюидов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Жидкость в пласте сильно сжата газом",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Порода при снижении давления растворяется",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n02#t1",
+   "type": "calc",
+   "step_id": "basniev-auto.n02",
+   "claim_ids": [
+    "basniev-auto.n02#c9"
+   ],
+   "prompt": "Числа учебные. m = 0,2; βж = 1·10−9 1/Па; βс = 0,5·10−9 1/Па. Найдите β* в единицах 10−9 1/Па.",
+   "explanation": "β* = m βж + βс = 0,2 · 1 + 0,5 = 0,7·10−9 1/Па.",
+   "kind": "transfer",
+   "answer": 0.7,
+   "tolerance": 0.02,
+   "unit": "·10^{−9} 1/Па"
+  },
+  {
+   "id": "basniev-auto.n02#t2",
+   "type": "calc",
+   "step_id": "basniev-auto.n02",
+   "claim_ids": [
+    "basniev-auto.n02#c8"
+   ],
+   "prompt": "Числа учебные. β* = 1·10−9 1/Па, V0 = 108 м³, Δp = 106 Па. Каков упругий запас ΔVз в тысячах м³?",
+   "explanation": "ΔVз = β* V0 Δp = 10−9 · 108 · 106 = 105 м³ = 100 тыс. м³.",
+   "kind": "transfer",
+   "answer": 100,
+   "tolerance": 0.01,
+   "unit": "тыс. м³"
+  },
+  {
+   "id": "basniev-auto.n02#t3",
+   "type": "single",
+   "step_id": "basniev-auto.n02",
+   "claim_ids": [
+    "basniev-auto.n02#c10"
+   ],
+   "prompt": "Что означает коэффициент упругоёмкости пласта β*?",
+   "explanation": "Так β* определён из формулы (23.4).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Изменение упругого запаса в единице объёма пласта при изменении давления на единицу",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Долю пор в объёме пласта",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Скорость распространения давления",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n02#t4",
+   "type": "gap",
+   "step_id": "basniev-auto.n02",
+   "claim_ids": [
+    "basniev-auto.n02#c9"
+   ],
+   "prompt": "Впишите обозначения. β* = m βж + {{1}}",
+   "explanation": "К вкладу жидкости m βж добавляется упругость скелета βс.",
+   "kind": "recall",
+   "answer": [
+    "β_с"
+   ],
+   "accepted": [
+    [
+     "β_с",
+     "βс",
+     "βс",
+     "бета с"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n03#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n03",
+   "claim_ids": [
+    "basniev-auto.n03#c2"
+   ],
+   "prompt": "Что такое p̄ в формуле Δp = pк − p̄?",
+   "explanation": "Автор определяет p̄ как средневзвешенное давление по возмущённой части пласта.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Давление, средневзвешенное по объёму возмущённой части пласта",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Давление на забое скважины",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Давление насыщения",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n03#t2",
+   "type": "order",
+   "step_id": "basniev-auto.n03",
+   "claim_ids": [
+    "basniev-auto.n03#c6"
+   ],
+   "prompt": "Расставьте шаги вывода уравнения истощения по порядку.",
+   "explanation": "Определение Δp, дифференцирование, баланс отбора и итоговое уравнение.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Определить Δp = pк − p̄",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Продифференцировать ΔVз = β* V0 Δp",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Приравнять убыль запаса отобранному объёму Q(t) dt",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Получить β* d[V0(t) Δp] = Q(t) dt",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "basniev-auto.n03#t3",
+   "type": "multiple",
+   "step_id": "basniev-auto.n03",
+   "claim_ids": [
+    "basniev-auto.n03#c3"
+   ],
+   "prompt": "Что нужно знать, чтобы вычислить p̄?",
+   "explanation": "Автор называет геометрию возмущённой части и распределение давления.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Геометрию возмущённой части пласта",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Распределение давления в ней",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Цвет нефти",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Число скважин в соседнем месторождении",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basniev-auto.n04#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n04",
+   "claim_ids": [
+    "basniev-auto.n04#c2"
+   ],
+   "prompt": "Какую часть извлекаемых запасов обычно дают при естественном упругом режиме?",
+   "explanation": "Автор пишет, что как правило добывают незначительную часть — до 2–5 %.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "До 2–5 %",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Около половины",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Более 80 %",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n04#t2",
+   "type": "multiple",
+   "step_id": "basniev-auto.n04",
+   "claim_ids": [
+    "basniev-auto.n04#c4"
+   ],
+   "prompt": "Из каких уравнений строят модель упругого режима?",
+   "explanation": "Автор называет неразрывность, закон Дарси и уравнения состояния.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Уравнение неразрывности",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Закон Дарси",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Уравнения состояния среды и жидкости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Уравнение Бернулли для трубы",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "basniev-auto.n04#t3",
+   "type": "gap",
+   "step_id": "basniev-auto.n04",
+   "claim_ids": [
+    "basniev-auto.n04#c3"
+   ],
+   "prompt": "Впишите число. На Тенгизе при упругом режиме отберут до {{1}} % запасов нефти.",
+   "explanation": "Автор приводит Тенгиз как пример большого упругого запаса — до 20 %.",
+   "kind": "recall",
+   "answer": [
+    "20"
+   ],
+   "accepted": [
+    [
+     "20"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n04#t4",
+   "type": "single",
+   "step_id": "basniev-auto.n04",
+   "claim_ids": [
+    "basniev-auto.n04#c12"
+   ],
+   "prompt": "Почему в модели проницаемость считают постоянной?",
+   "explanation": "Автор признаёт, что проницаемость меняется, но ещё одно уравнение состояния сильно усложнило бы модель.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Уравнение k = k(m(p)) существенно усложнило бы модель",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Проницаемость никогда не меняется",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Так требует закон Дарси",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n05#t1",
+   "type": "order",
+   "step_id": "basniev-auto.n05",
+   "claim_ids": [
+    "basniev-auto.n05#c11"
+   ],
+   "prompt": "Расставьте шаги вывода уравнения пьезопроводности.",
+   "explanation": "Сначала (23.12), затем упрощение левой и правой частей и итог (23.16).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Подставить функцию Лейбензона в неразрывность",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Перемножить ρ и m, отбросить малое слагаемое",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Подставить ρ(p) под интеграл, отбросить слагаемое с βж",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Получить β* ∂p/∂t = (k/μ) Δp",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "basniev-auto.n05#t2",
+   "type": "single",
+   "step_id": "basniev-auto.n05",
+   "claim_ids": [
+    "basniev-auto.n05#c5"
+   ],
+   "prompt": "Почему в произведении mρ отбрасывают последнее слагаемое?",
+   "explanation": "В нём произведение двух коэффициентов упругости порядка 10−10 Па−1.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Оно мало по сравнению с двумя другими",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Оно равно нулю по закону Дарси",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Так требует функция Лейбензона",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n05#t3",
+   "type": "calc",
+   "step_id": "basniev-auto.n05",
+   "claim_ids": [
+    "basniev-auto.n05#c13"
+   ],
+   "prompt": "Числа учебные. k = 10−12 м², μ = 10−3 Па·с, β* = 10−9 Па−1. Найдите κ = k/(μ β*), м²/с.",
+   "explanation": "κ = 10−12 / (10−3 · 10−9) = 1 м²/с.",
+   "kind": "transfer",
+   "answer": 1,
+   "tolerance": 0.01,
+   "unit": "м²/с"
+  },
+  {
+   "id": "basniev-auto.n05#t4",
+   "type": "gap",
+   "step_id": "basniev-auto.n05",
+   "claim_ids": [
+    "basniev-auto.n05#c7"
+   ],
+   "prompt": "Впишите число. Коэффициент объёмной упругости пласта βс = (0,3 − {{1}})·10−10 Па−1.",
+   "explanation": "Автор напоминает: βс = (0,3–2)·10−10 Па−1.",
+   "kind": "recall",
+   "answer": [
+    "2"
+   ],
+   "accepted": [
+    [
+     "2"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n06#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n06",
+   "claim_ids": [
+    "basniev-auto.n06#c6"
+   ],
+   "prompt": "Какие значения κ чаще всего встречаются в нефтепромысловой практике?",
+   "explanation": "Автор называет диапазон 0,1–5 м²/с.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "От 0,1 до 5 м²/с",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "От 100 до 500 м²/с",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "От 10−6 до 10−5 м²/с",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n06#t2",
+   "type": "gap",
+   "step_id": "basniev-auto.n06",
+   "claim_ids": [
+    "basniev-auto.n06#c5"
+   ],
+   "prompt": "Впишите обозначение. Размерность коэффициента пьезопроводности: L²/{{1}}.",
+   "explanation": "Из (23.18) размерность κ — длина в квадрате на время.",
+   "kind": "recall",
+   "answer": [
+    "T"
+   ],
+   "accepted": [
+    [
+     "T",
+     "Т"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n06#t3",
+   "type": "calc",
+   "step_id": "basniev-auto.n06",
+   "claim_ids": [
+    "basniev-auto.n06#c7"
+   ],
+   "prompt": "Числа учебные. β* = 10−9 Па−1, p − p0 = 107 Па. Вычислите β*(p − p0).",
+   "explanation": "10−9 · 107 = 0,01 — много меньше единицы, уравнение применимо.",
+   "kind": "transfer",
+   "answer": 0.01,
+   "tolerance": 0.01,
+   "unit": null
+  },
+  {
+   "id": "basniev-auto.n06#t4",
+   "type": "single",
+   "step_id": "basniev-auto.n06",
+   "claim_ids": [
+    "basniev-auto.n06#c8"
+   ],
+   "prompt": "Что будет, если β*(p − p0) не много меньше единицы?",
+   "explanation": "Слагаемое с β* нельзя отбросить, и уравнение усложнится и станет нелинейным.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Уравнение станет нелинейным",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "κ станет равным нулю",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Давление перестанет меняться",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n06#t5",
+   "type": "multiple",
+   "step_id": "basniev-auto.n06",
+   "claim_ids": [
+    "basniev-auto.n06#c2"
+   ],
+   "prompt": "Что верно об уравнении пьезопроводности?",
+   "explanation": "Уравнение верно только для слабосжимаемой жидкости.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Название предложил В. Н. Щелкачев",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Оно того же типа, что уравнение теплопроводности",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Оно применимо при любой сжимаемости жидкости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "κ назван по аналогии с температуропроводностью",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "d"
+   ]
+  },
+  {
+   "id": "basniev-auto.n07#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n07",
+   "claim_ids": [
+    "basniev-auto.n07#c10"
+   ],
+   "prompt": "Какую переменную вводят как автомодельную?",
+   "explanation": "Безразмерный комплекс из x, t и κ — x/√(κt); автор берёт u = x/(2√(κt)).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "u = x/(2√(κt))",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "u = κt/x",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "u = x·t",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n07#t2",
+   "type": "multiple",
+   "step_id": "basniev-auto.n07",
+   "claim_ids": [
+    "basniev-auto.n07#c14"
+   ],
+   "prompt": "Какие условия задаёт задача о галерее (случай 1)?",
+   "explanation": "В случае 1 на галерее держат постоянное давление, а не дебит.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При t = 0 давление всюду pк",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "На галерее при t > 0 давление pг",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Вдали от галереи давление pк",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "На галерее постоянный дебит",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "basniev-auto.n07#t3",
+   "type": "gap",
+   "step_id": "basniev-auto.n07",
+   "claim_ids": [
+    "basniev-auto.n07#c8"
+   ],
+   "prompt": "Впишите обозначение. Безразмерное давление: P = (p − pг) / (pк − {{1}}).",
+   "explanation": "P = (p − pг)/(pк − pг).",
+   "kind": "recall",
+   "answer": [
+    "p_г"
+   ],
+   "accepted": [
+    [
+     "p_г",
+     "pг",
+     "pг",
+     "p г"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n07#t4",
+   "type": "single",
+   "step_id": "basniev-auto.n07",
+   "claim_ids": [
+    "basniev-auto.n07#c12"
+   ],
+   "prompt": "Почему для безразмерного давления P получается то же уравнение, что для p?",
+   "explanation": "Автор ссылается на линейность уравнения (23.19).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Уравнение линейное",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "P не зависит от времени",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Галерея бесконечно длинная",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n08#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n08",
+   "claim_ids": [
+    "basniev-auto.n08#c5"
+   ],
+   "prompt": "Как называется функция, через которую выражено давление у галереи?",
+   "explanation": "Интеграл (23.26) — интеграл вероятности erf, табулированный от 0 до 1.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Интеграл вероятности erf",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Интегральная показательная функция Ei",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Логарифм",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n08#t2",
+   "type": "calc",
+   "step_id": "basniev-auto.n08",
+   "claim_ids": [
+    "basniev-auto.n08#c6"
+   ],
+   "prompt": "Числа учебные. pк = 20 МПа, pг = 10 МПа, erf(x/(2√(κt))) = 0,5. Найдите давление p, МПа.",
+   "explanation": "p = 10 + (20 − 10) · 0,5 = 15 МПа.",
+   "kind": "transfer",
+   "answer": 15,
+   "tolerance": 0.01,
+   "unit": "МПа"
+  },
+  {
+   "id": "basniev-auto.n08#t3",
+   "type": "order",
+   "step_id": "basniev-auto.n08",
+   "claim_ids": [
+    "basniev-auto.n08#c6"
+   ],
+   "prompt": "Расставьте шаги решения по порядку.",
+   "explanation": "Так идёт вывод от (23.23) к (23.27).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Получить ОДУ d²P/du² + 2u dP/du = 0",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Найти dP/du = C1 e−u²",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Проинтегрировать с условием P(0) = 0",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Найти C1 = 2/√π",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Записать p через erf",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ]
+  },
+  {
+   "id": "basniev-auto.n08#t4",
+   "type": "gap",
+   "step_id": "basniev-auto.n08",
+   "claim_ids": [
+    "basniev-auto.n08#c5"
+   ],
+   "prompt": "Впишите число. Интеграл вероятности erf меняется от 0 до {{1}}.",
+   "explanation": "Автор: табулированная функция, изменяющаяся от 0 до 1.",
+   "kind": "recall",
+   "answer": [
+    "1"
+   ],
+   "accepted": [
+    [
+     "1"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n09#t1",
+   "type": "calc",
+   "step_id": "basniev-auto.n09",
+   "claim_ids": [
+    "basniev-auto.n09#c5"
+   ],
+   "prompt": "Время после пуска галереи выросло в 4 раза. Во сколько раз уменьшился дебит?",
+   "explanation": "Q ~ 1/√t: при t в 4 раза больше дебит в √4 = 2 раза меньше.",
+   "kind": "understanding",
+   "answer": 2,
+   "tolerance": 0.01,
+   "unit": "раза"
+  },
+  {
+   "id": "basniev-auto.n09#t2",
+   "type": "calc",
+   "step_id": "basniev-auto.n09",
+   "claim_ids": [
+    "basniev-auto.n09#c7"
+   ],
+   "prompt": "Во сколько раз накопленная добыча за время 4t больше, чем за время t?",
+   "explanation": "Vдоб ~ √t, поэтому √4 = 2.",
+   "kind": "understanding",
+   "answer": 2,
+   "tolerance": 0.01,
+   "unit": "раза"
+  },
+  {
+   "id": "basniev-auto.n09#t3",
+   "type": "single",
+   "step_id": "basniev-auto.n09",
+   "claim_ids": [
+    "basniev-auto.n09#c6"
+   ],
+   "prompt": "Почему формула (23.30) даёт бесконечный дебит при t = 0?",
+   "explanation": "Автор объясняет это скачком давления от pк до pг в начальный момент.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Из-за мгновенного скачка давления на галерее",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Из-за бесконечной проницаемости",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Из-за ошибки в законе Дарси",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n09#t4",
+   "type": "gap",
+   "step_id": "basniev-auto.n09",
+   "claim_ids": [
+    "basniev-auto.n09#c5"
+   ],
+   "prompt": "Впишите выражение. Дебит галереи при постоянном давлении убывает как 1/{{1}}.",
+   "explanation": "Из (23.30): Q ~ 1/√t.",
+   "kind": "recall",
+   "answer": [
+    "√t"
+   ],
+   "accepted": [
+    [
+     "√t",
+     "корень из t",
+     "sqrt(t)",
+     "√ t"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n10#t1",
+   "type": "calc",
+   "step_id": "basniev-auto.n10",
+   "claim_ids": [
+    "basniev-auto.n10#c10"
+   ],
+   "prompt": "При постоянном дебите время после пуска выросло в 4 раза. Во сколько раз вырос перепад pк − pг(t)?",
+   "explanation": "По (23.39) перепад пропорционален √t, а √4 = 2.",
+   "kind": "understanding",
+   "answer": 2,
+   "tolerance": 0.01,
+   "unit": "раза"
+  },
+  {
+   "id": "basniev-auto.n10#t2",
+   "type": "single",
+   "step_id": "basniev-auto.n10",
+   "claim_ids": [
+    "basniev-auto.n10#c12"
+   ],
+   "prompt": "Что на самом деле произойдёт у галереи, если долго держать постоянный дебит?",
+   "explanation": "Отрицательных давлений не будет: автор пишет, что возникнет кавитация.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Возникнет кавитация",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Давление станет отрицательным",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Дебит вырастет сам",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n10#t3",
+   "type": "single",
+   "step_id": "basniev-auto.n10",
+   "claim_ids": [
+    "basniev-auto.n10#c4"
+   ],
+   "prompt": "Почему для скорости фильтрации w получается такое же решение через erf?",
+   "explanation": "Уравнение (23.33) совпадает по форме с уравнением теплопроводности.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Уравнение для w того же вида, что для давления",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Скорость не зависит от времени",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Давление на галерее постоянно",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n10#t4",
+   "type": "gap",
+   "step_id": "basniev-auto.n10",
+   "claim_ids": [
+    "basniev-auto.n10#c12"
+   ],
+   "prompt": "Впишите слово. Условие постоянного дебита автор называет слишком «{{1}}».",
+   "explanation": "Для его выполнения при больших t нужны отрицательные давления.",
+   "kind": "recall",
+   "answer": [
+    "жёстким"
+   ],
+   "accepted": [
+    [
+     "жёстким",
+     "жестким"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n11#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n11",
+   "claim_ids": [
+    "basniev-auto.n11#c1"
+   ],
+   "prompt": "Какой радиус у скважины в этой постановке?",
+   "explanation": "Скважина принята «нулевого» радиуса — точечным стоком.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "«Нулевой» — точечный сток",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Равный толщине пласта",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Бесконечный",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n11#t2",
+   "type": "calc",
+   "step_id": "basniev-auto.n11",
+   "claim_ids": [
+    "basniev-auto.n11#c7"
+   ],
+   "prompt": "Расстояние r увеличили в 2 раза. Во сколько раз нужно увеличить время t, чтобы ξ = r/(2√(κt)) не изменилась?",
+   "explanation": "ξ зависит от r/√t: при r в 2 раза больше нужно √t в 2 раза больше, то есть t в 4 раза.",
+   "kind": "understanding",
+   "answer": 4,
+   "tolerance": 0.01,
+   "unit": "раза"
+  },
+  {
+   "id": "basniev-auto.n11#t3",
+   "type": "single",
+   "step_id": "basniev-auto.n11",
+   "claim_ids": [
+    "basniev-auto.n11#c4"
+   ],
+   "prompt": "Что означает второе условие (23.41)?",
+   "explanation": "Вдали давление контурное, а граница возмущённой зоны со временем стремится к бесконечности.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Граница возмущённой зоны со временем уходит на бесконечность",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Дебит скважины постоянен",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "До пуска давление было нулевым",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n11#t4",
+   "type": "gap",
+   "step_id": "basniev-auto.n11",
+   "claim_ids": [
+    "basniev-auto.n11#c6"
+   ],
+   "prompt": "Впишите число. Давление зависит от {{1}} определяющих параметров.",
+   "explanation": "r, t, κ, pк и Q0μ/(2πkh).",
+   "kind": "recall",
+   "answer": [
+    "пяти"
+   ],
+   "accepted": [
+    [
+     "пяти",
+     "5",
+     "пять"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n12#t1",
+   "type": "calc",
+   "step_id": "basniev-auto.n12",
+   "claim_ids": [
+    "basniev-auto.n12#c10"
+   ],
+   "prompt": "Найдите −Ei(−x) по логарифмической замене при x = 0,01 (ln 100 ≈ 4,605).",
+   "explanation": "ln(1/0,01) − 0,5772 = 4,605 − 0,577 ≈ 4,03; при x = 0,01 погрешность не более 0,25 %.",
+   "kind": "data",
+   "answer": 4.03,
+   "tolerance": 0.01,
+   "unit": null
+  },
+  {
+   "id": "basniev-auto.n12#t2",
+   "type": "calc",
+   "step_id": "basniev-auto.n12",
+   "claim_ids": [
+    "basniev-auto.n12#c11"
+   ],
+   "prompt": "Числа учебные. r = 0,1 м, κ = 1 м²/с, t = 100 с. Вычислите x = r²/(4κt).",
+   "explanation": "0,01/(4·1·100) = 0,000025 — x много меньше 0,01, логарифмическая формула применима.",
+   "kind": "transfer",
+   "answer": 0.000025,
+   "tolerance": 0.01,
+   "unit": null
+  },
+  {
+   "id": "basniev-auto.n12#t3",
+   "type": "single",
+   "step_id": "basniev-auto.n12",
+   "claim_ids": [
+    "basniev-auto.n12#c9"
+   ],
+   "prompt": "Как ведёт себя −Ei(−x) при росте x от 0 до бесконечности?",
+   "explanation": "Так описано на с. 491 и видно на рис. 23.3.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Быстро убывает от ∞ до 0",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Растёт от 0 до ∞",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Остаётся постоянной",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n12#t4",
+   "type": "single",
+   "step_id": "basniev-auto.n12",
+   "claim_ids": [
+    "basniev-auto.n12#c14"
+   ],
+   "prompt": "Какая погрешность логарифмической замены при x ≤ 0,1?",
+   "explanation": "0,25 % — при x ≤ 0,01, 9,7 % — при x ≤ 0,14.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Не более 5,7 %",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Не более 0,25 %",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Не более 9,7 %",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n12#t5",
+   "type": "multiple",
+   "step_id": "basniev-auto.n12",
+   "claim_ids": [
+    "basniev-auto.n12#c7"
+   ],
+   "prompt": "Где применяют основную формулу (23.52)?",
+   "explanation": "Автор называет интерпретацию исследований скважин и расчёты давления.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "При интерпретации исследований скважин",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В расчётах распределения давления",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Для расчёта пористости по керну",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basniev-auto.n13#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n13",
+   "claim_ids": [
+    "basniev-auto.n13#c1"
+   ],
+   "prompt": "К чему стремится расход Q(r, t) на фиксированном радиусе при t → ∞?",
+   "explanation": "При t → ∞ множитель e−r²/4κt стремится к 1.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "К дебиту скважины Q0",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "К нулю",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "К бесконечности",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n13#t2",
+   "type": "single",
+   "step_id": "basniev-auto.n13",
+   "claim_ids": [
+    "basniev-auto.n13#c3"
+   ],
+   "prompt": "Почему стационарная скорость вблизи скважины устанавливается очень быстро?",
+   "explanation": "Так объясняет автор на с. 492.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Коэффициент пьезопроводности обычно велик",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Скважина имеет нулевой радиус",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Вязкость нефти мала",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n13#t3",
+   "type": "calc",
+   "step_id": "basniev-auto.n13",
+   "claim_ids": [
+    "basniev-auto.n13#c5"
+   ],
+   "prompt": "Числа учебные. κ = 1 м²/с, t = 1 с, rc = 0,1 м. Вычислите f0 = κt/rc².",
+   "explanation": "1·1/0,01 = 100.",
+   "kind": "transfer",
+   "answer": 100,
+   "tolerance": 0.01,
+   "unit": null
+  },
+  {
+   "id": "basniev-auto.n13#t4",
+   "type": "gap",
+   "step_id": "basniev-auto.n13",
+   "claim_ids": [
+    "basniev-auto.n13#c4"
+   ],
+   "prompt": "Впишите слово. Параметры Фурье играют роль безразмерного {{1}}.",
+   "explanation": "f0 и F0 — безразмерное время.",
+   "kind": "recall",
+   "answer": [
+    "времени"
+   ],
+   "accepted": [
+    [
+     "времени",
+     "время"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n14#t1",
+   "type": "calc",
+   "step_id": "basniev-auto.n14",
+   "claim_ids": [
+    "basniev-auto.n14#c4"
+   ],
+   "prompt": "κ = 1 м²/с, rc = 0,1 м. Через сколько секунд после пуска f0 станет равным 100?",
+   "explanation": "t = f0 rc²/κ = 100 · 0,01/1 = 1 с.",
+   "kind": "understanding",
+   "answer": 1,
+   "tolerance": 0.01,
+   "unit": "с"
+  },
+  {
+   "id": "basniev-auto.n14#t2",
+   "type": "single",
+   "step_id": "basniev-auto.n14",
+   "claim_ids": [
+    "basniev-auto.n14#c3"
+   ],
+   "prompt": "Какая погрешность формулы (23.52) по давлению при f0 = 25?",
+   "explanation": "0,6 % — при f0 = 100, 5 % — при f0 = 10.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "2,3 %",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "0,6 %",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "5 %",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n14#t3",
+   "type": "single",
+   "step_id": "basniev-auto.n14",
+   "claim_ids": [
+    "basniev-auto.n14#c13"
+   ],
+   "prompt": "Как ведут себя пьезометрические кривые у забоя при r² ≤ 0,03 · 4κt?",
+   "explanation": "Градиент там не зависит от времени, кривые логарифмические.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Логарифмические, с одинаковым наклоном на забое",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Прямые, параллельные оси r",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Не зависят от дебита",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n14#t4",
+   "type": "multiple",
+   "step_id": "basniev-auto.n14",
+   "claim_ids": [
+    "basniev-auto.n14#c5"
+   ],
+   "prompt": "Что верно о применимости формулы (23.52)?",
+   "explanation": "При больших Fo нужно учитывать границы пласта.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Строго она выведена для точечного стока в бесконечном пласте",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Для обычных скважин она точна уже через секунды после пуска",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Она верна при любом Fo для конечного пласта",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basniev-auto.n14#t5",
+   "type": "gap",
+   "step_id": "basniev-auto.n14",
+   "claim_ids": [
+    "basniev-auto.n14#c2"
+   ],
+   "prompt": "Впишите фамилии. Точная формула для скважины конечного радиуса — формула Ван-Эвердингена и {{1}}.",
+   "explanation": "С ней Щелкачев сравнил (23.52).",
+   "kind": "recall",
+   "answer": [
+    "Херста"
+   ],
+   "accepted": [
+    [
+     "Херста",
+     "Херст"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n15#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n15",
+   "claim_ids": [
+    "basniev-auto.n15#c3"
+   ],
+   "prompt": "На каком допущении основан метод ПССС?",
+   "explanation": "Поэтому производную по времени в первом приближении отбрасывают.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Давление меняется во времени гораздо медленнее, чем по координатам",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Жидкость несжимаема",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Пласт ограничен непроницаемой границей",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n15#t2",
+   "type": "single",
+   "step_id": "basniev-auto.n15",
+   "claim_ids": [
+    "basniev-auto.n15#c5"
+   ],
+   "prompt": "Каким считают давление в невозмущённой области?",
+   "explanation": "В невозмущённой области давление всюду постоянно и равно pк.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Равным начальному контурному pк",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Равным давлению на забое",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Линейно убывающим",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n15#t3",
+   "type": "gap",
+   "step_id": "basniev-auto.n15",
+   "claim_ids": [
+    "basniev-auto.n15#c2"
+   ],
+   "prompt": "Впишите фамилию. Метод ПССС развил И. А. {{1}}.",
+   "explanation": "Так указано на с. 494.",
+   "kind": "recall",
+   "answer": [
+    "Чарный"
+   ],
+   "accepted": [
+    [
+     "Чарный",
+     "Чарным"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n15#t4",
+   "type": "multiple",
+   "step_id": "basniev-auto.n15",
+   "claim_ids": [
+    "basniev-auto.n15#c7"
+   ],
+   "prompt": "Что верно о фазах процесса в методе ПССС?",
+   "explanation": "В бесконечном пласте есть только первая фаза.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В первой фазе граница возмущённой зоны расширяется",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Вторая начинается, когда граница дошла до границы пласта",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В бесконечном пласте есть только вторая фаза",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "basniev-auto.n16#t1",
+   "type": "calc",
+   "step_id": "basniev-auto.n16",
+   "claim_ids": [
+    "basniev-auto.n16#c8"
+   ],
+   "prompt": "Числа учебные. κ = 1 м²/с, t = 50 с. Найдите длину возмущённой зоны l = √(2κt).",
+   "explanation": "√(2 · 1 · 50) = √100 = 10 м.",
+   "kind": "transfer",
+   "answer": 10,
+   "tolerance": 0.01,
+   "unit": "м"
+  },
+  {
+   "id": "basniev-auto.n16#t2",
+   "type": "single",
+   "step_id": "basniev-auto.n16",
+   "claim_ids": [
+    "basniev-auto.n16#c4"
+   ],
+   "prompt": "Чему равно среднее снижение давления в возмущённой зоне по ПССС?",
+   "explanation": "Профиль линейный, поэтому среднее давление — полусумма pк и pг.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Половине депрессии (pк − pг)/2",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Всей депрессии pк − pг",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Нулю",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n16#t3",
+   "type": "calc",
+   "step_id": "basniev-auto.n16",
+   "claim_ids": [
+    "basniev-auto.n16#c8"
+   ],
+   "prompt": "Время выросло в 4 раза. Во сколько раз выросла длина возмущённой зоны l(t)?",
+   "explanation": "l ~ √t, √4 = 2.",
+   "kind": "understanding",
+   "answer": 2,
+   "tolerance": 0.01,
+   "unit": "раза"
+  },
+  {
+   "id": "basniev-auto.n16#t4",
+   "type": "gap",
+   "step_id": "basniev-auto.n16",
+   "claim_ids": [
+    "basniev-auto.n16#c10"
+   ],
+   "prompt": "Впишите число. Погрешность депрессии по приближённой формуле (24.7) составляет {{1}} %.",
+   "explanation": "Так указано на с. 496.",
+   "kind": "recall",
+   "answer": [
+    "25"
+   ],
+   "accepted": [
+    [
+     "25"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n17#t1",
+   "type": "calc",
+   "step_id": "basniev-auto.n17",
+   "claim_ids": [
+    "basniev-auto.n17#c5"
+   ],
+   "prompt": "Числа учебные. κ = 1 м²/с, t = 25 с. Найдите длину зоны l = 2√(κt) при постоянном давлении на галерее.",
+   "explanation": "2√25 = 10 м.",
+   "kind": "transfer",
+   "answer": 10,
+   "tolerance": 0.01,
+   "unit": "м"
+  },
+  {
+   "id": "basniev-auto.n17#t2",
+   "type": "single",
+   "step_id": "basniev-auto.n17",
+   "claim_ids": [
+    "basniev-auto.n17#c8"
+   ],
+   "prompt": "Какова погрешность дебита по ПССС при постоянном давлении на галерее?",
+   "explanation": "25 % — погрешность депрессии при постоянном дебите.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "11 %",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "25 %",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "0,6 %",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n17#t3",
+   "type": "single",
+   "step_id": "basniev-auto.n17",
+   "claim_ids": [
+    "basniev-auto.n17#c9"
+   ],
+   "prompt": "При каком режиме автор советует применять ПССС для прямолинейных потоков?",
+   "explanation": "Погрешность там меньше — 11 %.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При заданной постоянной депрессии",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "При постоянном дебите",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только для бесконечно длинных галерей",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n17#t4",
+   "type": "calc",
+   "step_id": "basniev-auto.n17",
+   "claim_ids": [
+    "basniev-auto.n17#c7"
+   ],
+   "prompt": "Время выросло в 4 раза. Во сколько раз уменьшился дебит по (24.9)?",
+   "explanation": "Q ~ 1/√t, √4 = 2.",
+   "kind": "understanding",
+   "answer": 2,
+   "tolerance": 0.01,
+   "unit": "раза"
+  },
+  {
+   "id": "basniev-auto.n18#t1",
+   "type": "calc",
+   "step_id": "basniev-auto.n18",
+   "claim_ids": [
+    "basniev-auto.n18#c8"
+   ],
+   "prompt": "Числа учебные. κ = 1 м²/с, t = 25 с, радиусом скважины пренебречь. Найдите R(t) = √(rc² + 4κt).",
+   "explanation": "√(4 · 1 · 25) = √100 = 10 м.",
+   "kind": "transfer",
+   "answer": 10,
+   "tolerance": 0.01,
+   "unit": "м"
+  },
+  {
+   "id": "basniev-auto.n18#t2",
+   "type": "single",
+   "step_id": "basniev-auto.n18",
+   "claim_ids": [
+    "basniev-auto.n18#c11"
+   ],
+   "prompt": "Как меняется погрешность ПССС для скважины с постоянным дебитом со временем?",
+   "explanation": "10,6 % при f0 = 100, 5,7 % при f0 = 10⁴.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Уменьшается",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Растёт",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Не меняется",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n18#t3",
+   "type": "single",
+   "step_id": "basniev-auto.n18",
+   "claim_ids": [
+    "basniev-auto.n18#c5"
+   ],
+   "prompt": "Какой формулой описывают дебит скважины в методе ПССС?",
+   "explanation": "Это формула (24.11).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Аналогичной формуле Дюпюи, с R(t) вместо радиуса контура",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Основной формулой с функцией Ei",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Законом Гука",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n18#t4",
+   "type": "gap",
+   "step_id": "basniev-auto.n18",
+   "claim_ids": [
+    "basniev-auto.n18#c11"
+   ],
+   "prompt": "Впишите число. При f0 = 100 погрешность депрессии по ПССС для скважины — {{1}} %.",
+   "explanation": "Так указано на с. 499.",
+   "kind": "recall",
+   "answer": [
+    "10,6"
+   ],
+   "accepted": [
+    [
+     "10,6",
+     "10.6"
+    ]
+   ]
+  },
+  {
+   "id": "basniev-auto.n19#t1",
+   "type": "single",
+   "step_id": "basniev-auto.n19",
+   "claim_ids": [
+    "basniev-auto.n19#c4"
+   ],
+   "prompt": "Какова погрешность дебита по ПССС для скважины с постоянным забойным давлением?",
+   "explanation": "По сравнению с расчётами Царевича и Куранова.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Около 5 %",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "25 %",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "11 %",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n19#t2",
+   "type": "single",
+   "step_id": "basniev-auto.n19",
+   "claim_ids": [
+    "basniev-auto.n19#c5"
+   ],
+   "prompt": "Почему результаты ПССС расходятся с точным решением?",
+   "explanation": "Автор называет разрыв градиента одной из причин.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "На границе зон градиент давления терпит разрыв",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Метод не учитывает материальный баланс",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Метод применим только к газу",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n19#t3",
+   "type": "single",
+   "step_id": "basniev-auto.n19",
+   "claim_ids": [
+    "basniev-auto.n19#c8"
+   ],
+   "prompt": "Что метод ПССС даёт точнее всего?",
+   "explanation": "Профиль давления довольно грубый, а связь дебита и депрессии гораздо точнее.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Связь дебита и депрессии",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Профиль давления в пласте",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Положение реальной границы пласта",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "basniev-auto.n19#t4",
+   "type": "multiple",
+   "step_id": "basniev-auto.n19",
+   "claim_ids": [
+    "basniev-auto.n19#c6"
+   ],
+   "prompt": "Где ещё применяют ПССС, по словам автора?",
+   "explanation": "Метод даёт простые решения и для этих задач.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Для движения газированной жидкости",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Для перемещения границы раздела жидкостей и газов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Для расчёта прочности обсадных труб",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  }
+ ]
+}

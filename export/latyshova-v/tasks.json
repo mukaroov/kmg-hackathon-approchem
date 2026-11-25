@@ -1,0 +1,1256 @@
+{
+ "chapter": "latyshova_gl5_par17-20",
+ "tasks": [
+  {
+   "id": "gis.v17.tasks.01#t1",
+   "type": "single",
+   "step_id": "gis.v17.tasks.01",
+   "claim_ids": [
+    "gis.v17.tasks.01#c2"
+   ],
+   "prompt": "Каким способом обычно строят литологический разрез скважины?",
+   "explanation": "Автор пишет, что литологию определяют качественно, по признакам основных типов пород на диаграммах.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Количественным расчётом коэффициента нефтегазонасыщения",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Качественной интерпретацией: по признакам пород на главных диаграммах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только по керну, без диаграмм",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "gis.v17.tasks.01#t2",
+   "type": "multiple",
+   "step_id": "gis.v17.tasks.01",
+   "claim_ids": [
+    "gis.v17.tasks.01#c4"
+   ],
+   "prompt": "На каких количественных определениях базируется промышленная оценка коллекторов?",
+   "explanation": "Промышленная оценка опирается на числа пористости, нефтегазонасыщения и проницаемости, которые идут в подсчёт запасов.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пористости",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Нефтегазонасыщения",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Проницаемости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Цвета шлама",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "gis.v17.mud.02#t1",
+   "type": "gap",
+   "step_id": "gis.v17.mud.02",
+   "claim_ids": [
+    "gis.v17.mud.02#c6"
+   ],
+   "prompt": "Впишите диапазон через дефис. Оптимальная водоотдача глинистого раствора — {{1}} см³/ч.",
+   "explanation": "Автор называет оптимальной водоотдачу 4–8 см³/ч: проникновение и корка тогда минимальны.",
+   "kind": "recall",
+   "answer": [
+    "4–8"
+   ],
+   "accepted": [
+    [
+     "4–8",
+     "4-8",
+     "4 - 8",
+     "от 4 до 8",
+     "4—8"
+    ]
+   ]
+  },
+  {
+   "id": "gis.v17.mud.02#t2",
+   "type": "single",
+   "step_id": "gis.v17.mud.02",
+   "claim_ids": [
+    "gis.v17.mud.02#c7"
+   ],
+   "prompt": "Что происходит при высокой водоотдаче (около 20 см³/ч)?",
+   "explanation": "Глубокое проникновение не даёт оценить продуктивность глубинными зондами, а толстая корка закрывает коллектор от ГГМ, МБК и ЯМР.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Корка исчезает, и все методы работают лучше",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Глубокое проникновение мешает глубинным методам, а толстая корка — малоглубинным",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Меняется только плотность раствора",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "gis.v17.mud.02#t3",
+   "type": "single",
+   "step_id": "gis.v17.mud.02",
+   "claim_ids": [
+    "gis.v17.mud.02#c9"
+   ],
+   "prompt": "Что для промысловой геофизики означает рост плотности раствора?",
+   "explanation": "Выше плотность — больше репрессия и глубже проникновение, поэтому эффект как у роста водоотдачи.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Примерно то же, что рост водоотдачи",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Улучшение условий для всех методов",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Ничего не меняет",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v17.fluids.03#t1",
+   "type": "multiple",
+   "step_id": "gis.v17.fluids.03",
+   "claim_ids": [
+    "gis.v17.fluids.03#c8"
+   ],
+   "prompt": "Какие методы подходят для скважины на нефильтрующемся растворе?",
+   "explanation": "Нужны методы без прямого электрического контакта с породой: из электрометрии только индукционный, плюс ядерные и акустические.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Индукционный зонд",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Ядерные методы",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Акустический метод",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Микрозонды",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Метод СП",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "gis.v17.fluids.03#t2",
+   "type": "single",
+   "step_id": "gis.v17.fluids.03",
+   "claim_ids": [
+    "gis.v17.fluids.03#c2"
+   ],
+   "prompt": "Что происходит с СП и микрозондами, когда ρф приближается к ρв?",
+   "explanation": "Автор пишет, что при сближении ρф и ρв эффективность СП и микрозондов как средств выделения коллектора резко снижается.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Их эффективность для выделения коллекторов резко снижается",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Они начинают лучше выделять коллекторы",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Ничего не меняется",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v18.types.01#t1",
+   "type": "multiple",
+   "step_id": "gis.v18.types.01",
+   "claim_ids": [
+    "gis.v18.types.01#c2"
+   ],
+   "prompt": "Какие типы коллекторов по форме порового пространства называет автор?",
+   "explanation": "Автор делит коллекторы по форме пустот на межзерновые, трещинные, кавернозно-трещинные и смешанные.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Межзерновые",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Трещинные",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Кавернозно-трещинные",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Смешанные",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Магнитные",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "gis.v18.types.01#t2",
+   "type": "gap",
+   "step_id": "gis.v18.types.01",
+   "claim_ids": [
+    "gis.v18.types.01#c2"
+   ],
+   "prompt": "Впишите одно слово. В терригенном разрезе преобладают {{1}} коллекторы.",
+   "explanation": "По автору, в терригенном разрезе преобладают межзерновые коллекторы, а в карбонатном к ним добавляются кавернозно-трещинные и смешанные.",
+   "kind": "recall",
+   "answer": [
+    "межзерновые"
+   ],
+   "accepted": [
+    [
+     "межзерновые"
+    ]
+   ]
+  },
+  {
+   "id": "gis.v18.methods.02#t1",
+   "type": "multiple",
+   "step_id": "gis.v18.methods.02",
+   "claim_ids": [
+    "gis.v18.methods.02#c2"
+   ],
+   "prompt": "Какие методы автор относит к группе методов пористости?",
+   "explanation": "Группу пористости составляют ГГМ, акустический и нейтронные методы.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Гамма-гамма-метод (ГГМ)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Акустический (АК)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Нейтронные методы",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Метод СП",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Каверномер",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "gis.v18.methods.02#t2",
+   "type": "single",
+   "step_id": "gis.v18.methods.02",
+   "claim_ids": [
+    "gis.v18.methods.02#c3"
+   ],
+   "prompt": "В каких скважинах применим гамма-метод (ГМ)?",
+   "explanation": "Автор пишет, что ГМ применим во всех скважинах независимо от типа раствора, обсаженных и необсаженных.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Только в необсаженных на пресном растворе",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Во всех: при любом растворе, обсаженных и необсаженных",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только на нефильтрующемся растворе",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "gis.v19.litho.01#t1",
+   "type": "single",
+   "step_id": "gis.v19.litho.01",
+   "claim_ids": [
+    "gis.v19.litho.01#c10"
+   ],
+   "prompt": "Что показывает кавернограмма против глины по табл. 21?",
+   "explanation": "В табл. 21 для глин указано dс > dн: ствол расширяется из-за разбухания и вымывания глинистых частиц.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "dс < dн — сужение из-за корки",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "dс > dн — расширение ствола",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "dс = dн — номинальный диаметр",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "gis.v19.litho.01#t2",
+   "type": "order",
+   "step_id": "gis.v19.litho.01",
+   "claim_ids": [
+    "gis.v19.litho.01#c1"
+   ],
+   "prompt": "Расставьте действия при построении литологического разреза по порядку.",
+   "explanation": "Сначала границы, затем литология по сумме признаков, а условную колонку уточняют по образцам.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Определить границы и толщины пластов",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Собрать признаки каждого интервала на разных диаграммах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Назвать породу по сумме признаков (табл. 21)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Уточнить колонку по керну или боковому грунтоносу",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "gis.v19.litho.01#t3",
+   "type": "single",
+   "step_id": "gis.v19.litho.01",
+   "claim_ids": [
+    "gis.v19.litho.01#c9"
+   ],
+   "prompt": "Какие методы особенно важны в гидрохимических отложениях?",
+   "explanation": "Автор пишет, что гипсы, ангидриты, известняки и соли выделяют по константам ГГМ и акустического метода.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "СП и микрозонды",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Методы рассеянного гамма-излучения (ГГМ) и акустический",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только каверномер",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "gis.v20.direct.01#t1",
+   "type": "multiple",
+   "step_id": "gis.v20.direct.01",
+   "claim_ids": [
+    "gis.v20.direct.01#c2"
+   ],
+   "prompt": "Какие признаки автор называет прямыми признаками коллектора при хорошем глинистом растворе?",
+   "explanation": "Автор перечисляет корку, приращение микрозондов и зону проникновения, а максимальный ГМ — признак глины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Сужение диаметра скважины коркой, dс < dн",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Положительное приращение на микрозондах",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Зона проникновения или радиальный градиент сопротивления",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Максимальные показания ГМ",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "gis.v20.direct.01#t2",
+   "type": "single",
+   "step_id": "gis.v20.direct.01",
+   "claim_ids": [
+    "gis.v20.direct.01#c6"
+   ],
+   "prompt": "Можно ли исключить коллектор, если заметного радиального градиента сопротивления нет?",
+   "explanation": "Автор прямо пишет, что отсутствие заметного градиента не отрицает коллектор.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Да, это надёжный признак неколлектора",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Нет: при некоторых сочетаниях насыщения и ρф/ρв градиента нет и у коллектора",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "gis.v20.direct.01#t3",
+   "type": "gap",
+   "step_id": "gis.v20.direct.01",
+   "claim_ids": [
+    "gis.v20.direct.01#c7"
+   ],
+   "prompt": "Впишите одно слово. Если коллектор не выделяется по отдельным замерам, применяют метод повторных замеров или метод двух {{1}}.",
+   "explanation": "Динамические методы — повторные замеры или метод двух растворов — следят за зоной проникновения во времени.",
+   "kind": "recall",
+   "answer": [
+    "растворов"
+   ],
+   "accepted": [
+    [
+     "растворов"
+    ]
+   ]
+  },
+  {
+   "id": "gis.v20.cutoff.02#t1",
+   "type": "order",
+   "step_id": "gis.v20.cutoff.02",
+   "claim_ids": [
+    "gis.v20.cutoff.02#c5"
+   ],
+   "prompt": "Расставьте шаги схемы автора по порядку.",
+   "explanation": "Автор идёт от дебита к проницаемости, от неё к пористости или глинистости и затем к уровням на диаграммах.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Найти коэффициент продуктивности η по рентабельному дебиту",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Рассчитать граничную проницаемость kпр*",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Найти соответствующие kп* или ηгл*",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Перевести их в ΔJnγ*, ΔT*, αСП*",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Отложить уровни на диаграммах и разделить пласты",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ]
+  },
+  {
+   "id": "gis.v20.cutoff.02#t2",
+   "type": "single",
+   "step_id": "gis.v20.cutoff.02",
+   "claim_ids": [
+    "gis.v20.cutoff.02#c2"
+   ],
+   "prompt": "Когда порода относится к классу «коллектор»?",
+   "explanation": "По автору, порода — коллектор, если её проницаемость выше граничной kпр*.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "kпр > kпр*",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "kпр ≤ kпр*",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "kп < 1 %",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.cutoff.02#t3",
+   "type": "single",
+   "step_id": "gis.v20.cutoff.02",
+   "claim_ids": [
+    "gis.v20.cutoff.02#c7"
+   ],
+   "prompt": "Какими методами находят hэф в терригенном разрезе, где пористость зависит от глинистости?",
+   "explanation": "В примечании автор пишет, что в таком разрезе hэф определяют по СП и ГМ.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "СП и ГМ (αСП*, ΔJγ*)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Только кавернограммой",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только по ЯМР",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.pn.03#t1",
+   "type": "calc",
+   "step_id": "gis.v20.pn.03",
+   "claim_ids": [
+    "gis.v20.pn.03#c1"
+   ],
+   "prompt": "Пласт: ρп = 12 Ом·м, по пористости Pп = 40, ρв = 0,075 Ом·м. Найдите Pн = ρп/(Pп·ρв).",
+   "explanation": "ρвп = 40 · 0,075 = 3 Ом·м, поэтому Pн = 12 / 3 = 4.",
+   "kind": "understanding",
+   "answer": 4,
+   "tolerance": 0.02,
+   "unit": null
+  },
+  {
+   "id": "gis.v20.pn.03#t2",
+   "type": "single",
+   "step_id": "gis.v20.pn.03",
+   "claim_ids": [
+    "gis.v20.pn.03#c5"
+   ],
+   "prompt": "Что означает ρп > ρвп?",
+   "explanation": "Автор выводит из ρп > ρвп, что Pн > 1 и kв < 1, то есть kн > 0.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pн > 1 и kв < 1: в порах есть нефть или газ",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пласт непроницаем",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Пластовая вода пресная",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.pn.03#t3",
+   "type": "multiple",
+   "step_id": "gis.v20.pn.03",
+   "claim_ids": [
+    "gis.v20.pn.03#c4"
+   ],
+   "prompt": "Какими способами сопоставляют сопротивление и пористость?",
+   "explanation": "Автор называет три способа: кроссплот ρп — kп, ρп против показаний пористости и нормализацию.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Точки в координатах ρп = f(kп)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "ρп против показаний методов пористости (ΔJnγ, ΔT, δп)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Совмещение (нормализация) диаграмм",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Сравнение с цветом керна",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "gis.v20.crossplot.04#t1",
+   "type": "single",
+   "step_id": "gis.v20.crossplot.04",
+   "claim_ids": [
+    "gis.v20.crossplot.04#c9"
+   ],
+   "prompt": "Пример 46: ρп = 20 Ом·м, kп = 25 %. Что даст пласт при испытании?",
+   "explanation": "Точка попадает в область I между ρпmax и ρп*, поэтому автор ожидает безводную нефть.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Безводную нефть",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Нефть с водой",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Воду",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Это неколлектор",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.crossplot.04#t2",
+   "type": "single",
+   "step_id": "gis.v20.crossplot.04",
+   "claim_ids": [
+    "gis.v20.crossplot.04#c10"
+   ],
+   "prompt": "Пример 47: ρп = 10 Ом·м, kп = 15 %. Чем представлена порода?",
+   "explanation": "Пористость 15 % меньше граничной 17 %, и точка лежит в области А неколлекторов.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Неколлектор",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Нефтеносный коллектор",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Коллектор с нефтью и водой",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.crossplot.04#t3",
+   "type": "order",
+   "step_id": "gis.v20.crossplot.04",
+   "claim_ids": [
+    "gis.v20.crossplot.04#c4"
+   ],
+   "prompt": "Расставьте области и границы палетки сверху вниз при kп = 25 %.",
+   "explanation": "Сверху вниз идут безводная нефть, граница ρп*, нефть с водой, граница ρп и вода.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Область I — безводная нефть",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Кривая ρп*",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Область II — нефть с водой",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Кривая ρп",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Область III — вода",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ]
+  },
+  {
+   "id": "gis.v20.critical.05#t1",
+   "type": "order",
+   "step_id": "gis.v20.critical.05",
+   "claim_ids": [
+    "gis.v20.critical.05#c8"
+   ],
+   "prompt": "Расставьте значения водонасыщения из примера 49 по возрастанию.",
+   "explanation": "Водонасыщение растёт от связанной воды к kв*, затем к kв.кр и kв.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "kв.св — связанная вода",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "kв* = 30 %",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "kв.кр = 56 %",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "kв = 80 %",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "gis.v20.critical.05#t2",
+   "type": "single",
+   "step_id": "gis.v20.critical.05",
+   "claim_ids": [
+    "gis.v20.critical.05#c9"
+   ],
+   "prompt": "Пример 50, Pн = 2. Что даст чистый коллектор при испытании?",
+   "explanation": "Автор сопоставляет значению 2 воду с признаками нефти.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Чистую нефть",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Нефть с небольшим количеством воды",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Воду с признаками нефти",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Чистую воду",
+     "misconception": null
+    }
+   ],
+   "answer": "c"
+  },
+  {
+   "id": "gis.v20.critical.05#t3",
+   "type": "single",
+   "step_id": "gis.v20.critical.05",
+   "claim_ids": [
+    "gis.v20.critical.05#c3"
+   ],
+   "prompt": "Почему статистический способ плох в начале разведки?",
+   "explanation": "Статистика требует большого числа испытаний, поэтому критические значения появляются поздно.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Нужно много испытанных интервалов, и значения появляются с опозданием",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Он требует керна",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Он не учитывает Pн",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.clayey.06#t1",
+   "type": "single",
+   "step_id": "gis.v20.clayey.06",
+   "claim_ids": [
+    "gis.v20.clayey.06#c6"
+   ],
+   "prompt": "Пример 53, д): Pн = 3, αСП = 0,9. Что даст коллектор?",
+   "explanation": "По табл. 22 для αСП = 0,9 значение Pн = 3 лежит между Pн.кр = 2,5 и Pн* = 5 — нефть с водой, как и у автора.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Чистую нефть",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Нефть с водой",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Воду с признаками нефти",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Чистую воду",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "gis.v20.clayey.06#t2",
+   "type": "calc",
+   "step_id": "gis.v20.clayey.06",
+   "claim_ids": [
+    "gis.v20.clayey.06#c4"
+   ],
+   "prompt": "По табл. 22: во сколько раз Pн* чистого коллектора (αСП = 1) больше, чем у коллектора с αСП = 0,7?",
+   "explanation": "10 / 2,1 ≈ 4,8: с ростом глинистости порог Pн* падает почти впятеро.",
+   "kind": "data",
+   "answer": 4.76,
+   "tolerance": 0.03,
+   "unit": "раза"
+  },
+  {
+   "id": "gis.v20.clayey.06#t3",
+   "type": "multiple",
+   "step_id": "gis.v20.clayey.06",
+   "claim_ids": [
+    "gis.v20.clayey.06#c6"
+   ],
+   "prompt": "Пример 53: какие случаи автор относит к нефтеносным коллекторам?",
+   "explanation": "Нефтеносными автор называет случаи а и б, случай в даёт нефть с небольшим количеством воды, е — воду с признаками нефти.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "а) Pн = 10, αСП = 0,9",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "б) Pн = 5, αСП = 0,8",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "в) Pн = 5, αСП = 0,95",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "е) Pн = 2, αСП = 0,9",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "gis.v20.contact.07#t1",
+   "type": "calc",
+   "step_id": "gis.v20.contact.07",
+   "claim_ids": [
+    "gis.v20.contact.07#c4"
+   ],
+   "prompt": "Кровля переходной зоны 1520 м, зеркало воды 1532 м, ρпmax = 40 Ом·м, ρвп = 4 Ом·м, критерий ρп.кр = 12 Ом·м. На какой глубине провести ВНК по линейному закону автора?",
+   "explanation": "Доля пути от кровли (40 − 12)/(40 − 4) ≈ 0,78, поэтому H = 1520 + 0,78 · 12 ≈ 1529,3 м.",
+   "kind": "data",
+   "answer": 1529.33,
+   "tolerance": 0.0003,
+   "unit": "м"
+  },
+  {
+   "id": "gis.v20.contact.07#t2",
+   "type": "order",
+   "step_id": "gis.v20.contact.07",
+   "claim_ids": [
+    "gis.v20.contact.07#c4"
+   ],
+   "prompt": "Расставьте шаги определения ВНК в переходной зоне.",
+   "explanation": "Автор идёт от границ зоны к сопротивлениям, затем к линейному профилю и точке критерия.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Найти кровлю и подошву переходной зоны по БЭЗ или ИК",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Определить ρпmax и ρвп",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Провести линейный график ρп = f(H)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Найти на нём ρп.кр и провести ВНК",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "gis.v20.contact.07#t3",
+   "type": "single",
+   "step_id": "gis.v20.contact.07",
+   "claim_ids": [
+    "gis.v20.contact.07#c5"
+   ],
+   "prompt": "Как устанавливают ГНК в обсаженной скважине?",
+   "explanation": "Автор пишет, что ГНК находят по повторным нейтронным замерам до стабилизации показаний НМ.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Повторными замерами стационарных нейтронных методов до стабилизации показаний",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Одним замером кавернограммы",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "По СП",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.layers.08#t1",
+   "type": "calc",
+   "step_id": "gis.v20.layers.08",
+   "claim_ids": [
+    "gis.v20.layers.08#c4"
+   ],
+   "prompt": "Пачка 18 м, ρп = 7,3 Ом·м, ρгл = 2,2 Ом·м, ρнп = 25 Ом·м. Считая, что плотных прослоев нет, найдите hэфΣ по формулам (63)–(64).",
+   "explanation": "Из (63) χгл = (1/7,3 − 1/25)/(1/2,2 − 1/25) ≈ 0,234, поэтому hэфΣ = 18 · (1 − 0,234) ≈ 13,8 м.",
+   "kind": "understanding",
+   "answer": 13.79,
+   "tolerance": 0.02,
+   "unit": "м"
+  },
+  {
+   "id": "gis.v20.layers.08#t2",
+   "type": "gap",
+   "step_id": "gis.v20.layers.08",
+   "claim_ids": [
+    "gis.v20.layers.08#c1"
+   ],
+   "prompt": "Впишите одно слово. Эффективная толщина пласта с прослоями равна всей толщине минус сумма толщин прослоев {{1}}.",
+   "explanation": "По автору hэф = h − Σhпл, где Σhпл — сумма толщин прослоев неколлектора.",
+   "kind": "recall",
+   "answer": [
+    "неколлектора"
+   ],
+   "accepted": [
+    [
+     "неколлектора",
+     "неколлекторов"
+    ]
+   ]
+  },
+  {
+   "id": "gis.v20.layers.08#t3",
+   "type": "single",
+   "step_id": "gis.v20.layers.08",
+   "claim_ids": [
+    "gis.v20.layers.08#c8"
+   ],
+   "prompt": "Почему плотные прослои с неактивным цементом мало влияют на сопротивление пачки?",
+   "explanation": "Автор отмечает, что ρпл обычно соизмеримо с ρнп, поэтому плотные прослои слабо меняют ρпач.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Их сопротивление соизмеримо с сопротивлением коллектора",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Они всегда очень тонкие",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Они проводят ток лучше глин",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.carb.09#t1",
+   "type": "calc",
+   "step_id": "gis.v20.carb.09",
+   "claim_ids": [
+    "gis.v20.carb.09#c7"
+   ],
+   "prompt": "Пример 54: общая толщина продуктивных отложений 13,5 м, сумма прослоев неколлектора 4,5 м. Найдите hэф.",
+   "explanation": "hэф = 13,5 − 4,5 = 9 м, как и у автора.",
+   "kind": "data",
+   "answer": 9,
+   "tolerance": 0.01,
+   "unit": "м"
+  },
+  {
+   "id": "gis.v20.carb.09#t2",
+   "type": "single",
+   "step_id": "gis.v20.carb.09",
+   "claim_ids": [
+    "gis.v20.carb.09#c4"
+   ],
+   "prompt": "Как преобразуют шкалы при совмещении ρк экранированного зонда с НГМ?",
+   "explanation": "Автор пишет, что линейный масштаб переводят в логарифмический с модулем, обеспечивающим совпадение в неколлекторах и водоносных коллекторах.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Линейный масштаб переводят в логарифмический, чтобы кривые совпали в неколлекторах и водоносных пластах",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Обе кривые нормируют на максимум",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Шкалы не меняют",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.kcut.10#t1",
+   "type": "single",
+   "step_id": "gis.v20.kcut.10",
+   "claim_ids": [
+    "gis.v20.kcut.10#c3"
+   ],
+   "prompt": "Как меняется kп* при переходе от крупнозернистых коллекторов к тонкозернистым?",
+   "explanation": "По табл. 23 автор делает вывод, что kп* растёт от крупных пор к мелким.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Растёт",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Падает",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Не меняется",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "gis.v20.kcut.10#t2",
+   "type": "gap",
+   "step_id": "gis.v20.kcut.10",
+   "claim_ids": [
+    "gis.v20.kcut.10#c3"
+   ],
+   "prompt": "Впишите диапазон через дефис. Типичное kп* для большинства межзерновых карбонатных коллекторов — {{1}} %.",
+   "explanation": "Автор называет типичный диапазон 6–8 %.",
+   "kind": "recall",
+   "answer": [
+    "6–8"
+   ],
+   "accepted": [
+    [
+     "6–8",
+     "6-8",
+     "от 6 до 8",
+     "6—8"
+    ]
+   ]
+  }
+ ]
+}

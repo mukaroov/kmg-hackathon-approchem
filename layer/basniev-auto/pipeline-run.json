@@ -1,0 +1,34 @@
+{
+  "run": 1,
+  "job": "j20261125203624-aa16",
+  "date": "2026-11-25T20:58:40.795Z",
+  "provider": "agent",
+  "model": "агент через очередь файлов work/agent-queue",
+  "extractor": "метки страниц из md",
+  "hashes": {
+    "chapter.json": "856f1e47007a58ce",
+    "nodes/basniev-auto.n01.json": "e536ec86ed8409d5",
+    "nodes/basniev-auto.n02.json": "a2deda99c6bbc246",
+    "nodes/basniev-auto.n03.json": "104ac2c7dad6b763",
+    "nodes/basniev-auto.n04.json": "93f0057f836731d1",
+    "nodes/basniev-auto.n05.json": "55637bdfce9b0d37",
+    "nodes/basniev-auto.n06.json": "4bf8742d0568250c",
+    "nodes/basniev-auto.n07.json": "6c764f4260ab3959",
+    "nodes/basniev-auto.n08.json": "3ce5398853bfb30a",
+    "nodes/basniev-auto.n09.json": "f99f291664b0a7fd",
+    "nodes/basniev-auto.n10.json": "91bd20149c3ba5ad",
+    "nodes/basniev-auto.n11.json": "09f355fe7070de72",
+    "nodes/basniev-auto.n12.json": "fa0609ecd2325f71",
+    "nodes/basniev-auto.n13.json": "6b9dbc2f17496619",
+    "nodes/basniev-auto.n14.json": "7008f1f0afcce169",
+    "nodes/basniev-auto.n15.json": "8c85c3c479786b9c",
+    "nodes/basniev-auto.n16.json": "39fc28548c2c9a91",
+    "nodes/basniev-auto.n17.json": "96f997cfc76eddd5",
+    "nodes/basniev-auto.n18.json": "9f2a5a038f070106",
+    "nodes/basniev-auto.n19.json": "560dd22b8a087a8c"
+  },
+  "video": {
+    "basniev-auto.n12": "2026-11-25T21:46:37.562Z"
+  },
+  "links": "2026-11-25T21:39:10.030Z"
+}

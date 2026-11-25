@@ -1,0 +1,48 @@
+{
+ "package_id": "ctrl_vendelshtein",
+ "chapter": "C:\\Users\\Ernar\\Desktop\\kmg_hackathon\\original\\review-pack\\пакет_вводных\\02_модуль_проверки\\контрольный_пакет\\vendelshtein_gl1.md",
+ "targets": 90,
+ "groups": 9,
+ "signals": {
+  "C012": [
+   "«любом…» есть в тексте, но не в цитате — проверить сверхобобщение"
+  ],
+  "C025": [
+   "«любая…» есть в тексте, но не в цитате — проверить сверхобобщение"
+  ],
+  "C033": [
+   "«всех…» есть в тексте, но не в цитате — проверить сверхобобщение"
+  ],
+  "C044": [
+   "«однозначно…» есть в тексте, но не в цитате — проверить сверхобобщение"
+  ],
+  "L04": [
+   "«всегда…» есть в тексте, но не в цитате — проверить сверхобобщение (утверждение C051)"
+  ]
+ },
+ "remarks": 19,
+ "by_category": {
+  "outdated_as_current": 1,
+  "measured_vs_inferred": 2,
+  "lost_condition": 1,
+  "sign_flip": 2,
+  "wrong_mechanism": 2,
+  "overgeneralization": 4,
+  "wrong_scaling": 2,
+  "analogy_without_limit": 1,
+  "frame_error": 4
+ },
+ "warnings": [],
+ "provider": "agent",
+ "model": "агент через очередь файлов work/agent-queue",
+ "tokens": {
+  "review": {
+   "calls": 9,
+   "cached": 0,
+   "in": 78336,
+   "out": 6168,
+   "ms": 638837,
+   "pages": 0
+  }
+ }
+}
