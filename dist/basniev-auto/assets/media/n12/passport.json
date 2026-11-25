@@ -343,7 +343,7 @@
  "audio_check": {
   "voice": "Microsoft Irina Desktop",
   "fallback_voices": [
-   "Microsoft Pavel Desktop"
+   "Microsoft Pavel"
   ],
   "loudness_lufs": -16.4,
   "words_per_minute": 114,
@@ -386,7 +386,7 @@
     "tempo": 1.07
    }
   ],
-  "asr_check": "не выполнено: на этом компьютере нет локального распознавателя русской речи",
+  "asr_check": "не выполнено: нет faster-whisper: ModuleNotFoundError",
   "subtitles": "assets/media/n12/subs.vtt"
  },
  "generated_by": {
