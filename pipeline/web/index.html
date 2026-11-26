@@ -47,9 +47,11 @@
     </div>
     <div class="row">
       <label>Доменный пакет<select name="domain" id="domain"></select></label>
-      <label>Модель<select name="provider"><option value="">из .env</option><option value="stub">заглушка без модели</option></select></label>
+      <label>Модель<select name="provider" id="provider"><option value="">из .env</option></select></label>
+      <label id="cliModelBox" hidden>Модель CLI<select name="cliModel" id="cliModel"></select></label>
       <label>Перезаписать ручные правки<select name="force"><option value="">нет</option><option value="1">да</option></select></label>
     </div>
+    <p id="pnote" class="note" aria-live="polite"></p>
     <button id="go">Собрать курс</button>
     <p id="health" class="note" aria-live="polite"></p>
   </form>
@@ -69,9 +71,22 @@
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 fetch('/api/config').then(r => r.json()).then(c => { $('#domain').innerHTML = c.domains.map(d => `<option${d === 'geo' ? ' selected' : ''}>${esc(d)}</option>`).join(''); });
+let PV = { providers: [] };
+function showProvider() {
+  const id = $('#provider').value || PV.current, one = PV.providers.find(x => x.id === id);
+  $('#cliModelBox').hidden = !(one && one.models);
+  if (one && one.models) $('#cliModel').innerHTML = one.models.map(m => `<option value="${esc(m.id)}"${m.id === (id === PV.current ? PV.cliModel : '') ? ' selected' : ''}>${esc(m.label)}</option>`).join('');
+  $('#go').disabled = !!one && !one.available;
+  $('#pnote').innerHTML = one ? (one.available ? esc(one.note || '') : `<b class="warn">Недоступна: ${esc(one.note)}</b>`) : '';
+  if (one && one.id === 'stub') $('#pnote').innerHTML += ' <b class="warn">Заглушка собирает курс из кусков текста: это проверка сборки, а не учебный слой.</b>';
+}
 fetch('/api/health').then(r => r.json()).then(h => {
-  $('#health').innerHTML = `Модель: ${esc(h.provider)} / ${esc(h.model)}. Ключ модели: ${h.keys.model ? 'есть' : '<b class="warn">нет</b>'}, распознавание PDF: ${h.keys.ocr ? 'есть' : 'нет (загружайте .md)'}.`;
-  if (!h.keys.model) { document.querySelector('[name=provider]').value = 'stub'; $('#health').innerHTML += ' <b class="warn">Без ключа доступна только заглушка: курс соберётся из кусков текста, это проверка, а не учебный слой.</b>'; }
+  PV = h.providers;
+  const cur = PV.providers.find(x => x.id === PV.current);
+  $('#provider').innerHTML = PV.providers.map(p => `<option value="${esc(p.id)}"${p.id === PV.current ? ' selected' : ''}>${esc(p.label)}${p.id === PV.current ? ' — из .env' : ''}${p.available ? '' : ' — не настроена'}</option>`).join('');
+  if (!cur || !cur.available) $('#provider').value = (PV.providers.find(p => p.available && p.id !== 'stub') || { id: 'stub' }).id;
+  $('#provider').onchange = showProvider; showProvider();
+  $('#health').innerHTML = `По умолчанию (.env): ${esc(h.model)}. Распознавание PDF: ${h.keys.ocr ? 'есть' : 'нет (загружайте .md)'}.`;
 });
 function loadCourses() {
   fetch('/api/courses').then(r => r.json()).then(cs => {
@@ -85,6 +100,9 @@ function render(j) {
   $('.bar i').style.width = j.progress + '%'; $('.bar').setAttribute('aria-valuenow', j.progress);
   $('#stages').innerHTML = j.stages.map(s => `<li data-s="${s.state}">${esc(s.title)}</li>`).join('');
   $('#log').textContent = j.log.join('\n'); $('#log').scrollTop = 1e9;
+  const waiting = j.state === 'running' && /запрос модели в очереди/.test(j.log[j.log.length - 1] || '');
+  if (waiting) $('#result').innerHTML = '<p class="warn">Запрос ждёт ответа в work/agent-queue. Напишите Claude в чате Claude Code: «ответь на очередь конвейера».</p>';
+  else if (j.state === 'running') $('#result').innerHTML = '';
   if (j.state === 'failed') $('#result').innerHTML = `<p class="err">${esc(j.error)}</p>`;
   if (j.state === 'done') { const r = j.result; $('#result').innerHTML = `<p><a href="${r.courseUrl}" target="_blank">Открыть курс</a> · <a href="/api/jobs/${j.id}/course.zip">скачать архив</a> · <a href="/api/jobs/${j.id}/report" target="_blank">отчёт проверок</a></p><p>${r.steps} шагов, ${r.tasks} заданий, покрыто ${r.coverage.covered} из ${r.coverage.units} единиц главы; не пройдено проверок сборщика: ${r.checksFailed.length}.${r.stub ? ' <b>Работала заглушка без модели.</b>' : ''}</p>`; }
 }
@@ -98,7 +116,10 @@ $('#f').onsubmit = async e => {
   render(j);
   const es = new EventSource(`/api/jobs/${j.id}/events`);
   es.addEventListener('job', ev => render(JSON.parse(ev.data)));
-  es.addEventListener('log', ev => { const l = JSON.parse(ev.data); $('#log').textContent += '\n' + l.line; $('#log').scrollTop = 1e9; });
+  es.addEventListener('log', ev => {
+    const l = JSON.parse(ev.data); $('#log').textContent += '\n' + l.line; $('#log').scrollTop = 1e9;
+    $('#result').innerHTML = /запрос модели в очереди/.test(l.line) ? '<p class="warn">Запрос ждёт ответа в work/agent-queue. Напишите Claude в чате Claude Code: «ответь на очередь конвейера».</p>' : '';
+  });
   es.addEventListener('end', () => { es.close(); $('#go').disabled = false; loadCourses(); });
 };
 </script>

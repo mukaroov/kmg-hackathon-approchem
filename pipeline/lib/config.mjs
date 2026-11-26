@@ -100,3 +100,22 @@ export function publicConfig(cfg) {
   const { apiKey, mistralKey, ...rest } = cfg;
   return { ...rest, apiKey: apiKey ? 'задан' : 'нет', mistralKey: mistralKey ? 'задан' : 'нет' };
 }
+
+// Выбор модели в форме загрузки → поправки к .env для одной задачи.
+// provider: agent | cli:claude | cli:codex | mistral | openai-compatible | stub; cliModel — модель CLI (sonnet, opus…).
+export const MISTRAL_DEFAULT_MODEL = 'mistral-medium-2604';
+export function providerOverrides(provider, cliModel, baseModel = '') {
+  const o = {};
+  if (provider) {
+    const [p, cli] = String(provider).split(':');
+    o.LLM_PROVIDER = p;
+    if (p === 'cli' && cli) o.LLM_CLI = cli;
+    // в .env модель может быть другого поставщика (например, gemini для openai-compatible)
+    if (p === 'mistral') {
+      o.LLM_BASE_URL = 'https://api.mistral.ai/v1';
+      if (!/^(mistral|magistral|ministral|open-mistral)/.test(baseModel)) o.LLM_MODEL = MISTRAL_DEFAULT_MODEL;
+    }
+  }
+  if (cliModel != null && cliModel !== '') o.LLM_CLI_MODEL = cliModel === 'default' ? '' : cliModel;
+  return o;
+}

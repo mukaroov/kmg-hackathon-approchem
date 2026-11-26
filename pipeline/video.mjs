@@ -15,6 +15,7 @@ import { loadDomain } from './lib/jobs.mjs';
 import { runBuild, layerHashes } from './lib/assemble.mjs';
 import { validate } from '../build/lib/jsonschema.mjs';
 import { plain } from '../build/lib/source.mjs';
+import { synthesize, ttsSettings } from './lib/tts.mjs';
 
 const args = process.argv.slice(2);
 const opt = k => { const i = args.indexOf('--' + k); return i >= 0 ? args[i + 1] : undefined; };
@@ -139,9 +140,9 @@ const audio = { voice: null, wpm: null, lufs: null, max_sync_offset_sec: null, s
 if (!args.includes('--no-voice')) {
   const segFile = path.join(work, 'segments.json');
   fs.writeFileSync(segFile, JSON.stringify(sync.map(s => ({ id: s.segment_id, text: speakable(s.narration_script) }))));
-  const voices = process.env.TTS_VOICES || 'Microsoft Irina Desktop,Microsoft Pavel';
-  const tts = await run('powershell', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', path.join(ROOT, 'video', 'tts.ps1'), '-In', segFile, '-OutDir', path.join(work, 'tts'), '-Voices', voices, '-Rate', process.env.TTS_RATE || '2']);
-  let t; try { t = JSON.parse(tts.out.trim().split('\n').pop()); } catch { t = { status: 'error', error: tts.err.slice(-300) }; }
+  // поставщик голоса — цепочка TTS_PROVIDER (gemini, fish, windows): pipeline/lib/tts.mjs
+  const t = await synthesize(JSON.parse(fs.readFileSync(segFile, 'utf8')), path.join(work, 'tts'), { log });
+  audio.tts = t;
   if (t.status !== 'ok') log(`озвучка не удалась (${t.error}); ролик будет без голоса, с субтитрами`);
   else {
     audio.voice = t.voice;
@@ -202,8 +203,8 @@ const passport = {
   transfer_question: spec.transfer_question,
   data_it_bridge: spec.data_bridge_text,
   physics_checklist: checklist.map(c => pcGiven.get(c.id) ? { item: c.id, answer: pcGiven.get(c.id).answer, note: pcGiven.get(c.id).note || '' } : { item: c.id, answer: 'н/п', note: 'модель не отметила пункт' }),
-  audio_check: { voice: audio.voice || 'без голоса', fallback_voices: (process.env.TTS_VOICES || 'Microsoft Irina Desktop,Microsoft Pavel').split(',').slice(1), loudness_lufs: audio.lufs, words_per_minute: audio.wpm, max_sync_offset_sec: audio.max_sync_offset_sec, segments_sped_up: audio.segments_sped_up, asr_check: audio.asr ? (audio.asr.status === 'ok' ? { model: audio.asr.model, mean_match: audio.asr.mean_match, threshold: audio.asr.threshold, below_threshold: audio.asr.below_threshold } : 'не выполнено: ' + audio.asr.reason) : 'не выполнено: ролик без голоса', subtitles: `assets/media/${short}/subs.vtt` },
-  generated_by: { engine: 'video/video_engine.py', spec_model: Object.keys(meter).length ? cfg.model : 'из файла', provider: cfg.provider, tts: 'System.Speech (Windows), голоса Microsoft — локально' },
+  audio_check: { voice: audio.voice || 'без голоса', fallback_voices: ttsSettings().chain.filter(x => x !== audio.tts?.provider), loudness_lufs: audio.lufs, words_per_minute: audio.wpm, max_sync_offset_sec: audio.max_sync_offset_sec, segments_sped_up: audio.segments_sped_up, asr_check: audio.asr ? (audio.asr.status === 'ok' ? { model: audio.asr.model, mean_match: audio.asr.mean_match, threshold: audio.asr.threshold, below_threshold: audio.asr.below_threshold } : 'не выполнено: ' + audio.asr.reason) : 'не выполнено: ролик без голоса', subtitles: `assets/media/${short}/subs.vtt` },
+  generated_by: { engine: 'video/video_engine.py', spec_model: Object.keys(meter).length ? cfg.model : 'из файла', provider: cfg.provider, tts: audio.tts?.status === 'ok' ? `${audio.tts.engine}: ${audio.tts.voice}` : 'без голоса' },
 };
 const pschema = JSON.parse(fs.readFileSync(path.join(ROOT, 'schemas', 'passport.schema.json'), 'utf8'));
 const perrs = validate(passport, pschema);

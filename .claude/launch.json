@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "configurations": [
+    { "name": "pipeline", "runtimeExecutable": "node", "runtimeArgs": ["pipeline/server.mjs"], "port": 8787 },
     { "name": "course", "runtimeExecutable": "node", "runtimeArgs": ["tools/serve.js", "dist", "8092"], "port": 8092 },
     { "name": "original", "runtimeExecutable": "node", "runtimeArgs": ["tools/serve.js", "original/dist", "8091"], "port": 8091 }
   ]

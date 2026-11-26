@@ -7,4 +7,4 @@
 <script>(function(){var u="http://127.0.0.1:8787/",el=document.getElementById('srv');
 function off(){el.innerHTML='Загрузка работает через локальный конвейер. Если он не запущен, запустите его двойным щелчком по <code>start.cmd</code> в папке проекта (macOS и Linux: <code>./start.sh</code>) или командой <code>node pipeline/server.mjs --open</code>. <a class="btn" href="'+u+'">Открыть загрузку главы →</a>';}
 var t=setTimeout(off,2500);
-fetch(u+'api/health',{mode:'no-cors',cache:'no-store'}).then(function(){clearTimeout(t);el.innerHTML='Конвейер запущен. <a class="btn" href="'+u+'">Открыть загрузку главы →</a>';}).catch(function(){clearTimeout(t);off();});})();</script><p class="ui muted">Собрано 26.11.2026, 03:05:32 командой <code>node build/build.mjs</code>.</p></div></main></body></html>
+fetch(u+'api/health',{mode:'no-cors',cache:'no-store'}).then(function(){clearTimeout(t);el.innerHTML='Конвейер запущен. <a class="btn" href="'+u+'">Открыть загрузку главы →</a>';}).catch(function(){clearTimeout(t);off();});})();</script><p class="ui muted">Собрано 26.11.2026, 09:04:10 командой <code>node build/build.mjs</code>.</p></div></main></body></html>

@@ -16,7 +16,7 @@
 | Спецификация сцены ролика | та же модель, что для слоя | — | как у слоя | текст шага и схема движка | `LLM_MODEL` / режим agent |
 | Модуль проверки внешнего пакета | сверка — локально; суждение — та же модель | — | как у слоя | элементы пакета, страницы главы, кадры PNG (в режиме agent — путь к файлу) | `node pipeline/review.mjs` |
 | Сборка курса | без модели | — | локально | ничего | — |
-| Озвучка | Windows SAPI, голос «Microsoft Irina Desktop» (`video/tts.ps1`) | системный | локально | ничего | `TTS_RATE`; другой голос — параметр `-Voice` в `tts.ps1` |
+| Озвучка | Gemini TTS `gemini-3.8-flash-tts`, голос Charon; запасные — Fish Audio `s2.1-pro-free`, Windows SAPI «Microsoft Irina Desktop» (`pipeline/lib/tts.mjs`) | gemini-3.8-flash-tts | Gemini API / локально | текст реплик сценария (Gemini, Fish); ничего (Windows) | `TTS_PROVIDER`, `GEMINI_TTS_VOICE`, `GEMINI_TTS_STYLE`, `FISH_VOICE` |
 | Иллюстрации и кадры роликов | без генеративных моделей: рисунки строятся кодом (виджеты `engine/widgets.js`), кадры — детерминированным движком `video/video_engine.py` | — | локально | ничего | — |
 
 Выход данных во внешний сервис: текст и страницы глав уходят в Mistral AI (La Plateforme). Ключ — бесплатный план Experiment. Использование запросов для обучения моделей Mistral выключено в консоли (Admin Console → Privacy). Тесты конвейера без внешних вызовов: `LLM_PROVIDER=stub` (заглушка, наружу ничего не уходит).

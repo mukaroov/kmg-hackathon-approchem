@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { EventEmitter } from 'node:events';
-import { ROOT, loadConfig, publicConfig } from './config.mjs';
+import { ROOT, loadConfig, publicConfig, providerOverrides } from './config.mjs';
 import { createLLM } from './llm.mjs';
 import { ingest, parseRange } from './ingest.mjs';
 import { buildLayer } from './stages.mjs';
@@ -87,7 +87,7 @@ export class JobQueue extends EventEmitter {
 
   async run(job) {
     const P = job.params;
-    const cfg = loadConfig(P.provider ? { LLM_PROVIDER: P.provider } : {});
+    const cfg = loadConfig(providerOverrides(P.provider, P.cliModel, loadConfig().model));
     job.state = 'running'; job.started = new Date().toISOString(); job.config = publicConfig(cfg);
     const dir = path.join(JOBS, job.id);
     const meter = {};

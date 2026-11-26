@@ -6,12 +6,20 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawn } from 'node:child_process';
-import { ROOT, loadConfig, publicConfig } from './lib/config.mjs';
+import { ROOT, loadConfig, publicConfig, providerOverrides } from './lib/config.mjs';
+import { listProviders } from './lib/local-llm.mjs';
 import { JobQueue } from './lib/jobs.mjs';
 import { zipDir } from './lib/zip.mjs';
 
 const args = process.argv.slice(2);
 const cfg = loadConfig(args.includes('--port') ? { PORT: args[args.indexOf('--port') + 1] } : {});
+// модели для формы: локальные (очередь, CLI) и API, для которых в .env есть ключ (сами ключи наружу не уходят)
+function providers() {
+  const apis = [];
+  if (cfg.provider === 'openai-compatible' || cfg.baseUrl) apis.push(loadConfig(providerOverrides('openai-compatible', '', cfg.model)));
+  apis.push(loadConfig(providerOverrides('mistral', '', cfg.model)));
+  return listProviders(cfg, apis);
+}
 const queue = new JobQueue(cfg);
 const selfOrigin = `http://${cfg.host}:${cfg.port}`;
 const DIST = path.join(ROOT, 'dist');
@@ -85,7 +93,12 @@ const server = http.createServer(async (req, res) => {
   if (originOk(origin)) { res.setHeader('Access-Control-Allow-Origin', origin); res.setHeader('Vary', 'Origin'); res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Filename'); res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS'); }
   if (req.method === 'OPTIONS') return send(res, 204, '');
   try {
-    if (p === '/api/health') return send(res, 200, { ok: true, provider: cfg.provider, model: cfg.model, ocrModel: cfg.ocrModel, keys: { model: !!cfg.apiKey || cfg.provider === 'stub', ocr: !!cfg.mistralKey }, busy: queue.busy, queued: queue.queue.length });
+    if (p === '/api/health' || p === '/api/providers') {
+      const pv = await providers();
+      const cur = pv.providers.find(x => x.id === pv.current);
+      if (p === '/api/providers') return send(res, 200, pv);
+      return send(res, 200, { ok: true, provider: cfg.provider, model: cfg.modelLabel || cfg.model, ocrModel: cfg.ocrModel, keys: { model: !!cur?.available, ocr: !!cfg.mistralKey }, providers: pv, busy: queue.busy, queued: queue.queue.length });
+    }
     if (p === '/api/config') return send(res, 200, { config: publicConfig(cfg), domains: fs.readdirSync(path.join(ROOT, 'domain')).filter(d => fs.existsSync(path.join(ROOT, 'domain', d, 'domain.json'))), formats: ['.md', '.pdf'] });
 
     if (p === '/api/jobs' && req.method === 'POST') {
@@ -96,7 +109,12 @@ const server = http.createServer(async (req, res) => {
       let name, buffer, fields = Object.fromEntries(url.searchParams);
       if (/multipart\/form-data/i.test(ctype)) { const mp = parseMultipart(body, ctype); if (!mp.file) return fail(res, 400, 'в форме нет файла (поле file)'); name = mp.file.name; buffer = mp.file.buffer; fields = { ...fields, ...mp.fields }; }
       else { name = req.headers['x-filename'] ? decodeURIComponent(req.headers['x-filename']) : fields.filename; buffer = body; if (!name) return fail(res, 400, 'укажите имя файла: заголовок X-Filename или параметр ?filename='); }
-      const params = { start: fields.start || undefined, end: fields.end || undefined, author: fields.author || undefined, book: fields.book || undefined, year: fields.year || undefined, chapter: fields.chapter || undefined, id: fields.id || undefined, pages: fields.pages || undefined, pageStart: fields.pageStart || undefined, domain: fields.domain || undefined, provider: fields.provider || undefined, force: fields.force === '1' || fields.force === 'true' };
+      const params = { start: fields.start || undefined, end: fields.end || undefined, author: fields.author || undefined, book: fields.book || undefined, year: fields.year || undefined, chapter: fields.chapter || undefined, id: fields.id || undefined, pages: fields.pages || undefined, pageStart: fields.pageStart || undefined, domain: fields.domain || undefined, provider: fields.provider || undefined, cliModel: fields.cliModel || undefined, force: fields.force === '1' || fields.force === 'true' };
+      if (params.provider) {
+        const pv = await providers(), one = pv.providers.find(x => x.id === params.provider);
+        if (!one) return fail(res, 400, `неизвестная модель ${params.provider}; список — /api/providers`);
+        if (!one.available) return fail(res, 409, `модель «${one.label}» недоступна: ${one.note}`);
+      }
       const job = queue.create({ name, buffer, params });
       return send(res, 202, job, { Location: `/api/jobs/${job.id}` });
     }
@@ -152,7 +170,7 @@ server.on('error', e => {
 });
 server.listen(cfg.port, cfg.host, () => {
   console.log(`конвейер: ${selfOrigin}/  — загрузка главы и список курсов (API — pipeline/API.md)`);
-  console.log(`модель: ${cfg.provider} / ${cfg.model}${cfg.provider !== 'stub' && !cfg.apiKey ? '  — НЕТ КЛЮЧА: задайте его в .env (без ключа доступна только заглушка)' : ''}`);
+  console.log(`модель: ${cfg.provider} / ${cfg.modelLabel || cfg.model}${!['stub', 'agent', 'cli'].includes(cfg.provider) && !cfg.apiKey ? '  — НЕТ КЛЮЧА: задайте его в .env или выберите в форме другую модель' : ''}`);
   console.log('остановить: Ctrl+C');
   if (args.includes('--open')) openBrowser(selfOrigin + '/');
 });

@@ -343,7 +343,7 @@
  "audio_check": {
   "voice": "Microsoft Irina Desktop",
   "fallback_voices": [
-   "Microsoft Pavel"
+   "gemini"
   ],
   "loudness_lufs": -16.4,
   "words_per_minute": 114,
@@ -393,6 +393,6 @@
   "engine": "video/video_engine.py",
   "spec_model": "из файла",
   "provider": "agent",
-  "tts": "System.Speech (Windows), голоса Microsoft — локально"
+  "tts": "Windows sapi: Microsoft Irina Desktop"
  }
 }
