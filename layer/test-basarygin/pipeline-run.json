@@ -9,7 +9,7 @@
     "chapter.json": "b7e4af2b883d9711",
     "nodes/test-basarygin.n01.json": "e05da80151f035c5",
     "nodes/test-basarygin.n02.json": "87b59c5106842700",
-    "nodes/test-basarygin.n03.json": "fdc9a38798b8d8d9",
+    "nodes/test-basarygin.n03.json": "9493ffb7f008d85f",
     "nodes/test-basarygin.n04.json": "0c4652c452f05445",
     "nodes/test-basarygin.n05.json": "664d612ee76b96c5",
     "nodes/test-basarygin.n06.json": "18dc54abedb1e9c2",
@@ -20,5 +20,8 @@
     "nodes/test-basarygin.n11.json": "32f9bc3af1111041",
     "nodes/test-basarygin.n12.json": "daf8155d7c5badae"
   },
-  "links": "2026-11-26T09:15:16.613Z"
+  "links": "2026-11-26T09:15:16.613Z",
+  "video": {
+    "test-basarygin.n03": "2026-11-26T09:24:47.434Z"
+  }
 }

@@ -41,6 +41,19 @@
    "claim_ids": []
   },
   {
+   "id": "test-basarygin.n03#video1",
+   "step_id": "test-basarygin.n03",
+   "node_id": "test-basarygin.n03",
+   "file": "layer/test-basarygin/assets/media/n03/video.mp4",
+   "frame_class": "A",
+   "origin": "code_from_model",
+   "label": "схема",
+   "caption": "Какой приток не увидит уровнемер",
+   "alt": "Ролик «Какой приток не увидит уровнемер», 68 с, к шагу «Уровень в ёмкостях и минимальный объём».",
+   "source": "спецификация сцены и паспорт: layer/test-basarygin/assets/media/n03/passport.json",
+   "claim_ids": []
+  },
+  {
    "id": "test-basarygin.n04#fig1",
    "step_id": "test-basarygin.n04",
    "node_id": "test-basarygin.n04",
