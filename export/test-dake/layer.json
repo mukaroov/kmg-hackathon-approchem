@@ -1,0 +1,4451 @@
+{
+ "chapter": "test-dake",
+ "source": "layer/test-dake/source.md",
+ "pdf_pages": [
+  "75–89"
+ ],
+ "generated_by": "учебный слой strata.layer/1 (test-dake@run1); экспорт node build/build.mjs; все тексты, кроме цитат, написаны моделью (by_model)",
+ "nodes": [
+  {
+   "id": "test-dake.n01",
+   "order": 1,
+   "title": "Основное уравнение и его нелинейность",
+   "why_here": {
+    "text": "С этого шага начинается курс: надо увидеть главное уравнение и понять, почему его нельзя сразу решить.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Ф",
+    "secondary": "Н"
+   },
+   "threshold": true,
+   "pages": [
+    75,
+    75
+   ],
+   "layers": {
+    "topic": {
+     "text": "Глава 5. Основное дифференциальное уравнение радиального потока в пористой среде (Darcy's Law and Applications)",
+     "by_model": true
+    },
+    "main": {
+     "text": "Основное уравнение радиального течения жидкости в однородной пористой среде нелинейно: его коэффициенты сами зависят от давления, которое мы ищем. Чтобы получить аналитические решения, коэффициенты нужно сделать почти постоянными, то есть линеаризовать уравнение. Для жидкости это даёт радиальное уравнение диффузии (главы 6–7), для реального газа нужна более сложная процедура (глава 8).",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Уравнение (5.1) связывает перенос по радиусу (слева) с накоплением во времени (справа). Из-за зависимости коэффициентов от давления оно нелинейно.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Автор линеаризует уравнение, чтобы получить аналитические решения: для нефти — в главах 6 и 7, для газа — в главе 8.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Линеаризация для жидкости приближённая, а для реального газа нужна более сложная интегральная. Уравнение выведено для однородной пористой среды.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 5, §5.2: вывод уравнения и допущения",
+      "by_model": true
+     },
+     {
+      "text": "Глава 5, §5.4: линеаризация и уравнение диффузии",
+      "by_model": true
+     },
+     {
+      "text": "Главы 6 и 7: решения для нефти",
+      "by_model": true
+     },
+     {
+      "text": "Глава 8: течение реального газа",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n01#c1",
+     "text": "Список литературы к предыдущей главе включает книгу Amyx, Bass и Whiting (1960) «Petroleum Reservoir Engineering — Physical Properties», страницы 86–96.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "Amyx, J.W., Bass, D.M. and Whiting, R.L., 1960. Petroleum Reservoir Engineering — Physical Properties. McGraw-Hill: 86-96.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n01#c2",
+     "text": "В список литературы входит серия статей Herbeck, Heintz, Hastings (1976) «Fundamentals of Tertiary Oil Recovery» в «Petroleum Engineer», январь — сентябрь.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "Herbeck, E.F., Heintz, R.C. and Hastings, J.R., 1976. Fundamentals of Tertiary Oil Recovery. Series of articles appearing in the \"Petroleum Engineer\", January — September.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n01#c3",
+     "text": "Автор заявляет, что в главе выводится основное уравнение радиального течения флюида в однородной пористой среде.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "In this chapter the basic equation for the radial flow of a fluid in a homogeneous porous medium is derived as",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n01#c4",
+     "text": "Основное уравнение (5.1): слева радиальная производная от выражения с k, ρ, μ и ∂p/∂r (с множителем 1/r), справа — φ, c, ρ и ∂p/∂t.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "\\frac{1}{r} \\frac{\\partial}{\\partial r} \\left( \\frac{k \\rho}{\\mu} r \\frac{\\partial p}{\\partial r} \\right) = \\phi c \\rho \\frac{\\partial p}{\\partial t} \\tag{5.1}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n01#c5",
+     "text": "Уравнение нелинейно, потому что коэффициенты по обе стороны сами зависят от давления — зависимой переменной.",
+     "kind": "inference",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "This equation is non-linear since the coefficients on both sides are themselves functions of the dependent variable, the pressure.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n01#c6",
+     "text": "Для аналитических решений уравнение сначала линеаризуют: записывают так, чтобы зависимостью коэффициентов от давления можно было пренебречь и считать их константами.",
+     "kind": "assumption",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "In order to obtain analytical solutions, it is first necessary to linearize the equation by expressing it in a form in which the coefficients have a negligible dependence upon the pressure and can be considered as constants.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n01#c7",
+     "text": "Для течения жидкости приближённая линеаризация даётся в конце главы; она сводит уравнение (5.1) к радиальному уравнению диффузии.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "An approximate form of linearization applicable to liquid flow is presented at the end of the chapter in which equ. (5.1) is reduced to the form of the radial diffusivity equation.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n01#c8",
+     "text": "Решения уравнения диффузии и их применения для течения нефти подробно изложены в главах 6 и 7.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "Solutions of this equation and their applications for the flow of oil are presented in detail in Chapters 6 and 7.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n01#c9",
+     "text": "Для течения реального газа требуется более сложная линеаризация интегральным преобразованием; она вынесена в главу 8.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "For the flow of a real gas, however, a more complex linearization by integral transformation is required which will be presented separately in Chapter 8.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [],
+   "misconception": {
+    "ref": null,
+    "text": "Уравнение (5.1) можно сразу решать как линейное: k, ρ, μ и c — это просто числа. На самом деле: Коэффициенты зависят от давления, поэтому уравнение нелинейно. Сначала нужна линеаризация: для жидкости приближённая, для газа — отдельная, более сложная.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: свойства пласта и флюида как функции давления (плотность, вязкость, сжимаемость, пористость) — из лабораторных данных и PVT-таблиц.; Гипотеза модели: замеры давления по времени в скважине.. На выходе: Уравнение (5.1) в радиальной форме — основа для решений, описывающих давление в пласте вокруг скважины.; Линеаризованная форма (для жидкости — уравнение диффузии), которую можно решать аналитически.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Зависимость коэффициентов от давления: пока её нельзя считать пренебрежимой, линейные формулы неприменимы.; Для реального газа линеаризация жидкостного типа недостаточна (по тексту автора) — нужна глава 8.; Гипотеза модели: однородность среды — допущение; в реальных данных свойства меняются от точки к точке.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Нелинейная система, где параметры функции зависят от её же выхода, как у рекуррентного соотношения xn+1 = f(a(x_n), x_n). Линеаризация — разложение около рабочей точки, чтобы работали линейные инструменты.",
+    "breaks_where": "Аналогия качественная: здесь дифференциальное уравнение в частных производных, а не итерация; точность линеаризации автор оценивает отдельно.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: в промысловой практике и численных симуляторах уравнение обычно решают численно, а линеаризованные аналитические решения используют для интерпретации замеров давления при испытаниях скважин.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Радиальный поток",
+    "Пористая среда",
+    "Нелинейное уравнение",
+    "Зависимая переменная",
+    "Линеаризация",
+    "Уравнение диффузии (радиальное)",
+    "Аналитическое решение",
+    "Однородная среда"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n02",
+   "order": 2,
+   "title": "Зачем нужна радиальная форма уравнения",
+   "why_here": {
+    "text": "Шаг объясняет, зачем выбрана радиальная форма и какие допущения лежат в основе вывода, прежде чем выводить сам баланс массы.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "П",
+    "secondary": "Н"
+   },
+   "threshold": false,
+   "pages": [
+    75,
+    75
+   ],
+   "layers": {
+    "topic": {
+     "text": "Основное дифференциальное уравнение радиального течения в пористой среде (гл. 5)",
+     "by_model": true
+    },
+    "main": {
+     "text": "Основное уравнение выводят в радиальной форме, потому что оно моделирует течение флюидов вблизи скважины. Из него при разных начальных и граничных условиях получают аналитические решения для исследования скважин и притока; автор считает это важнее декартова вывода. Вывод начинают с допущений: пласт однородный и изотропный по проницаемости, скважина вскрывает всю толщину.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Уравнение записывают через расстояние r от скважины, чтобы получить аналитические решения для давления и притока. Для вывода принимают допущения: однородный изотропный пласт и скважина на всю толщину.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Решения применяют для описания исследования скважин и притока к скважине; в численных моделях приток в скважину тоже задают радиальными уравнениями.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Допущения введены «изначально» (initially) — это отправная точка вывода. Декартов вывод автор считает менее важным для практики, но не говорит, что он неверен.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Раздел 5.1 — уравнение (5.1) и его нелинейность",
+      "by_model": true
+     },
+     {
+      "text": "Раздел 5.2 далее — баланс массы, закон Дарси, сжимаемость",
+      "by_model": true
+     },
+     {
+      "text": "Главы 6 и 7 — решения для нефти; глава 8 — реальный газ",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n02#c1",
+     "text": "Основное уравнение выводится в радиальной форме, чтобы моделировать течение флюидов вблизи скважины.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "The basic differential equation will be derived in radial form thus simulating the flow of fluids in the vicinity of a well.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n02#c2",
+     "text": "Аналитические решения при разных граничных и начальных условиях применяют для описания исследования скважин и притока; у них, по автору, большое практическое применение в разработке пласта.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "Analytical solutions of the equation can then be obtained under various boundary and initial conditions for use in the description of well testing and well inflow, which have considerable practical application in reservoir engineering.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n02#c3",
+     "text": "Радиальный вывод автор считает важнее декартова, потому что аналитические решения в декартовой форме промысловые инженеры редко используют на практике.",
+     "kind": "inference",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "This is considered of greater importance than deriving the basic equation in cartesian coordinates since analytical solutions of the latter are seldom used in practice by field engineers.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n02#c4",
+     "text": "В численном моделировании чаще декартова геометрия, но приток в скважину и отток из неё и там задают радиальными уравнениями.",
+     "kind": "observation",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "In numerical reservoir simulation, however, cartesian geometry is more commonly used but even in this case the flow into or out of a well is controlled by equations expressed in radial form",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n02#c5",
+     "text": "Геометрия радиальной ячейки показана на рис. 5.1; сначала принимаются упрощающие допущения.",
+     "kind": "assumption",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "The radial cell geometry is shown in fig. 5.1 and initially the following simplifying assumptions will be made.",
+     "source_kind": "figure_caption",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n02#c6",
+     "text": "Допущение a): пласт однородный по всем свойствам породы и изотропный по проницаемости.",
+     "kind": "assumption",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "The reservoir is considered homogeneous in all rock properties and isotropic with respect to permeability.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n02#c7",
+     "text": "Допущение b): добывающая скважина вскрывает всю толщину пласта, что обеспечивает полностью радиальное течение.",
+     "kind": "assumption",
+     "page_pdf": 75,
+     "page_print": null,
+     "quote": "The producing well is completed across the entire formation thickness thus ensuring fully radial flow.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n01"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Если симулятор использует декартову сетку, радиальные уравнения вообще не нужны. На самом деле: Даже при декартовой сетке приток в скважину и отток из неё задают уравнениями в радиальной форме.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: свойства пласта (проницаемость, пористость, толщина) и давление на забое по времени — но в этом фрагменте книги данные не названы; Допущения a) и b) как условия, при которых работает вывод. На выходе: Аналитические решения для давления у скважины при заданных начальных и граничных условиях (для well testing и well inflow)",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Если пласт неоднороден или проницаем по-разному в разных направлениях, допущение a) не выполняется (вывод из формулировки допущения); Гипотеза модели: если скважина вскрывает не всю толщину, течение не будет полностью радиальным, и допущение b) нарушено",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Полярные координаты вместо декартовых в задаче с симметрией: формула с одним параметром r проще и даёт замкнутое решение, как обработчик симметричного случая в коде.",
+    "breaks_where": "Это гипотеза модели. Реальная скважина и пласт менее симметричны, поэтому допущения a) и b) — осознанное упрощение, а не свойство данных.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: сегодня радиальные решения используют в программах интерпретации тестов скважин, а общую динамику пласта считают численно на декартовых или других сетках с моделью скважины.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Радиальная форма уравнения",
+    "Аналитическое решение",
+    "Граничные условия",
+    "Начальное условие",
+    "Исследование скважин",
+    "Приток к скважине",
+    "Однородный пласт",
+    "Изотропный по проницаемости",
+    "Численное моделирование пласта"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n03",
+   "order": 3,
+   "title": "Баланс массы в тонком кольце",
+   "why_here": {
+    "text": "Баланс массы — первый кирпич вывода: без (5.2) нечего подставлять закон Дарси и сжимаемость.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "М",
+    "secondary": "Ф"
+   },
+   "threshold": true,
+   "pages": [
+    76,
+    76
+   ],
+   "layers": {
+    "topic": {
+     "text": "Radial differential equation for fluid flow: Mass conservation (equ. 5.2)",
+     "by_model": true
+    },
+    "main": {
+     "text": "Для тонкого кольца толщиной dr разность входящего и выходящего потоков массы равна скорости изменения массы внутри. После сокращения dr получается ∂(qρ)/∂r = 2πrhφ ∂ρ/∂t (5.2). Это ещё не уравнение для давления: закон Дарси и сжимаемость подставляются на следующих шагах. Условие шага: пласт полностью насыщен одним флюидом.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Для тонкого кольца разность потоков массы на его границах равна скорости изменения массы внутри. После сокращения dr получается ∂(qρ)/∂r = 2πrhφ ∂ρ/∂t.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Это первый шаг вывода радиального уравнения; на следующих шагах в (5.2) подставляют закон Дарси и сжимаемость.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Верно при допущении c): пласт полностью насыщен одним флюидом. Выражение для q из закона Дарси автор вводит позже, после (5.2).",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 5, §5.2: закон Дарси и уравнение (5.3)",
+      "by_model": true
+     },
+     {
+      "text": "Глава 5, §5.4: линеаризация",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n03#c1",
+     "text": "Допущение c): пласт полностью насыщен одним флюидом.",
+     "kind": "assumption",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "c) The formation is completely saturated with a single fluid.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n03#c2",
+     "text": "Рисунок 5.1 показывает радиальное течение однофазного флюида вблизи добывающей скважины.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "Fig. 5.1 Radial flow of a single phase fluid in the vicinity of a producing well.",
+     "source_kind": "figure_caption",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n03#c3",
+     "text": "Берём объёмный элемент толщиной dr на расстоянии r от центра радиальной ячейки и применяем к нему принцип сохранения массы.",
+     "kind": "assumption",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "Consider the flow through a volume element of thickness dr situated at a distance r from the centre of the radial cell. Then applying the principle of mass conservation",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n03#c4",
+     "text": "Баланс массы: разность потоков qρ на границах r+dr и r равна 2πrhφdr, умноженному на ∂ρ/∂t.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "q \\rho | _ {r + d r} - q \\rho | _ {r} = 2 \\pi r h \\phi d r \\frac {\\partial \\rho}{\\partial t}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n03#c5",
+     "text": "Величина 2πrhφdr — объём малого элемента толщиной dr.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "where $2\\pi rh\\phi dr$ is the volume of the small element of thickness dr.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n03#c6",
+     "text": "Левую часть баланса можно развернуть: qρ|_r + ∂(qρ)/∂r · dr минус qρ|_r, правая часть не меняется.",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "\\left(q \\rho | _ {r} + \\frac {\\partial (q \\rho)}{\\partial r} d r - q \\rho | _ {r}\\right) = 2 \\pi r h \\phi d r \\frac {\\partial \\rho}{\\partial t}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n03#c7",
+     "text": "После упрощения получается уравнение (5.2): ∂(qρ)/∂r = 2πrhφ ∂ρ/∂t.",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "\\frac {\\partial (q \\rho)}{\\partial r} = 2 \\pi r h \\phi \\frac {\\partial \\rho}{\\partial t} \\tag {5.2}",
+     "source_kind": "formula",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n02"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Считать, что в тонком кольце масса не меняется, поэтому приток равен оттоку. На самом деле: Разность потоков массы на границах кольца равна скорости изменения массы внутри: она даёт член с ∂ρ/∂t.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: в расчёте это геометрия кольца (r, dr, h), пористость φ и плотность флюида ρ, заданные как функции r и t.. На выходе: Уравнение (5.2): связь изменения потока массы по радиусу со скоростью изменения плотности. Это ещё не уравнение для давления.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Гипотеза модели: баланс верен, только если в пласте один флюид (допущение c); при нескольких фазах q и ρ нельзя брать как одно значение.; Гипотеза модели: ρ, φ и q в формуле — не прямые измерения, а величины модели; дебит замеряют на устье, а профиль по r выводят расчётом.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Это уравнение непрерывности для очереди: вход минус выход равны изменению длины очереди. В численной схеме это баланс на ячейке сетки.",
+    "breaks_where": "В очереди нет геометрии: здесь площадь границы 2πrh зависит от r, а «длина очереди» — масса через плотность и пористость.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: тот же баланс массы на ячейку лежит в основе численных симуляторов пласта и программ интерпретации испытаний скважин.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "объёмный элемент (тонкое кольцо)",
+    "радиальная ячейка",
+    "сохранение массы",
+    "однофазный флюид",
+    "плотность",
+    "пористость",
+    "частная производная"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n04",
+   "order": 4,
+   "title": "Подстановка закона Дарси в баланс массы",
+   "why_here": {
+    "text": "Здесь расход из баланса массы (шаг 3) выражается через давление, и подготавливается замена плотности сжимаемостью (шаг 5).",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Ф",
+    "secondary": "М"
+   },
+   "threshold": false,
+   "pages": [
+    76,
+    76
+   ],
+   "layers": {
+    "topic": {
+     "text": "Radial differential equation for fluid flow (глава 5, §5.2 Darcy's Law)",
+     "by_model": true
+    },
+    "main": {
+     "text": "Чтобы убрать из баланса массы (5.2) расход q, автор подставляет вместо него закон Дарси для радиального горизонтального течения. Получается уравнение (5.3). Подстановка идёт в два шага: q заменяется выражением через градиент давления ∂p/∂r, затем обе части делятся на 2πh. В правой части (5.3) пока остаётся производная плотности по времени.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Расход q в балансе массы заменяется законом Дарси, где он пропорционален градиенту давления. Так баланс превращается в уравнение для давления (5.3).",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Уравнение (5.3) — шаг к основному уравнению (5.1), из которого потом получают решения для постоянного дебита.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Знак в записи закона Дарси автор не обсуждает. Плотность остаётся под производной, поэтому уравнение нелинейно. Заменить ∂ρ/∂t на давление можно через сжимаемость на следующем шаге.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 5, §5.2: сжимаемость и уравнения (5.4)–(5.5)",
+      "by_model": true
+     },
+     {
+      "text": "Глава 5, §5.4: линеаризация",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n04#c1",
+     "text": "Закон Дарси для радиального горизонтального течения позволяет подставить вместо расхода q в уравнении (5.2) выражение через давление.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "By applying Darcy's Law for radial, horizontal flow it is possible to substitute for the flow rate q in equ. (5.2) since",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n04#c2",
+     "text": "Расход q равен 2πkhr/μ, умноженному на ∂p/∂r. В записи книги знака минус перед градиентом нет.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "q = \\frac {2 \\pi k h r}{\\mu} \\frac {\\partial p}{\\partial r}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n04#c3",
+     "text": "После подстановки q в (5.2) под производной по r стоит (2πkhr/μ)·ρ·∂p/∂r. Правая часть остаётся 2πrhφ ∂ρ/∂t.",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "\\frac {\\partial}{\\partial r} \\left(\\frac {2 \\pi k h r}{\\mu} \\rho \\frac {\\partial p}{\\partial r}\\right) = 2 \\pi r h \\phi \\frac {\\partial \\rho}{\\partial t}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n04#c4",
+     "text": "Уравнение (5.3) — та же запись без множителя 2πh: (1/r)∂/∂r((kρ/μ) r ∂p/∂r) = φ ∂ρ/∂t.",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "\\frac {1}{r} \\frac {\\partial}{\\partial r} \\left(\\frac {k \\rho}{\\mu} r \\frac {\\partial p}{\\partial r}\\right) = \\phi \\frac {\\partial \\rho}{\\partial t} \\tag {5.3}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n04#c5",
+     "text": "Исходный баланс массы (5.2): производная произведения qρ по r равна 2πrhφ ∂ρ/∂t.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "\\frac {\\partial (q \\rho)}{\\partial r} = 2 \\pi r h \\phi \\frac {\\partial \\rho}{\\partial t} \\tag {5.2}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n04#c6",
+     "text": "Производную плотности по времени из правой части (5.3) можно выразить через производную давления по времени.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "The time derivative of the density appearing on the right hand side of equ. (5.3) can be expressed in terms of a time derivative of the pressure",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n04#c7",
+     "text": "Итоговое уравнение названо нелинейным, потому что плотность, сжимаемость и вязкость неявно зависят от давления и входят в коэффициенты.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "The equation is referred to as non-linear because of the implicit pressure dependence of the density, compressibility and viscosity appearing in the coefficients",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n03"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Закон Дарси подставляют вместо всего уравнения, а не вместо расхода q внутри баланса массы. На самом деле: Закон Дарси заменяет только q в уравнении (5.2). Плотность ρ остаётся под знаком производной, и правая часть с ∂ρ/∂t пока не меняется.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: профиль давления p(r, t) вокруг скважины.; Гипотеза модели: проницаемость k, толщина h, пористость φ, вязкость μ, плотность ρ флюида.. На выходе: Гипотеза модели: уравнение, которое связывает изменение давления в пласте с этими параметрами и позволяет искать p(r, t).; Расход q не требуется как отдельная неизвестная, он выражен через давление.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Коэффициенты kρ/μ и φcρ неявно зависят от давления, поэтому уравнение нелинейно, и простых аналитических решений нет без линеаризации.; Гипотеза модели: в реальных данных k, h и μ известны с погрешностью, а в записи (5.3) они считаются заданными.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Это подстановка в формулу: в уравнении баланса стоит промежуточная переменная q. Её заменяют функцией от p, и остаётся одно уравнение с одной искомой функцией.",
+    "breaks_where": "Уравнение содержит частные производные по r и t, и коэффициенты зависят от самой неизвестной. Обычная подстановка значений такого не даёт.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: в современных симуляторах пласта уравнение (5.3) в обобщённом виде решают численно на сетке, а закон Дарси входит в расчёт потоков между ячейками.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Закон Дарси",
+    "Радиальное горизонтальное течение",
+    "Градиент давления",
+    "Проницаемость",
+    "Вязкость"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n05",
+   "order": 5,
+   "title": "Сжимаемость заменяет плотность на давление",
+   "why_here": {
+    "text": "Последний шаг вывода: после него основное уравнение (5.1) готово и нужны условия решения.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Ф",
+    "secondary": "М"
+   },
+   "threshold": true,
+   "pages": [
+    76,
+    76
+   ],
+   "layers": {
+    "topic": {
+     "text": "Radial differential equation for fluid flow (гл. 5, §5.2 Compressibility)",
+     "by_model": true
+    },
+    "main": {
+     "text": "Сжимаемость связывает изменение плотности с изменением давления, поэтому в (5.3) производную плотности по времени заменяют на cρ ∂p/∂t и получают основное уравнение (5.1) с одной неизвестной p. Уравнение (5.1) описывает радиальный приток любой однофазной жидкости, но остаётся нелинейным: ρ, c и μ зависят от давления и стоят в коэффициентах kρ/μ и φcρ. Простых аналитических решений нет, пока уравнение не линеаризовано: для жидкостей с малой постоянной сжимаемостью это сделано в §5.4, для реального газа — в главе 8.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Сжимаемость связывает ρ и p, поэтому ∂ρ/∂t = cρ ∂p/∂t. Подстановка в (5.3) даёт уравнение (5.1) с одной неизвестной p.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Это основа анализа переходных процессов давления (главы 7–8).",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Определение изотермическое. Уравнение нелинейно, пока коэффициенты зависят от давления; линеаризация — §5.4 (жидкости) и глава 8 (газ).",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "§5.4 Linearization",
+      "by_model": true
+     },
+     {
+      "text": "Глава 8: преобразование Кирхгофа",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n05#c1",
+     "text": "Производную плотности по времени из правой части (5.3) можно выразить через производную давления, взяв термодинамическое определение изотермической сжимаемости.",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "The time derivative of the density appearing on the right hand side of equ. (5.3) can be expressed in terms of a time derivative of the pressure by using the basic thermodynamic definition of isothermal compressibility",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c2",
+     "text": "Изотермическая сжимаемость определена как c = −(1/V)·∂V/∂p.",
+     "kind": "assumption",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "c = - \\frac {1}{V} \\frac {\\partial V}{\\partial p}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c3",
+     "text": "Через ρ = m/V сжимаемость записывается как c = −(ρ/m)·∂(m/ρ)/∂p = (1/ρ)·∂ρ/∂p, уравнение (5.4).",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "c = - \\frac {\\rho}{m} \\frac {\\partial \\left(\\frac {m}{\\rho}\\right)}{\\partial p} = \\frac {1}{\\rho} \\frac {\\partial \\rho}{\\partial p} \\tag {5.4}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c4",
+     "text": "Дифференцирование (5.4) по времени даёт cρ ∂p/∂t = ∂ρ/∂t, уравнение (5.5).",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "c \\rho \\frac {\\partial p}{\\partial t} = \\frac {\\partial \\rho}{\\partial t} \\tag {5.5}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c5",
+     "text": "Подстановка (5.5) в (5.3) приводит (5.3) к виду (5.1).",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "Finally, substituting equ. (5.5) in equ. (5.3) reduces the latter to",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c6",
+     "text": "Итоговое уравнение: (1/r)∂/∂r((kρ/μ) r ∂p/∂r) = φcρ ∂p/∂t.",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "\\frac {1}{r} \\frac {\\partial}{\\partial r} \\left(\\frac {k \\rho}{\\mu} r \\frac {\\partial p}{\\partial r}\\right) = \\phi c \\rho \\frac {\\partial p}{\\partial t} \\tag {5.1}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c7",
+     "text": "Автор называет (5.1) основным уравнением в частных производных радиального притока любой однофазной жидкости в пористой среде.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "This is the basic, partial differential equation for the radial flow of any single phase fluid in a porous medium.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c8",
+     "text": "Уравнение нелинейно из-за неявной зависимости плотности, сжимаемости и вязкости от давления в коэффициентах.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "The equation is referred to as non-linear because of the implicit pressure dependence of the density, compressibility and viscosity appearing in the coefficients",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c9",
+     "text": "Простых аналитических решений нет без линеаризации, при которой коэффициенты теряют зависимость от давления.",
+     "kind": "inference",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "Because of this, it is not possible to find simple analytical solutions of the equation without first linearizing it so that the coefficients somehow lose their pressure dependence.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c10",
+     "text": "Простая линеаризация для жидкостей с малой и постоянной сжимаемостью (недонасыщенная нефть) рассмотрена в §5.4.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "A simple form of linearization applicable to the flow of liquids of small and constant compressibility (under-saturated oil) will be considered in sec. 5.4",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n05#c11",
+     "text": "Более строгий метод с преобразованием Кирхгофа для реального газа будет в главе 8.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "while a more rigorous method, using the Kirchhoff integral transformation, will be presented in Chapter 8 for the more complex case of linearization for the flow of a real gas.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n04"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Раз в (5.1) появилось c, уравнение уже линейно и решается просто. На самом деле: Уравнение остаётся нелинейным: ρ, c и μ зависят от давления. Нужна линеаризация (§5.4, гл. 8).",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: сжимаемость жидкости c из лабораторных PVT-данных; Гипотеза модели: пористость φ, проницаемость k, вязкость μ. На выходе: Уравнение (5.1) с единственной неизвестной p(r, t)",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Гипотеза модели: c, ρ, μ меняются с давлением — уравнение нелинейно; Гипотеза модели: у газа сжимаемость сильно зависит от давления, поэтому нужен метод главы 8",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Цепное правило как замена переменной: вместо ∂ρ/∂t пишем (∂ρ/∂p)·(∂p/∂t) и получаем одну неизвестную p.",
+    "breaks_where": "В коде это просто алгебра, а здесь c и ρ сами зависят от p.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: в симуляторах сжимаемость берут из PVT-таблиц, а не как константу.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Изотермическая сжимаемость",
+    "Нелинейное уравнение",
+    "Линеаризация",
+    "Недонасыщенная нефть"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n06",
+   "order": 6,
+   "title": "Начальное и граничные условия задачи",
+   "why_here": {
+    "text": "Сначала нужно понять, что условия выбирают решение, и только потом разбирать три режима по очереди.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Н",
+    "secondary": "Ф"
+   },
+   "threshold": true,
+   "pages": [
+    76,
+    76
+   ],
+   "layers": {
+    "topic": {
+     "text": "Radial differential equation for fluid flow: 5.3 Conditions of solution",
+     "by_model": true
+    },
+    "main": {
+     "text": "У уравнения (5.1) в принципе бесконечно много решений, и конкретное задают начальное и граничные условия. Самое частое и полезное — решение с постоянным дебитом q на стенке скважины (r=rw) при начальном равновесном давлении pi. Для него автор называет три частых, но не единственных режима: переходный, полустационарный и стационарный.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Уравнение (5.1) описывает давление в пласте вообще. Чтобы получить одну конкретную картину, нужно задать начальное состояние и условия на границах.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Самое частое решение — постоянный дебит q на стенке скважины при начальном равновесном давлении pi. Его автор разбирает в главах 7 и 8.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Три режима — переходный, полустационарный, стационарный — частые, но не единственные. Каждый применим в своё время и при своих предполагаемых граничных условиях.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 7: решение с постоянным дебитом",
+      "by_model": true
+     },
+     {
+      "text": "Глава 8: то же решение",
+      "by_model": true
+     },
+     {
+      "text": "§5.4: линеаризация уравнения",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n06#c1",
+     "text": "Уравнение (5.1) в принципе имеет бесконечно много решений. Какое получится, зависит от наложенных начального и граничных условий.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "In principle, an infinite number of solutions of equ. (5.1) can be obtained depending on the initial and boundary conditions imposed.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n06#c2",
+     "text": "Самое частое и полезное решение называется решением с постоянным дебитом на выходе. Его начальное условие задано на некотором фиксированном времени.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "The most common and useful of these is called the constant terminal rate solution for which the initial condition is that at some fixed time",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n06#c3",
+     "text": "Условия задачи: в фиксированный момент пласт в равновесии при давлении pi. После этого скважина добывает с постоянным дебитом q на стенке ствола r=rw.",
+     "kind": "assumption",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "at which the reservoir is at equilibrium pressure $p_i$, the well is produced at a constant rate q at the wellbore, $r=r_w$.",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n06#c4",
+     "text": "Решение с постоянным дебитом автор подробно рассмотрит в главах 7 и 8. Сейчас он описывает только условия, для которых его ищут.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "This type of solution will be examined in detail in Chapters 7 and 8 but it is appropriate, at this stage",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n06#c5",
+     "text": "Автор описывает три самых частых условия для этого решения и прямо говорит, что они не единственные.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "to describe the three most common, although not exclusive, conditions for which the constant terminal rate solution is sought.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n06#c6",
+     "text": "Три условия называются переходным, полустационарным и стационарным. Каждое применимо в разное время после начала добычи и при разных предполагаемых граничных условиях.",
+     "kind": "observation",
+     "page_pdf": 76,
+     "page_print": null,
+     "quote": "These conditions are called transient, semi steady state and steady state and are each applicable at different times after the start of production and for different, assumed boundary conditions.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n05"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "У уравнения (5.1) одно решение, и оно описывает любую скважину. На самом деле: Решений бесконечно много; конкретное задают начальное и граничные условия. Режимов три частых, но не единственных.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: замеры забойного давления во времени и дебит скважины; Гипотеза модели: начальное пластовое давление pi до пуска. На выходе: Гипотеза модели: выбор режима (переходный, полустационарный, стационарный), с которым сравнивают данные; Решение (5.1) при условиях из книги — в главах 7 и 8",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Гипотеза модели: реальный дебит не строго постоянен, а пласт перед пуском не в идеальном равновесии; Гипотеза модели: режим выбран неверно — условия в данных не те, что допущены в задаче",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Уравнение (5.1) — как код решателя дифференциальных уравнений, а начальное и граничные условия — его входные параметры: pi как начальное значение, q на rw как граничное. Другие параметры дают другой результат.",
+    "breaks_where": "В коде неверные параметры просто дают другой результат, а здесь условия должны быть физически обоснованы.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: в численных симуляторах и анализе испытаний скважин начальное давление и дебит или забойное давление на скважине задают как входные данные модели.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Начальное условие",
+    "Граничное условие",
+    "Решение с постоянным дебитом на выходе",
+    "Переходный режим",
+    "Полустационарный режим",
+    "Стационарный режим"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n07",
+   "order": 7,
+   "title": "Переходный режим: пласт «бесконечный»",
+   "why_here": {
+    "text": "После начального и граничных условий (шаг 6) это первый из режимов решения, и он показывает, как граница влияет на ответ.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "В",
+    "secondary": "И"
+   },
+   "threshold": false,
+   "pages": [
+    77,
+    77
+   ],
+   "layers": {
+    "topic": {
+     "text": "Радиальное дифференциальное уравнение течения флюида, §5.3 a) Transient condition",
+     "by_model": true
+    },
+    "main": {
+     "text": "Переходный режим — это короткий период после возмущения давления, пока пласт «не знает» о внешней границе и выглядит бесконечным. Возмущение обычно создают сменой дебита на r=r_w, и давление зависит и от места, и от времени. Режим нужен для испытаний скважин: дебит меняют намеренно, а давление на забое измеряют несколько часов.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Смена дебита на стенке скважины создаёт возмущение давления. Пока оно не дошло до внешней границы, пласт ведёт себя как бесконечный, а p и ∂p/∂t зависят от r и t.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Применяют для анализа испытаний скважин: дебит намеренно меняют, давление в стволе измеряют несколько часов.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Режим короткий. Допущение «граница не влияет» верно, если пласт не чрезвычайно мал. Давление измеряют, свойства пласта выводят позже.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 7: методы переходного анализа",
+      "by_model": true
+     },
+     {
+      "text": "Глава 8: применение к испытаниям скважин",
+      "by_model": true
+     },
+     {
+      "text": "§5.3 b): полустационарный режим",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n07#c1",
+     "text": "Переходный режим применим лишь относительно короткое время после создания возмущения давления в пласте.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "This condition is only applicable for a relatively short period after some pressure disturbance has been created in the reservoir.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n07#c2",
+     "text": "В радиальной модели возмущение обычно вызвано изменением дебита скважины на r=r_w.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "In terms of the radial flow model this disturbance would be typically caused by altering the well's production rate at $r=r_w$.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n07#c3",
+     "text": "Пока режим применим, предполагается, что отклик давления не зависит от внешней границы, поэтому пласт кажется бесконечным.",
+     "kind": "assumption",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "it is assumed that the pressure response in the reservoir is not affected by the presence of the outer boundary, thus the reservoir appears infinite in extent.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n07#c4",
+     "text": "Режим применяют главным образом к испытаниям скважин: дебит намеренно меняют, давление в стволе измеряют несколько часов.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "the well's production rate is deliberately changed and the resulting pressure response in the wellbore is measured and analysed during a brief period of a few hours",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n07#c5",
+     "text": "Если пласт не чрезвычайно мал, границы не ощущаются и пласт математически бесконечен.",
+     "kind": "inference",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "Then, unless the reservoir is extremely small, the boundary effects will not be felt and the reservoir is, mathematically, infinite.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n07#c6",
+     "text": "Решение (5.1) сложное: давление и его производная по времени зависят и от положения, и от времени.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "This gives rise to a complex solution of equ. (5.1) in which both the pressure and pressure derivative, with respect to time, are themselves functions of both position and time",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n07#c7",
+     "text": "Давление записано как функция радиуса и времени.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "$$p = g(r,t)$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n07#c8",
+     "text": "Методы анализа переходного режима и их применение к испытаниям скважин описаны в главах 7 и 8.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "Transient analysis techniques and their application to oil and gas well testing will be described in Chapters 7 and 8, respectively.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n06"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Переходный режим длится всё время работы скважины, и граница пласта всегда не важна. На самом деле: Режим применим лишь короткое время после возмущения, пока граница не ощущается; для испытаний это несколько часов.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: ряд забойного давления во времени и ряд дебита с моментом его смены. На выходе: Гипотеза модели: оценки свойств пласта, выведенные интерпретатором по отклику (методы — главы 7 и 8)",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Если пласт очень мал, граница влияет и пласт уже не бесконечен (глава: «unless the reservoir is extremely small»); Гипотеза модели: окно в несколько часов берут слишком длинным, и в отклик попадает влияние границы",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Нагрузочный тест: меняете нагрузку и смотрите отклик, пока кэш и лимиты ещё не включились. Пока граница не сказалась, система ведёт себя как «неограниченная».",
+    "breaks_where": "В пласте отклик зависит от r и t по физическому уравнению, а не от настроек системы.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: давление пишут забойными датчиками, а отклик анализируют специальным ПО для интерпретации испытаний скважин.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Переходный режим",
+    "Бесконечный пласт",
+    "Испытание скважины"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n08",
+   "order": 8,
+   "title": "Полустационарный режим и «кирпичная стена»",
+   "why_here": {
+    "text": "После переходного режима нужен второй предельный случай: граница уже ощутима, и из баланса массы получается постоянная скорость падения давления.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "М",
+    "secondary": "Ф"
+   },
+   "threshold": false,
+   "pages": [
+    77,
+    77
+   ],
+   "layers": {
+    "topic": {
+     "text": "Глава 5. Радиальное дифференциальное уравнение течения флюида, §5.3 b) Semi steady state condition",
+     "by_model": true
+    },
+    "main": {
+     "text": "Полустационарный режим наступает, когда скважина добывает достаточно долго и внешняя граница уже ощутима: это глухая «кирпичная стена», на r_e потока нет, ∂p/∂r = 0. При постоянном дебите давление падает с одинаковой скоростью везде (∂p/∂t ≈ const), а константу даёт материальный баланс: dp/dt = −q/(cV), для радиальной ячейки −q/(cπr_e²hφ). Режим используют в главе 6 для нефти и в главе 8 для газа, хотя у газа сжимаемость непостоянна.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Когда граница почувствована, а потока через неё нет, весь отбор идёт за счёт расширения флюида. Давление падает равномерно: dp/dt = −q/(cV).",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Условие используют, чтобы вывести формулы притока нефти (глава 6) и газа (глава 8) при полустационарном режиме.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Нужен постоянный дебит, а ∂p/∂t ≈ const — приближение. Для газа сжимаемость непостоянна, но подход применяют. Граница — «кирпичная стена», т.е. допущение модели.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 5, §5.3: дренирование скважин и среднее давление (шаг 9)",
+      "by_model": true
+     },
+     {
+      "text": "Глава 6: формулы притока нефти",
+      "by_model": true
+     },
+     {
+      "text": "Глава 8: течение газа",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n08#c1",
+     "text": "Полустационарный режим применим к пласту, который добывает достаточно долго, чтобы эффект внешней границы уже был ощутим.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "This condition is applicable to a reservoir which has been producing for a sufficient period of time so that the effect of the outer boundary has been felt.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n08#c2",
+     "text": "Модель принимает, что скважину на внешней границе окружает сплошная «кирпичная стена», не пропускающая флюид в радиальную ячейку.",
+     "kind": "assumption",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "It is considered that the well is surrounded, at its outer boundary, by a solid \"brick wall\" which prevents the flow of fluids into the radial cell.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n08#c3",
+     "text": "Из закона Дарси автор выводит условие на внешней границе: потока нет.",
+     "kind": "inference",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "Thus at the outer boundary, in accordance with Darcy's law",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n08#c4",
+     "text": "На внешней границе r = r_e производная давления по радиусу равна нулю (5.6).",
+     "kind": "inference",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "\\frac{\\partial p}{\\partial r} = 0 \\quad \\text{at} \\quad r = r_e \\tag{5.6}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n08#c5",
+     "text": "При постоянном дебите скважины давление падает так, что ∂p/∂t примерно постоянна для всех r и t (5.7).",
+     "kind": "inference",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "\\frac{\\partial p}{\\partial t} \\approx \\text{constant, for all } r \\text{ and } t. \\tag{5.7}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n08#c6",
+     "text": "Материальный баланс с определением сжимаемости: cV·dp/dt = −dV/dt = −q (5.8); отсюда (5.9) dp/dt = −q/(cV).",
+     "kind": "inference",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "cV \\frac{dp}{dt} = - \\frac{dV}{dt} = - q \\tag{5.8}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n08#c7",
+     "text": "Константу из (5.7) можно найти простым материальным балансом с использованием определения сжимаемости.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "The constant referred to in equ. (5.7) can be obtained from a simple material balance using the compressibility definition, thus",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n08#c8",
+     "text": "Для дренирования радиальной ячейки соотношение записывается как dp/dt = −q/(cπr_e²hφ) (5.10).",
+     "kind": "inference",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "which for the drainage of a radial cell can be expressed as",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n08#c9",
+     "text": "Условие будет применено в главе 6 для нефти и в главе 8 для газа для вывода формул притока; для газа сжимаемость непостоянна.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "This is a condition which will be applied in Chapter 6, for oil flow, and in Chapter 8, for gas flow, to derive the well inflow equations under semi steady state conditions, even though in the latter case the gas compressibility is not constant.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n08#c10",
+     "text": "Рис. 5.2 иллюстрирует радиальное течение при полустационарных условиях.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "Fig. 5.2 Radial flow under semi steady state conditions.",
+     "source_kind": "figure_caption",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n06"
+    },
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n07"
+    },
+    {
+     "type": "to_data",
+     "target": "test-dake.n09"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Полустационарный режим — это когда давление в пласте не меняется. На самом деле: Меняется: давление падает со своей почти постоянной скоростью dp/dt = −q/(cV). Постоянна именно скорость падения, а нет потока — только через границу.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: ряд забойного давления во времени при постоянном дебите.; Гипотеза модели: оценки сжимаемости c, пористости φ, толщины h и дебита q.. На выходе: Скорость падения давления dp/dt = −q/(cπr_e²hφ) — вычисляется по формуле, а не измеряется напрямую.; Гипотеза модели: из наклона dp/dt можно оценить объём дренирования, если известны q и c.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Дебит непостоянен — тогда ∂p/∂t ≈ const нарушается.; Режим ещё не наступил: граница не почувствована, и идёт переходный режим.; У газа сжимаемость непостоянна (оговорка автора).; Гипотеза модели: граница в реальном пласте не абсолютно глухая, а радиус r_e — модельная величина, а не измерение.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Закрытая очередь с постоянной скоростью обработки: после того как «фронт» дошёл до границ, длина падает с одинаковой скоростью, а новые задачи извне не поступают.",
+    "breaks_where": "Аналогия не передаёт зависимость скорости падения от сжимаемости и размера ячейки.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: на практике режим узнают по прямолинейному участку падения давления на графике давления от времени при постоянном дебите и по нему оценивают объём дренирования.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Полустационарный режим",
+    "«Кирпичная стена»",
+    "Внешний радиус",
+    "Материальный баланс"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n09",
+   "order": 9,
+   "title": "Дренирование скважин и среднее давление",
+   "why_here": {
+    "text": "После вывода условия dp/dt = const и «кирпичной стены» нужно показать, как оно даёт среднее давление пласта по нескольким скважинам.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Пр",
+    "secondary": "Н"
+   },
+   "threshold": false,
+   "pages": [
+    77,
+    78
+   ],
+   "layers": {
+    "topic": {
+     "text": "Radial differential equation for fluid flow, гл. 5, §5.3 b",
+     "by_model": true
+    },
+    "main": {
+     "text": "При полустационарном режиме каждая скважина дренирует свой объём с границей «нет потока» и почти не зависит от соседних. Среднее давление пласта считают как среднее по поровым объёмам зон дренирования (5.11). Так как объёмы трудно найти, а дебиты q_i меряют постоянно, объёмное среднее заменяют средним по дебитам (5.13).",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "При полустационарном режиме давление падает с одинаковой скоростью по всему пласту, поэтому каждая зона отдаёт флюид пропорционально своему объёму. Среднее давление можно взвесить по дебитам.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Дебиты измеряют постоянно, поэтому p̄_res по (5.13) считается без знания объёмов V_i. Это давление нужно для материального баланса.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Вывод требует dp/dt примерно постоянной по пласту и малой вариации сжимаемости. Определение отдельных p̄_i откладывается до главы 7.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Гл. 7, раздел 7: определение p̄_i",
+      "by_model": true
+     },
+     {
+      "text": "Гл. 6: приток нефти при полустационарном режиме",
+      "by_model": true
+     },
+     {
+      "text": "Гл. 8: газ, где сжимаемость непостоянна",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n09#c1",
+     "text": "Авторы (Мэтьюс, Бронс, Хазебрук) отметили: при полустационарном режиме в истощаемом пласте каждая скважина дренирует из своей границы «нет потока» почти независимо от других скважин.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "once the reservoir is producing under the semi steady state condition, each well will drain from within its own no-flow boundary quite independently of the other wells.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c2",
+     "text": "Для такого режима dp/dt должна быть примерно постоянной по всему пласту. Иначе через границы пошёл бы поток, и их положение перестраивалось бы до наступления устойчивости.",
+     "kind": "inference",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "For this condition dp/dt must be approximately constant throughout the entire reservoir otherwise flow would occur across the boundaries causing a re-adjustment in their positions until stability was eventually achieved.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c3",
+     "text": "Объёмно-осреднённое давление пласта находят простым приёмом (5.11): сумма p̄_i V_i, делённая на сумму V_i.",
+     "kind": "inference",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "In this case a simple technique can be applied to determine the volume averaged reservoir pressure",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c4",
+     "text": "Из (5.9) следует: раз dp/dt постоянна для пласта, то при малом изменении сжимаемости дебит зоны пропорционален её объёму, q_i ∝ V_i (5.12).",
+     "kind": "inference",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "Equation (5.9) implies that since dp/dt is constant for the reservoir then, if the variation in the compressibility is small",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c5",
+     "text": "Поэтому объёмное среднее из (5.11) можно заменить средним по дебитам (5.13): p̄_res = Σ p̄_i q_i / Σ q_i.",
+     "kind": "inference",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "and hence the volume average in equ. (5.11) can be replaced by a rate average, as follows",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c6",
+     "text": "Объёмы V_i трудно определить на практике, а дебиты q_i измеряют регулярно в течение всей жизни месторождения. Это упрощает расчёт p̄_res.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "whereas the $V_i$'s are difficult to determine in practice, the $q_i$'s are measured on a routine basis throughout the lifetime of the field",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c7",
+     "text": "p̄_res — это давление, при котором вычисляют материальный баланс пласта.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "which is the pressure at which the reservoir material balance is evaluated",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c8",
+     "text": "Способ определения отдельных p̄_i автор откладывает до главы 7, раздел 7.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "The method by which the individual $\\overline{p}_i$'s can be determined will be detailed in Chapter 7, sec. 7.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c9",
+     "text": "V_i — поровый объём i-й зоны дренирования.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "$V_i$ = the pore volume of the iᵗʰ drainage volume",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c10",
+     "text": "p̄_i — среднее давление внутри i-й зоны дренирования.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "and $\\bar{p}_i$ = the average pressure within the iᵗʰ drainage volume.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c11",
+     "text": "Рис. 5.3 иллюстрирует истощение пласта при полустационарных условиях. В присланном тексте есть только подпись.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "Fig. 5.3 Reservoir depletion under semi steady state conditions.",
+     "source_kind": "figure_caption",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n09#c12",
+     "text": "Постоянную в условии (5.7) получают из простого материального баланса через определение сжимаемости.",
+     "kind": "observation",
+     "page_pdf": 77,
+     "page_print": null,
+     "quote": "The constant referred to in equ. (5.7) can be obtained from a simple material balance using the compressibility definition",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [],
+   "misconception": {
+    "ref": null,
+    "text": "Скважины в пласте влияют друг на друга постоянно, поэтому среднее давление нельзя считать по зонам, или его можно взять как простое среднее по скважинам. На самом деле: При полустационарном режиме каждая скважина дренирует свою зону почти независимо. Среднее давление взвешивают по поровым объёмам (5.11) или, при малой вариации сжимаемости, по дебитам (5.13).",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Дебиты q_i каждой скважины: автор говорит, что их измеряют регулярно в течение жизни месторождения; Средние давления зон p̄_i (способ их получения — глава 7, раздел 7); Поровые объёмы V_i — их трудно определить. На выходе: Среднее давление пласта p̄_res по (5.13) или по (5.11); Давление для оценки материального баланса пласта",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Формула (5.13) опирается на q_i ∝ V_i, а это верно при малой вариации сжимаемости; Гипотеза модели: если дебиты менялись недавно, зоны ещё перестраиваются и режим не полустационарный; Гипотеза модели: p̄_i — не прямое измерение, оно выводится в интерпретации",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Взвешенное среднее метрики по шардам: вес — трафик шарда вместо размера данных, когда нагрузка пропорциональна размеру. Гипотеза модели.",
+    "breaks_where": "В ИТ-системах нагрузка не обязана быть пропорциональна объёму, а в пласте пропорциональность следует из постоянной dp/dt.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: среднее пластовое давление сейчас оценивают по замерам давления на скважинах и по промысловым дебитам, часто в специальном ПО для материального баланса. Детали за пределами главы.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Зона (объём) дренирования",
+    "Граница «нет потока»",
+    "Среднее давление пласта",
+    "Поровый объём",
+    "Осреднение по дебитам"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": {
+    "features": [
+     "Режим полустационарный, dp/dt примерно постоянна по всему пласту",
+     "Сжимаемость меняется мало",
+     "Известны дебиты q_i и средние давления зон p̄_i",
+     "Поровые объёмы V_i неизвестны или определяются плохо"
+    ],
+    "rule": "Если q_i ∝ V_i, объёмное среднее (5.11) заменяют средним по дебитам (5.13).",
+    "conclusion": "p̄_res вычисляют как Σ p̄_i q_i / Σ q_i по измеренным дебитам, не определяя V_i.",
+    "counterexample": "Гипотеза модели: если сжимаемость заметно разная по зонам или дебиты недавно менялись, пропорциональность q_i ∝ V_i нарушается и (5.13) может дать неверное среднее."
+   },
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n10",
+   "order": 10,
+   "title": "Стационарный режим и пределы применимости",
+   "why_here": {
+    "text": "Завершает набор условий решения (переходный, полустационарный, стационарный), прежде чем линеаризовать уравнение в §5.4.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Н",
+    "secondary": "М"
+   },
+   "threshold": false,
+   "pages": [
+    78,
+    78
+   ],
+   "layers": {
+    "topic": {
+     "text": "Radial differential equation for fluid flow, §5.3: Steady State condition",
+     "by_model": true
+    },
+    "main": {
+     "text": "Стационарный режим — это приток к скважине при полностью открытой внешней границе: отбор из ячейки точно уравновешен притоком через границу. В математике это два условия: давление на внешнем радиусе постоянно (5.14), а производная давления по времени везде равна нулю (5.15). Автор оговаривает, что стационарный и полустационарный режимы в пласте могут никогда не реализоваться полностью.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "При открытой границе приток компенсирует отбор, поэтому давление на радиусе r_e постоянно, а ∂p/∂t = 0 везде.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Условие применяют, когда давление поддерживает естественный водонапор или закачка; на практике оно лишь приближено, так как установки работают на постоянных дебитах.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Режимы могут никогда не реализоваться полностью. После смены дебита наступает короткий переходный период, затем стабилизированное течение.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 10 — поддержание давления (водонапор, закачка)",
+      "by_model": true
+     },
+     {
+      "text": "§5.3 b) — полустационарный режим и условие (5.7)",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n10#c1",
+     "text": "Стационарное условие применяется после переходного периода к скважине, дренирующей ячейку с полностью открытой внешней границей.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "The steady state condition applies, after the transient period, to a well draining a cell which has a completely open outer boundary.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n10#c2",
+     "text": "Автор допускает: при постоянном дебите отбор из ячейки точно уравновешен поступлением через открытую границу.",
+     "kind": "assumption",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "It is assumed that, for a constant rate of production, fluid withdrawal from the cell will be exactly balanced by fluid entry across the open boundary and therefore,",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n10#c3",
+     "text": "Граничное условие (5.14): на радиусе r_e давление равно постоянной p_e.",
+     "kind": "assumption",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "p = p_e = \\text{constant, at } r = r_e \\tag{5.14}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n10#c4",
+     "text": "Условие (5.15): производная давления по времени равна нулю для всех r и t.",
+     "kind": "assumption",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "\\text{and } \\frac{\\partial p}{\\partial t} = 0 \\text{ for all } r \\text{ and } t \\tag{5.15}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n10#c5",
+     "text": "Условие подходит, когда давление в пласте поддерживается естественным притоком воды или закачкой вытесняющего флюида (см. гл. 10).",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "This condition is appropriate when pressure is being maintained in the reservoir due to either natural water influx or the injection of some displacing fluid (refer Chapter 10).",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n10#c6",
+     "text": "Автор отмечает, что полустационарный и стационарный режимы могут никогда не реализоваться в пласте полностью.",
+     "kind": "inference",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "It should be noted that the semi steady state and steady state conditions may never be fully realised in the reservoir.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n10#c7",
+     "text": "Уравнения полустационарного режима часто применяют, когда дебит и положение границы «нет потока» медленно меняются во времени.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "semi steady state flow equations are frequently applied when the rate, and consequently the position of the no-flow boundary surrounding a well, are slowly varying functions of time.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n10#c8",
+     "text": "Условия (5.7) и (5.15) часто приближённо выполняются в поле, потому что установки рассчитаны на постоянные дебиты и менять их без нужды нет смысла.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "the defining conditions specified by equ. (5.7) and (5.15) are frequently approximated in the field since both production and injection facilities are usually designed to operate at constant rates and it makes little sense to unnecessarily alter these",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n10#c9",
+     "text": "После смены дебита скважины будет короткий период переходного течения, затем стабилизированное течение для нового распределения дебитов.",
+     "kind": "inference",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "there will be a brief period when transient flow conditions prevail followed by stabilized flow for the new distribution of individual well rates.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n08"
+    },
+    {
+     "type": "example_of",
+     "target": "test-dake.n06"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Стационарный или полустационарный режим всегда полностью достигается в пласте, и формулы точны. На самом деле: Автор пишет, что эти режимы могут никогда не реализоваться полностью; их условия лишь часто приближённо выполняются.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: ряды дебита скважины и давления (забойного, пластового) во времени.; Гипотеза модели: сведения о закачке или водонапорном режиме, поддерживающем давление.. На выходе: Вывод интерпретатора: признак «давление не меняется со временем» (∂p/∂t ≈ 0) и выбор режима для расчёта.; Гипотеза модели: значение p_e на внешнем радиусе — это допущение модели, а не прямое измерение.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Автор: режимы могут никогда не реализоваться полностью (дебит и граница медленно меняются).; Автор: смена дебита (ремонт, выравнивание отбора) даёт короткий переходный период.; Гипотеза модели: без поддержки давления (воды или закачки) допущение открытой границы не выполняется.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Очередь в стабильном режиме: скорость входа заявок равна скорости обработки, длина очереди не растёт. Это как установившееся состояние системы.",
+    "breaks_where": "Нагрузка в ИТ меняется случайно, а здесь автор допускает точное равенство при постоянном дебите.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: стационарные формулы применяют к скважинам при заводнении или активном водонапорном режиме; в симуляторах границу задают постоянным давлением или связью с водоносным пластом.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Стационарный режим",
+    "Открытая внешняя граница",
+    "Естественный напор воды",
+    "Стабилизированное течение"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n11",
+   "order": 11,
+   "title": "Раскрываем левую часть уравнения",
+   "why_here": {
+    "text": "Перед выбором допущений нужно видеть все члены левой части, чтобы понять, какие из них можно убрать.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Ф",
+    "secondary": null
+   },
+   "threshold": false,
+   "pages": [
+    78,
+    78
+   ],
+   "layers": {
+    "topic": {
+     "text": "Radial differential equation for fluid flow, §5.4 Linearization",
+     "by_model": true
+    },
+    "main": {
+     "text": "Автор упрощает уравнение (5.1) для жидкости, то есть для недонасыщенной нефти, и начинает с раскрытия левой части по цепному правилу. Получается сумма четырёх слагаемых (5.16); производную плотности по r заменяют через сжимаемость, и в (5.18) появляется член с (∂p/∂r)². Здесь только алгебра раскрытия: какие члены убрать, автор решает позже, через допущения.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Левую часть (5.1) раскрывают по цепному правилу и получают четыре слагаемых (5.16). Производную плотности по r заменяют через c и ∂p/∂r по (5.17), и появляется член с (∂p/∂r)² (5.18).",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Эта форма — основа для следующего шага: при допущениях о жидкости часть членов удаляют и получают линейное уравнение.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Всё относится к жидкости (недонасыщенной нефти). Простую линеаризацию автор связывает с допущениями о флюиде. В распознанном тексте есть вероятные опечатки: ∂p вместо ∂ρ в (5.16) и (5.17).",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Уравнение (5.1) и сжимаемость (5.4) — шаг 5",
+      "by_model": true
+     },
+     {
+      "text": "Допущения для жидкости и уравнение (5.19)–(5.20) — следующий шаг",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n11#c1",
+     "text": "Простую линеаризацию (5.1) получают, удаляя часть членов. Какие члены удалять, зависит от допущений о природе флюида.",
+     "kind": "inference",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "A simple linearization of equ. (5.1) can be obtained by deletion of some of the terms, dependent upon making various assumptions concerning the nature of fluid for which solutions are being sought.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n11#c2",
+     "text": "В разделе рассматривается жидкость. На практике это течение недонасыщенной нефти.",
+     "kind": "assumption",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "In this section the fluid considered will be a liquid which, in a practical sense, will apply to the flow of undersaturated oil.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n11#c3",
+     "text": "Левую часть (5.1) раскрывают по цепному правилу дифференцирования.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "Expanding the left hand side of equ. (5.1), using the chain rule for differentiation gives",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n11#c4",
+     "text": "В (5.16) последние два слагаемых в скобках — (kρ/μ)∂p/∂r и (kρ/μ) r ∂²p/∂r². Правая часть равна φcρ ∂p/∂t. Второе слагаемое в распознанном тексте напечатано с ∂p/∂r, там возможна ошибка распознавания.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "\\frac{k \\rho}{\\mu} r \\frac{\\partial^2 p}{\\partial r^2} \\right] = \\phi c \\rho \\frac{\\partial p}{\\partial t} \\tag{5.16}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n11#c5",
+     "text": "Уравнение (5.4) дифференцируют по r.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "and differentiating equ. (5.4) with respect to r gives",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n11#c6",
+     "text": "Результат — (5.17): cρ ∂p/∂r равно производной по r величины, стоящей справа. В распознанном тексте это ∂p/∂r, по смыслу замены — производная плотности.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "c \\rho \\frac{\\partial p}{\\partial r} = \\frac{\\partial p}{\\partial r} \\tag{5.17}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n11#c7",
+     "text": "Подстановка (5.17) в (5.16) меняет (5.16) и даёт (5.18).",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "which when substituted into equ. (5.16) changes the latter to",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n11#c8",
+     "text": "В (5.18) второе слагаемое принимает вид (k/μ) c ρ r (∂p/∂r)², с квадратом градиента давления.",
+     "kind": "observation",
+     "page_pdf": 78,
+     "page_print": null,
+     "quote": "\\frac{k}{\\mu} c \\rho r \\left( \\frac{\\partial p}{\\partial r} \\right)^2 + \\frac{k \\rho}{\\mu} \\frac{\\partial p}{\\partial r}",
+     "source_kind": "formula",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n05"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Раскрытие левой части (5.16)–(5.18) уже упрощает уравнение: члены пропали или стали равны нулю. На самом деле: На этом шаге ничего не отброшено. Автор только раскрыл производные и заменил производную плотности через сжимаемость. Члены удаляют позже, после допущений.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: профили давления p(r, t) из замеров или модели.; Гипотеза модели: свойства k, μ, ρ, φ, c из керна и лабораторных замеров флюида.. На выходе: Уравнение (5.18), где зависимость от плотности записана через сжимаемость c и градиент давления.; Гипотеза модели: исходная форма для последующего отбрасывания малых членов.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Гипотеза модели: если k/μ меняется с r, первое слагаемое нельзя считать нулём.; Гипотеза модели: если сжимаемость не мала и не постоянна, связь (5.17) и дальнейшие упрощения теряют смысл.; Опечатки распознавания (∂p вместо ∂ρ) легко сломать при переносе формул в код.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Рефакторинг: сначала разворачиваем вызов функции (inline), заменяем вложенную зависимость через известное тождество, и только потом упрощаем код.",
+    "breaks_where": "В коде уравнение не вычисляется, а в книге каждая замена опирается на физический закон.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: сейчас такие выкладки проверяют в системах компьютерной алгебры, а уравнение решают численно в симуляторах пласта.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Линеаризация",
+    "Цепное правило",
+    "Недонасыщенная нефть"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n12",
+   "order": 12,
+   "title": "Допущения для жидкости: уравнение диффузии",
+   "why_here": {
+    "text": "Прежде чем проверять условие cp ≪ 1 и решать уравнение, нужно получить из (5.18) простое линейное уравнение диффузии.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Н",
+    "secondary": "Ф"
+   },
+   "threshold": true,
+   "pages": [
+    79,
+    79
+   ],
+   "layers": {
+    "topic": {
+     "text": "Radial differential equation for fluid flow (гл. 5, §5.4)",
+     "by_model": true
+    },
+    "main": {
+     "text": "Для жидкости принимают два допущения: вязкость μ постоянна, а градиент давления мал, поэтому члены порядка (∂p/∂r)² отбрасывают; два первых члена левой части (5.18) исчезают, остаются (5.19) и (5.20). Если сжимаемость ещё и постоянна, коэффициент φμc/k постоянен, и уравнение становится линейным. Автор предупреждает: такая линеаризация «удалением» работает только при условии на произведение cp, которое разбирается дальше.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Если μ и c постоянны, а градиент давления мал, нелинейные члены пропадают. Остаётся линейное уравнение с постоянным коэффициентом φμc/k.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Автор называет такие допущения для жидкости обычными и часто применявшимися; результат — радиальное уравнение диффузии (5.20).",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Допущения принимаются без доказательства. Линеаризация удалением требует осторожности и условия на cp (Дранчук и Куон); сжимаемость должна быть не только постоянной, но и малой (это развивается далее).",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Гл. 5, §5.4: условие (5.21) и общая сжимаемость (5.22)",
+      "by_model": true
+     },
+     {
+      "text": "Гл. 5, §5.4: произведение φc и диффузионная постоянная",
+      "by_model": true
+     },
+     {
+      "text": "Гл. 8, §§2–4: линеаризация для газа",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n12#c1",
+     "text": "Для жидкости принимают, что вязкость μ практически не зависит от давления и постоянна.",
+     "kind": "assumption",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "the viscosity $\\mu$ is practically independent of pressure and may be regarded as a constant",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n12#c2",
+     "text": "Для жидкости принимают, что градиент давления мал, поэтому члены порядка (∂p/∂r)² отбрасывают.",
+     "kind": "assumption",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "the pressure gradient $\\partial p/\\partial r$ is small and therefore, terms of the order $(\\partial p/\\partial r)^2$ can be neglected.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n12#c3",
+     "text": "Из двух допущений следует, что первые два члена левой части (5.18) исчезают, и уравнение упрощается.",
+     "kind": "inference",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "These two assumptions eliminate the first two terms in the left hand side of equ. (5.18), reducing the latter to",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n12#c4",
+     "text": "Упрощённое уравнение (5.19): левая часть — вторая производная давления по r плюс (1/r) первой производной; правая — (φμc/k)∂p/∂t.",
+     "kind": "inference",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "\\frac{\\partial^2 p}{\\partial r^2} + \\frac{1}{r} \\frac{\\partial p}{\\partial r} = \\frac{\\phi \\mu c}{k} \\frac{\\partial p}{\\partial t} \\tag{5.19}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n12#c5",
+     "text": "Та же запись в компактной форме (5.20): левая часть как (1/r)∂/∂r(r∂p/∂r).",
+     "kind": "inference",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "\\frac{1}{r} \\frac{\\partial}{\\partial r} \\left( r \\frac{\\partial p}{\\partial r} \\right) = \\frac{\\phi \\mu c}{k} \\frac{\\partial p}{\\partial t} \\tag{5.20}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n12#c6",
+     "text": "Если сжимаемость постоянна, коэффициент φμc/k постоянен, и основное уравнение эффективно линеаризовано.",
+     "kind": "assumption",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "Making one final assumption, that the compressibility is constant, means that the coefficient $\\phi \\mu c/k$ is also constant and therefore, the basic equation has been effectively linearized.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n12#c7",
+     "text": "Для течения жидкостей эти допущения вполне разумны и часто применялись.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "For the flow of liquids the above assumptions are quite reasonable and have been frequently applied in the past.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n12#c8",
+     "text": "По Дранчуку и Куону, простую линеаризацию удалением членов надо применять осторожно: она годится только при условии на произведение cp (дальше в тексте — (5.21)).",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "however, have shown that this simple linearization by deletion must be treated with caution and can only be applied when the product",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n11"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Линейное уравнение (5.20) точно описывает жидкость при любых условиях, раз все члены «убраны законно». На самом деле: Это допущения, а не точный вывод: μ постоянна, градиент мал, c постоянна. Дранчук и Куон требуют осторожности и условия на cp.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: профиль или ряд давления p(r, t) из замеров в скважине или модели.; Гипотеза модели: оценки φ, μ, c, k для пласта и флюида.. На выходе: Линейное уравнение диффузии (5.20) с постоянным коэффициентом φμc/k для давления.; Гипотеза модели: такое уравнение можно решать аналитически и использовать при расчётах.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Если вязкость заметно зависит от давления, первое допущение нарушено.; Если градиент давления не мал, отброшенные члены (∂p/∂r)² могут стать существенными.; Если сжимаемость не мала и не постоянна, простая линеаризация требует осторожности (Дранчук и Куон).",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Линеаризация похожа на замену нелинейной функции первым членом разложения: код становится простым, а работает только около рабочей точки.",
+    "breaks_where": "Здесь не разложение в ряд, а отбрасывание членов по допущениям, плюс условие применимости cp.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: в современных симуляторах и интерпретации испытаний скважин используют и линейное уравнение диффузии, и численные модели, где свойства флюида меняются с давлением.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "линеаризация удалением",
+    "градиент давления",
+    "радиальное уравнение диффузии",
+    "постоянная сжимаемость"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n13",
+   "order": 13,
+   "title": "Проверка условия cp ≪ 1 на числах",
+   "why_here": {
+    "text": "После вывода уравнения диффузии (5.20) нужно проверить числами, что допущение о малой постоянной сжимаемости верно, прежде чем решать его.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Н",
+    "secondary": "Ф"
+   },
+   "threshold": false,
+   "pages": [
+    79,
+    79
+   ],
+   "layers": {
+    "topic": {
+     "text": "Глава 5. Радиальное дифференциальное уравнение течения флюида, §5.4 Total compressibility",
+     "by_model": true
+    },
+    "main": {
+     "text": "Простая линеаризация уравнения для жидкости допустима только при cp ≪ 1, когда сжимаемость постоянна и мала. В уравнении (5.20) стоит полная сжимаемость системы «пласт + жидкость»: c_t = c_o S_o + c_w Swc + c_f. На типичных числах автора cp = 0.04 и условие выполнено, а для реального газа cp равно единице.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Простая линеаризация отбрасывает слагаемые уравнения и допустима только при cp ≪ 1. Поэтому считают c_t по (5.22) и произведение с давлением.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Берут c_o, c_w, c_f и насыщенности, считают c_t и cp и сравнивают с единицей. Для системы с типичными числами автора (cp = 0.04) простая линеаризация подходит. Для реального газа (cp равно единице) нужно интегральное преобразование.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Условие необходимое; порог «≪» не задан числом. S_o в тексте не названа. Значения «типичные», а не измеренные в конкретном пласте. Сжимаемость должна быть и постоянной, и малой.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 8, разделы 2–4: линеаризация для реального газа",
+      "by_model": true
+     },
+     {
+      "text": "Глава 3, уравнение (3.19): сжимаемость для углеводородного порового объёма",
+      "by_model": true
+     },
+     {
+      "text": "Дранчук и Куон, 1967 (список литературы главы)",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n13#c1",
+     "text": "Дранчук и Куон показали: простую линеаризацию «вычёркиванием» нужно применять осторожно, и она допустима только при условии cp ≪ 1 (5.21).",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "Dranchuk and Quon$^3$, however, have shown that this simple linearization by deletion must be treated with caution and can only be applied when the product",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c2",
+     "text": "Из условия (5.21) следует, что последнее допущение уточняется: сжимаемость должна быть и постоянной, и малой.",
+     "kind": "inference",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "This condition makes it necessary to modify the final assumption so that the compressibility is not just constant but both small and constant.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c3",
+     "text": "Сжимаемость в уравнении (5.20) — полная (взвешенная по насыщенности) сжимаемость всей системы «пласт — жидкость».",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "The compressibility appearing in equ. (5.20) is the total, or saturation weighted, compressibility of the entire reservoir-liquid system",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c4",
+     "text": "В формуле (5.22) насыщенности выражены долями порового объёма; далее автор берёт типичные значения компонентов.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "in which the saturations are expressed as fractions of the pore volume. Using typical figures for the components of equ. (5.22)",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c8",
+     "text": "Полная сжимаемость: c_t = c_o S_o + c_w Swc + c_f (5.22).",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "c_t = c_o S_o + c_w S_{wc} + c_f \\tag{5.22}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c10",
+     "text": "Типичные значения: сжимаемость нефти 10 × 10−6/psi, связанная водонасыщенность 0.2.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "c_o = 10 \\times 10^{-6} / \\text{psi} & S_{wc} = 0.2",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c11",
+     "text": "Типичные значения: сжимаемость воды 3 × 10−6/psi, давление 3000 psi.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "c_w = 3 \\times 10^{-6} / \\text{psi} & p = 3000 \\text{ psi}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c5",
+     "text": "Автор получает c_t = 14.6 × 10−6/psi и cp = 0.04; условие для простой линеаризации выполнено.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "then $c_t$ in equ. (5.22) has the value $14.6 \\times 10^{-6} / \\text{psi}$ and the product expressed by equ. (5.21) has the value 0.04, which satisfies the necessary condition for this simple linearization to be valid.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c6",
+     "text": "При более высокой полной сжимаемости уравнение (5.1) нужно линеаризовать через интегральное преобразование (по Дранчуку и Куону).",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "However, when dealing with reservoir systems which have a higher total compressibility it will be necessary to linearize equ. (5.1) using some form of integral transformation as detailed by Dranchuk and Quon.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c7",
+     "text": "Для реального газа сжимаемость в первом приближении равна 1/p, поэтому произведение cp равно единице; такой подход нужен и там.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "the compressibility of the gas alone may, to a first approximation, be expressed as the reciprocal of the pressure and the cp product, equ. (5.21), will itself be unity.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n13#c12",
+     "text": "Сжимаемость породы c_f = 6 × 10−6/psi — типичное значение автора.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "c_f = 6 \\times 10^{-6} / \\text{psi} & \\end{array}",
+     "source_kind": "formula",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "example_of",
+     "target": "test-dake.n12"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Раз в уравнении диффузии сжимаемость постоянна, линеаризация годится для любой системы, включая газ. На самом деле: Для системы пласт — жидкость с типичными значениями автора (c_t = 14.6 × 10−6/psi, p = 3000 psi) cp = 0.04, и условие выполнено. При более высокой полной сжимаемости нужна линеаризация через интегральное преобразование.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Сжимаемости нефти, воды и породы c_o, c_w, c_f (в книге — «типичные значения», не измерения конкретного пласта); Связанная водонасыщенность Swc = 0.2 и давление p = 3000 psi; Гипотеза модели: в реальной работе эти величины берут из лабораторных замеров керна и пробы флюидов и из замеров пластового давления. На выходе: Полная сжимаемость c_t = 14.6 × 10−6/psi — расчётная величина, не замер; Проверочное число cp = 0.04 и вывод: условие (5.21) выполнено; Гипотеза модели: флаг «линеаризация допустима / нужна другая»",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "S_o в тексте не задана; пересчёт c_t опирается на допущение S_o = 1 − Swc; Если сжимаемость выше или система — газ (c ≈ 1/p), простая линеаризация не годится; Книга не говорит, где «≪» превращается в «не ≪»: порог не задан, 0.04 просто признано достаточным; Гипотеза модели: единицы 1/psi и psi нужно держать согласованными, иначе cp окажется неверным",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Это проверка предусловия (assert) перед применением быстрого алгоритма: если cp не мало, линейный решатель использовать нельзя. Надо переключиться на более общий метод. Гипотеза модели.",
+    "breaks_where": "Assert даёт точный булев результат. Здесь «≪» — оценка по порядку величины без заданного порога.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: в современных симуляторах и интерпретации испытаний нелинейность по давлению часто учитывают через псевдодавление и псевдовремя для газа, а для жидкости применяют линейную модель при малой сжимаемости.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Полная сжимаемость",
+    "Условие cp ≪ 1",
+    "Линеаризация вычёркиванием",
+    "Связанная водонасыщенность",
+    "Интегральное преобразование"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": {
+    "features": [
+     "Полная сжимаемость c_t по (5.22)",
+     "Давление p",
+     "Произведение cp",
+     "Тип флюида: жидкость или реальный газ"
+    ],
+    "rule": "Простая линеаризация для жидкости применима, только если cp ≪ 1 и сжимаемость постоянна и мала (5.21).",
+    "conclusion": "На числах автора c_t = 14.6 × 10−6/psi, p = 3000 psi, cp = 0.04: условие выполнено, линеаризация допустима.",
+    "counterexample": "Реальный газ: сжимаемость ≈ 1/p, поэтому cp равно единице, и условие нарушено. Нужна линеаризация через интегральное преобразование (глава 8, разделы 2–4). То же — при более высокой полной сжимаемости системы."
+   },
+   "worked_examples": [
+    {
+     "page_pdf": 79,
+     "condition": "Пример 1. c_o = 10 × 10−6/psi, c_w = 3 × 10−6/psi, c_f = 6 × 10−6/psi, Swc = 0.2, p = 3000 psi.",
+     "steps": [
+      "Записать (5.22): c_t = c_o S_o + c_w Swc + c_f.",
+      "Взять S_o = 1 − Swc = 0.8 (вывод читателя: автор S_o не называет).",
+      "Нефть: 10 × 0.8 = 8 (в единицах 10−6/psi).",
+      "Вода: 3 × 0.2 = 0.6.",
+      "Порода: 6.",
+      "Сумма: 8 + 0.6 + 6 = 14.6, то есть c_t = 14.6 × 10−6/psi — как у автора.",
+      "Умножить на давление: 14.6 × 10−6 × 3000 = 0.0438 ≈ 0.04 (автор: 0.04).",
+      "Сравнить с условием (5.21): 0.04 ≪ 1."
+     ],
+     "result": "c_t = 14.6 × 10−6/psi, cp = 0.04. Условие выполнено, простая линеаризация для этой системы допустима.",
+     "figure": null
+    }
+   ],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n14",
+   "order": 14,
+   "title": "Пористость, сжимаемость и аналогия с теплом",
+   "why_here": {
+    "text": "Шаг завершает §5.4: после линеаризации он фиксирует, как читать φc, и называет уравнение диффузии, решения которого понадобятся дальше.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Ф",
+    "secondary": "Р"
+   },
+   "threshold": false,
+   "pages": [
+    79,
+    79
+   ],
+   "layers": {
+    "topic": {
+     "text": "5.4 φc product, diffusivity constant, References",
+     "by_model": true
+    },
+    "main": {
+     "text": "Произведение пористости φ на сжимаемость c записывают двумя способами, (5.23) и (5.24): значение одно, но множители смешивать нельзя. Уравнение (5.20) называется радиальным уравнением диффузии, а его коэффициент k/φμc — постоянной диффузии (diffusivity constant). Такие уравнения встречаются в физике, например в теплопроводности, поэтому статьи по разработке пластов ссылаются на книгу Карслоу и Егера.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Множитель (1 − Swc) умножает пористость и делит сжимаемость, поэтому произведение φc не меняется. Уравнение (5.20) по форме совпадает с уравнением радиальной теплопроводности.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Для φc берут согласованную пару множителей. За сложными решениями уравнения диффузии обращаются к книге Carslaw и Jaeger с решениями для разных граничных и начальных условий.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Запись (5.23) опирается на допущение о насыщении одним флюидом; (5.24) учитывает связанную воду. В распознанном тексте у Dranchuk и Quon стоит надстрочная цифра 3, а в списке литературы они идут под номером 2; номер 3 — Carslaw и Jaeger.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 3, уравнение (3.19): сжимаемость, используемая с углеводородным поровым объёмом",
+      "by_model": true
+     },
+     {
+      "text": "Carslaw и Jaeger, 1959, «Conduction of Heat in Solids»",
+      "by_model": true
+     },
+     {
+      "text": "Dranchuk и Quon, 1967: условия применимости простой линеаризации",
+      "by_model": true
+     },
+     {
+      "text": "Matthews, Brons и Hazebroek, 1954: среднее давление в ограниченном пласте",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n14#c1",
+     "text": "Произведение φ и c во всех уравнениях этой и следующих глав по соглашению записывают в виде (5.23).",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "Before leaving the subject of compressibility, it should be noted that the product of $\\phi$ and c in all the equations, in this and the following chapters, is conventionally expressed as",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c2",
+     "text": "При выводе (5.1) принято, что пористая среда полностью насыщена одним флюидом; это подразумевает абсолютную пористость.",
+     "kind": "assumption",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "since it was assumed in deriving equ. (5.1) that the porous medium was completely saturated with a single fluid thus implying the use of the absolute porosity.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c3",
+     "text": "Другой вариант: с учётом насыщенности связанной водой произведение φc можно толковать в виде (5.24).",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "Alternatively, allowing for the presence of a connate water saturation, the $\\phi c$ product can be interpreted as",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c4",
+     "text": "φabsolute(1 − Swc) — эффективная углеводородная пористость, а сжимаемость в (5.24) эквивалентна выведенной в (3.19) и используется с углеводородным поровым объёмом.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "in which $\\phi_{\\text{absolute}} (1 - S_{wc})$ is the effective, hydrocarbon porosity, and the compressibility is equivalent to that derived in Chapter 3, equ. (3.19), which is used in conjunction with the hydrocarbon pore volume.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c5",
+     "text": "Произведения в (5.23) и (5.24) равны по значению, но отдельные члены этих уравнений нельзя смешивать.",
+     "kind": "inference",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "In either event, the products expressed in equ. (5.23) and (5.24) have the same value, the reader must only be careful not to mix the individual terms appearing in the separate equations.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c6",
+     "text": "Уравнение (5.20) — радиальное уравнение диффузии, коэффициент k/φμc называют постоянной диффузии.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "Equation (5.20) is the radial diffusivity equation in which the coefficient $k/\\phi \\mu c$ is called the diffusivity constant.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c7",
+     "text": "Такое уравнение часто применяют в физике, например для распределения температуры при радиально-симметричной теплопроводности.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "This is an equation which is frequently applied in physics, for instance, the temperature distribution due to the conduction of heat in radial symmetry would be described by the equation",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c8",
+     "text": "В тепловом уравнении T — абсолютная температура, K — постоянная температуропроводности.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "in which T is the absolute temperature and K the thermal diffusivity constant.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c9",
+     "text": "Из-за общего характера (5.20) многие статьи по разработке пластов при сложных решениях ссылаются на книгу Карслоу и Егера.",
+     "kind": "inference",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "Because of the general nature of equ. (5.20) it is not surprising that many reservoir engineering papers, when dealing with complex solutions of the diffusivity equation, make reference to a text book entitled \"Conduction of Heat in Solids\", by Carslaw and Jaeger$^3$",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c10",
+     "text": "Книга даёт решения уравнения для множества граничных и начальных условий и считается стандартной в разработке пластов.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "which gives the solutions of the equation for a large variety of boundary and initial conditions and is regarded as a standard text in reservoir engineering.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c11",
+     "text": "Источник 1: Matthews, Brons и Hazebroek, 1954, метод определения среднего давления в ограниченном пласте.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "Matthews, C.S., Brons, F. and Hazebroek, P., 1954. A Method for Determination of Average Pressure in a Bounded Reservoir. Trans. AIME. 201: 182-191.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c12",
+     "text": "Источник 2: Dranchuk и Quon, 1967, анализ уравнения неразрывности с законом Дарси.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "Dranchuk, P.M. and Quon, D., 1967. Analysis of the Darcy Continuity Equation. Producers Monthly, October: 25-28.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n14#c13",
+     "text": "Источник 3: Carslaw и Jaeger, 1959, «Теплопроводность в твёрдых телах», 2-е издание.",
+     "kind": "observation",
+     "page_pdf": 79,
+     "page_print": null,
+     "quote": "Carslaw, H.S. and Jaeger, J.C., 1959. Conduction of Heat in Solids. Oxford at the Clarendon Press, (2nd edition).",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n12"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Взять пористость из одной записи, а сжимаемость из другой: например, φabsolute умножить на сжимаемость, уже делённую на (1 − Swc). На самом деле: Брать оба множителя из одной формулы: φabsolute с (coSo + cwSwc + cf) или φabsolute(1 − Swc) с той же суммой, делённой на (1 − Swc).",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Абсолютная пористость φabsolute; Насыщенности So и Swc в долях порового объёма; Сжимаемости co, cw, cf; Проницаемость k и вязкость μ для постоянной диффузии; Гипотеза модели: пористость и насыщенности обычно получают интерпретацией замеров, а не прямым измерением прибором. На выходе: Произведение φc в записи (5.23) или (5.24); Постоянная диффузии k/φμc для уравнения (5.20)",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Смешаны множители из (5.23) и (5.24): произведение уже не то; Простая линеаризация требует cp ≪ 1; при большей сжимаемости, например для реального газа, нужен другой способ; Гипотеза модели: в таблице колонка «пористость» может не говорить, абсолютная она или углеводородная; Гипотеза модели: насыщенности в процентах вместо долей исказят сумму сжимаемостей",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Один решатель с параметрами работает на разных предметных данных. Уравнению всё равно, подставили в него давление с k/φμc или температуру с K. Пара (5.23)/(5.24) похожа на две схемы нормировки: числитель и знаменатель должны относиться к одной базе.",
+    "breaks_where": "Переносить решение можно, только если совпадают начальные и граничные условия и выполнены допущения линеаризации. Одинаковая форма уравнения не делает физику одинаковой.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: сегодня уравнение диффузии для сложных случаев часто решают численно в программах моделирования пласта. Аналитические решения по аналогии с теплопроводностью используют для проверки и быстрых оценок. Согласованность определений пористости и сжимаемости по-прежнему проверяют при подготовке входных данных.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": {
+    "inputs": "Пористость, насыщенности и сжимаемости компонентов",
+    "manual_steps": "Выбрать запись (5.23) или (5.24) и проследить, что оба множителя взяты из неё",
+    "judgment_points": "Определить, какая пористость имеется в виду: абсолютная или эффективная углеводородная",
+    "time": "не указано в главе",
+    "typical_errors": "Смешение отдельных членов из двух записей",
+    "by_model": true
+   },
+   "terms_introduced": [
+    "Абсолютная пористость",
+    "Насыщенность связанной водой",
+    "Эффективная углеводородная пористость",
+    "Радиальное уравнение диффузии",
+    "Постоянная диффузии",
+    "Постоянная температуропроводности"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n15",
+   "order": 15,
+   "title": "Три стадии падения давления",
+   "why_here": {
+    "text": "Перед выводом решения линейного источника (разд. 7.3) нужно увидеть, где на кривой падения давления оно применимо: на переходной стадии.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "В",
+    "secondary": "И"
+   },
+   "threshold": true,
+   "pages": [
+    87,
+    87
+   ],
+   "layers": {
+    "topic": {
+     "text": "Oilwell Testing, гл. 7.2: решение при постоянном дебите (конец)",
+     "by_model": true
+    },
+    "main": {
+     "text": "При постоянном дебите падение давления обычно делится на три стадии: переходную (пласт «бесконечный»), позднюю переходную (начинает влиять граница) и в конце стабилизированный поток, который для границы «без потока» является полустационарным (скорость изменения забойного давления постоянна). Полное решение для всех времён дали Херст и Ван Эвердинген в 1949 г.; оно очень сложное из-за поздней переходной стадии, а для переходного и полустационарного потока есть относительно простые решения (разд. 7.3). Решение при постоянном дебите — базовое уравнение анализа давления: из него суперпозицией теоретически строят отклик на любую последовательность дебитов (разд. 7.5).",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Сначала давление у ствола не зависит от границы дренирования, и пласт кажется бесконечным. Потом влияние границы начинает ощущаться. В конце поток стабилизируется; для границы «без потока» давление на забое меняется с постоянной скоростью.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Стадия определяет, какое решение применять. Суперпозиция решений для постоянного дебита теоретически описывает давление при любой последовательности дебитов и служит общим методом анализа исследований скважин.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Простые решения есть для переходного и полустационарного потока. Полное решение Херста и Ван Эвердингена (ур. 7.34) сложное из-за поздней переходной стадии; для границы «без потока» важны форма области и положение скважины.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Разд. 7.3: простые решения для переходного и полустационарного потока",
+      "by_model": true
+     },
+     {
+      "text": "Разд. 7.5: суперпозиция",
+      "by_model": true
+     },
+     {
+      "text": "Гл. 5, разд. 3(b): полустационарный режим",
+      "by_model": true
+     },
+     {
+      "text": "Гл. 9: постоянное давление и приток воды",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n15#c1",
+     "text": "Решение при постоянном дебите — уравнение зависимости pref от времени t при добыче с постоянным дебитом, для любого времени работы.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The constant terminal rate solution is therefore the equation of $p_{\\text{ref}}$ versus t for constant rate production for any value of the flowing time.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c2",
+     "text": "Падение давления обычно делится на три участка в зависимости от времени работы и геометрии дренируемой области.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The pressure decline, fig. 7.1(b), can normally be divided into three sections depending on the value of the flowing time and the geometry of the reservoir or part of the reservoir being drained by the well.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c3",
+     "text": "Сначала отклик можно описать переходным решением уравнения диффузии; в этот период принимается, что ствол и граница дренирования не влияют друг на друга.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "Initially, the pressure response can be described using a transient solution of the diffusivity equation. It is assumed during this period that the pressure response at the wellbore is not affected by the drainage boundary of the well and vice versa.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c4",
+     "text": "Переходный период часто называют случаем бесконечного пласта: в это время пласт кажется бесконечным.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "This is frequently referred to as the infinite reservoir case since, during the transient flow period, the reservoir appears to be infinite in extent.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c5",
+     "text": "За переходной стадией следует поздний переходный период, когда начинает ощущаться влияние границы дренирования.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The transient phase is followed by the so-called late transient period during which the influence of the drainage boundary begins to be felt.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c6",
+     "text": "Для скважины внутри границы «без потока» форма области и положение скважины относительно границы очень важны при выборе решения поздней переходной стадии.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "For a well producing from within a no-flow boundary both the shape of the area drained and position of the well with respect to the boundary are of major importance in determining the appropriate late transient constant terminal rate solution.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c7",
+     "text": "В итоге устанавливается стабилизированный поток: для границы «без потока» скорость изменения забойного давления во времени постоянна.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "Eventually, stabilised flow conditions will prevail which means that for the no-flow boundary case the rate of change of wellbore pressure with respect to time is constant.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c8",
+     "text": "Эта стабилизированная стадия соответствует полустационарному режиму из гл. 5, разд. 3(b).",
+     "kind": "inference",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "This corresponds to the semi steady state condition described in Chapter 5, sec 3(b).",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c9",
+     "text": "Решение для всех времён работы впервые представили отрасли Херст и Ван Эвердинген в 1949 г.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The constant terminal rate solution, for all values of the flowing time, was first presented to the Industry by Hurst and Van Everdingen in 1949.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c10",
+     "text": "Авторы решили радиальное уравнение диффузии преобразованием Лапласа для случаев постоянного дебита и постоянного давления.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "the authors solved the radial diffusivity equation using the Laplace transform for both the constant terminal rate and constant terminal pressure cases.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c11",
+     "text": "Случай постоянного давления относится к расчётам притока воды и будет описан в гл. 9.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The latter, which is relevant to water influx calculations, will be described in Chapter 9.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c12",
+     "text": "Полное решение Херста и Ван Эвердингена (ур. 7.34) очень сложное; в нём есть бесконечная сумма функций Бесселя.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The full Hurst and Van Everdingen solution, equ. 7.34, is a most intimidating mathematical equation which contains as one of its components an infinite summation of Bessel functions.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c13",
+     "text": "Сложность вызвана откликом в позднюю переходную стадию; для переходного и полустационарного потока получаются относительно простые решения (разд. 7.3).",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The complexity is due to the wellbore pressure response during the late transient period, since for transient and semi steady state flow relatively simple solutions can be obtained which will be described in sec. 7.3.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c14",
+     "text": "Суперпозицией таких решений (разд. 7.5) давление на забое теоретически описывается для любой последовательности дебитов, действующих разное время.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "By superposition of such solutions, as will be shown in sec. 7.5, the pressure response at the wellbore can be theoretically described for any sequence of different rates acting for different periods of time",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c15",
+     "text": "Это общий метод анализа любого вида исследования нефтяной или газовой скважины.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "and this is the general method employed in the analysis of any form of oil or gas well test.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n15#c16",
+     "text": "Автор считает сложность полного решения досадной, так как решение при постоянном дебите можно считать базовым уравнением анализа забойного давления.",
+     "kind": "inference",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The fact that the full solution is so complex is rather unfortunate since the constant terminal rate solution of the radial diffusivity equation can be regarded as the basic equation in wellbore pressure analysis techniques.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n07"
+    },
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n08"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Давление на забое при постоянном дебите падает по одному закону на всём протяжении. На самом деле: Падение обычно делится на три участка: переходный, поздний переходный и стабилизированный. Решение зависит от времени работы и геометрии дренируемой области.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Гипотеза модели: ряд забойного давления во времени (замеры манометра) при постоянном дебите; Гипотеза модели: дебит q и свойства пласта и флюида. На выходе: Гипотеза модели: разметка кривой на три стадии — переходная, поздняя переходная, стабилизированная; Выбор подходящего решения для стадии; суперпозиция для переменных дебитов (разд. 7.5)",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Для границы «без потока» форма области дренирования и положение скважины определяют решение поздней переходной стадии; Представление о «бесконечном» пласте принято только пока граница не влияет на давление у ствола; Гипотеза модели: на реальных данных дебит не бывает строго постоянным, и стадии размываются",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Три режима отклика системы на постоянную нагрузку: сначала кэш и очереди не заполнены, потом упираемся в лимит ресурсов, потом устанавливается постоянный темп деградации.",
+    "breaks_where": "Аналогия нестрогая: в пласте стадии задаются диффузией давления и геометрией, а не очередями и лимитами.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: сегодня тест-интерпретацию делают в специальном ПО, где подбирают модель пласта и границ под записанную кривую давления.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Решение при постоянном дебите",
+    "Время работы (потока)",
+    "Переходная стадия",
+    "Случай бесконечного пласта",
+    "Поздняя переходная стадия",
+    "Граница «без потока»",
+    "Стабилизированный поток",
+    "Преобразование Лапласа",
+    "Функции Бесселя",
+    "Суперпозиция"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n16",
+   "order": 16,
+   "title": "Условия задачи линейного источника",
+   "why_here": {
+    "text": "После уравнения диффузии (шаг 12) и стадий падения давления (шаг 15) здесь задают условия для переходной стадии, без которых нельзя начать решение.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Н",
+    "secondary": "Ф"
+   },
+   "threshold": false,
+   "pages": [
+    87,
+    87
+   ],
+   "layers": {
+    "topic": {
+     "text": "7.3 Line source conditions, equ. (7.1)",
+     "by_model": true
+    },
+    "main": {
+     "text": "В начальный переходный период скважину считают линией и задают для давления три условия (7.1): начальное, внешнее и внутреннее. Допущения вывода радиального уравнения из главы 5 сохраняются, поэтому решение применимо к течению недонасыщенной нефти. При этих условиях уравнение (5.20) решают с помощью замены переменной Больцмана.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Радиус ствола пренебрегают и считают скважину линией. Давление задают до пуска, на бесконечности и в пределе r → 0, после чего (5.20) решают заменой Больцмана.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Этими условиями определяют задачу, решение которой описывает давление в начальный переходный период при постоянном дебите.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Только начальный переходный период; сохраняются допущения главы 5; применимость — течение недонасыщенной нефти; многие ограничения автор снимает позже.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Раздел 5.2: вывод радиального уравнения и его допущения",
+      "by_model": true
+     },
+     {
+      "text": "Раздел 5.4: уравнение диффузии (5.20)",
+      "by_model": true
+     },
+     {
+      "text": "Раздел 7.5: суперпозиция решений для последовательности разных дебитов",
+      "by_model": true
+     },
+     {
+      "text": "Уравнение 7.34: полное решение Хёрста и Ван Эвердингена",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n16#c1",
+     "text": "В начальный переходный период решение с постоянным дебитом, найденное преобразованием Лапласа, можно приближённо заменить решением линейного источника.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "During the initial transient flow period, it has been found that the constant terminal rate solution of the radial diffusivity equation, determined using the Laplace transform, can be approximated by the so-called line source solution",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c2",
+     "text": "Решение линейного источника предполагает, что радиус ствола пренебрежимо мал по сравнению с кажущимся бесконечным пластом.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "line source solution which assumes that in comparison to the apparently infinite reservoir the wellbore radius is negligible",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c3",
+     "text": "Ствол скважины можно считать линией, и это значительно упрощает математику.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "and the wellbore itself can be treated as a line. This leads to a considerable simplification in the mathematics",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c4",
+     "text": "Условие (a): при t = 0 давление равно pi для всех r.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "a) $p = p_i$ at $t = 0$, for all $r$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c5",
+     "text": "Условие (b): на бесконечном радиусе давление равно pi для всех t.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "b) $p = p_i$ at $r = \\infty$, for all $t$ (7.1)",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c6",
+     "text": "Условие (c): при t > 0 предел r·∂p/∂r при r → 0 равен qμ/(2πkh).",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "c) $\\lim_{r \\to 0} r \\frac{\\partial p}{\\partial r} = \\frac{q\\mu}{2\\pi kh}$, for $t > 0$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c7",
+     "text": "Условие (a) начальное: до добычи давление всюду в объёме дренирования равно начальному равновесному давлению pi.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "Condition (a) is merely the initial condition that, before producing, the pressure everywhere within the drainage volume is equal to the initial equilibrium pressure $p_i$.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c8",
+     "text": "Условие (b) обеспечивает переходный режим: внешняя бесконечная граница и возмущение у ствола не влияют друг на друга.",
+     "kind": "inference",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "Condition (b) ensures the condition of transience, namely that the pressure at the outer, infinite boundary is not affected by the pressure disturbance at the wellbore and vice versa.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c9",
+     "text": "Условие (c) — внутреннее граничное условие линейного источника.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "Condition (c) is the line source inner boundary condition.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c10",
+     "text": "Сохраняются допущения главы 5: пласт однороден и изотропен, а скважина вскрывает его полностью, чтобы течение было радиальным.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "In addition, the assumptions made in deriving the radial diffusivity equation in Chapter 5 are retained. That is, that the formation is homogeneous and isotropic, and drained by a fully penetrating well to ensure radial flow;",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c11",
+     "text": "Жидкость должна иметь постоянную вязкость и малую постоянную сжимаемость.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "the fluid itself must have a constant viscosity and a small and constant compressibility.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c12",
+     "text": "Поэтому полученное решение будет применимо к течению недонасыщенной нефти.",
+     "kind": "inference",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The solution obtained will, therefore, be applicable to the flow of undersaturated oil.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c13",
+     "text": "После построения простой теории многие ограничения снимут, например рассмотрев неполное вскрытие и сильно сжимаемые флюиды.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "Having developed the simple theory of pressure analysis based on these assumptions, many of the restrictions will be removed by considering, for instance, the effects of partial well completion, the flow of highly compressible fluids, etc.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c14",
+     "text": "Эти изменения базовой теории вводятся постепенно в этой и следующей главе.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "These modifications to the basic theory will be gradually introduced in this and the following chapter.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c15",
+     "text": "При названных условиях уравнение диффузии можно решить с помощью преобразования Больцмана.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "can be solved by making use of Boltzmann's transformation",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c16",
+     "text": "Переменная Больцмана: s = r²/(4·(константа диффузии)·t) = φμcr²/(4kt).",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "$$s = \\frac{r^2}{4(\\text{Diffusivity constant})t} = \\frac{\\phi \\mu c r^2}{4kt}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c17",
+     "text": "Производная s по радиусу равна φμcr/(2kt).",
+     "kind": "inference",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "$$\\frac{\\partial s}{\\partial r} = \\frac{\\phi \\mu c r}{2kt} \\tag{7.2}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c18",
+     "text": "Производная s по времени равна −φμcr²/(4kt²).",
+     "kind": "inference",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "$$\\frac{\\partial s}{\\partial t} = - \\frac{\\phi \\mu c r^2}{4kt^2} \\tag{7.3}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n16#c19",
+     "text": "Переходный период часто называют случаем бесконечного пласта, так как пласт тогда кажется бесконечным по протяжённости.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "This is frequently referred to as the infinite reservoir case since, during the transient flow period, the reservoir appears to be infinite in extent.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n12"
+    },
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n15"
+    },
+    {
+     "type": "example_of",
+     "target": "test-dake.n06"
+    },
+    {
+     "type": "example_of",
+     "target": "test-dake.n07"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Решение линейного источника простое, значит, годится для любого времени, пласта и флюида. На самом деле: Это приближение для начального переходного периода при допущениях главы 5: однородный изотропный пласт, полное вскрытие, постоянная вязкость, малая постоянная сжимаемость.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Начальное равновесное давление pi; Постоянный дебит q, вязкость μ, проницаемость k, толщина пласта h; Пористость φ и сжимаемость c (входят в уравнение (5.20) и переменную s); Расстояние r и время t. На выходе: Постановка задачи: условия (a), (b), (c) для уравнения (5.20); Переменная s и её производные (7.2), (7.3) для дальнейшего решения; Само решение для давления на этом шаге ещё не получено",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Влияние границы дренирования начинает ощущаться: начальный переходный период заканчивается, и приближение выходит за свою область.; Пласт неоднороден или анизотропен, либо вскрыт не полностью: нарушены сохранённые допущения.; Вязкость непостоянна или флюид сильно сжимаем: базовая теория без изменений этого не учитывает.; Гипотеза модели: если до пуска давление не было равновесным, например из-за прежней добычи, условие (a) неверно.; Гипотеза модели: k, h, φ, c обычно берут из интерпретаций и лабораторных оценок, поэтому их неопределённость переходит в расчёт.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Условия (7.1) похожи на спецификацию задачи для решателя: начальное состояние, поведение на краях области и список предусловий. Линия вместо ствола — как упрощённая модель компонента, детали которого малы для системы.",
+    "breaks_where": "Код при нарушенном предусловии может выдать ошибку. Формула же посчитает число и не предупредит, что пласт или флюид не подходят.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: сегодня решение линейного источника обычно считают готовыми функциями в программах анализа испытаний скважин. Для более сложных пластов и флюидов используют расширенные аналитические или численные модели.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Решение линейного источника",
+    "Начальное условие",
+    "Внутреннее граничное условие",
+    "Условие переходности",
+    "Однородный и изотропный пласт",
+    "Полностью вскрывающая скважина",
+    "Недонасыщенная нефть",
+    "Преобразование Больцмана"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n17",
+   "order": 17,
+   "title": "Замена переменной по Больцману",
+   "why_here": {
+    "text": "Условия линейного источника уже заданы, и теперь нужна переменная с производными, чтобы в следующем шаге решить уравнение.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Ф",
+    "secondary": null
+   },
+   "threshold": false,
+   "pages": [
+    87,
+    87
+   ],
+   "layers": {
+    "topic": {
+     "text": "7.3 Boltzmann's transformation, equs. (7.2)–(7.3)",
+     "by_model": true
+    },
+    "main": {
+     "text": "Чтобы решить уравнение диффузии (5.20) для линейного источника, вводят новую переменную s = φμcr2/(4kt), объединяющую радиус r и время t. Затем находят её производные по r и по t, формулы (7.2) и (7.3), чтобы переписать уравнение (5.20) через s.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Радиус и время объединяются в переменную s = φμcr2/(4kt). Производные (7.2) и (7.3) позволяют выразить уравнение (5.20) через неё.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Это шаг к решению с постоянным дебитом для переходного режима в приближении линейного источника.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Нужны начальный неустановившийся период, условия (7.1), однородный изотропный пласт, полное вскрытие, постоянная вязкость, малая постоянная сжимаемость. Решение применимо к недонасыщенной нефти; многие ограничения автор обещает постепенно снять.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Уравнение (5.20) — глава 5.",
+      "by_model": true
+     },
+     {
+      "text": "Продолжение вывода — §7.3, уравнения (7.4)–(7.6).",
+      "by_model": true
+     },
+     {
+      "text": "Суперпозиция решений для переменных дебитов — §7.5.",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n17#c10",
+     "text": "Установлено, что в начальный неустановившийся период решение радиального уравнения диффузии при постоянном дебите, найденное преобразованием Лапласа, можно приближённо заменить решением линейного источника.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "During the initial transient flow period, it has been found that the constant terminal rate solution of the radial diffusivity equation, determined using the Laplace transform, can be approximated by the so-called line source solution",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n17#c1",
+     "text": "Решение линейного источника предполагает, что радиус скважины пренебрежимо мал по сравнению с кажущимся бесконечным пластом.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "line source solution which assumes that in comparison to the apparently infinite reservoir the wellbore radius is negligible",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n17#c2",
+     "text": "Пласт однороден и изотропен, скважина вскрывает его полностью ради радиального потока; вязкость постоянна, сжимаемость мала и постоянна.",
+     "kind": "assumption",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "That is, that the formation is homogeneous and isotropic, and drained by a fully penetrating well to ensure radial flow; the fluid itself must have a constant viscosity and a small and constant compressibility.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n17#c3",
+     "text": "Поэтому полученное решение будет применимо к течению недонасыщенной нефти.",
+     "kind": "inference",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "The solution obtained will, therefore, be applicable to the flow of undersaturated oil.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n17#c4",
+     "text": "Уравнение диффузии (5.20) связывает радиальные производные давления с его производной по времени через множитель φμc/k.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "$$\\frac{1}{r} \\frac{\\partial}{\\partial r} \\left( r \\frac{\\partial p}{\\partial r} \\right) = \\frac{\\phi \\mu c}{k} \\frac{\\partial p}{\\partial t} \\tag{5.20}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n17#c5",
+     "text": "Уравнение можно решить с помощью преобразования Больцмана.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "can be solved by making use of Boltzmann's transformation",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n17#c6",
+     "text": "Новая переменная: s = r2/(4·(константа диффузии)·t) = φμcr2/(4kt).",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "$$s = \\frac{r^2}{4(\\text{Diffusivity constant})t} = \\frac{\\phi \\mu c r^2}{4kt}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n17#c7",
+     "text": "Производная s по r равна φμcr/(2kt).",
+     "kind": "inference",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "$$\\frac{\\partial s}{\\partial r} = \\frac{\\phi \\mu c r}{2kt} \\tag{7.2}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n17#c8",
+     "text": "Производная s по t равна −φμcr2/(4kt2).",
+     "kind": "inference",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "$$\\frac{\\partial s}{\\partial t} = - \\frac{\\phi \\mu c r^2}{4kt^2} \\tag{7.3}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n17#c9",
+     "text": "Уравнение (5.20) можно выразить относительно новой переменной.",
+     "kind": "observation",
+     "page_pdf": 87,
+     "page_print": null,
+     "quote": "Equation (5.20) can be expressed with respect to this new variable as",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n16"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Производная s по времени получается по тому же образцу, что и по радиусу, и тоже положительна. На самом деле: t стоит в знаменателе s, поэтому ∂s/∂t = −φμcr2/(4kt2): есть минус и квадрат времени.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Радиус r и время t.; Пористость φ, вязкость μ, сжимаемость c и проницаемость k.; Гипотеза модели: r и t задают по условиям замера или расчёта, а φ, μ, c, k обычно берут из лабораторных анализов и интерпретации.. На выходе: Значение переменной s для выбранных r и t.; Производные ∂s/∂r (7.2) и ∂s/∂t (7.3) для перехода к записи уравнения через s.; Гипотеза модели: s не измеряется прибором, а вычисляется, поэтому наследует неточности входных величин.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Приближение линейного источника относится к начальному неустановившемуся (transient) периоду течения при постоянном дебите на скважине; радиус скважины пренебрежимо мал, пласт кажется бесконечным.; Решение опирается на однородный изотропный пласт и полное вскрытие; без этого исходные допущения не выполнены.; Требуются постоянная вязкость и малая постоянная сжимаемость; решение относится к недонасыщенной нефти.; Гипотеза модели: при t = 0 в формуле s возникает деление на нуль, в коде этот случай нужно обрабатывать отдельно.; Гипотеза модели: смешение разных систем единиц для φ, μ, c, k, r, t даст неверное s.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Это похоже на замену двух признаков r и t одним производным признаком r2/t с постоянным коэффициентом. Дальше задачу формулируют уже относительно него.",
+    "breaks_where": "В анализе данных такой признак часто подбирают на пробу. Здесь это точная математическая замена, и вместе с ней нужно пересчитать производные.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: такие производные сегодня легко проверить системой символьных вычислений, а готовое решение обычно уже встроено в программы анализа испытаний скважин.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "преобразование Больцмана",
+    "уравнение диффузии",
+    "константа диффузии",
+    "частная производная",
+    "линейный источник"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n18",
+   "order": 18,
+   "title": "Решаем обыкновенное уравнение по шагам",
+   "why_here": {
+    "text": "После замены Больцмана уравнение решают по шагам, чтобы получить интеграл, который в следующем шаге разбирается как ei(x).",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Ф",
+    "secondary": "Пр"
+   },
+   "threshold": false,
+   "pages": [
+    88,
+    88
+   ],
+   "layers": {
+    "topic": {
+     "text": "7.3 Derivation of equs. (7.4)–(7.6)",
+     "by_model": true
+    },
+    "main": {
+     "text": "Уравнение для давления p через одну переменную s решают заменой p′ = dp/ds и интегрированием: p′ = C2e−s/s. Постоянную C2 = qμ/(4πkh) находят из граничного условия линейного источника при r → 0. Затем это выражение интегрируют от начального состояния до текущего и получают решение линейного источника (7.6).",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Замена p′ = dp/ds даёт уравнение, где p′ и s разделяются и интегрируются. Условие у скважины связывает постоянную с дебитом, а пределы интегрирования вводят начальное давление.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Уравнение (7.6) используют как решение, дающее давление в любой точке в любой момент в рамках задачи линейного источника.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "C2 найдена в пределе r → 0. Интегрируют от t = 0 (s → ∞, p = pi) до s = x. В распознанной записи (7.6) нижний предел искажён: вместо ∞ должен быть x.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Уравнения (7.2) и (7.3) — выражения, использованные при подстановке.",
+      "by_model": true
+     },
+     {
+      "text": "Интеграл ei(x), рис. 7.2 и приближение (7.8) — следующий шаг.",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n18#c1",
+     "text": "Уравнение записано через переменную s с производными s по r и по t.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\frac{1}{r} \\frac{d}{ds} \\left( r \\frac{dp}{ds} \\frac{\\partial s}{\\partial r} \\right) \\frac{\\partial s}{\\partial r} = \\frac{\\phi \\mu c}{k} \\frac{dp}{ds} \\frac{\\partial s}{\\partial t}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c2",
+     "text": "После использования уравнений (7.2) и (7.3) производные s заменяются явными выражениями, а справа появляется минус.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "and using equs. (7.2) and (7.3), this becomes\n\n$$\\frac{1}{r} \\frac{\\phi \\mu c r}{2kt} \\frac{d}{ds} \\left( \\frac{\\phi \\mu c r^2}{2kt} \\frac{dp}{ds} \\right) = - \\left( \\frac{\\phi \\mu c r}{2kt} \\right)^2 \\frac{dp}{ds}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c3",
+     "text": "Уравнение упрощается до d/ds(s dp/ds) = −s dp/ds.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "which can be simplified as\n\n$$\\frac{d}{ds} \\left( s \\frac{dp}{ds} \\right) = -s \\frac{dp}{ds}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c4",
+     "text": "В раскрытом виде: dp/ds + s d/ds(dp/ds) = −s dp/ds.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\frac{dp}{ds} + s \\frac{d}{ds} \\left( \\frac{dp}{ds} \\right) = -s \\frac{dp}{ds}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c5",
+     "text": "Это обыкновенное дифференциальное уравнение, его решают заменой dp/ds = p′.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "This is an ordinary differential equation which can be solved by letting\n\n$$\\frac{dp}{ds} = p'$$",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c6",
+     "text": "После замены уравнение принимает вид p′ + s dp′/ds = −sp′.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\frac{dp}{ds} = p'$$\n\nThen\n\n$$p' + s \\frac{dp'}{ds} = -sp'$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c7",
+     "text": "Уравнение (7.4): dp′/p′ = −((s+1)/s) ds, и далее его интегрируют.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\frac{dp'}{p'} = - \\frac{(s+1)}{s} ds \\tag{7.4}$$\n\nIntegrating equ. (7.4) gives",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c8",
+     "text": "Интегрирование (7.4) даёт ln p′ = −ln s − s + C1.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "Integrating equ. (7.4) gives\n\n$$\\ln p' = - \\ln s - s + C_1$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c9",
+     "text": "Тот же результат записывается как p′ = C2 e−s/s — уравнение (7.5).",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\ln p' = - \\ln s - s + C_1$$\n\nor\n\n$$p' = C_2 \\frac{e^{-s}}{s} \\tag{7.5}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c10",
+     "text": "C1 и C2 — постоянные интегрирования; C2 можно найти из граничного условия линейного источника.",
+     "kind": "assumption",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "where $C_1$ and $C_2$ are constants of integration and $C_2$ can be evaluated using the line source boundary condition",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c11",
+     "text": "Условие линейного источника: предел r ∂p/∂r при r → 0 равен qμ/(2πkh); через s это выражение равно 2s dp/ds.",
+     "kind": "assumption",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\lim_{r \\to 0} r \\frac{\\partial p}{\\partial r} = \\frac{q\\mu}{2\\pi kh} = r \\frac{dp}{ds} \\frac{\\partial s}{\\partial r} = 2s \\frac{dp}{ds}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c12",
+     "text": "Отсюда qμ/(4πkh) = C2 e−s, и это равенство рассматривают при r и s, стремящихся к нулю.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "therefore,\n\n$$\\frac{q\\mu}{4\\pi kh} = C_2 e^{-s}$$\n\nwhich yields, as r (and therefore s) tends to zero",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c13",
+     "text": "При r (а значит, и s), стремящемся к нулю, C2 = qμ/(4πkh).",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "which yields, as r (and therefore s) tends to zero\n\n$$C_2 = \\frac{q\\mu}{4\\pi kh}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c14",
+     "text": "(7.5) интегрируют от t = 0 (s → ∞) до текущего t, где s = x, и от начального давления pi до текущего p.",
+     "kind": "assumption",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "Equation (7.5) can now be integrated between the limits $t = 0$ ($s \\to \\infty$) and the current value of t, for which $s = x$; and $p_i$ (initial pressure) and the current pressure p.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c15",
+     "text": "Интеграл по давлению от pi до p равен qμ/(4πkh), умноженному на интеграл e−s/s от ∞ до x.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\int_{p_i}^{p} dp = \\frac{q\\mu}{4\\pi kh} \\int_{\\infty}^{x} \\frac{e^{-s}}{s} ds$$\n\nwhich gives",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n18#c16",
+     "text": "Уравнение (7.6) — решение линейного источника, дающее давление pr,t как функцию положения и времени.",
+     "kind": "observation",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "Equation (7.6) is the line source solution of the diffusivity equation giving the pressure $p_{r,t}$ as a function of position and time.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n17"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Равенство qμ/(4πkh) = C2e−s верно при любом s, значит C2 зависит от s. На самом деле: Условие задано в пределе r → 0. Тогда s → 0, e−s → 1, и постоянная C2 равна qμ/(4πkh).",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Уравнение через переменную s и выражения из (7.2), (7.3).; Граничное условие линейного источника с величинами q, μ, k, h.; Начальное давление pi при t = 0.; Величины φ, μ, c, k, расстояние r и время t для x = φμcr2/(4kt).. На выходе: Выражение для производной: p′ = C2e−s/s.; Постоянная C2 = qμ/(4πkh).; Давление pr,t как функция положения и времени, уравнение (7.6).",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Гипотеза модели: если дебит q меняется во времени, одно значение q в C2 уже не описывает опыт.; Гипотеза модели: в C2 величины k и h входят произведением, поэтому одна C2 не разделяет их.; Гипотеза модели: q замеряют, а k обычно получают интерпретацией; их нельзя считать одинаково надёжными входами.; Гипотеза модели: при переносе из распознанного текста нижний предел интеграла (7.6) легко закодировать неверно.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Замена p′ = dp/ds похожа на ввод промежуточной переменной при рефакторинге: сначала решают задачу для неё, потом восстанавливают p. Постоянная C2 похожа на параметр, который фиксируют заданным ограничением.",
+    "breaks_where": "Ограничение здесь берётся из физической постановки задачи, его нельзя подбирать под желаемый ответ. Преобразования должны сохранять математическое равенство.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: такие выкладки можно проверить системой символьной математики, а интеграл вычислить готовой библиотечной функцией.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": null,
+   "terms_introduced": [
+    "Обыкновенное дифференциальное уравнение",
+    "Постоянные интегрирования",
+    "Граничное условие линейного источника",
+    "Начальное давление pi",
+    "Решение линейного источника"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n19",
+   "order": 19,
+   "title": "Экспоненциальный интеграл ei(x)",
+   "why_here": {
+    "text": "На прошлом шаге получена производная давления (7.5); здесь из неё получают само давление и функцию ei(x), нужную для двух следующих шагов.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Ф",
+    "secondary": "Р"
+   },
+   "threshold": false,
+   "pages": [
+    88,
+    89
+   ],
+   "layers": {
+    "topic": {
+     "text": "Oilwell Testing, глава 7, §7.3 Line source solution",
+     "by_model": true
+    },
+    "main": {
+     "text": "Интегрирование уравнения (7.5) даёт решение линейного источника (7.6): давление pr,t в зависимости от расстояния и времени. Интеграл от e−s/s в пределах от x = φμcr^2/4kt до ∞ называют экспоненциальным интегралом ei(x): он велик при малых x и мал при больших. При x < 0.01 его можно заменить приближением ei(x) ≈ −ln x − 0.5772.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Интегрирование (7.5) от начального состояния до текущего переводит производную dp/ds в само давление. Изменение давления относительно pi пропорционально площади под e−s/s правее x.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "По r и t вычисляют x, находят ei(x) и подставляют в (7.6). При x < 0.01 можно использовать приближение (7.8).",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Решение относится к условиям линейного источника. Приближение (7.8) дано только для x < 0.01. Запись (7.6) в распознанном тексте искажена в нижнем пределе.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Рис. 7.3: график ei-функции для 0.001 ≤ x ≤ 5.0.",
+      "by_model": true
+     },
+     {
+      "text": "Уравнения (7.9)–(7.10): логарифмическое приближение для забойного давления.",
+      "by_model": true
+     },
+     {
+      "text": "Уравнение (7.11): полная формула с ei для далёкой скважины.",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n19#c1",
+     "text": "Уравнение (7.5) интегрируют от t = 0 (s → ∞) до текущего t (s = x), а по давлению — от начального pi до текущего p.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "Equation (7.5) can now be integrated between the limits $t = 0$ ($s \\to \\infty$) and the current value of t, for which $s = x$; and $p_i$ (initial pressure) and the current pressure p.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c2",
+     "text": "Интеграл dp от pi до p равен qμ/4πkh, умноженному на интеграл e−s/s ds от ∞ до x.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\int_{p_i}^{p} dp = \\frac{q\\mu}{4\\pi kh} \\int_{\\infty}^{x} \\frac{e^{-s}}{s} ds$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c3",
+     "text": "Уравнение (7.6) выражает pr,t как pi минус qμ/4πkh, умноженное на интеграл e−s/s; при этом x = φμcr^2/4kt (нижний предел в записи распознан как ∞).",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\begin{array}{l} p_{r,t} = p_i - \\frac{q\\mu}{4\\pi kh} \\int_{\\infty}^{\\infty} \\frac{e^{-s}}{s} ds \\tag{7.6} \\\\ x = \\frac{\\phi \\mu c r^2}{4kt} \\end{array}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c4",
+     "text": "В уравнении (7.7) интеграл e−s/s берётся от x до ∞, где x = φμcr^2/4kt.",
+     "kind": "observation",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$\\int_{x}^{\\infty} \\frac{e^{-s}}{s} ds = \\int_{x}^{\\infty} \\frac{e^{-s}}{s} ds \\quad x = \\frac{\\phi \\mu c r^2}{4kt}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c5",
+     "text": "Уравнение (7.6) — решение линейного источника для уравнения диффузии: оно даёт pr,t как функцию положения и времени.",
+     "kind": "observation",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "Equation (7.6) is the line source solution of the diffusivity equation giving the pressure $p_{r,t}$ as a function of position and time.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c6",
+     "text": "Этот интеграл стандартный, называется экспоненциальным и обозначается ei(x).",
+     "kind": "observation",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "is a standard integral, called the exponential integral, and is denoted by ei(x).",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c7",
+     "text": "Характер интеграла можно качественно понять, рассмотрев его составные части на рис. 7.2.",
+     "kind": "observation",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "Qualitatively, the nature of this integral can be understood by considering the component parts, fig. 7.2.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c8",
+     "text": "Интеграл кривой (c) от x до ∞ имеет форму, показанную на рис. 7.2 (d).",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "The integral of curve (c) between x and $\\infty$ will have the shape shown in fig. 7.2 (d).",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c9",
+     "text": "ei(x) велика при малых x, потому что это площадь под графиком от данного x до бесконечности.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "Thus ei (x) is large for small values of x, since the ei-function is the area under the graph from the particular value of x out to infinity",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c10",
+     "text": "Эта площадь заштрихована под кривой (c) рис. 7.2; при больших x функция ei(x), наоборот, мала.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "(i.e. the shaded area in curve (c) of fig. 7.2) and, conversely, small for large values of x.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c11",
+     "text": "ei-функцию обычно строят в двойном логарифмическом масштабе; такой график дан на рис. 7.3.",
+     "kind": "observation",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "The ei-function is normally plotted on a log-log scale and such a version is included as fig. 7.3.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c12",
+     "text": "Из графика видно, что при x < 0.01 функцию ei(x) можно приближённо заменить.",
+     "kind": "observation",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "From this curve it can be seen that if x < 0.01, ei (x) can be approximated as",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n19#c13",
+     "text": "Приближение (7.8): ei(x) ≈ −ln x − 0.5772.",
+     "kind": "inference",
+     "page_pdf": 88,
+     "page_print": null,
+     "quote": "$$ei(x) \\approx - \\ln x - 0.5772 \\tag{7.8}$$",
+     "source_kind": "formula",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n18"
+    },
+    {
+     "type": "to_data",
+     "target": "test-dake.n20"
+    },
+    {
+     "type": "to_data",
+     "target": "test-dake.n21"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Заменять ei(x) на −ln x − 0.5772 при любом x. На самом деле: Автор даёт это приближение только для x < 0.01; это приближённое равенство, а не определение ei(x).",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Величины для аргумента x = φμcr^2/4kt: φ, μ, c, r, k, t.; Величины для давления по (7.6): pi, q, μ, k, h.; Гипотеза модели: в расчётной таблице это параметры пласта и жидкости плюс столбцы расстояния и времени.. На выходе: Значение x и значение ei(x).; Расчётное давление pr,t в точке r в момент t — это вычисление по модели, а не замер прибором.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Приближение (7.8) дано для x < 0.01; при других x на него нельзя опираться по этому тексту.; В распознанной записи (7.6) искажён нижний предел интеграла: формулу нельзя переносить в код без сверки с (7.7).; Гипотеза модели: ошибки в параметрах пласта переходят в x и в расчётное давление.; Гипотеза модели: в программных библиотеках есть похожие функции с разными знаками; перед расчётом нужно сверить определение с (7.7).",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Это похоже на «хвостовую» сумму в аналитике: сколько накопилось правее порога x, например доля запросов с задержкой выше порога. Двигаете порог вправо — хвост уменьшается.",
+    "breaks_where": "e−s/s не является плотностью вероятности: площадь не нормирована на 1 и у нуля растёт без предела.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: сейчас ei(x) обычно считают библиотечной функцией, а не снимают с графика. Например, определению (7.7) соответствует scipy.special.exp1(x); scipy.special.expi — функция с другим соглашением о знаках.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": {
+    "inputs": "φ, μ, c, r, k, t для вычисления x; график ei-функции (рис. 7.3).",
+    "manual_steps": "Посчитать x, проверить условие x < 0.01, затем применить формулу (7.8) или найти значение по графику.",
+    "judgment_points": "Решить, применимо ли логарифмическое приближение.",
+    "time": "не указано в главе",
+    "typical_errors": "Гипотеза модели: неточное чтение логарифмических шкал и применение приближения вне его области.",
+    "by_model": true
+   },
+   "terms_introduced": [
+    "Решение линейного источника",
+    "Экспоненциальный интеграл ei(x)",
+    "Начальное давление pi",
+    "Двойной логарифмический масштаб"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": null,
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n20",
+   "order": 20,
+   "title": "Логарифмическое приближение для забойного давления",
+   "why_here": {
+    "text": "После экспоненциального интеграла (шаг 19) автор упрощает его до логарифма для замеров в стволе и показывает, когда нужна полная формула следующего шага.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "И",
+    "secondary": "Н"
+   },
+   "threshold": false,
+   "pages": [
+    89,
+    89
+   ],
+   "layers": {
+    "topic": {
+     "text": "7.3 Equs. (7.9)–(7.10), Fig. 7.3",
+     "by_model": true
+    },
+    "main": {
+     "text": "При x < 0.01 экспоненциальный интеграл ei(x) приближённо равен −ln(γx), где γ = 1.781, и давление в скважине выражается логарифмической формулой (7.10). Для замеров в стволе скважины x обычно меньше 0.01 даже при малых временах t. Это решение переходного режима: оно не зависит ни от площади дренирования, ни от положения скважины относительно границы.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "При x < 0.01 функция ei(x) приближённо равна −ln(γx). Подстановка x для ствола скважины превращает решение (7.6) в логарифмическую формулу.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Формулу (7.10) применяют для давлений, замеренных в стволе скважины; скин-фактор входит добавкой 2S.",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Условие x < 0.01 для ствола выполняется «обычно», а не всегда. Решение переходное: действует короткое время, пока пласт кажется бесконечным. Скин принят не зависящим от времени. Для далёкой скважины приближение неверно.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Глава 4, разд. 7: скин-фактор.",
+      "by_model": true
+     },
+     {
+      "text": "Рис. 7.3: сравнение ei(x) и логарифма.",
+      "by_model": true
+     },
+     {
+      "text": "§7.3: импульсное прослушивание и уравнение (7.11).",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n20#c1",
+     "text": "0.5772 — постоянная Эйлера; её экспоненту обозначают γ = e0.5772 = 1.781.",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "where the number 0.5772 is Euler's constant, the exponential of which is denoted by\n\n$$\\gamma = e^{0.5772} = 1.781$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c2",
+     "text": "Уравнение (7.8) поэтому можно записать как ei(x) ≈ −ln(γx) для x < 0.01.",
+     "kind": "inference",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "and therefore equ. (7.8) can be expressed as\n\n$$ei(x) \\approx - \\ln (\\gamma x)$$\n\n$$\\text{for } x < 0.01$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c3",
+     "text": "Отдельные графики ei(x) и −ln(γx) на рис. 7.3 показывают область применимости уравнения (7.9).",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "The separate plots of ei(x) and -ln(γx), in Fig. 7.3, demonstrate the range of validity of equ. (7.9).",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c4",
+     "text": "Приближение важно, потому что инженеры-разработчики часто анализируют давления, замеренные в стволе скважины при r = rw.",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "The significance of this approximation is that reservoir engineers are frequently concerned with the analysis of pressures measured in the wellbore, at r=r_w.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c5",
+     "text": "Для замеров в стволе x обычно оказывается меньше 0.01 даже при малых значениях t.",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "Since in this case x=dμcr_w^2/4kt, it is usually found that for measurements in the wellbore, x will be less than 0.01 even for small values of t.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c6",
+     "text": "Тогда уравнение (7.6) приближённо даёт pwf = pi − (qμ/4πkh)·ln(4kt/γφμcrw2).",
+     "kind": "inference",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "Equation (7.6) can then be approximated as\n\n$$p_{rw^2} = p_{wf} = p_i - \\frac{q\\mu}{4\\pi kh} \\ln \\frac{4kt}{\\gamma \\phi \\mu c r_w^2}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c7",
+     "text": "Механический скин-фактор van Everdingen можно включить как возмущение, не зависящее от времени.",
+     "kind": "assumption",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "Or, if the van Everdingen mechanical skin factor is included as a time independent perturbation (ref. Chapter 4, sec. 7), then",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c8",
+     "text": "Со скин-фактором: pwf = pi − (qμ/4πkh)·(ln(4kt/γφμcrw2) + 2S) — уравнение (7.10).",
+     "kind": "inference",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "$$p_{wf} = p_i - \\frac{q\\mu}{4\\pi kh} \\left( \\ln \\frac{4kt}{\\gamma \\phi \\mu c r_w^2} + 2S \\right) \\tag{7.10}$$",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c9",
+     "text": "Это переходное решение совсем не зависит от площади дренирования и положения скважины относительно границы.",
+     "kind": "inference",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "As expected for this transient solution there is no dependence at all upon the area drained or well position with respect to the boundary",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c10",
+     "text": "В течение короткого времени, когда применимо (7.10), пласт кажется бесконечным по протяжённости.",
+     "kind": "inference",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "since for the short time when equ.(7.10) is applicable the reservoir appears to be infinite in extent.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c11",
+     "text": "Рис. 7.3 — график ei-функции для 0.001 ≤ x ≤ 5.0.",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "Fig. 7.3 Graph of the ei-function for 0.001 ≤ x ≤ 5.0.",
+     "source_kind": "figure_caption",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n20#c12",
+     "text": "Когда возмущения давления от одной скважины регистрируют в далёкой, r велико и приближение (7.9) уже неверно.",
+     "kind": "inference",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "In such cases pressure transients caused in one well are recorded in a distant well and, under these circumstances, r is large and the approximation of equ. (7.9) is no longer valid.",
+     "source_kind": "text",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "example_of",
+     "target": "test-dake.n07"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Логарифмическую формулу можно применять в любой точке пласта, в том числе для далёкой скважины. На самом деле: Приближение (7.9) дано для x < 0.01. Для ствола это обычно выполняется, а при большом r нужна полная формула с ei (7.11).",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Давления, замеренные в стволе скважины (r = rw).; Величины формулы (7.10): pi, q, μ, k, h, φ, c, rw, время t и скин-фактор S.; Для проверки применимости: x = φμcrw2/4kt.. На выходе: Расчётное забойное давление pwf в момент t по формуле (7.10).; Решение, можно ли заменить ei(x) логарифмом (x < 0.01).; Гипотеза модели: по замерам pwf во времени оценивают kh и S; это уже выводы интерпретации, а не показания прибора.",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "При x, не меньшем 0.01, условие приближения (7.9) не выполнено.; В далёкой скважине r велико, и приближение неверно.; Формула (7.10) относится к короткому времени, пока пласт кажется бесконечным.; Гипотеза модели: в машинном описании рис. 7.3 кривая подписана «ln γx» без минуса; опираться нужно на формулу (7.9) из текста.; Гипотеза модели: по одному замеру нельзя раздельно найти k и S, так как оба влияют на давление.",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Похоже на быструю ветку в коде: если x < 0.01, считаем простой логарифм, иначе берём полную функцию ei(x).",
+    "breaks_where": "У автора это не ускорение программы, а упрощение формулы для анализа давления. Погрешность приближения на с. 89 числом не задана.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: сейчас ei(x) обычно считают библиотечными функциями, а не снимают с графика. Логарифмическая форма остаётся полезной: давление в ней линейно по ln t, что используют при интерпретации исследований скважин.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": {
+    "inputs": "Параметры для расчёта x, график ei-функции (рис. 7.3).",
+    "manual_steps": "Посчитать x и сравнить с 0.01; для полной формулы снять значение ei(x) с графика.",
+    "judgment_points": "Решить, применимо ли приближение и можно ли ещё считать пласт бесконечным.",
+    "time": "не указано в главе",
+    "typical_errors": "Гипотеза модели: ошибки чтения логарифмических шкал, потерянный минус перед логарифмом, применение формулы вне x < 0.01.",
+    "by_model": true
+   },
+   "terms_introduced": [
+    "Постоянная Эйлера",
+    "Логарифмическое приближение ei(x)",
+    "Забойное давление pwf",
+    "Механический скин-фактор",
+    "Переходное решение"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": {
+    "features": [
+     "Значение x = φμcr2/4kt.",
+     "Место замера: ствол скважины (r = rw) или далёкая скважина (r велико).",
+     "Время: достаточно короткое, чтобы пласт казался бесконечным."
+    ],
+    "rule": "Если x < 0.01, ei(x) заменяют на −ln(γx). При большом r, как при импульсном прослушивании, берут уравнение (7.6) в полной форме.",
+    "conclusion": "Для замеров в стволе x обычно меньше 0.01 даже при малых t. Поэтому (7.6) приближают логарифмом и с учётом скина получают (7.10).",
+    "counterexample": "Импульсное прослушивание: возмущение от одной скважины регистрируют в далёкой. Там r велико, приближение (7.9) неверно, нужна формула (7.11)."
+   },
+   "worked_examples": [],
+   "book_tasks": []
+  },
+  {
+   "id": "test-dake.n21",
+   "order": 21,
+   "title": "Далёкая скважина: полная формула с ei",
+   "why_here": {
+    "text": "После логарифмической формулы для забоя (шаг 20) этот шаг показывает, где она перестаёт работать, и завершает путь полной формулой с ei.",
+    "by_model": true
+   },
+   "difficulty": {
+    "primary": "Н",
+    "secondary": "П"
+   },
+   "threshold": false,
+   "pages": [
+    89,
+    89
+   ],
+   "layers": {
+    "topic": {
+     "text": "7.3 Pulse testing, equ. (7.11)",
+     "by_model": true
+    },
+    "main": {
+     "text": "Для далёкой скважины расстояние r велико, и логарифмическое приближение (7.9) не годится: нужна полная формула (7.11) с ei. Такой случай возникает в тестах на связь между скважинами, например при импульсном тестировании: возмущение давления создают в одной скважине, а записывают в другой. Значения экспоненциального интеграла ei берут с рис. 7.3.",
+     "by_model": true
+    },
+    "mechanism": {
+     "text": "Аргумент x = φμcr2/4kt растёт с квадратом расстояния. При большом r логарифмическое приближение ei(x) перестаёт быть справедливым.",
+     "by_model": true
+    },
+    "practice": {
+     "text": "Испытания на связь между скважинами, например импульсное тестирование: возмущают одну скважину, записывают давление в далёкой и считают по (7.11).",
+     "by_model": true
+    },
+    "nuances": {
+     "text": "Приближение (7.9) записано для x < 0.01. Значения ei берут с рис. 7.3, который по подписи охватывает 0.001 ≤ x ≤ 5.0. В формуле (7.11), в отличие от (7.10), нет слагаемого со скин-фактором S.",
+     "by_model": true
+    },
+    "deeper": [
+     {
+      "text": "Уравнение (7.6) — исходная полная форма решения",
+      "by_model": true
+     },
+     {
+      "text": "Приближение (7.9) и рис. 7.3",
+      "by_model": true
+     },
+     {
+      "text": "Уравнение (7.10) и гл. 4, разд. 7 о скин-факторе",
+      "by_model": true
+     }
+    ]
+   },
+   "claims": [
+    {
+     "id": "test-dake.n21#c1",
+     "text": "Для измерений в стволе скважины x обычно оказывается меньше 0.01 даже при малых значениях t.",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "it is usually found that for measurements in the wellbore, x will be less than 0.01 even for small values of t.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n21#c2",
+     "text": "Отдельные графики ei(x) и −ln(γx) на рис. 7.3 показывают область применимости уравнения (7.9).",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "The separate plots of ei(x) and -ln(γx), in Fig. 7.3, demonstrate the range of validity of equ. (7.9).",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n21#c3",
+     "text": "Иногда испытания по давлению проводят ради определения степени связи между скважинами, например импульсное тестирование.",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "Sometimes pressure tests are conducted in order to determine the degree of communication between wells, for example, pulse testing.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n21#c4",
+     "text": "В таких случаях изменения давления, вызванные в одной скважине, записывают в далёкой скважине.",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "In such cases pressure transients caused in one well are recorded in a distant well",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n21#c5",
+     "text": "В этих условиях r велико, и приближение уравнения (7.9) перестаёт быть справедливым.",
+     "kind": "inference",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "under these circumstances, r is large and the approximation of equ. (7.9) is no longer valid.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n21#c6",
+     "text": "Тогда уравнение (7.6) необходимо использовать в полной форме.",
+     "kind": "inference",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "Equation (7.6) must then be used in its full form, i.e.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n21#c7",
+     "text": "Полная формула (7.11): pr,t равно pi минус qμ/4πkh, умноженное на ei от φμcr2/4kt.",
+     "kind": "inference",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "p_{r,t} = p_i - \\frac{q\\mu}{4\\pi kh} e^i \\left( \\frac{\\phi \\mu c r^2}{4kt} \\right) \\tag{7.11}",
+     "source_kind": "formula",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n21#c8",
+     "text": "Значения экспоненциального интеграла для формулы (7.11) можно получить с рис. 7.3.",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "in which the values of the exponential integral can be obtained from fig. 7.3.",
+     "source_kind": "text",
+     "by_model": true
+    },
+    {
+     "id": "test-dake.n21#c9",
+     "text": "Рис. 7.3 — график ei-функции для x от 0.001 до 5.0.",
+     "kind": "observation",
+     "page_pdf": 89,
+     "page_print": null,
+     "quote": "Fig. 7.3 Graph of the ei-function for 0.001 ≤ x ≤ 5.0.",
+     "source_kind": "figure_caption",
+     "by_model": true
+    }
+   ],
+   "links": [
+    {
+     "type": "prerequisite",
+     "target": "test-dake.n20"
+    }
+   ],
+   "misconception": {
+    "ref": null,
+    "text": "Логарифмическая формула удобна, значит ею можно считать давление и в далёкой скважине. На самом деле: Для далёкой скважины r велико, приближение (7.9) недействительно. Нужна полная формула (7.11) с ei.",
+    "by_model": true
+   },
+   "data_meaning": {
+    "from_chapter": {
+     "text": "На входе: Давление, записанное в далёкой скважине (измерение); Возмущение давления, вызванное в другой скважине; Параметры формулы (7.11): pi, q, μ, k, h, φ, c, расстояние r, время t; Значения ei с рис. 7.3. На выходе: Расчётное давление pr,t на расстоянии r в момент t; Цель испытания: степень связи между скважинами (это вывод интерпретатора, а не прямой замер); Гипотеза модели: расчётную кривую сравнивают с записанной и так подбирают свойства пласта между скважинами",
+     "by_model": true
+    },
+    "breaks": {
+     "text": "Приближение (7.9) при большом r недействительно: расчёт по логарифму будет неверным; График на рис. 7.3 построен для 0.001 ≤ x ≤ 5.0: вне этого диапазона значение с него не взять; Гипотеза модели: сигнал в далёкой скважине слаб и может теряться в шуме манометра; Гипотеза модели: неоднородный пласт нарушает допущения линейного источника, и разные наборы свойств дают похожие кривые",
+     "by_model": true
+    },
+    "hypotheses": []
+   },
+   "it_analogy": {
+    "text": "Это как быстрая ветка в коде: дешёвое приближение вызывают только при x < 0.01. В остальных случаях вызывают полную функцию.",
+    "breaks_where": "Код не упадёт сам, если выбрать не ту ветку: логарифм посчитается, но результат будет неверным. Проверку x нужно писать явно.",
+    "by_model": true
+   },
+   "now_practice": {
+    "text": "Гипотеза модели: сегодня ei(x) обычно не снимают с графика, а считают программно. Функции книги при x > 0 соответствует scipy.special.exp1; scipy.special.expi — другая функция. Давление пишут точными манометрами, а свойства пласта подбирают в программах интерпретации.",
+    "by_model": true,
+    "hypothesis": true
+   },
+   "inefficiency_lens": {
+    "inputs": "Параметры пласта и жидкости, расстояние r, время t, график рис. 7.3",
+    "manual_steps": "Посчитать x = φμcr2/4kt, найти ei(x) на графике и подставить в (7.11) для каждого момента времени",
+    "judgment_points": "Решить, годится ли логарифмическое приближение или нужна полная формула",
+    "time": "не указано в главе",
+    "typical_errors": "Гипотеза модели: неточное чтение логарифмических шкал и применение приближения вне его области",
+    "by_model": true
+   },
+   "terms_introduced": [
+    "Связь между скважинами",
+    "Импульсное тестирование",
+    "Переходное изменение давления",
+    "Далёкая скважина"
+   ],
+   "terms_used": [],
+   "needs_scan": [],
+   "decision_on_data": {
+    "features": [
+     "Где измеряют давление: в стволе (r = rw) или в далёкой скважине",
+     "Величина аргумента x = φμcr2/4kt",
+     "Порог приближения (7.9): x < 0.01"
+    ],
+    "rule": "В стволе x обычно меньше 0.01, и можно брать логарифмическое приближение. Для далёкой скважины r велико: используют полную формулу (7.11), а ei берут с рис. 7.3.",
+    "conclusion": "В примере автора, импульсном тестировании, давление записывают в далёкой скважине. Значит, считать его нужно по (7.11).",
+    "counterexample": "Замер в стволе самой скважины: там x обычно меньше 0.01 даже при малых t, и работает приближение, приводящее к (7.10)."
+   },
+   "worked_examples": [],
+   "book_tasks": []
+  }
+ ]
+}

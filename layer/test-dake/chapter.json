@@ -1,0 +1,240 @@
+{
+  "schema": "strata.layer/1",
+  "id": "test-dake",
+  "version": "test-dake@run1",
+  "domain": "geo",
+  "source": {
+    "md": "source.md",
+    "origin": "test_dake.md",
+    "key": "test-dake",
+    "from": 75,
+    "to": 89,
+    "start": null,
+    "end": null
+  },
+  "complete": false,
+  "title": "Как давление течёт к скважине: радиальное уравнение",
+  "subtitle": "Глава 5 (§5.1–5.4) и глава 7 (§7.3) книги по пластовой гидродинамике и испытанию скважин",
+  "description": "Курс выводит основное уравнение радиального притока к скважине, объясняет режимы течения и показывает, как из него получается формула падения давления в стволе.",
+  "intro": [
+    "Давление в забое скважины — главный замер, по которому инженеры судят о пласте: его проницаемости, границах, связи между скважинами. Чтобы читать такие замеры, нужно понимать уравнение, из которого берутся формулы интерпретации. Курс разбирает это уравнение шаг за шагом, без геологической подготовки.",
+    "Сначала выводим уравнение из баланса массы и закона Дарси. Потом смотрим три режима течения и условия, при которых уравнение упрощается. В конце решаем упрощённое уравнение и получаем формулу забойного давления. Везде отмечаем: что измеряют, что вычисляют и где допущения перестают работать."
+  ],
+  "book": {
+    "author": "L. P. Dake",
+    "authorShort": "Dake",
+    "title": "Fundamentals of Reservoir Engineering",
+    "year": "1978",
+    "chapter": "Chapter 5. The Basic Differential Equation for Radial Flow in a Porous Medium; §7.3",
+    "chapterTitle": "The Basic Differential Equation for Radial Flow in a Porous Medium; Oilwell Testing (§7.3)",
+    "pages": "75–89"
+  },
+  "difficulty": {
+    "М": "механизм",
+    "В": "геологическое время",
+    "И": "косвенное измерение",
+    "Ф": "формализм",
+    "П": "пространство",
+    "Пр": "процедура",
+    "Н": "неопределённость и решение",
+    "Р": "распознавание"
+  },
+  "parts": [
+    {
+      "id": "p1",
+      "title": "Глава 5, §5.1–5.2. Вывод основного уравнения",
+      "short": "Вывод уравнения",
+      "sub": "Как из баланса массы, закона Дарси и сжимаемости получается основное радиальное уравнение.",
+      "nodes": [
+        "test-dake.n01",
+        "test-dake.n02",
+        "test-dake.n03",
+        "test-dake.n04",
+        "test-dake.n05"
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Глава 5, §5.3. Условия решения",
+      "short": "Режимы течения",
+      "sub": "Три режима — переходный, полустационарный и стационарный — и что в них происходит с давлением.",
+      "nodes": [
+        "test-dake.n06",
+        "test-dake.n07",
+        "test-dake.n08",
+        "test-dake.n09",
+        "test-dake.n10"
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Глава 5, §5.4. Линеаризация для жидкости",
+      "short": "Линеаризация",
+      "sub": "Какие члены уравнения отбрасывают для нефти без газа и когда это допустимо.",
+      "nodes": [
+        "test-dake.n11",
+        "test-dake.n12",
+        "test-dake.n13",
+        "test-dake.n14"
+      ]
+    },
+    {
+      "id": "p4",
+      "title": "Глава 7, §7.3. Решение для линейного источника",
+      "short": "Линейный источник",
+      "sub": "Как решить уравнение диффузии для переходного режима и получить формулу забойного давления.",
+      "nodes": [
+        "test-dake.n15",
+        "test-dake.n16",
+        "test-dake.n17",
+        "test-dake.n18",
+        "test-dake.n19",
+        "test-dake.n20",
+        "test-dake.n21"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "test-dake.n01",
+      "to": "test-dake.n02",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n02",
+      "to": "test-dake.n03",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n03",
+      "to": "test-dake.n04",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n04",
+      "to": "test-dake.n05",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n05",
+      "to": "test-dake.n06",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n06",
+      "to": "test-dake.n07",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n06",
+      "to": "test-dake.n08",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n07",
+      "to": "test-dake.n08",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n08",
+      "to": "test-dake.n09",
+      "type": "data"
+    },
+    {
+      "from": "test-dake.n08",
+      "to": "test-dake.n10",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n05",
+      "to": "test-dake.n11",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n11",
+      "to": "test-dake.n12",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n12",
+      "to": "test-dake.n13",
+      "type": "example"
+    },
+    {
+      "from": "test-dake.n12",
+      "to": "test-dake.n14",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n07",
+      "to": "test-dake.n15",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n08",
+      "to": "test-dake.n15",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n12",
+      "to": "test-dake.n16",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n15",
+      "to": "test-dake.n16",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n16",
+      "to": "test-dake.n17",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n17",
+      "to": "test-dake.n18",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n18",
+      "to": "test-dake.n19",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n19",
+      "to": "test-dake.n20",
+      "type": "data"
+    },
+    {
+      "from": "test-dake.n20",
+      "to": "test-dake.n21",
+      "type": "base"
+    },
+    {
+      "from": "test-dake.n06",
+      "to": "test-dake.n10",
+      "type": "example"
+    },
+    {
+      "from": "test-dake.n06",
+      "to": "test-dake.n16",
+      "type": "example"
+    },
+    {
+      "from": "test-dake.n07",
+      "to": "test-dake.n16",
+      "type": "example"
+    },
+    {
+      "from": "test-dake.n07",
+      "to": "test-dake.n20",
+      "type": "example"
+    },
+    {
+      "from": "test-dake.n19",
+      "to": "test-dake.n21",
+      "type": "data"
+    }
+  ],
+  "errata": []
+}

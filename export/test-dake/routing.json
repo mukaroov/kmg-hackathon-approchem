@@ -1,0 +1,320 @@
+{
+ "chapter": "test-dake",
+ "routes": [
+  {
+   "node_id": "test-dake.n01",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудность Ф и Н: нужно прочитать формулу и понять причину нелинейности. Процесса во времени и масштабного скачка нет, потому достаточно текста с разбором формулы и картинкой-цепочкой."
+  },
+  {
+   "node_id": "test-dake.n02",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудность — пространство и неопределённость допущений: нужно понять геометрию и условия применимости. Событий во времени нет, решения на данных нет; достаточно текста и схемы."
+  },
+  {
+   "node_id": "test-dake.n03",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "Кольцо с регулируемой толщиной dr и пошаговым выводом формулы",
+   "why": "Тип М и Ф: нужно увидеть, как разность потоков на границах кольца превращается в производную и dr сокращается. Интерактив с шагами вывода подходит лучше, чем видео: баллов по времени и масштабу нет."
+  },
+  {
+   "node_id": "test-dake.n04",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудность — формализм и механизм: цепочка подстановок в формулах. Времени, масштаба и контринтуитивности нет, поэтому видео не нужно."
+  },
+  {
+   "node_id": "test-dake.n05",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудности Ф и М: цепочка алгебраических подстановок, без динамики и масштаба — лучше читать текстом с формулами."
+  },
+  {
+   "node_id": "test-dake.n06",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудности Н и Ф: это определение условий и понятий, динамики и масштаба нет. Хватит короткого текста со схемой."
+  },
+  {
+   "node_id": "test-dake.n07",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудности — геологическое время и косвенное измерение: мало формул и чисел, нужны точные оговорки. Динамики нет, поэтому видео не нужно."
+  },
+  {
+   "node_id": "test-dake.n08",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудность — механизм и формализм: нужно связать условие на границе с материальным балансом. Видео-баллы низкие, достаточно текста с цепочкой выводов и формулами."
+  },
+  {
+   "node_id": "test-dake.n09",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "Таблица скважин: q_i, p̄_i → p̄_res по (5.13)",
+   "why": "Тип Пр, Н: есть процедура осреднения и решение, какой вес брать (объёмы или дебиты). Это удобно отработать на таблице дебитов и давлений."
+  },
+  {
+   "node_id": "test-dake.n10",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудность Н и М: нужно различить условия применимости и принять оговорку автора; динамики во времени и масштабных скачков мало, поэтому видео не нужно."
+  },
+  {
+   "node_id": "test-dake.n11",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудность — формализм: последовательность алгебраических подстановок без динамики и масштаба. Лучше всего подходит текст с формулами по шагам."
+  },
+  {
+   "node_id": "test-dake.n12",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 1,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудность — формализм и неопределённость: какие члены и почему отбрасываются, и что допущение, а что вывод. Это удобнее читать по шагам с формулами, чем смотреть как процесс во времени."
+  },
+  {
+   "node_id": "test-dake.n13",
+   "format": "практикум на данных",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 1,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "Калькулятор: ползунки c_o, c_w, c_f, S_wc, p; выводит c_t, cp и вердикт «cp ≪ 1?»",
+   "why": "Трудности Н и Ф: надо посчитать c_t и cp по формулам и решить по числу, применима ли линеаризация. Это короткий расчёт с решением на данных; динамики и скачка масштаба нет."
+  },
+  {
+   "node_id": "test-dake.n14",
+   "format": "карточки",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 1,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудность — формализм и распознавание: надо узнавать согласованные пары множителей и уравнение диффузии в другой физике. Видеобаллы низкие: процесса во времени и скачка масштаба здесь нет."
+  },
+  {
+   "node_id": "test-dake.n15",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 2,
+    "invisible": 2,
+    "scale": 1,
+    "counterintuitive": 0,
+    "cause_effect": 2
+   },
+   "hook_short": false,
+   "template": "Кривая давления с ползунком времени и подсветкой стадии",
+   "why": "Трудности «геологическое время» и «косвенное измерение»: по кривой давления видны стадии, границу напрямую не видно. Интерактив с ползунком времени покажет, как начинает влиять граница. Пороговая идея: три стадии."
+  },
+  {
+   "node_id": "test-dake.n16",
+   "format": "текст",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 1,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": null,
+   "why": "Трудности — формализм и неопределённость: нужно спокойно разобрать три условия и допущения. Изменение во времени и причинная связь выражены слабо, контринтуитивности нет, поэтому видео мало что добавит."
+  },
+  {
+   "node_id": "test-dake.n17",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 0
+   },
+   "hook_short": false,
+   "template": "Два ползунка r и t в относительных единицах; на экране значение s, знаки производных и пары (r, t) с равным s.",
+   "why": "Трудность формальная: важно увидеть, как s меняется с r и t. Ползунки показывают это лучше видео; баллы за видео низкие."
+  },
+  {
+   "node_id": "test-dake.n18",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 0,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "Пошаговый разбор формулы: выбрать следующее преобразование и увидеть изменившиеся члены",
+   "why": "Трудность в формализме и процедуре: читателю полезно самому выбирать следующее преобразование. Изменения во времени, масштаба и неожиданности почти нет, видео мало что добавит."
+  },
+  {
+   "node_id": "test-dake.n19",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 0,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "Ползунок x: заливка площади под e^{−s}/s правее x, точка на кривой ei(x), индикатор «x < 0.01: можно применять (7.8)».",
+   "why": "Трудность — формализм и распознавание: интеграл становится понятным, когда читатель сам двигает x и видит площадь. Изменения во времени и скачка масштаба здесь почти нет, поэтому длинное видео не нужно."
+  },
+  {
+   "node_id": "test-dake.n20",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "Графики ei(x) и −ln(γx) с ползунком x, порогом 0.01 и переключателем «ствол / далёкая скважина».",
+   "why": "Тип И, Н: по косвенной величине x нужно решить, годится ли приближение. Сравнение двух кривых при изменении x позволяет это увидеть. Изменение во времени, невидимое и причинная связь умеренные; скачка масштаба и контринтуитивности нет."
+  },
+  {
+   "node_id": "test-dake.n21",
+   "format": "интерактив",
+   "secondary_format": null,
+   "video_scores": {
+    "time": 1,
+    "invisible": 1,
+    "scale": 0,
+    "counterintuitive": 0,
+    "cause_effect": 1
+   },
+   "hook_short": false,
+   "template": "Две скважины на плане → ползунки r и t → значение x → порог 0.01 → выбор формулы (7.9) или (7.11)",
+   "why": "Тип Н и П: нужно выбрать формулу по расстоянию между скважинами. Изменение во времени, невидимое возмущение и причинная связь получают по 1 баллу, остальное 0. Ползунки r и t позволяют самому увидеть, как меняется x и годится ли приближение."
+  }
+ ]
+}

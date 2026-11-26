@@ -1,0 +1,33 @@
+{
+  "run": 1,
+  "job": "j20261126090203-5787",
+  "date": "2026-11-26T09:10:01.773Z",
+  "provider": "cli",
+  "model": "claude CLI, модель sonnet",
+  "extractor": "метки страниц из md",
+  "hashes": {
+    "chapter.json": "0a163a0c67e1fb35",
+    "nodes/test-dake.n01.json": "7e1e4ce94f3acb06",
+    "nodes/test-dake.n02.json": "c29e360491758ee6",
+    "nodes/test-dake.n03.json": "47e743769c9bcd63",
+    "nodes/test-dake.n04.json": "88bdde9f5795eb1b",
+    "nodes/test-dake.n05.json": "5ef5bad034e6c501",
+    "nodes/test-dake.n06.json": "e378c02c299e4452",
+    "nodes/test-dake.n07.json": "9c86cbde141ebff0",
+    "nodes/test-dake.n08.json": "f442539fbca1b434",
+    "nodes/test-dake.n09.json": "cf3c4c81eb6689b2",
+    "nodes/test-dake.n10.json": "ade78521d5ee7212",
+    "nodes/test-dake.n11.json": "d9c9dc903e012438",
+    "nodes/test-dake.n12.json": "37b5559156db92a8",
+    "nodes/test-dake.n13.json": "dc3eed6ee1a1f4cf",
+    "nodes/test-dake.n14.json": "80e82bd341c3dbf9",
+    "nodes/test-dake.n15.json": "e5f109cc89edd72d",
+    "nodes/test-dake.n16.json": "8b97e8b4bd82cbe1",
+    "nodes/test-dake.n17.json": "3b985ddf6b97a3a5",
+    "nodes/test-dake.n18.json": "c1af3f6892052926",
+    "nodes/test-dake.n19.json": "17ae2572d600b10c",
+    "nodes/test-dake.n20.json": "a5760478cb8cb8f1",
+    "nodes/test-dake.n21.json": "cba2d41eab94ad1d"
+  },
+  "links": "2026-11-26T09:10:23.318Z"
+}

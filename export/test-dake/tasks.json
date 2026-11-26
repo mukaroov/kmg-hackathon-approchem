@@ -1,0 +1,2526 @@
+{
+ "chapter": "test-dake",
+ "tasks": [
+  {
+   "id": "test-dake.n01#t1",
+   "type": "single",
+   "step_id": "test-dake.n01",
+   "claim_ids": [
+    "test-dake.n01#c5"
+   ],
+   "prompt": "Почему уравнение (5.1) нелинейно по мнению автора?",
+   "explanation": "Автор прямо связывает нелинейность с зависимостью коэффициентов от давления.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что оно радиальное",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что коэффициенты с обеих сторон зависят от давления",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что среда неоднородна",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что в нём есть время",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n01#t2",
+   "type": "multiple",
+   "step_id": "test-dake.n01",
+   "claim_ids": [
+    "test-dake.n01#c7"
+   ],
+   "prompt": "Что автор говорит о линеаризации для течения жидкости и газа? Выберите верные.",
+   "explanation": "Жидкость — приближённая линеаризация и диффузия, газ — интегральное преобразование (глава 8).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Для жидкости форма приближённая и приводит к уравнению диффузии",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Для реального газа требуется более сложная интегральная линеаризация",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Для газа используется та же форма, что и для жидкости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Решения для нефти даются в главах 6 и 7",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n01#t3",
+   "type": "gap",
+   "step_id": "test-dake.n01",
+   "claim_ids": [
+    "test-dake.n01#c6"
+   ],
+   "prompt": "Заполните пропуск. Чтобы получить аналитические решения, уравнение сначала нужно {{1}}.",
+   "explanation": "Это условие автора для получения аналитических решений.",
+   "kind": "recall",
+   "answer": [
+    "линеаризовать"
+   ],
+   "accepted": [
+    [
+     "линеаризовать",
+     "линеаризовать уравнение",
+     "линеаризация"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n01#t4",
+   "type": "order",
+   "step_id": "test-dake.n01",
+   "claim_ids": [
+    "test-dake.n01#c6"
+   ],
+   "prompt": "Расположите шаги логики §5.1 по порядку.",
+   "explanation": "Автор идёт от уравнения к нелинейности, затем к линеаризации и диффузии.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Основное уравнение (5.1) записано",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Показано, что оно нелинейно",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Коэффициенты делают почти постоянными",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Для жидкости получают уравнение диффузии",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n02#t1",
+   "type": "single",
+   "step_id": "test-dake.n02",
+   "claim_ids": [
+    "test-dake.n02#c3"
+   ],
+   "prompt": "Почему автор выводит уравнение в радиальной, а не в декартовой форме?",
+   "explanation": "Автор прямо ссылается на редкое практическое применение декартовых аналитических решений.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Декартовы решения неверны",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Аналитические решения в декартовой форме редко используют промысловые инженеры",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Радиальная форма всегда точнее численной сетки",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Скважина всегда круглая в плане",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n02#t2",
+   "type": "multiple",
+   "step_id": "test-dake.n02",
+   "claim_ids": [
+    "test-dake.n02#c6"
+   ],
+   "prompt": "Какие допущения принимаются в начале вывода?",
+   "explanation": "Допущения a) и b): однородность, изотропия, вскрытие всей толщины.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пласт однородный по свойствам породы",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Проницаемость изотропна",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Скважина вскрывает всю толщину пласта",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Скважина стоит на границе пласта",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n02#t3",
+   "type": "gap",
+   "step_id": "test-dake.n02",
+   "claim_ids": [
+    "test-dake.n02#c7"
+   ],
+   "prompt": "Заполните пропуск. Вскрытие скважиной всей толщины пласта обеспечивает полностью {{1}} течение.",
+   "explanation": "Так сказано в допущении b).",
+   "kind": "recall",
+   "answer": [
+    "радиальное"
+   ],
+   "accepted": [
+    [
+     "радиальное",
+     "радиальный"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n02#t4",
+   "type": "order",
+   "step_id": "test-dake.n02",
+   "claim_ids": [
+    "test-dake.n02#c1"
+   ],
+   "prompt": "Расставьте мысли раздела в том порядке, в каком они идут в тексте.",
+   "explanation": "В тексте сначала цель и решения, затем сравнение с декартовой формой, в конце допущения.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Цель: моделировать течение вблизи скважины в радиальной форме",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Аналитические решения при начальных и граничных условиях",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Радиальный вывод важнее декартова",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Допущения a) и b)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n03#t1",
+   "type": "single",
+   "step_id": "test-dake.n03",
+   "claim_ids": [
+    "test-dake.n03#c4"
+   ],
+   "prompt": "Чему равна правая часть баланса массы в кольце?",
+   "explanation": "Правая часть — объём элемента на скорость изменения плотности.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Дебиту q",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Скорости изменения массы в элементе: 2πrhφdr ∂ρ/∂t",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Давлению на границе",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Проницаемости",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n03#t2",
+   "type": "order",
+   "step_id": "test-dake.n03",
+   "claim_ids": [
+    "test-dake.n03#c7"
+   ],
+   "prompt": "Расставьте шаги вывода (5.2) по порядку.",
+   "explanation": "Так идёт вывод у автора на с. 76.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Выделить тонкое кольцо толщиной dr",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Записать баланс qρ на r+dr минус qρ на r",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Развернуть левую часть через ∂(qρ)/∂r · dr",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Сократить dr и получить (5.2)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n03#t3",
+   "type": "gap",
+   "step_id": "test-dake.n03",
+   "claim_ids": [
+    "test-dake.n03#c1"
+   ],
+   "prompt": "Заполните пропуск. Элемент толщиной dr считается заполненным {{1}} флюидом, потому что пласт полностью им насыщен.",
+   "explanation": "Допущение c): пласт полностью насыщен одним флюидом.",
+   "kind": "recall",
+   "answer": [
+    "одним"
+   ],
+   "accepted": [
+    [
+     "одним",
+     "единственным",
+     "однофазным",
+     "одним и тем же"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n03#t4",
+   "type": "multiple",
+   "step_id": "test-dake.n03",
+   "claim_ids": [
+    "test-dake.n03#c7"
+   ],
+   "prompt": "Что НЕ используется при выводе (5.2) на этом шаге?",
+   "explanation": "Закон Дарси и сжимаемость автор вводит после (5.2).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Принцип сохранения массы",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Закон Дарси",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Определение сжимаемости",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Объём элемента 2πrhφdr",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n04#t1",
+   "type": "single",
+   "step_id": "test-dake.n04",
+   "claim_ids": [
+    "test-dake.n04#c1"
+   ],
+   "prompt": "Что именно заменяется законом Дарси в уравнении (5.2)?",
+   "explanation": "Автор подставляет выражение для q через градиент давления.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Плотность ρ",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Расход q",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Пористость φ",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Время t",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n04#t2",
+   "type": "order",
+   "step_id": "test-dake.n04",
+   "claim_ids": [
+    "test-dake.n04#c3"
+   ],
+   "prompt": "Расставьте шаги вывода (5.3) по порядку.",
+   "explanation": "Сначала баланс, затем подстановка q, затем промежуточная запись и упрощение.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Баланс массы (5.2)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Подстановка q = (2πkhr/μ)·∂p/∂r",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Запись с ρ под производной",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Упрощение до (5.3)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n04#t3",
+   "type": "gap",
+   "step_id": "test-dake.n04",
+   "claim_ids": [
+    "test-dake.n04#c4"
+   ],
+   "prompt": "Заполните пропуск. В правой части (5.3) пока стоит производная {{1}} по времени.",
+   "explanation": "Правая часть (5.3) равна φ ∂ρ/∂t.",
+   "kind": "recall",
+   "answer": [
+    "плотности"
+   ],
+   "accepted": [
+    [
+     "плотности",
+     "ρ"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n05#t1",
+   "type": "single",
+   "step_id": "test-dake.n05",
+   "claim_ids": [
+    "test-dake.n05#c3"
+   ],
+   "prompt": "Что выражает сжимаемость c в (5.4)?",
+   "explanation": "В (5.4) c = (1/ρ)∂ρ/∂p.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "(1/ρ)·∂ρ/∂p",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "ρ·∂p/∂t",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "m/V",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "k/μ",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n05#t2",
+   "type": "gap",
+   "step_id": "test-dake.n05",
+   "claim_ids": [
+    "test-dake.n05#c4"
+   ],
+   "prompt": "Заполните: ∂ρ/∂t = ___ ∂p/∂t. ∂ρ/∂t = {{1}} ∂p/∂t",
+   "explanation": "Так записано (5.5).",
+   "kind": "recall",
+   "answer": [
+    "cρ"
+   ],
+   "accepted": [
+    [
+     "cρ",
+     "c·ρ",
+     "c ρ"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n05#t3",
+   "type": "order",
+   "step_id": "test-dake.n05",
+   "claim_ids": [
+    "test-dake.n05#c5"
+   ],
+   "prompt": "Расставьте шаги вывода (5.1).",
+   "explanation": "Таков порядок автора.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Определение сжимаемости c = −(1/V)∂V/∂p",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Подстановка V = m/ρ, уравнение (5.4)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Дифференцирование по времени, уравнение (5.5)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Подстановка (5.5) в (5.3), уравнение (5.1)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n05#t4",
+   "type": "single",
+   "step_id": "test-dake.n05",
+   "claim_ids": [
+    "test-dake.n05#c8"
+   ],
+   "prompt": "Почему (5.1) нелинейно?",
+   "explanation": "Так сказано автором.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "ρ, c и μ неявно зависят от давления",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В нём есть производная по времени",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Оно радиальное",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "В нём есть пористость",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n06#t1",
+   "type": "single",
+   "step_id": "test-dake.n06",
+   "claim_ids": [
+    "test-dake.n06#c1"
+   ],
+   "prompt": "Что определяет, какое именно решение уравнения (5.1) получится?",
+   "explanation": "Автор: решений бесконечно много, выбирают их начальное и граничные условия.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Только вязкость жидкости",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Начальное и граничные условия",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Только радиус скважины",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Номер главы",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n06#t2",
+   "type": "multiple",
+   "step_id": "test-dake.n06",
+   "claim_ids": [
+    "test-dake.n06#c6"
+   ],
+   "prompt": "Какие три условия автор называет самыми частыми?",
+   "explanation": "Названы transient, semi steady state и steady state.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Переходное",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Полустационарное",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Стационарное",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Турбулентное",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n06#t3",
+   "type": "gap",
+   "step_id": "test-dake.n06",
+   "claim_ids": [
+    "test-dake.n06#c3"
+   ],
+   "prompt": "Заполните пропуск: в решении с постоянным дебитом пласт сначала в равновесии при давлении ___. Начальное давление обозначено p{{1}}.",
+   "explanation": "Начальное равновесное давление пласта обозначено pi.",
+   "kind": "recall",
+   "answer": [
+    "i"
+   ],
+   "accepted": [
+    [
+     "i"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n07#t1",
+   "type": "single",
+   "step_id": "test-dake.n07",
+   "claim_ids": [
+    "test-dake.n07#c3"
+   ],
+   "prompt": "Почему при переходном режиме пласт считают бесконечным?",
+   "explanation": "Автор принимает допущение, что внешняя граница на отклик не влияет.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пласт действительно не имеет границ",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Предполагают, что отклик давления не зависит от внешней границы",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Давление в нём постоянно",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Дебит скважины равен нулю",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n07#t2",
+   "type": "multiple",
+   "step_id": "test-dake.n07",
+   "claim_ids": [
+    "test-dake.n07#c6"
+   ],
+   "prompt": "Что верно для переходного режима по тексту?",
+   "explanation": "Постоянная производная относится к другому режиму; здесь p и ∂p/∂t — функции r и t.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Он применим короткое время после возмущения",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Давление зависит от r и t",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "∂p/∂t одинакова во всех точках и постоянна",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Его применяют к испытаниям скважин",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n07#t3",
+   "type": "gap",
+   "step_id": "test-dake.n07",
+   "claim_ids": [
+    "test-dake.n07#c2"
+   ],
+   "prompt": "Вставьте слово. Возмущение давления обычно вызывает изменение {{1}} скважины на r=r_w.",
+   "explanation": "Автор называет причиной смену дебита скважины.",
+   "kind": "recall",
+   "answer": [
+    "дебита"
+   ],
+   "accepted": [
+    [
+     "дебита",
+     "добычи",
+     "production rate"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n08#t1",
+   "type": "single",
+   "step_id": "test-dake.n08",
+   "claim_ids": [
+    "test-dake.n08#c3"
+   ],
+   "prompt": "Что выражает условие (5.6) ∂p/∂r = 0 при r = r_e?",
+   "explanation": "По закону Дарси нулевой градиент на границе означает отсутствие потока.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Давление постоянно во времени",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Через внешнюю границу нет потока («кирпичная стена»)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Пласт бесконечен",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Дебит равен нулю во всей ячейке",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n08#t2",
+   "type": "multiple",
+   "step_id": "test-dake.n08",
+   "claim_ids": [
+    "test-dake.n08#c8"
+   ],
+   "prompt": "От чего, по (5.10), зависит скорость падения давления dp/dt в радиальной ячейке?",
+   "explanation": "Все эти величины входят в формулу (5.10); больше q — быстрее падение, больше cπr_e²hφ — медленнее.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "От дебита q",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "От сжимаемости c",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "От радиуса r_e, толщины h и пористости φ",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "От номера главы",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n08#t3",
+   "type": "order",
+   "step_id": "test-dake.n08",
+   "claim_ids": [
+    "test-dake.n08#c6"
+   ],
+   "prompt": "Расположите логику вывода в порядке автора.",
+   "explanation": "Автор идёт от условия на границе к константе скорости падения.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Граница ощутима, стена не пускает флюид",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "∂p/∂r = 0 при r = r_e",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "При постоянном q ∂p/∂t ≈ const",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Баланс cV·dp/dt = −q",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "dp/dt = −q/(cπr_e²hφ)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ]
+  },
+  {
+   "id": "test-dake.n08#t4",
+   "type": "gap",
+   "step_id": "test-dake.n08",
+   "claim_ids": [
+    "test-dake.n08#c7"
+   ],
+   "prompt": "Заполните пропуск. Константу в (5.7) получают простым {{1}} балансом с определением сжимаемости.",
+   "explanation": "Автор называет это простым материальным балансом (material balance).",
+   "kind": "recall",
+   "answer": [
+    "материальным"
+   ],
+   "accepted": [
+    [
+     "материальным",
+     "материальный"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n09#t1",
+   "type": "single",
+   "step_id": "test-dake.n09",
+   "claim_ids": [
+    "test-dake.n09#c4"
+   ],
+   "prompt": "Почему в (5.13) можно использовать дебиты вместо объёмов?",
+   "explanation": "Из (5.9) следует q_i ∝ V_i при малой вариации сжимаемости.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Потому что объёмы всегда равны",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Потому что при постоянной dp/dt и малой вариации сжимаемости q_i ∝ V_i",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Потому что дебиты не зависят от давления",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Потому что границы зон проницаемы",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n09#t2",
+   "type": "order",
+   "step_id": "test-dake.n09",
+   "claim_ids": [
+    "test-dake.n09#c5"
+   ],
+   "prompt": "Расставьте логику вывода по порядку.",
+   "explanation": "Сначала условие постоянной dp/dt, затем пропорциональность, замена весов и расчёт.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "dp/dt примерно постоянна по пласту",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "q_i ∝ V_i при малой вариации сжимаемости",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Объёмное среднее заменяют средним по дебитам",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Считают p̄_res по (5.13)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n09#t3",
+   "type": "calc",
+   "step_id": "test-dake.n09",
+   "claim_ids": [
+    "test-dake.n09#c5"
+   ],
+   "prompt": "Две скважины: q_1 = 100, p̄_1 = 200; q_2 = 300, p̄_2 = 240 (условные числа, не из книги). Найдите p̄_res по (5.13).",
+   "explanation": "(200·100 + 240·300)/(100+300) = 92000/400 = 230.",
+   "kind": "data",
+   "answer": 230,
+   "tolerance": 0.02,
+   "unit": "в тех же единицах, что p̄_i"
+  },
+  {
+   "id": "test-dake.n09#t4",
+   "type": "multiple",
+   "step_id": "test-dake.n09",
+   "claim_ids": [
+    "test-dake.n09#c2"
+   ],
+   "prompt": "Что верно о зонах дренирования при полустационарном режиме?",
+   "explanation": "Границы стабильны именно потому, что dp/dt примерно постоянна; перестройка была бы при её неоднородности.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Каждая скважина дренирует свою зону почти независимо от других",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "dp/dt примерно постоянна по всему пласту",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Границы зон постоянно перестраиваются без причины",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "V_i трудно определить, а q_i измеряют регулярно",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n10#t1",
+   "type": "single",
+   "step_id": "test-dake.n10",
+   "claim_ids": [
+    "test-dake.n10#c1"
+   ],
+   "prompt": "Какая внешняя граница соответствует стационарному режиму?",
+   "explanation": "Автор применяет условие к скважине, дренирующей ячейку с полностью открытой внешней границей.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Полностью открытая",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Непроницаемая («нет потока»)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Бесконечно далёкая",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Граница отсутствует",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n10#t2",
+   "type": "multiple",
+   "step_id": "test-dake.n10",
+   "claim_ids": [
+    "test-dake.n10#c3"
+   ],
+   "prompt": "Какие условия задают стационарный режим?",
+   "explanation": "Это условия (5.14) и (5.15).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "p = p_e на r = r_e",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "∂p/∂t = 0 для всех r и t",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Дебит равен нулю",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Граница непроницаема",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "test-dake.n10#t3",
+   "type": "order",
+   "step_id": "test-dake.n10",
+   "claim_ids": [
+    "test-dake.n10#c9"
+   ],
+   "prompt": "Расставьте события после смены дебита скважины.",
+   "explanation": "Автор описывает краткий переходный период, затем стабилизацию.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Дебит скважины изменён",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Короткий переходный период",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Стабилизированное течение при новом распределении дебитов",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n10#t4",
+   "type": "gap",
+   "step_id": "test-dake.n10",
+   "claim_ids": [
+    "test-dake.n10#c6"
+   ],
+   "prompt": "Заполните: стационарный режим может ___ полностью реализоваться в пласте. Стационарный и полустационарный режимы могут {{1}} быть полностью реализованы в пласте.",
+   "explanation": "Автор пишет, что режимы могут никогда не реализоваться полностью.",
+   "kind": "recall",
+   "answer": [
+    "никогда не"
+   ],
+   "accepted": [
+    [
+     "никогда не",
+     "никогда"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n11#t1",
+   "type": "single",
+   "step_id": "test-dake.n11",
+   "claim_ids": [
+    "test-dake.n11#c3"
+   ],
+   "prompt": "Каким правилом автор раскрывает левую часть (5.1)?",
+   "explanation": "Автор прямо пишет, что использует цепное правило.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Правилом Дарси",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Цепным правилом дифференцирования",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Правилом сохранения массы",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Заменой переменной Больцмана",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n11#t2",
+   "type": "order",
+   "step_id": "test-dake.n11",
+   "claim_ids": [
+    "test-dake.n11#c7"
+   ],
+   "prompt": "Расставьте действия автора по порядку.",
+   "explanation": "Сначала раскрытие, затем связь через сжимаемость, затем подстановка.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Раскрыть левую часть (5.1) — получить (5.16)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Продифференцировать (5.4) по r — получить (5.17)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Подставить (5.17) в (5.16) — получить (5.18)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n11#t3",
+   "type": "gap",
+   "step_id": "test-dake.n11",
+   "claim_ids": [
+    "test-dake.n11#c2"
+   ],
+   "prompt": "Какой флюид рассматривается в разделе 5.4? В разделе рассматривается жидкость, на практике — {{1}} нефть.",
+   "explanation": "Автор связывает жидкость с течением недонасыщенной нефти.",
+   "kind": "recall",
+   "answer": [
+    "недонасыщенная"
+   ],
+   "accepted": [
+    [
+     "недонасыщенная",
+     "недонасыщенной"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n12#t1",
+   "type": "single",
+   "step_id": "test-dake.n12",
+   "claim_ids": [
+    "test-dake.n12#c3"
+   ],
+   "prompt": "Какие члены уравнения (5.18) исчезают при допущениях для жидкости?",
+   "explanation": "Автор прямо пишет, что два допущения убирают первые два члена левой части (5.18).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Первые два члена левой части",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Правая часть с ∂p/∂t",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Член со второй производной по r",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Все члены с k",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n12#t2",
+   "type": "multiple",
+   "step_id": "test-dake.n12",
+   "claim_ids": [
+    "test-dake.n12#c6"
+   ],
+   "prompt": "Какие допущения для жидкости упомянуты в тексте (включая последнее)?",
+   "explanation": "Три допущения названы в тексте; про рост k автор ничего не говорит.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Вязкость μ постоянна",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Градиент давления мал, члены (∂p/∂r)² отбрасываются",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Сжимаемость постоянна",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Проницаемость k растёт с давлением",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n12#t3",
+   "type": "gap",
+   "step_id": "test-dake.n12",
+   "claim_ids": [
+    "test-dake.n12#c6"
+   ],
+   "prompt": "Заполните пропуск. При постоянной сжимаемости коэффициент φμc/k тоже {{1}}, и уравнение становится линейным.",
+   "explanation": "Постоянство c делает коэффициент постоянным.",
+   "kind": "recall",
+   "answer": [
+    "постоянен"
+   ],
+   "accepted": [
+    [
+     "постоянен",
+     "постоянный",
+     "константа",
+     "const"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n12#t4",
+   "type": "order",
+   "step_id": "test-dake.n12",
+   "claim_ids": [
+    "test-dake.n12#c5"
+   ],
+   "prompt": "Расположите шаги упрощения по порядку.",
+   "explanation": "Сначала допущения о μ и градиенте дают (5.19), затем (5.20), затем допущение о c.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Принять μ постоянной",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Отбросить члены порядка (∂p/∂r)²",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Получить (5.19)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Записать компактно как (5.20)",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Принять c постоянной",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ]
+  },
+  {
+   "id": "test-dake.n13#t1",
+   "type": "calc",
+   "step_id": "test-dake.n13",
+   "claim_ids": [
+    "test-dake.n13#c5"
+   ],
+   "prompt": "Примите S_o = 1 − Swc (автор S_o не называет). По данным автора найдите c_t из (5.22) и посчитайте cp при p = 3000 psi. Ответ — безразмерное число.",
+   "explanation": "c_t = 14.6×10−6/psi, умножение на 3000 psi даёт ≈ 0.0438, у автора 0.04.",
+   "kind": "data",
+   "answer": 0.0438,
+   "tolerance": 0.03,
+   "unit": null
+  },
+  {
+   "id": "test-dake.n13#t2",
+   "type": "single",
+   "step_id": "test-dake.n13",
+   "claim_ids": [
+    "test-dake.n13#c2"
+   ],
+   "prompt": "Что, по автору, требуется для простой линеаризации жидкости, кроме постоянства сжимаемости?",
+   "explanation": "Сжимаемость должна быть и постоянной, и малой.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Чтобы сжимаемость была малой, то есть cp ≪ 1",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Чтобы давление было равно нулю",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Чтобы насыщенность воды была равна 1",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Чтобы вязкость росла с давлением",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n13#t3",
+   "type": "single",
+   "step_id": "test-dake.n13",
+   "claim_ids": [
+    "test-dake.n13#c7"
+   ],
+   "prompt": "Почему для реального газа простая линеаризация не подходит?",
+   "explanation": "При cp порядка единицы условие (5.21) нарушено.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Сжимаемость газа ≈ 1/p, поэтому cp равно единице",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "У газа нет давления",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Газ несжимаем",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "c_f у газа равна нулю",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n13#t4",
+   "type": "gap",
+   "step_id": "test-dake.n13",
+   "claim_ids": [
+    "test-dake.n13#c4"
+   ],
+   "prompt": "Заполните пропуск о том, как выражены насыщенности в (5.22). Насыщенности — доли {{1}} объёма.",
+   "explanation": "Автор указывает: насыщенности — доли порового объёма.",
+   "kind": "data",
+   "answer": [
+    "порового"
+   ],
+   "accepted": [
+    [
+     "порового",
+     "поры",
+     "пор"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n14#t1",
+   "type": "single",
+   "step_id": "test-dake.n14",
+   "claim_ids": [
+    "test-dake.n14#c2"
+   ],
+   "prompt": "Почему в записи (5.23) стоит абсолютная пористость?",
+   "explanation": "Допущение о полном насыщении одним флюидом подразумевает абсолютную пористость.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "При выводе (5.1) среду считали полностью насыщенной одним флюидом",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Связанную воду уже вычли из пористости",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Абсолютная пористость делает произведение φc больше, чем в (5.24)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Так требует уравнение теплопроводности",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n14#t2",
+   "type": "multiple",
+   "step_id": "test-dake.n14",
+   "claim_ids": [
+    "test-dake.n14#c4"
+   ],
+   "prompt": "Что верно о записи (5.24)?",
+   "explanation": "Произведения (5.23) и (5.24) равны, а члены из разных записей смешивать нельзя.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "φabsolute(1 − Swc) — эффективная углеводородная пористость",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Её сжимаемость используют вместе с углеводородным поровым объёмом",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Её произведение больше, чем в (5.23)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Её сжимаемость можно свободно умножать на φabsolute",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "test-dake.n14#t3",
+   "type": "gap",
+   "step_id": "test-dake.n14",
+   "claim_ids": [
+    "test-dake.n14#c6"
+   ],
+   "prompt": "Впишите термин из книги (по-английски или по-русски). Коэффициент k/φμc в уравнении (5.20) называют постоянной {{1}}.",
+   "explanation": "Автор называет k/φμc diffusivity constant.",
+   "kind": "recall",
+   "answer": [
+    "диффузии"
+   ],
+   "accepted": [
+    [
+     "диффузии",
+     "диффузивности",
+     "diffusivity",
+     "пьезопроводности"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n14#t4",
+   "type": "single",
+   "step_id": "test-dake.n14",
+   "claim_ids": [
+    "test-dake.n14#c6"
+   ],
+   "prompt": "Сравните (5.20) с уравнением теплопроводности. Что в уравнении давления играет роль K?",
+   "explanation": "В тепловом уравнении справа стоит 1/K, а в (5.20) — φμc/k, значит K соответствует k/φμc.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "k/φμc",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "φμc/k",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "φabsolute(1 − Swc)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Давление p",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n15#t1",
+   "type": "order",
+   "step_id": "test-dake.n15",
+   "claim_ids": [
+    "test-dake.n15#c5"
+   ],
+   "prompt": "Расположите стадии падения давления в порядке времени (граница «без потока»).",
+   "explanation": "Автор: сначала переходная, затем поздняя переходная, в конце стабилизированный поток.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Переходная (бесконечный пласт)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Поздняя переходная",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Стабилизированная (полустационарная)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n15#t2",
+   "type": "single",
+   "step_id": "test-dake.n15",
+   "claim_ids": [
+    "test-dake.n15#c7"
+   ],
+   "prompt": "Что характерно для стабилизированного потока при границе «без потока»?",
+   "explanation": "Автор: скорость изменения забойного давления постоянна; это соответствует полустационарному режиму.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Давление на забое не меняется",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Скорость изменения забойного давления по времени постоянна",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Граница дренирования ещё не ощущается",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Дебит равен нулю",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n15#t3",
+   "type": "multiple",
+   "step_id": "test-dake.n15",
+   "claim_ids": [
+    "test-dake.n15#c6"
+   ],
+   "prompt": "Что очень важно для выбора решения поздней переходной стадии у скважины внутри границы «без потока»?",
+   "explanation": "Автор называет форму области и положение скважины очень важными факторами.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Форма дренируемой области",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Положение скважины относительно границы",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Год публикации решения",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Номер уравнения полного решения",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "test-dake.n15#t4",
+   "type": "gap",
+   "step_id": "test-dake.n15",
+   "claim_ids": [
+    "test-dake.n15#c9"
+   ],
+   "prompt": "Заполните пропуск. Решение для всех времён впервые представили в {{1}} году Херст и Ван Эвердинген.",
+   "explanation": "Год указан в тексте.",
+   "kind": "recall",
+   "answer": [
+    "1949"
+   ],
+   "accepted": [
+    [
+     "1949"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n16#t1",
+   "type": "single",
+   "step_id": "test-dake.n16",
+   "claim_ids": [
+    "test-dake.n16#c9"
+   ],
+   "prompt": "Какое из условий является внутренним граничным условием линейного источника?",
+   "explanation": "Автор прямо называет условие (c) внутренним граничным условием линейного источника.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "p = pi при t = 0 для всех r",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "p = pi при r = ∞ для всех t",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "lim r·∂p/∂r = qμ/(2πkh) при r → 0, t > 0",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "s = φμcr²/(4kt)",
+     "misconception": null
+    }
+   ],
+   "answer": "c"
+  },
+  {
+   "id": "test-dake.n16#t2",
+   "type": "multiple",
+   "step_id": "test-dake.n16",
+   "claim_ids": [
+    "test-dake.n16#c10"
+   ],
+   "prompt": "Какие допущения о пласте и скважине сохраняются из главы 5?",
+   "explanation": "Нужны однородный изотропный пласт и полное вскрытие, чтобы течение было радиальным.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Пласт однороден",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Пласт изотропен",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Скважина вскрывает пласт полностью",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Скважина вскрывает пласт частично",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Свойства пласта различаются по направлениям",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n16#t3",
+   "type": "gap",
+   "step_id": "test-dake.n16",
+   "claim_ids": [
+    "test-dake.n16#c5"
+   ],
+   "prompt": "Дополните внешнее условие задачи. p = pi при r = {{1}} для всех t.",
+   "explanation": "Условие (b) задаёт начальное давление на бесконечно удалённой границе, что обеспечивает переходный режим.",
+   "kind": "recall",
+   "answer": [
+    "∞"
+   ],
+   "accepted": [
+    [
+     "∞",
+     "бесконечность",
+     "бесконечности",
+     "inf",
+     "infinity"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n17#t1",
+   "type": "single",
+   "step_id": "test-dake.n17",
+   "claim_ids": [
+    "test-dake.n17#c6"
+   ],
+   "prompt": "Какое выражение задаёт переменную Больцмана s?",
+   "explanation": "По определению s = r2/(4·(константа диффузии)·t) = φμcr2/(4kt).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "φμcr2/(4kt)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "φμcr/(2kt)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "4kt/(φμcr2)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "kr2/(4φμct)",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n17#t2",
+   "type": "single",
+   "step_id": "test-dake.n17",
+   "claim_ids": [
+    "test-dake.n17#c6"
+   ],
+   "prompt": "Свойства пласта и флюида не меняются, r увеличили вдвое. Во сколько раз нужно увеличить t, чтобы s осталась прежней?",
+   "explanation": "s пропорциональна r2/t, поэтому при удвоении r время нужно увеличить вчетверо.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "В 2 раза",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "В 4 раза",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "В 8 раз",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Менять t не нужно",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n17#t3",
+   "type": "multiple",
+   "step_id": "test-dake.n17",
+   "claim_ids": [
+    "test-dake.n17#c8"
+   ],
+   "prompt": "Какие утверждения о производной ∂s/∂t по формуле (7.3) верны?",
+   "explanation": "Формула (7.3): ∂s/∂t = −φμcr2/(4kt2), коэффициент в знаменателе равен 4.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Перед выражением стоит знак минус",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Время в знаменателе стоит в квадрате",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Радиус в числителе стоит в квадрате",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "В знаменателе стоит коэффициент 2",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n17#t4",
+   "type": "order",
+   "step_id": "test-dake.n17",
+   "claim_ids": [
+    "test-dake.n17#c9"
+   ],
+   "prompt": "Расставьте действия в порядке изложения автора.",
+   "explanation": "Сначала замена и её производные (7.2), (7.3), затем уравнение выражают через новую переменную.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Записать уравнение диффузии (5.20)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Ввести переменную s",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Найти ∂s/∂r",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Найти ∂s/∂t",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Выразить уравнение (5.20) через s",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ]
+  },
+  {
+   "id": "test-dake.n18#t1",
+   "type": "order",
+   "step_id": "test-dake.n18",
+   "claim_ids": [
+    "test-dake.n18#c13"
+   ],
+   "prompt": "Расставьте шаги вывода в порядке автора.",
+   "explanation": "Сначала упрощение и замена, затем интегрирование, и только потом поиск постоянной C2.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Упростить уравнение до d/ds(s·dp/ds) = −s·dp/ds",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Обозначить dp/ds = p′",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Получить уравнение (7.4) для dp′/p′",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Проинтегрировать и получить (7.5)",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Найти C2 из условия при r → 0",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ]
+  },
+  {
+   "id": "test-dake.n18#t2",
+   "type": "single",
+   "step_id": "test-dake.n18",
+   "claim_ids": [
+    "test-dake.n18#c13"
+   ],
+   "prompt": "Чему равна постоянная C2?",
+   "explanation": "Из условия 2s·dp/ds = qμ/(2πkh) при s → 0 получается C2 = qμ/(4πkh).",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "qμ/(2πkh)",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "qμ/(4πkh)",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "pi",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "φμcr2/(4kt)",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n18#t3",
+   "type": "gap",
+   "step_id": "test-dake.n18",
+   "claim_ids": [
+    "test-dake.n18#c8"
+   ],
+   "prompt": "Интегрирование (7.4) даёт: ln p′ = −ln s − ___ + C1. ln p′ = −ln s − {{1}} + C1",
+   "explanation": "Правая часть (7.4) содержит единицу и 1/s, их интегралы дают −s и −ln s.",
+   "kind": "recall",
+   "answer": [
+    "s"
+   ],
+   "accepted": [
+    [
+     "s"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n18#t4",
+   "type": "multiple",
+   "step_id": "test-dake.n18",
+   "claim_ids": [
+    "test-dake.n18#c10"
+   ],
+   "prompt": "Какие утверждения о постоянных верны?",
+   "explanation": "Автор называет обе величины постоянными интегрирования и определяет C2 по условию линейного источника при r → 0.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "C1 и C2 — постоянные интегрирования",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "C2 находят из граничного условия линейного источника",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "C2 находят в пределе r → ∞",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "C2 равна начальному давлению pi",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "id": "test-dake.n19#t1",
+   "type": "single",
+   "step_id": "test-dake.n19",
+   "claim_ids": [
+    "test-dake.n19#c9"
+   ],
+   "prompt": "Почему ei(x) велика при малых x?",
+   "explanation": "ei(x) — площадь под графиком от выбранного x до бесконечности.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Площадь под e−s/s берётся от x до бесконечности и при малом x велика",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Функция e−s растёт с увеличением s",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Площадь берётся от нуля до x",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Постоянная 0.5772 растёт при уменьшении x",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n19#t2",
+   "type": "order",
+   "step_id": "test-dake.n19",
+   "claim_ids": [
+    "test-dake.n19#c1"
+   ],
+   "prompt": "Расставьте шаги получения ei(x) по порядку.",
+   "explanation": "Сначала интегрируют (7.5) в заданных пределах, затем называют полученный интеграл.",
+   "kind": "understanding",
+   "options": [
+    {
+     "id": "a",
+     "text": "Взять уравнение (7.5) для p'",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Задать пределы по s и по давлению",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Проинтегрировать и получить уравнение (7.6)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Обозначить интеграл от x до ∞ как ei(x)",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n19#t3",
+   "type": "calc",
+   "step_id": "test-dake.n19",
+   "claim_ids": [
+    "test-dake.n19#c13"
+   ],
+   "prompt": "Оцените ei(x) по приближению (7.8) при x = 0.001.",
+   "explanation": "−ln 0.001 − 0.5772 ≈ 6.908 − 0.577 = 6.33; условие x < 0.01 выполнено.",
+   "kind": "understanding",
+   "answer": 6.33,
+   "tolerance": 0.01,
+   "unit": "безразмерная величина"
+  },
+  {
+   "id": "test-dake.n19#t4",
+   "type": "gap",
+   "step_id": "test-dake.n19",
+   "claim_ids": [
+    "test-dake.n19#c12"
+   ],
+   "prompt": "По графику ei-функции приближение (7.8) можно использовать, если x < ___. Приближение ei(x) ≈ −ln x − 0.5772 можно использовать, если x < {{1}}.",
+   "explanation": "Автор указывает границу x < 0.01.",
+   "kind": "recall",
+   "answer": [
+    "0.01"
+   ],
+   "accepted": [
+    [
+     "0.01",
+     "0,01",
+     "10−2"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n20#t1",
+   "type": "single",
+   "step_id": "test-dake.n20",
+   "claim_ids": [
+    "test-dake.n20#c2"
+   ],
+   "prompt": "При каком условии автор записывает ei(x) ≈ −ln(γx)?",
+   "explanation": "Уравнение (7.9) дано для x < 0.01, а диапазон 0.001–5.0 относится к графику.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "x < 0.01",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "x > 0.01",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "только при x = 5.0",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "при любом x от 0.001 до 5.0",
+     "misconception": null
+    }
+   ],
+   "answer": "a"
+  },
+  {
+   "id": "test-dake.n20#t2",
+   "type": "calc",
+   "step_id": "test-dake.n20",
+   "claim_ids": [
+    "test-dake.n20#c2"
+   ],
+   "prompt": "Пусть x = 0.005 и γ = 1.781. Найдите ei(x) по приближению (7.9).",
+   "explanation": "x < 0.01, поэтому ei(x) ≈ −ln(1.781 · 0.005) = −ln(0.008905) ≈ 4.72.",
+   "kind": "data",
+   "answer": 4.72,
+   "tolerance": 0.01,
+   "unit": "безразмерная"
+  },
+  {
+   "id": "test-dake.n20#t3",
+   "type": "multiple",
+   "step_id": "test-dake.n20",
+   "claim_ids": [
+    "test-dake.n20#c9"
+   ],
+   "prompt": "Какие утверждения о решении (7.10) верны по тексту?",
+   "explanation": "(7.10) — переходное решение для короткого времени и замеров в стволе, а при большом r приближение неверно.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Оно не зависит от площади дренирования",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Оно не зависит от положения скважины относительно границы",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Скин-фактор включён как не зависящий от времени",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Оно применимо при сколь угодно большом времени",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Оно получено для далёкой скважины при большом r",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "id": "test-dake.n20#t4",
+   "type": "order",
+   "step_id": "test-dake.n20",
+   "claim_ids": [
+    "test-dake.n20#c8"
+   ],
+   "prompt": "Расставьте шаги перехода к формуле (7.10).",
+   "explanation": "Сначала проверяют условие, затем заменяют функцию логарифмом и добавляют скин.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Записать x для ствола, r = rw",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Убедиться, что x < 0.01",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Заменить ei(x) на −ln(γx) в (7.6)",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Добавить 2S для учёта скин-фактора",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "id": "test-dake.n21#t1",
+   "type": "single",
+   "step_id": "test-dake.n21",
+   "claim_ids": [
+    "test-dake.n21#c6"
+   ],
+   "prompt": "Давление записывают в далёкой скважине. Чем считать pr,t?",
+   "explanation": "При большом r приближение (7.9) недействительно, поэтому уравнение (7.6) берут в полной форме.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Формулой (7.10) со скин-фактором",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Полной формулой (7.11) с ei",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Приближением ei(x) ≈ −ln(γx)",
+     "misconception": null
+    }
+   ],
+   "answer": "b"
+  },
+  {
+   "id": "test-dake.n21#t2",
+   "type": "order",
+   "step_id": "test-dake.n21",
+   "claim_ids": [
+    "test-dake.n21#c5"
+   ],
+   "prompt": "Расставьте шаги рассуждения по порядку.",
+   "explanation": "Большое расстояние до точки записи отменяет приближение и ведёт к полной формуле.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "В одной скважине вызывают возмущение давления",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Возмущение записывают в далёкой скважине",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Отмечают: r велико, приближение (7.9) недействительно",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Берут полную формулу (7.11)",
+     "misconception": null
+    },
+    {
+     "id": "e",
+     "text": "Получают значение ei с рис. 7.3",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ]
+  },
+  {
+   "id": "test-dake.n21#t3",
+   "type": "gap",
+   "step_id": "test-dake.n21",
+   "claim_ids": [
+    "test-dake.n21#c8"
+   ],
+   "prompt": "Заполните пропуск. Значения экспоненциального интеграла для формулы (7.11) берут с рис. {{1}}.",
+   "explanation": "Автор прямо отсылает за значениями ei к рис. 7.3.",
+   "kind": "data",
+   "answer": [
+    "7.3"
+   ],
+   "accepted": [
+    [
+     "7.3",
+     "7,3"
+    ]
+   ]
+  },
+  {
+   "id": "test-dake.n21#t4",
+   "type": "multiple",
+   "step_id": "test-dake.n21",
+   "claim_ids": [
+    "test-dake.n21#c3"
+   ],
+   "prompt": "Что из этого следует из текста?",
+   "explanation": "Неверно только третье: для далёкой скважины r велико, и приближение (7.9) не действует.",
+   "kind": "data",
+   "options": [
+    {
+     "id": "a",
+     "text": "Импульсное тестирование — пример проверки связи между скважинами",
+     "misconception": null
+    },
+    {
+     "id": "b",
+     "text": "Для замеров в стволе x обычно меньше 0.01",
+     "misconception": null
+    },
+    {
+     "id": "c",
+     "text": "Для далёкой скважины приближение (7.9) остаётся верным",
+     "misconception": null
+    },
+    {
+     "id": "d",
+     "text": "Степень связи между скважинами определяют с помощью испытаний по давлению",
+     "misconception": null
+    }
+   ],
+   "answer": [
+    "a",
+    "b",
+    "d"
+   ]
+  }
+ ]
+}
