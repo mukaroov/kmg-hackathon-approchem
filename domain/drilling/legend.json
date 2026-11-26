@@ -1,0 +1,47 @@
+{
+  "id": "geo-legend",
+  "version": "1.0",
+  "note": "Единая легенда цветов курса для домена «геология и геофизика». Стайлгайда организаторов не было, поэтому легенда собрана по распространённой практике оформления диаграмм ГИС и литологических колонок. Чтобы перейти на стайлгайд организаторов, достаточно заменить значения в этом файле и пересобрать курсы.",
+  "fluids": {
+    "oil":      { "label": "нефть",              "light": "#7a4b1f", "dark": "#d29a5f" },
+    "gas":      { "label": "газ",                "light": "#c0392b", "dark": "#f08a7a" },
+    "water":    { "label": "пластовая вода",     "light": "#1f5fa8", "dark": "#7fb0ec" },
+    "filtrate": { "label": "фильтрат раствора",  "light": "#6aa0d8", "dark": "#9cc3ee" },
+    "mud":      { "label": "буровой раствор",    "light": "#8a8370", "dark": "#a9a290" }
+  },
+  "rocks": {
+    "clay":      { "label": "глина",               "light": "#9aa38a", "dark": "#7f8872", "pattern": "dash" },
+    "sand":      { "label": "песчаник",            "light": "#e6cf86", "dark": "#a8935a", "pattern": "dots" },
+    "silt":      { "label": "алевролит",           "light": "#d3c49a", "dark": "#978a66", "pattern": "dots-dash" },
+    "limestone": { "label": "известняк",           "light": "#a9c4df", "dark": "#6f8ba6", "pattern": "brick" },
+    "dolomite":  { "label": "доломит",             "light": "#c4b1d8", "dark": "#8f7ca6", "pattern": "brick-slant" },
+    "marl":      { "label": "мергель",             "light": "#b9c2b0", "dark": "#80897a", "pattern": "brick-dash" },
+    "anhydrite": { "label": "ангидрит",            "light": "#e2b8c6", "dark": "#a9808f", "pattern": "cross" },
+    "gypsum":    { "label": "гипс",                "light": "#efd6de", "dark": "#b39ba3", "pattern": "cross" },
+    "salt":      { "label": "каменная соль",       "light": "#d4ebf1", "dark": "#8fb0b8", "pattern": "grid" },
+    "dense":     { "label": "плотная порода",      "light": "#b7b2a7", "dark": "#7d796f", "pattern": "solid" },
+    "cake":      { "label": "глинистая корка",     "light": "#6f6655", "dark": "#a59a83", "pattern": "solid" }
+  },
+  "curves": {
+    "res":     { "label": "сопротивление (БК, ИК, БЭЗ)", "light": "#22201c", "dark": "#ebe6dc", "dash": "" },
+    "resShallow": { "label": "сопротивление малой глубинности (МБК, микрозонды)", "light": "#5f5a50", "dark": "#bdb6a8", "dash": "6 4" },
+    "sp":      { "label": "СП",                         "light": "#b0432e", "dark": "#ec8f7b", "dash": "" },
+    "gr":      { "label": "ГМ (естественная радиоактивность)", "light": "#2f7a3a", "dark": "#86c792", "dash": "" },
+    "neutron": { "label": "НГМ, НМ",                    "light": "#1f5fa8", "dark": "#7fb0ec", "dash": "" },
+    "sonic":   { "label": "АК (ΔT)",                     "light": "#7b3f98", "dark": "#c49ae0", "dash": "" },
+    "density": { "label": "ГГМ (плотность)",             "light": "#b5761a", "dark": "#e6b066", "dash": "" },
+    "caliper": { "label": "кавернограмма",               "light": "#6b665c", "dark": "#a39d90", "dash": "2 3" }
+  },
+  "zones": {
+    "oilClean":  { "label": "безводная нефть",       "light": "#7a4b1f", "dark": "#d29a5f" },
+    "oilWater":  { "label": "нефть с водой",         "light": "#b98a3e", "dark": "#e0bf7a" },
+    "water":     { "label": "вода",                  "light": "#1f5fa8", "dark": "#7fb0ec" },
+    "nonres":    { "label": "неколлектор",           "light": "#8a8370", "dark": "#a9a290" }
+  },
+  "frameClasses": {
+    "A": { "label": "A · данные",        "note": "рисунок построен кодом по данным или расчёту, без генерации" },
+    "B": { "label": "B · процесс",       "note": "движение вычислено из модели процесса" },
+    "C": { "label": "C · внешний вид",   "note": "реальное фото или скан книги" },
+    "D": { "label": "D · атмосфера",     "note": "фон без фактов" }
+  }
+}

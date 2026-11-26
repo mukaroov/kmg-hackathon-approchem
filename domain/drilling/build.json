@@ -1,0 +1,23 @@
+{
+ "id": "drilling",
+ "source": "test_basarygin.md",
+ "pages": "231–318",
+ "started": "2026-11-26T08:32:09.841Z",
+ "finished": "2026-11-26T08:33:51.282Z",
+ "seconds": 101,
+ "provider": "cli",
+ "model": "claude-haiku-5-5",
+ "usage": {
+  "in": 41513,
+  "out": 17872,
+  "calls": 2,
+  "cached": 0
+ },
+ "unresolved": [],
+ "copiedFrom": "geo",
+ "copied": [
+  "styleguide.json",
+  "video_style.json",
+  "legend.json"
+ ]
+}

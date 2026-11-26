@@ -1,0 +1,27 @@
+{
+ "_comment": "Стиль роликов видеодвижка (video/video_engine.py), собран из стайлгайда организаторов (пакет вводных, 03_стайлгайд/styleguide.json). Ключи — как в DomainStyleConfig движка.",
+ "bg_color": "#0F1419",
+ "panel_color": "#1A2129",
+ "ink_color": "#ECEFF4",
+ "muted_color": "#8A96A3",
+ "accent_color": "#2ECC71",
+ "secondary_accent": "#F1C40F",
+ "ochre": "#E8C872",
+ "pressure_cmap": "viridis",
+ "lithology": {
+  "clay": "#6B8E5A",
+  "sand_oil": "#2E8B57",
+  "sand_water": "#3498DB",
+  "sand_gas": "#E74C3C",
+  "limestone": "#7FB3D5",
+  "reef": "#F0A35E",
+  "dolomite": "#A98FD1",
+  "salt": "#C9D6DF",
+  "anhydrite": "#D98CB3",
+  "dense": "#8C7B6B"
+ },
+ "provenance": { "реальные данные": "#27AE60", "симуляция": "#2980B9", "схема": "#8E44AD" },
+ "font_family": "Segoe UI",
+ "min_caption_px_at_1080": 44,
+ "safe_zone": { "top": 220, "bottom": 380, "side": 70 }
+}
