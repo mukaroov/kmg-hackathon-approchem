@@ -82,13 +82,17 @@ export function locateQuote(quote, src, page) {
 }
 
 // Числа: «1,5», «10^{−3}», «4–8» → {1.5, 10, 3, 4, 8}
-export function numbers(s) {
+// lenient — для текста источника: «1,500» в английской книге — тысяча пятьсот, в русской — полтора; в набор идут оба прочтения,
+// и тысячи через запятую или пробел («1,500,000», «12 500») — ещё и целым числом
+export function numbers(s, { lenient = false } = {}) {
   const t = plain(s).replace(/\\[a-zA-Z]+/g, ' ').replace(/[−–—]/g, ' ');
-  return [...new Set((t.match(/\d+(?:[.,]\d+)?/g) || []).map(x => String(parseFloat(x.replace(',', '.')))))];
+  const out = new Set((t.match(/\d+(?:[.,]\d+)?/g) || []).map(x => String(parseFloat(x.replace(',', '.')))));
+  if (lenient) for (const x of t.match(/\b\d{1,3}(?:[,   ]\d{3})+(?:\.\d+)?\b/g) || []) out.add(String(parseFloat(x.replace(/[,   ]/g, ''))));
+  return [...out];
 }
 export function pageNumbers(src, pages) {
   const set = new Set();
-  for (const p of pages) for (const n of numbers(src.pages[p] || '')) set.add(n);
+  for (const p of pages) for (const n of numbers(src.pages[p] || '', { lenient: true })) set.add(n);
   return set;
 }
 

@@ -6,7 +6,7 @@
 // 3) замечания проверяются: цель из пакета, страница в главе, цитата дословно на этой странице; одно замечание на цель.
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, loadConfig } from './lib/config.mjs';
+import { ROOT, loadConfig, providerOverrides } from './lib/config.mjs';
 import { createLLM } from './lib/llm.mjs';
 import { tpl } from './lib/stages.mjs';
 import { loadDomain } from './lib/jobs.mjs';
@@ -29,7 +29,8 @@ const S = readSource(chapterFile);
 const PAGES = Object.keys(S.pages).map(Number).sort((a, b) => a - b);
 const outFile = path.resolve(opt('out') || path.join(ROOT, 'work', 'review', pkg.package_id, 'answer.json'));
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
-const cfg = loadConfig();
+// --provider agent|cli:claude|openai-compatible|… и --cli-model sonnet|opus — как у pipeline/run.mjs; без них — модель из .env
+const cfg = (a => { const o = k => { const i = a.indexOf('--' + k); return i >= 0 ? a[i + 1] : undefined; }; return loadConfig(providerOverrides(o('provider'), o('cli-model'), loadConfig().model)); })(process.argv.slice(2));
 const log = m => console.log('  ' + m);
 const meter = {};
 const llm = createLLM(cfg, { log, meter });

@@ -6,7 +6,7 @@
   "model": "агент через очередь файлов work/agent-queue",
   "extractor": "метки страниц из md",
   "hashes": {
-    "chapter.json": "d5eeba291e636e30",
+    "chapter.json": "320c5898259155ad",
     "nodes/vendelshtein-auto.n01.json": "dd4851ddee98d0b7",
     "nodes/vendelshtein-auto.n02.json": "123ab6dea51a60fc",
     "nodes/vendelshtein-auto.n03.json": "5597b9d5a780f05e",

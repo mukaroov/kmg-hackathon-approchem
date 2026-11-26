@@ -132,7 +132,7 @@ export function writeLayer({ target, layer, source, ingestInfo, name, domain, jo
     source: { md: 'source.md', origin: name, key: id, from: ingestInfo.from, to: ingestInfo.to, start: meta.start || null, end: meta.end || null },
     complete: layer.results.every(r => !r.hard.length),
     title: o.chapter.title, subtitle: o.chapter.subtitle, description: o.chapter.description, intro: o.chapter.intro,
-    book: { author, authorShort: author.split(/\s+/).pop(), title: nz(b.title) || 'название книги не указано', year: nz(b.year) || '', chapter: nz(b.chapter) || '', chapterTitle: nz(b.chapterTitle) || '', pages: ingestInfo.from === ingestInfo.to ? String(ingestInfo.from) : `${ingestInfo.from}–${ingestInfo.to}` },
+    book: { author, authorShort: shortAuthor(author), title: nz(b.title) || 'название книги не указано', year: nz(b.year) || '', chapter: nz(b.chapter) || '', chapterTitle: nz(b.chapterTitle) || '', pages: ingestInfo.from === ingestInfo.to ? String(ingestInfo.from) : `${ingestInfo.from}–${ingestInfo.to}` },
     difficulty: domain.difficulty,
     parts: o.parts.map((p, i) => ({ id: 'p' + (i + 1), title: p.title, short: p.short, sub: p.sub, nodes: p.nodes.map(nd => ids.get(nd.n)) })),
     edges: layer.results.flatMap(r => (r.plan.after || []).filter(a => ids.has(a)).map(a => ({ from: ids.get(a), to: ids.get(r.plan.n), type: 'base' }))),

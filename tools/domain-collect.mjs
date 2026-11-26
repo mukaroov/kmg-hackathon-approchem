@@ -37,6 +37,12 @@ for (const id of fs.readdirSync(path.join(ROOT, 'layer'))) {
   }
 }
 const dir = path.join(ROOT, 'domain', domain);
+// заготовка из главы (pipeline/domain.mjs) — термины, которых нет в слоях, остаются в глоссарии
+const seedFile = path.join(dir, 'glossary_seed.json');
+if (fs.existsSync(seedFile)) for (const g of JSON.parse(fs.readFileSync(seedFile, 'utf8'))) {
+  const key = plain(g.term).toLowerCase();
+  if (key && !terms.has(key)) terms.set(key, { term: plain(g.term), en: plain(g.en), def: plain(g.def), src: [`пакет по главе, с. ${g.page ?? '—'}`] });
+}
 const rows = [...terms.values()].sort((a, b) => a.term.localeCompare(b.term, 'ru'));
 fs.writeFileSync(path.join(dir, 'glossary.md'), `# Глоссарий RU/EN (домен ${domain})\n\nСобран из учебных слоёв командой \`node tools/domain-collect.mjs\`: термин, английский аналог, определение (пишет модель), где встречается. ${rows.length} терминов.\n\n| Термин | EN | Определение | Где |\n| --- | --- | --- | --- |\n${rows.map(r => `| ${r.term} | ${r.en || '—'} | ${r.def} | ${[...new Set(r.src)].slice(0, 3).join('; ')} |`).join('\n')}\n`);
 fs.writeFileSync(path.join(dir, 'it_bridges.md'), `# ИТ-мосты и где они ломаются (домен ${domain})\n\nСобраны из учебных слоёв командой \`node tools/domain-collect.mjs\`. Аналогия — гипотеза модели, граница — где она перестаёт работать. ${bridges.length} мостов.\n\n${bridges.map(b => `## ${b.title} (${b.who}, с. ${b.page ?? '—'}, \`${b.node}\`)\n\n- Аналогия: ${b.text}\n- Где ломается: ${b.limit}\n`).join('\n')}`);

@@ -32,7 +32,9 @@ function limiter(rps, concurrency) {
 }
 
 export function createLLM(cfg, { log = () => {}, meter } = {}) {
-  const run = limiter(cfg.rps, cfg.concurrency);
+  // CLI агента и очередь не ограничены лимитом HTTP API: свой параллелизм (CLI_CONCURRENCY), без паузы между запросами
+  const local0 = cfg.provider === 'agent' || cfg.provider === 'cli';
+  const run = local0 ? limiter(0, cfg.provider === 'cli' ? cfg.cliConcurrency : 1) : limiter(cfg.rps, cfg.concurrency);
   const cacheDir = path.join(ROOT, 'cache', 'llm');
   let schemaMode = cfg.schemaMode;
   const stub = cfg.provider === 'stub';

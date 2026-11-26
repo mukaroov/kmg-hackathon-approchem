@@ -66,7 +66,7 @@ export async function buildLayer({ S, from, to, name, domain, llm, cfg, log, pro
   // границы главы внутри страниц: регулярные выражения начала и конца (--start, --end)
   const units = splitUnits(S, from, to, start ? new RegExp(start, 'm') : null, end ? new RegExp(end, 'm') : null);
   if (!units.length) throw new Error('в главе не найдено ни одной единицы текста');
-  const chapterNums = new Set(); for (let p = from; p <= to; p++) for (const x of numbers(S.pages[p] || '')) chapterNums.add(x);
+  const chapterNums = new Set(); for (let p = from; p <= to; p++) for (const x of numbers(S.pages[p] || '', { lenient: true })) chapterNums.add(x);
   const sys = tpl('system', { domain: { ...domain, hints: (domain.hints || []).map(h => '- ' + h) } });
   const misc = domain.misconceptionsList?.length ? domain.misconceptionsList.map(m => `${m.id} — ${m.text}`) : ['(списка нет — ставь "")'];
   const diffText = Object.entries(domain.difficulty).map(([k, v]) => `${k} — ${v}`).join(', ');
@@ -92,7 +92,7 @@ export async function buildLayer({ S, from, to, name, domain, llm, cfg, log, pro
 
   // 2. узлы
   let done = 0;
-  const results = await pool(plan, cfg.concurrency, async nd => {
+  const results = await pool(plan, cfg.provider === 'cli' ? cfg.cliConcurrency : cfg.concurrency, async nd => {
     const us = nd.units.map(id => byId.get(id));
     const pa = Math.min(...us.map(u => u.page_pdf)), pb = Math.max(...us.map(u => u.page_pdf));
     const text = pageText(S, pa, pb);

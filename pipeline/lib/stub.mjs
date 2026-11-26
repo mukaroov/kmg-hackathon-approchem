@@ -69,6 +69,19 @@ export function stubJSON(task) {
     case 'verify': return { issues: [] };
     case 'tasks': return tasks(task);
     case 'links': return { links: [] };
+    case 'domain': {
+      const K = ['М', 'В', 'И', 'Ф', 'П', 'Пр', 'Н', 'Р'], pg = (task.pages || [])[0] ?? null;
+      return {
+        name: 'область по главе (заглушка)', audience: 'новичок-цифровик без профильного образования', notation: 'Индексы разметкой: x_{i}. Единицы — как у автора.',
+        hints: ['Заглушка без модели: подсказки не собраны.'],
+        difficulty: Object.fromEntries(K.map(k => [k, k])),
+        misconceptions: Array.from({ length: 5 }, (_, i) => ({ id: `misc.stub_${i + 1}`, text: `Заблуждение-заглушка ${i + 1}.`, page: null })),
+        physicsChecklist: Array.from({ length: 8 }, (_, i) => ({ id: `pc.stub_${i + 1}`, group: 'Заглушка', item: `Пункт-заглушка ${i + 1}.` })),
+        pronunciation: [], stress: [],
+        glossary: Array.from({ length: 10 }, (_, i) => ({ term: `термин ${i + 1}`, en: `term ${i + 1}`, def: 'Определение-заглушка.', page: pg })),
+        sceneTemplates: Object.fromEntries(K.map(k => [k, []])), newTemplates: [], dataSources: ['заглушка'],
+      };
+    }
     case 'review': return { verdicts: (task.ids || []).map(id => ({ target: id, has_error: false, category: 'none', severity: 'none', problem: 'заглушка: ошибки не ищет', fix: '', page_pdf: null, quote: null })) };
     default: throw new Error(`заглушка не знает этап ${task?.stage}`);
   }

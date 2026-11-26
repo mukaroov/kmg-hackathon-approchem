@@ -20,7 +20,8 @@ function readEnvFile(file) {
 const DEFAULTS = {
   LLM_PROVIDER: 'mistral',              // mistral | openai-compatible | cli | agent | stub
   LLM_CLI: 'claude',                    // для LLM_PROVIDER=cli: claude (Claude Code) или codex (OpenAI Codex CLI)
-  LLM_CLI_MODEL: '',                    // для LLM_PROVIDER=cli: модель CLI (--model); пусто — модель CLI по умолчанию
+  LLM_CLI_MODEL: '',
+  CLI_CONCURRENCY: '3',                 // для LLM_PROVIDER=cli: сколько запросов к CLI идут одновременно                    // для LLM_PROVIDER=cli: модель CLI (--model); пусто — модель CLI по умолчанию
   LLM_CLI_PATH: '',                     // путь к исполняемому файлу CLI, если его нет в PATH
   AGENT_TIMEOUT_MIN: '240',             // для LLM_PROVIDER=agent: сколько ждать ответа на запрос из очереди
   PYTHON_PATH: 'python',                // Python для видеодвижка (numpy, matplotlib, pydantic 2)
@@ -65,6 +66,7 @@ export function loadConfig(overrides = {}) {
     cli: env.LLM_CLI,
     cliPath: env.LLM_CLI_PATH,
     cliModel: env.LLM_CLI_MODEL,
+    cliConcurrency: Math.max(1, num('CLI_CONCURRENCY')),
     modelLabel: provider === 'agent' ? 'агент через очередь файлов work/agent-queue' : provider === 'cli' ? `${env.LLM_CLI} CLI${env.LLM_CLI_MODEL ? ', модель ' + env.LLM_CLI_MODEL : ', модель CLI по умолчанию'}` : env.LLM_MODEL,
     agentTimeoutMin: num('AGENT_TIMEOUT_MIN'),
     pythonPath: env.PYTHON_PATH,

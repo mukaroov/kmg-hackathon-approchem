@@ -15,7 +15,7 @@ const args = process.argv.slice(2);
 const file = args.find(a => !a.startsWith('--') && !/^--/.test(args[args.indexOf(a) - 1] || ''));
 const opt = k => { const i = args.indexOf('--' + k); return i >= 0 ? args[i + 1] : undefined; };
 if (!file || args.includes('--help')) {
-  console.log('Использование: node pipeline/run.mjs <глава.md|глава.pdf> [--id имя] [--pages 90-108] [--page-start 1] [--domain geo] [--provider stub] [--author «И. О. Фамилия»] [--book «Название»] [--year 2012] [--chapter «Глава 10»] [--force]');
+  console.log('Использование: node pipeline/run.mjs <глава.md|глава.pdf> [--id имя] [--pages 90-108] [--page-start 1] [--domain geo] [--provider stub|agent|cli:claude] [--cli-model sonnet|opus] [--author «И. О. Фамилия»] [--book «Название»] [--year 2012] [--chapter «Глава 10»] [--force]');
   process.exit(file ? 0 : 2);
 }
 if (!fs.existsSync(file)) { console.error(`нет файла ${file}`); process.exit(2); }
@@ -24,7 +24,7 @@ const q = new JobQueue();
 q.on('log', e => console.log('  ' + e.line));
 let job;
 try {
-  job = q.create({ name: path.basename(file), buffer: fs.readFileSync(file), params: { start: opt('start'), end: opt('end'), author: opt('author'), book: opt('book'), year: opt('year'), chapter: opt('chapter'), id: opt('id'), pages: opt('pages'), pageStart: opt('page-start'), domain: opt('domain'), provider: opt('provider'), force: args.includes('--force') } });
+  job = q.create({ name: path.basename(file), buffer: fs.readFileSync(file), params: { start: opt('start'), end: opt('end'), author: opt('author'), book: opt('book'), year: opt('year'), chapter: opt('chapter'), id: opt('id'), pages: opt('pages'), pageStart: opt('page-start'), domain: opt('domain'), provider: opt('provider'), cliModel: opt('cli-model'), force: args.includes('--force') } });
 } catch (e) { console.error('✗ ' + e.message); process.exit(2); }
 console.log(`задача ${job.id}: ${job.name}`);
 q.on('job', j => {

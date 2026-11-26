@@ -8,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawn } from 'node:child_process';
-import { ROOT, loadConfig } from './lib/config.mjs';
+import { ROOT, loadConfig, providerOverrides } from './lib/config.mjs';
 import { createLLM } from './lib/llm.mjs';
 import { tpl } from './lib/stages.mjs';
 import { loadDomain } from './lib/jobs.mjs';
@@ -19,10 +19,11 @@ import { synthesize, ttsSettings } from './lib/tts.mjs';
 
 const args = process.argv.slice(2);
 const opt = k => { const i = args.indexOf('--' + k); return i >= 0 ? args[i + 1] : undefined; };
-const [layerArg, nodeId] = args.filter((a, i) => !a.startsWith('--') && !/^--(format)$/.test(args[i - 1] || ''));
+const [layerArg, nodeId] = args.filter((a, i) => !a.startsWith('--') && !/^--(format|provider|cli-model)$/.test(args[i - 1] || ''));
 if (!layerArg || !nodeId) { console.log('Использование: node pipeline/video.mjs layer/<глава> <id шага> [--format 9:16|16:9] [--from-spec] [--no-voice]'); process.exit(2); }
 
-const cfg = loadConfig();
+// --provider agent|cli:claude|openai-compatible|… и --cli-model sonnet|opus — как у pipeline/run.mjs; без них — модель из .env
+const cfg = (a => { const o = k => { const i = a.indexOf('--' + k); return i >= 0 ? a[i + 1] : undefined; }; return loadConfig(providerOverrides(o('provider'), o('cli-model'), loadConfig().model)); })(process.argv.slice(2));
 const dir = path.resolve(ROOT, layerArg);
 const ch = JSON.parse(fs.readFileSync(path.join(dir, 'chapter.json'), 'utf8'));
 const nodeFile = path.join(dir, 'nodes', nodeId + '.json');
