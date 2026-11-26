@@ -24,7 +24,8 @@ const queue = new JobQueue(cfg);
 const selfOrigin = `http://${cfg.host}:${cfg.port}`;
 const DIST = path.join(ROOT, 'dist');
 const WEB = path.join(ROOT, 'pipeline', 'web');
-const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.md': 'text/markdown; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.webp': 'image/webp', '.mp4': 'video/mp4', '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.txt': 'text/plain; charset=utf-8' };
+const SITE = path.join(ROOT, 'site');
+const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.md': 'text/markdown; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.webp': 'image/webp', '.mp4': 'video/mp4', '.vtt': 'text/vtt; charset=utf-8','.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.txt': 'text/plain; charset=utf-8' };
 
 const originOk = o => !!o && cfg.corsOrigins.some(p => p === '*' || new RegExp('^' + p.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '[^/]*') + '$').test(o));
 function send(res, status, body, headers = {}) {
@@ -66,13 +67,23 @@ function parseMultipart(buf, ctype) {
   return { fields, file };
 }
 
-function serveFile(res, root, rel, extraHeaders = {}) {
+// req — для запросов с Range: без них браузер не перематывает видео (вопрос внутри ролика возвращает к моменту паузы)
+function serveFile(res, root, rel, extraHeaders = {}, req = null) {
   const abs = path.resolve(root, '.' + path.sep + rel);
   if (!abs.startsWith(path.resolve(root) + path.sep) && abs !== path.resolve(root)) return fail(res, 403, 'путь вне папки');
   let f = abs;
   if (fs.existsSync(f) && fs.statSync(f).isDirectory()) f = path.join(f, 'index.html');
   if (!fs.existsSync(f)) return fail(res, 404, 'нет файла');
-  res.writeHead(200, { 'Content-Type': MIME[path.extname(f).toLowerCase()] || 'application/octet-stream', 'Cache-Control': 'no-cache', ...extraHeaders });
+  const type = MIME[path.extname(f).toLowerCase()] || 'application/octet-stream', size = fs.statSync(f).size;
+  const m = req?.headers.range && /^bytes=(\d*)-(\d*)$/.exec(req.headers.range);
+  if (m && (m[1] || m[2])) {
+    let start = m[1] ? +m[1] : Math.max(0, size - +m[2]), end = m[1] && m[2] ? Math.min(+m[2], size - 1) : size - 1;
+    if (start >= size || start > end) { res.writeHead(416, { 'Content-Range': `bytes */${size}` }); return res.end(); }
+    res.writeHead(206, { 'Content-Type': type, 'Content-Range': `bytes ${start}-${end}/${size}`, 'Accept-Ranges': 'bytes', 'Content-Length': end - start + 1, 'Cache-Control': 'no-cache', ...extraHeaders });
+    return fs.createReadStream(f, { start, end }).pipe(res);
+  }
+  res.writeHead(200, { 'Content-Type': type, 'Content-Length': size, 'Accept-Ranges': 'bytes', 'Cache-Control': 'no-cache', ...extraHeaders });
+  if (req?.method === 'HEAD') return res.end();
   fs.createReadStream(f).pipe(res);
 }
 
@@ -152,8 +163,11 @@ const server = http.createServer(async (req, res) => {
       if (m[2] === 'report') return serveFile(res, path.join(DIST, id), 'build-report.json');
       return serveFile(res, path.join(ROOT, 'export', id), m[2] + '.json');
     }
-    if (p.startsWith('/courses/')) return serveFile(res, DIST, p.slice('/courses/'.length));
-    if (req.method === 'GET' && (p === '/' || p.startsWith('/web/'))) return serveFile(res, WEB, p === '/' ? 'index.html' : p.slice(5));
+    if (p.startsWith('/courses/')) return serveFile(res, DIST, p.slice('/courses/'.length), {}, req);
+    if (p.startsWith('/dist/')) return serveFile(res, DIST, p.slice('/dist/'.length), {}, req);   // ролики курсов для сайта (../dist/… из site/)
+    if (p === '/pipeline' || p === '/pipeline/') return serveFile(res, WEB, 'index.html');          // простая страница загрузки конвейера
+    if (p.startsWith('/web/')) return serveFile(res, WEB, p.slice(5));
+    if (!p.startsWith('/api/') && (req.method === 'GET' || req.method === 'HEAD')) return serveFile(res, SITE, p === '/' ? 'index.html' : p.slice(1), {}, req); // сайт STRATA
     return fail(res, 404, 'нет такого адреса; список — pipeline/API.md');
   } catch (e) {
     return fail(res, e.status || 500, e.message);

@@ -10,6 +10,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { exportChapter } from './lib/export.mjs';
+import { writeSiteData } from './lib/strata.mjs';
 import { loadConfig } from '../pipeline/lib/config.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -227,5 +228,8 @@ if (!CHECK_ONLY) {
 <link rel="stylesheet" href="${first ? first.id : ''}/course.css"><style>ul.c{list-style:none;padding:0;margin:24px 0}ul.c li{border-top:1px solid var(--rule);padding:16px 0}ul.c a{font-size:22px}ul.c span{display:block;font:16px/1.45 var(--sans);color:var(--ink-2)}ul.c .m{color:var(--muted)}section.add{border:1px solid var(--rule);border-radius:8px;padding:4px 18px 10px;margin:8px 0 24px}section.add h2{font-size:22px}section.add p{font:16px/1.5 var(--sans)}section.add .btn{display:inline-block;margin-left:6px;padding:8px 14px;border-radius:6px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600}</style></head>
 <body><main class="wrap"><div class="page"><p class="kicker">Глава → курс</p><h1>Демо-курсы по главам</h1><p>Каждый курс открывается в браузере без сервера и без входа. Прогресс сохраняется в этом браузере.</p><ul class="c">${items}</ul>${addChapterBlock()}<p class="ui muted">Собрано ${new Date().toLocaleString('ru')} командой <code>node build/build.mjs</code>.</p></div></main></body></html>`);
   console.log('\n→ dist/index.html');
+  // сайт STRATA (site/): курсы и ролики конвейера в его модели данных; SITE_COURSES=a,b — только эти главы
+  try { const r = writeSiteData(ROOT, process.env.SITE_COURSES ? process.env.SITE_COURSES.split(',') : null); if (r) console.log(`→ site/data/pipeline.js: ${r.courses} курсов, ${r.videos} роликов`); }
+  catch (e) { console.log('✗ site/data/pipeline.js не записан: ' + e.message); }
 }
 process.exit(failed ? 1 : 0);

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173B4D">
+<meta name="description" content="STRATA — глава книги превращается в курс: шаги со ссылками на страницы, задания с проверкой, карточки и личный ранг.">
+<title>STRATA · учебный центр</title>
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/watch.css">
+<link rel="stylesheet" href="css/team.css">
+</head>
+<body>
+<a class="skip" href="#view">К содержанию</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#/home" aria-label="STRATA, главная"><span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></svg></span><span>STRATA<small>УЧЕБНЫЙ ЦЕНТР</small></span></a>
+    <nav class="nav" id="nav" aria-label="Разделы"></nav>
+    <div class="top-tools">
+      <button class="icon-btn" id="theme" type="button" aria-label="Сменить тему"></button>
+      <a class="icon-btn" id="settings-btn" href="#/settings" aria-label="Профиль и настройки"></a>
+      <a class="xp-chip" id="xpchip" href="#/rank"></a>
+      <button class="icon-btn menu-btn" id="menu" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mnav"></button>
+    </div>
+  </div>
+  <nav class="wrap mobile-nav" id="mnav" data-open="false" aria-label="Разделы (мобильное меню)"></nav>
+</header>
+<main id="view" tabindex="-1"></main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div><b>STRATA</b>Глава книги → проверенный курс. <span id="foot-mode"></span></div>
+    <div><b>Обучение</b><a href="#/courses">Курсы</a><a href="#/upload">Загрузить книгу</a><a href="#/shorts">Шортсы</a></div>
+    <div><b>Профиль</b><a href="#/rank">Мой ранг</a><a href="#/settings">Настройки</a><a href="#/team">Кабинет руководителя</a></div>
+    <div><b>Источники</b><span>Тексты глав — по PDF с метками страниц. Метки «автор» и «модель» показывают происхождение текста.</span></div>
+  </div>
+</footer>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<script src="data/content.js"></script>
+<script src="data/media.js"></script>
+<script src="data/scenes.js"></script>
+<script src="data/pipeline.js"></script>
+<script src="js/util.js"></script>
+<script src="js/store.js"></script>
+<script src="js/xp.js"></script>
+<script src="js/api.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/pipeline.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/tasks.js"></script>
+<script src="js/scenes.js"></script>
+<script src="js/views/main.js"></script>
+<script src="js/views/learn.js"></script>
+<script src="js/views/watch.js"></script>
+<script src="js/views/team.js"></script>
+<script src="js/views/admin.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

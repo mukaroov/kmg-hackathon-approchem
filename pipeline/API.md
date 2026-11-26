@@ -110,6 +110,9 @@ const job = await fetch('http://127.0.0.1:8787/api/jobs', { method: 'POST', body
 |---|---|
 | `GET /api/health` | `{ok, provider, model, ocrModel, keys: {model, ocr}, providers, busy, queued}`: доступна ли модель из `.env` и занята ли очередь |
 | `GET /api/providers` | `{current, cliModel, providers: [{id, label, available, note, models?}]}` — модели для выбора в форме; недоступная модель приходит с `note`, что сделать (вход в CLI, ключ). Задача с недоступной моделью получает 409 |
+| `GET /` | сайт STRATA (`site/`): курсы и ролики конвейера из `site/data/pipeline.js`, сборка главы через `POST /api/jobs` |
+| `GET /dist/<глава>/…` | файлы демо-курсов, в том числе ролики; поддерживает `Range` (перемотка видео) |
+| `GET /pipeline` | простая страница загрузки главы |
 | `GET /api/config` | настройки без ключей, список доменных пакетов, форматы файлов |
 | `GET /api/jobs` | все задачи, новые первыми |
 | `GET /api/jobs/{id}/events` | SSE-поток: `event: job` — объект задачи целиком при каждом изменении; `event: log` — `{id, line}`, новая строка журнала; `event: end` — `{state}`, после него поток закрывается |

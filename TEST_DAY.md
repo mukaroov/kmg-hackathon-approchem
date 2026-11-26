@@ -62,7 +62,7 @@ node tools/domain-collect.mjs --domain drilling
 ### 13:15–14:00 — модуль проверки
 
 ```powershell
-node pipeline/review.mjs "<тестовый пакет>.json" --chapter "<глава пакета>.md" --out work/review/test/answer.json --team "<команда>"
+node pipeline/review.mjs "<тестовый пакет>.json" --chapter "<глава пакета>.md" --out work/review/test/answer.json --team "Approchemmately"
 ```
 
 Ответ — `work/review/test/answer.json` в формате `review_output.schema.json`. Сдать этот файл; копия в репозитории — `work/review/`.
