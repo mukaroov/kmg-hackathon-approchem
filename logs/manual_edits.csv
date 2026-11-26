@@ -2,3 +2,4 @@ time,chapter,file,what_changed,person_minutes,people,run_no,reason
 2026-11-25T21:02:34Z,basniev-auto,nodes/basniev-auto.n12.json,"route.format «видео» → «длинное видео» (недопустимое значение формата; проверка формата добавлена в checks.mjs)",1,1,1,ошибка агента в ответе шага 12
 2026-11-25T21:42:26Z,basniev-auto,chapter.json,"book.authorShort «Максимов» → «Басниев и др.» (ошибка конвейера: бралась последняя фамилия списка; исправлено в assemble.mjs)",1,1,1,ошибка конвейера
 2026-11-26T04:38:46Z,vendelshtein-auto,chapter.json,"book.authorShort «Резванов» → «Вендельштейн и др.» (ошибка конвейера: assemble.mjs брал последнее слово строки авторов; исправлено — shortAuthor)",1,1,1,ошибка конвейера
+2026-11-26T05:00:31Z,latyshova-v,"nodes/gis.v20.critical.05.json, nodes/gis.v20.clayey.06.json","убраны ролики short1–3 и пояснения clarify1–3 (демонстрационные заглушки фронтенда, не собраны конвейером); вместо них — шортсы конвейера",2,1,1,решение команды

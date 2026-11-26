@@ -3,6 +3,8 @@
 //   node pipeline/video.mjs layer/<глава> <id шага> [--format 9:16|16:9] [--from-spec] [--no-voice]
 // --from-spec  пересобрать ролик из сохранённой спецификации без модели (после правки факта или спецификации)
 // --no-voice   без озвучки (только субтитры)
+// --voice-only только переозвучить готовый ролик: кадры и спецификация берутся из work/video, рендер не повторяется (секунды вместо минут)
+// --tts gemini,windows  цепочка поставщиков голоса вместо TTS_PROVIDER; --voice Kore — голос первого поставщика (список: node pipeline/lib/tts.mjs --voices)
 // Результат: layer/<глава>/assets/media/<шаг>/ — ролик, постер, субтитры .vtt, спецификация, паспорт (passport.schema.json);
 // в узел шага добавляется запись media, курс пересобирается.
 import fs from 'node:fs';
@@ -19,8 +21,12 @@ import { synthesize, ttsSettings } from './lib/tts.mjs';
 
 const args = process.argv.slice(2);
 const opt = k => { const i = args.indexOf('--' + k); return i >= 0 ? args[i + 1] : undefined; };
-const [layerArg, nodeId] = args.filter((a, i) => !a.startsWith('--') && !/^--(format|provider|cli-model)$/.test(args[i - 1] || ''));
-if (!layerArg || !nodeId) { console.log('Использование: node pipeline/video.mjs layer/<глава> <id шага> [--format 9:16|16:9] [--from-spec] [--no-voice]'); process.exit(2); }
+const [layerArg, nodeId] = args.filter((a, i) => !a.startsWith('--') && !/^--(format|provider|cli-model|tts|voice)$/.test(args[i - 1] || ''));
+const voiceOnly = args.includes('--voice-only');
+// голос: флаги важнее .env (ttsSettings читает process.env раньше файла)
+if (opt('tts')) process.env.TTS_PROVIDER = opt('tts');
+if (opt('voice')) { const first = (process.env.TTS_PROVIDER || '').split(',')[0].trim() || 'gemini'; process.env[{ gemini: 'GEMINI_TTS_VOICE', fish: 'FISH_VOICE', windows: 'TTS_VOICES' }[first] || 'GEMINI_TTS_VOICE'] = opt('voice'); }
+if (!layerArg || !nodeId) { console.log('Использование: node pipeline/video.mjs layer/<глава> <id шага> [--format 9:16|16:9] [--from-spec] [--voice-only] [--no-voice] [--tts gemini,fish,windows] [--voice имя]'); process.exit(2); }
 
 // --provider agent|cli:claude|openai-compatible|… и --cli-model sonnet|opus — как у pipeline/run.mjs; без них — модель из .env
 const cfg = (a => { const o = k => { const i = a.indexOf('--' + k); return i >= 0 ? a[i + 1] : undefined; }; return loadConfig(providerOverrides(o('provider'), o('cli-model'), loadConfig().model)); })(process.argv.slice(2));
@@ -99,7 +105,8 @@ function checkSpec(s) {
 // ---------- 1. спецификация сцены ----------
 const specFile = path.join(work, 'spec.json');
 let spec;
-if (args.includes('--from-spec') && fs.existsSync(specFile)) { spec = JSON.parse(fs.readFileSync(specFile, 'utf8')); log('спецификация из файла (без модели)'); }
+if (voiceOnly && !fs.existsSync(specFile)) { console.error(`✗ --voice-only: нет ${path.relative(ROOT, specFile)} — сначала соберите ролик целиком`); process.exit(2); }
+if ((args.includes('--from-spec') || voiceOnly) && fs.existsSync(specFile)) { spec = JSON.parse(fs.readFileSync(specFile, 'utf8')); log('спецификация из файла (без модели)'); }
 else {
   const llm = createLLM(cfg, { log, meter });
   const engineSchema = JSON.parse(fs.readFileSync(path.join(ROOT, 'video', 'scene.schema.json'), 'utf8'));
@@ -128,7 +135,16 @@ else {
 log(`рендер ${fmt}: ${spec.scene_params.template_type}, ${spec.timeline_segments.length} сегментов`);
 const t0 = Date.now();
 const styleFile = path.join(ROOT, 'domain', domain.id, 'video_style.json');
-const res = await py(specFile, path.join(ROOT, 'work', 'video', ch.id), ...(fs.existsSync(styleFile) ? [styleFile] : []));
+const silent0 = path.join(work, `${nodeId}_silent.mp4`), sync0 = path.join(work, 'timeline_sync.json');
+let res;
+if (voiceOnly && fs.existsSync(silent0) && fs.existsSync(sync0)) {
+  const sy = JSON.parse(fs.readFileSync(sync0, 'utf8'));
+  res = { status: 'ok', video_path: silent0, timeline_sync_json: sync0, total_duration_sec: Math.max(...sy.map(x => x.end_sec)) };
+  log('кадры из прошлого рендера (--voice-only)');
+} else {
+  if (voiceOnly) log('прошлого рендера нет — рисую кадры заново');
+  res = await py(specFile, path.join(ROOT, 'work', 'video', ch.id), ...(fs.existsSync(styleFile) ? [styleFile] : []));
+}
 if (res.status !== 'ok') { console.error('✗ движок: ' + JSON.stringify(res).slice(0, 800)); process.exit(1); }
 const silent = path.resolve(ROOT, res.video_path);
 const sync = JSON.parse(fs.readFileSync(path.resolve(ROOT, res.timeline_sync_json), 'utf8'));

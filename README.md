@@ -86,6 +86,16 @@ node tools/domain-collect.mjs              # глоссарий и ИТ-мост
 node pipeline/video.mjs layer/<глава> <id шага> [--format 9:16|16:9] [--from-spec] [--no-voice]
 ```
 
+**Как поменять озвучку.** Кадры не перерисовываются: `--voice-only` берёт готовые кадры из `work/video/` и заново делает только звук, субтитры и паспорт (секунды вместо минут).
+
+```
+node pipeline/lib/tts.mjs --voices                                                   # голоса всех поставщиков
+node pipeline/video.mjs layer/kuznetsov-auto kuznetsov-auto.n12 --voice-only --tts gemini --voice Kore
+node pipeline/video.mjs layer/kuznetsov-auto kuznetsov-auto.n12 --voice-only --tts windows --voice "Microsoft Pavel"
+```
+
+`--tts` — цепочка поставщиков (`gemini`, `fish`, `windows`), `--voice` — голос первого из них; без флагов берутся `TTS_PROVIDER`, `GEMINI_TTS_VOICE`, `FISH_VOICE`, `TTS_VOICES` из `.env` (там же меняется голос для всех роликов сразу). Манера чтения Gemini — `GEMINI_TTS_STYLE`. Сайт и курс обновляются сами.
+
 Модель пишет спецификацию сцены по схеме движка (`video/scene.schema.json`); конвейер проверяет её по ТЗ (длительность, крючок до 4 с, пауза на предсказание, утверждение и страница у каждого сегмента, подписи до 8 слов, озвучка без цифр и в темпе). Детерминированный движок `video/video_engine.py` (Python 3.12, numpy, matplotlib, pydantic 2) рисует кадры по стайлгайду `domain/geo/video_style.json`; голос — цепочка `TTS_PROVIDER` (`pipeline/lib/tts.mjs`): Gemini TTS (бесплатная модель, голос Charon), Fish Audio (`FISH_API_KEY`, модель s2.1-pro-free) или голоса Windows (`video/tts.ps1`) как запасной вариант без сети; озвученные фразы кешируются в `cache/tts`, громкость −16 LUFS, субтитры `.vtt`, постер и паспорт по `schemas/passport.schema.json`. Ролик кладётся в `layer/<глава>/assets/media/<шаг>/` и подключается к узлу. `--from-spec` пересобирает ролик из сохранённой спецификации без модели. Нужны `PYTHON_PATH` и `FFMPEG_PATH` в `.env`.
 
 Шаблоны движка: `geological_evolution`, `well_log_sync`, `crossplot_cutoff`, `pressure_wave_2d` (режим `well_mode: "rate"` — постоянный дебит, давление точно по основной формуле упругого режима через −Ei, с логарифмическим приближением и границей x = 0,01), `formula_dynamic_plot`.

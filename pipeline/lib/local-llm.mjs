@@ -129,7 +129,23 @@ function runProc(cmd, args, input, timeoutMs) {
   });
 }
 
-export async function cliJSON({ cli, cliPath, model, system, user, schema, timeoutMs }) {
+// CLI проверяет схему строго (JSON Schema draft 2020-12): ключи OpenAPI из схем pydantic (discriminator и т. п.) убираются
+const NON_JSON_SCHEMA = new Set(['discriminator', 'xml', 'externalDocs', 'example', 'nullable', 'readOnly', 'writeOnly']);
+export function cleanSchema(v) {
+  if (Array.isArray(v)) return v.map(cleanSchema);
+  if (!v || typeof v !== 'object') return v;
+  const out = {};
+  for (const [k, x] of Object.entries(v)) {
+    if (NON_JSON_SCHEMA.has(k)) continue;
+    // в properties ключи — имена полей, их не трогаем
+    out[k] = (k === 'properties' || k === '$defs' || k === 'definitions') && x && typeof x === 'object' && !Array.isArray(x)
+      ? Object.fromEntries(Object.entries(x).map(([n, s]) => [n, cleanSchema(s)])) : cleanSchema(x);
+  }
+  return out;
+}
+
+export async function cliJSON({ cli, cliPath, model, system, user, schema: rawSchema, timeoutMs }) {
+  const schema = cleanSchema(rawSchema);
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'glava-'));
   try {
     if (cli === 'claude') {

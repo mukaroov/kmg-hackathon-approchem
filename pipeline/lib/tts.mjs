@@ -59,6 +59,8 @@ async function retrying(fn, label, log) {
   throw last;
 }
 
+export const GEMINI_VOICES = ['Zephyr', 'Puck', 'Charon', 'Kore', 'Fenrir', 'Leda', 'Orus', 'Aoede', 'Callirrhoe', 'Autonoe', 'Enceladus', 'Iapetus', 'Umbriel', 'Algieba', 'Despina', 'Erinome', 'Algenib', 'Rasalgethi', 'Laomedeia', 'Achernar', 'Alnilam', 'Schedar', 'Gacrux', 'Pulcherrima', 'Achird', 'Zubenelgenubi', 'Vindemiatrix', 'Sadachbia', 'Sadaltager', 'Sulafat'];
+
 const PROVIDERS = {
   gemini: {
     ready: s => s.gemini.key ? '' : 'нет ключа GEMINI_API_KEY',
@@ -223,6 +225,16 @@ export async function synthesize(segments, outDir, { log = () => {}, chain } = {
 // CLI: node pipeline/lib/tts.mjs "текст" [out.wav] [--provider gemini]  — проверка голоса
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname.replace(/^\/(\w:)/, '$1'))) {
   const a = process.argv.slice(2);
+  if (a.includes('--voices')) {
+    const s = ttsSettings();
+    console.log(`Цепочка сейчас: ${s.chain.join(' → ')} (TTS_PROVIDER)\n`);
+    console.log(`gemini (GEMINI_TTS_VOICE, сейчас ${s.gemini.voice}):\n  ${GEMINI_VOICES.join(', ')}\n`);
+    console.log(`fish (FISH_VOICE, сейчас ${s.fish.voice || 'голос по умолчанию'}): id голоса из адреса fish.audio/m/<id>\n`);
+    const r = await new Promise(res => { const p = spawn('powershell', ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', path.join(ROOT, 'video', 'tts.ps1'), '-List'], { windowsHide: true }); let o = ''; p.stdout.on('data', d => o += d); p.on('close', () => res(o)); p.on('error', () => res('')); });
+    let list = []; try { list = JSON.parse(r.trim().split('\n').pop()); } catch {}
+    console.log(`windows (TTS_VOICES, сейчас ${s.windows.voices}):\n  ${list.length ? list.map(v => `${v.name} [${v.lang}]`).join('\n  ') : 'нет голосов или не Windows'}`);
+    process.exit(0);
+  }
   const pi = a.indexOf('--provider'); const chain = pi >= 0 ? a.splice(pi, 2)[1].split(',') : undefined;
   const [text = 'Проверка голоса: давление в пласте восстанавливается после остановки скважины.', out = 'tts-test.wav'] = a;
   const dir = path.join(ROOT, 'work', 'tts-test');
