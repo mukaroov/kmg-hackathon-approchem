@@ -15,6 +15,19 @@
    "claim_ids": []
   },
   {
+   "id": "kuznetsov-auto.n01#video1",
+   "step_id": "kuznetsov-auto.n01",
+   "node_id": "kuznetsov-auto.n01",
+   "file": "layer/kuznetsov-auto/assets/media/n01/video.mp4",
+   "frame_class": "B",
+   "origin": "code_from_model",
+   "label": "схема",
+   "caption": "Биостром или биогерм: кто выступал",
+   "alt": "Ролик «Биостром или биогерм: кто выступал», 69 с, к шагу «Биостромы, биогермы и рифы».",
+   "source": "спецификация сцены и паспорт: layer/kuznetsov-auto/assets/media/n01/passport.json",
+   "claim_ids": []
+  },
+  {
    "id": "kuznetsov-auto.n02#fig1",
    "step_id": "kuznetsov-auto.n02",
    "node_id": "kuznetsov-auto.n02",

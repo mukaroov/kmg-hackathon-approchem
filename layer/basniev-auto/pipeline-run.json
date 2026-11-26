@@ -7,7 +7,7 @@
   "extractor": "метки страниц из md",
   "hashes": {
     "chapter.json": "856f1e47007a58ce",
-    "nodes/basniev-auto.n01.json": "e536ec86ed8409d5",
+    "nodes/basniev-auto.n01.json": "5b609305271c02fa",
     "nodes/basniev-auto.n02.json": "a2deda99c6bbc246",
     "nodes/basniev-auto.n03.json": "104ac2c7dad6b763",
     "nodes/basniev-auto.n04.json": "93f0057f836731d1",
@@ -28,7 +28,8 @@
     "nodes/basniev-auto.n19.json": "560dd22b8a087a8c"
   },
   "video": {
-    "basniev-auto.n12": "2026-11-26T04:04:10.777Z"
+    "basniev-auto.n12": "2026-11-26T04:04:10.777Z",
+    "basniev-auto.n01": "2026-11-26T05:10:59.130Z"
   },
   "links": "2026-11-25T21:39:10.030Z"
 }

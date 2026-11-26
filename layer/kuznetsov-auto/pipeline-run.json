@@ -7,7 +7,7 @@
   "extractor": "метки страниц из md",
   "hashes": {
     "chapter.json": "e353fdfceef05130",
-    "nodes/kuznetsov-auto.n01.json": "4dd90d7190e9e4bd",
+    "nodes/kuznetsov-auto.n01.json": "4eb8b9994a8579e3",
     "nodes/kuznetsov-auto.n02.json": "fc72c7b56343636a",
     "nodes/kuznetsov-auto.n03.json": "4a275e6c95db21f0",
     "nodes/kuznetsov-auto.n04.json": "4246e7fbd58b0df7",
@@ -25,7 +25,8 @@
     "nodes/kuznetsov-auto.n16.json": "014216b8e67ab5e0"
   },
   "video": {
-    "kuznetsov-auto.n12": "2026-11-25T20:35:01.093Z"
+    "kuznetsov-auto.n12": "2026-11-25T20:35:01.093Z",
+    "kuznetsov-auto.n01": "2026-11-26T05:10:55.866Z"
   },
   "links": "2026-11-25T21:39:36.394Z"
 }

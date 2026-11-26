@@ -15,6 +15,19 @@
    "claim_ids": []
   },
   {
+   "id": "basniev-auto.n01#video1",
+   "step_id": "basniev-auto.n01",
+   "node_id": "basniev-auto.n01",
+   "file": "layer/basniev-auto/assets/media/n01/video.mp4",
+   "frame_class": "B",
+   "origin": "code_from_model",
+   "label": "схема",
+   "caption": "Упругий режим пласта: изменения от скважины",
+   "alt": "Ролик «Упругий режим пласта: изменения от скважины», 62 с, к шагу «Что такое упругий режим пласта».",
+   "source": "спецификация сцены и паспорт: layer/basniev-auto/assets/media/n01/passport.json",
+   "claim_ids": []
+  },
+  {
    "id": "basniev-auto.n02#fig1",
    "step_id": "basniev-auto.n02",
    "node_id": "basniev-auto.n02",

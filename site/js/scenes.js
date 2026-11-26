@@ -167,7 +167,7 @@
     const r = s.render || {status: 'none'}, base = '/api/scenes/' + encodeURIComponent(s.id);
     let html = '';
     if (r.status === 'done') html = '<video class="scene-mp4" controls preload="metadata" src="' + base + '/video?v=' + encodeURIComponent(r.at || '') + '"></video>' +
-      '<p class="muted" style="font-size:14px">MP4 ' + esc(r.format || '') + ', ' + esc(r.duration || '') + ' с · <a class="link" href="' + base + '/passport" download>паспорт ролика (JSON)</a></p>';
+      '<p class="muted" style="font-size:16px">MP4 ' + esc(r.format || '') + ', ' + esc(r.duration || '') + ' с · <a class="link" href="' + base + '/passport" download>паспорт ролика (JSON)</a></p>';
     else if (r.status === 'queued' || r.status === 'rendering') html = '<p class="muted">Собирается MP4: ' + (r.progress || 0) + ' %…</p>';
     else if (r.status === 'failed' && expert) html = '<div class="note">Сборка не удалась: ' + esc(r.error || '') + '</div>';
     if (expert && !['queued', 'rendering'].includes(r.status)) html += '<button class="btn ghost small" data-render>' + icon('play', 15) + (r.status === 'done' ? ' Пересобрать MP4' : ' Собрать MP4 и паспорт') + '</button>';

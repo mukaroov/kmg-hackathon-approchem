@@ -72,11 +72,11 @@
           let cls = '';
           if (locked) { const right = t.type === 'single' ? o.id === t.answer : t.answer.includes(o.id); if (right) cls = 'right'; else if (S.sel.includes(o.id)) cls = 'wrong'; }
           return '<button type="button" class="opt ' + cls + '" data-opt="' + esc(o.id) + '" aria-pressed="' + S.sel.includes(o.id) + '"' + (locked ? ' disabled' : '') + '><span>' + LETTERS[k] + '</span>' + U.richText(o.text) + '</button>';
-        }).join('') + '</div>' + (t.type === 'multiple' ? '<p class="muted" style="margin-top:8px;font-size:15px">Отметьте все верные варианты.</p>' : '');
+        }).join('') + '</div>' + (t.type === 'multiple' ? '<p class="muted" style="margin-top:8px;font-size:16px">Отметьте все верные варианты.</p>' : '');
       }
       if (t.type === 'order') {
         const byId = id => t.options.find(o => o.id === id);
-        return '<p class="q-prompt">' + U.richText(t.prompt) + '</p><p class="muted" style="font-size:15px;margin:-6px 0 10px">Перетащите карточки за значок слева или используйте стрелки.</p><ol class="order-list">' + S.order.map((id, k) =>
+        return '<p class="q-prompt">' + U.richText(t.prompt) + '</p><p class="muted" style="font-size:16px;margin:-6px 0 10px">Перетащите карточки за значок слева или используйте стрелки.</p><ol class="order-list">' + S.order.map((id, k) =>
           '<li class="order-item" data-id="' + esc(id) + '"><span class="grip" aria-hidden="true">' + icon('grip', 20) + '</span><span>' + U.richText(byId(id).text) + '</span><span class="mv">' +
           '<button type="button" data-mv="-1" aria-label="Поднять выше"' + (k === 0 || locked ? ' disabled' : '') + '>' + icon('up', 16) + '</button>' +
           '<button type="button" data-mv="1" aria-label="Опустить ниже"' + (k === S.order.length - 1 || locked ? ' disabled' : '') + '>' + icon('down', 16) + '</button></span></li>').join('') + '</ol>';
@@ -93,7 +93,7 @@
       const page = t.page ? '<button type="button" class="pg" data-page="' + esc(t.page) + '">стр. ' + esc(t.page) + '</button>' : '';
       return '<div class="fb' + (S.fb.correct ? '' : ' bad') + '" role="status"><strong>' + (S.fb.correct ? 'Верно' : 'Разберём ответ') + '</strong>' + esc(t.explanation || '') +
         '<p style="margin-top:6px"><b>Верный ответ:</b> ' + U.richText(answerText(t)) + ' ' + page + '</p>' +
-        (t.quote ? '<p class="muted" style="margin-top:6px;font-size:15px">«' + U.richText(t.quote) + '»</p>' : '') +
+        (t.quote ? '<p class="muted" style="margin-top:6px;font-size:16px">«' + U.richText(t.quote) + '»</p>' : '') +
         (S.fb.rec && S.fb.rec.code !== 'neutral' ? '<div class="rec"><b>' + icon('bulb', 16) + ' Рекомендация</b><p>' + esc(S.fb.rec.message) + '</p>' +
           (S.fb.rec.lessons?.length ? '<p>' + S.fb.rec.lessons.map(l => '<a class="link" href="#/step/' + esc(course.id) + '/' + esc(l.id) + '">' + esc(l.title) + '</a>').join(', ') + '</p>' : '') +
           '<small class="muted">' + esc(S.fb.rec.note || '') + '</small></div>' : '') + '</div>';

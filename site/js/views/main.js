@@ -13,7 +13,7 @@
   function courseCard(c) {
     const pr = Catalog.progress(c), st = Catalog.resumeStep(c);
     return '<a class="card course" href="#/course/' + esc(c.id) + '">' + cover(c) +
-      '<div class="course-b"><span class="muted" style="font-size:14px">' + esc(c.author || c.domain) + '</span><h3>' + esc(c.title) + '</h3>' +
+      '<div class="course-b"><span class="muted" style="font-size:16px">' + esc(c.author || c.domain) + '</span><h3>' + esc(c.title) + '</h3>' +
       '<div class="meta"><span>' + icon('layers', 16) + P.step(c.steps.length) + '</span><span>' + icon('list', 16) + P.task(c.tasks.length) + '</span><span>' + icon('clock', 16) + Catalog.minutes(c) + ' мин</span></div>' +
       '<div class="meta"><span>' + (pr.done ? 'Пройдено ' + pr.pct + ' %' : 'Начать: ' + esc(st?.title || '')) + '</span></div>' +
       '<div class="bar"><i style="width:' + pr.pct + '%"></i></div></div></a>';
@@ -82,8 +82,8 @@
 
       '<section class="sec"><div class="sec-head"><h2>Учебные траектории</h2><a class="link" href="#/courses">Все траектории ' + icon('arrow', 16) + '</a></div><div class="grid g4">' +
       parts.map(({c, p}) => '<a class="card path" href="#/course/' + esc(c.id) + '">' + (c.cover ? '<div class="cover" style="background-image:url(' + esc(c.cover) + ')"></div>' : '<div class="cover gen">' + icon('layers', 36) + '</div>') +
-        '<div class="course-b"><h3>' + esc(p.title) + '</h3><span class="muted" style="font-size:15px">' + esc(c.title) + ' · ' + P.step(p.steps.length) + '</span></div></a>').join('') + '</div></section>' +
-      '<p class="muted" style="margin-top:22px;font-size:15px">В каталоге ' + P.card(cards) + ' для повторения. Шортсы: <a class="link" href="#/shorts">смотреть</a>.</p></div>';
+        '<div class="course-b"><h3>' + esc(p.title) + '</h3><span class="muted" style="font-size:16px">' + esc(c.title) + ' · ' + P.step(p.steps.length) + '</span></div></a>').join('') + '</div></section>' +
+      '<p class="muted" style="margin-top:22px;font-size:16px">В каталоге ' + P.card(cards) + ' для повторения. Шортсы: <a class="link" href="#/shorts">смотреть</a>.</p></div>';
     host.querySelector('[data-search]').onsubmit = e => {
       e.preventDefault(); const f = new FormData(e.target);
       const q = new URLSearchParams(); ['q', 'cat', 'type'].forEach(k => { if (f.get(k)) q.set(k, f.get(k)); });
@@ -131,7 +131,7 @@
     host.innerHTML = '<div class="wrap"><div class="page-head"><div><h1>Мой ранг</h1><p>Личный прогресс этого профиля. Без рейтинга и соревнований с другими: опыт показывает только вашу работу.</p></div><a class="btn ghost" href="#/settings">' + icon('settings') + ' Профиль</a></div>' +
       '<div class="rank-grid">' +
       '<div class="grid" style="gap:16px"><div class="card medal-card">' + XP.badge(r, 130, lv.n) + '<h2>' + esc(s.name) + '</h2><span class="chip accent">' + esc(r.name) + '</span>' +
-      '<div style="width:100%;margin-top:6px"><div style="display:flex;justify-content:space-between;font-size:15px"><span class="muted">Уровень ' + lv.n + '</span><b>' + lv.inLevel + ' / ' + lv.span + ' XP</b></div><div class="bar yellow" style="margin-top:6px"><i style="width:' + lv.pct + '%"></i></div></div>' +
+      '<div style="width:100%;margin-top:6px"><div style="display:flex;justify-content:space-between;font-size:16px"><span class="muted">Уровень ' + lv.n + '</span><b>' + lv.inLevel + ' / ' + lv.span + ' XP</b></div><div class="bar yellow" style="margin-top:6px"><i style="width:' + lv.pct + '%"></i></div></div>' +
       '<div class="grid g2" style="width:100%;margin-top:10px;gap:10px;text-align:left"><div class="kpi card"><b>' + XP.streakAlive() + '</b><small>серия, дней</small></div><div class="kpi card"><b>' + s.streak.best + '</b><small>лучшая серия</small></div>' +
       '<div class="kpi card"><b>' + s.completed.length + '</b><small>шагов пройдено</small></div><div class="kpi card"><b>' + (answers.length ? Math.round(100 * right / answers.length) : 0) + '%</b><small>верных ответов</small></div></div></div>' +
       '<div class="card pad"><h3 style="font-size:17px">Как начисляется опыт</h3><ul class="log" style="margin-top:8px"><li><span>Шаг завершён (все задания решены)</span><b>+' + XP.RULES.complete + '</b></li><li><span>Все задания шага верно с первой попытки</span><b>+' + XP.RULES.perfect + '</b></li><li><span>Серия: первый шаг за день, × число дней (до 7)</span><b>+' + XP.RULES.streakPerDay + '…' + XP.RULES.streakPerDay * XP.RULES.streakCap + '</b></li></ul></div></div>' +
@@ -160,7 +160,7 @@
       '<form class="card pad form" style="margin-top:16px" data-api><h2 style="font-size:20px">Сервер (бэкенд)</h2><p class="muted">Выключено: курсы собирает встроенный движок, прогресс хранится локально. Включите, когда напарник поднимет сервер: тогда PDF и сборка моделью пойдут на сервер, события синхронизируются.</p>' +
       '<label class="field">Адрес сервера<input name="base" placeholder="https://…" value="' + esc(s.api.base) + '"><small>Пути API задаются в js/api.js (PATHS)</small></label>' +
       '<label style="display:flex;gap:10px;align-items:center;font-weight:600"><input type="checkbox" name="enabled"' + (s.api.enabled ? ' checked' : '') + '> Использовать сервер</label>' +
-      '<p class="muted" style="font-size:15px">В очереди на отправку: ' + Api.queued() + ' событий.</p><button class="btn ghost" style="justify-self:start">Сохранить</button></form>' +
+      '<p class="muted" style="font-size:16px">В очереди на отправку: ' + Api.queued() + ' событий.</p><button class="btn ghost" style="justify-self:start">Сохранить</button></form>' +
       '<div class="card pad" style="margin-top:16px"><h2 style="font-size:20px">Данные</h2><p class="muted" style="margin:6px 0 12px">Экспорт отчёта и импорт отчётов сотрудников — в кабинете руководителя. Сброс удалит прогресс, опыт и ранг этого профиля, но не загруженные книги.</p>' +
       '<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn ghost" href="#/team">' + icon('team') + ' Кабинет руководителя</a><button class="btn ghost" data-reset style="color:var(--red)">' + icon('trash') + ' Сбросить прогресс</button></div></div></div>';
     host.querySelector('[data-profile]').onsubmit = e => { e.preventDefault(); const f = new FormData(e.target); s.name = f.get('name').trim() || 'Участник'; s.deadline = f.get('deadline'); s.theme = f.get('theme'); Store.save(); App.applyTheme(); App.header(); U.toast('Сохранено'); };

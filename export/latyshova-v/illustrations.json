@@ -145,32 +145,6 @@
    "claim_ids": []
   },
   {
-   "id": "gis.v20.critical.05#video1",
-   "step_id": "gis.v20.critical.05",
-   "node_id": "gis.v20.critical.05",
-   "file": "layer/latyshova-v/assets/media/short1.mp4",
-   "frame_class": "B",
-   "origin": "code_from_model",
-   "label": "схема",
-   "caption": "Что покажет испытание?",
-   "alt": "Ролик «Что покажет испытание?», 44 с, к шагу «Критические значения: где кончается нефть».",
-   "source": "спецификация сцены и паспорт: layer/latyshova-v/undefined",
-   "claim_ids": []
-  },
-  {
-   "id": "gis.v20.critical.05#video2",
-   "step_id": "gis.v20.critical.05",
-   "node_id": "gis.v20.critical.05",
-   "file": "layer/latyshova-v/assets/media/short2.mp4",
-   "frame_class": "B",
-   "origin": "code_from_model",
-   "label": "схема",
-   "caption": "Когда в притоке вода?",
-   "alt": "Ролик «Когда в притоке вода?», 44 с, к шагу «Критические значения: где кончается нефть».",
-   "source": "спецификация сцены и паспорт: layer/latyshova-v/undefined",
-   "claim_ids": []
-  },
-  {
    "id": "gis.v20.clayey.06#t22w",
    "step_id": "gis.v20.clayey.06",
    "node_id": "gis.v20.clayey.06",
@@ -181,19 +155,6 @@
    "caption": "Критические Pн по табл. 22. Введите αСП и Pн или выберите случай из примера 53.",
    "alt": "График: по горизонтали αСП от 0,7 до 1,0, по вертикали логарифм Pн; три линии Pн*, Pн.кр, Pн из таблицы 22 делят поле на области нефти, нефти с водой и воды; красная точка — введённый пласт.",
    "source": "Построено кодом по табл. 22, с. 100. Между строками таблицы — линейная интерполяция модели (помечается в ответе).",
-   "claim_ids": []
-  },
-  {
-   "id": "gis.v20.clayey.06#video1",
-   "step_id": "gis.v20.clayey.06",
-   "node_id": "gis.v20.clayey.06",
-   "file": "layer/latyshova-v/assets/media/short3.mp4",
-   "frame_class": "B",
-   "origin": "code_from_model",
-   "label": "схема",
-   "caption": "Одинаковое число, разный вывод",
-   "alt": "Ролик «Одинаковое число, разный вывод», 44 с, к шагу «Глинистый коллектор: нужен ещё αСП».",
-   "source": "спецификация сцены и паспорт: layer/latyshova-v/undefined",
    "claim_ids": []
   },
   {

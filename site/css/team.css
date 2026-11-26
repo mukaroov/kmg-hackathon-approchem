@@ -27,15 +27,15 @@
 .tm-person.tm-selected {border-color:var(--accent)}
 .tm-avatar {display:grid;place-items:center;width:36px;height:36px;flex:0 0 auto;border-radius:50%;background:color-mix(in srgb,var(--accent) 18%,var(--panel));font-weight:700}
 .tm-identity {flex:1;min-width:0;overflow-wrap:anywhere}
-.tm-identity small,.tm-mini small,.tm-ranking small {font-size:.78rem;margin-top:4px}
+.tm-identity small,.tm-mini small,.tm-ranking small {font-size:1rem;margin-top:4px}
 .tm-mini {min-width:40px;text-align:right}
-.tm-note,.tm-empty {font-size:.9rem;line-height:1.5}
+.tm-note,.tm-empty {font-size:1rem;line-height:1.5}
 .tm-empty {border:1px dashed var(--line);padding:18px;border-radius:10px}
 .tm-dl {margin:0}
 .tm-dl div {justify-content:space-between;align-items:flex-start;gap:12px;margin:10px 0}
 .tm-dl dd {margin:0;font-weight:600;text-align:right}
 .tm-deadline {gap:8px;align-items:flex-end;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:14px;margin:16px 0 8px}
-.tm-deadline label {display:grid;gap:5px;font-size:.9rem}
+.tm-deadline label {display:grid;gap:5px;font-size:1rem}
 .tm-deadline input {max-width:100%;color-scheme:inherit}
 .tm-attempts {max-height:495px;overflow:auto}
 .tm-attempts details {border-top:1px solid var(--line)}
@@ -52,4 +52,4 @@
 .tm-ranking {padding:0;list-style:none}
 .tm-ranking li {align-items:flex-start;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
 @media(max-width:850px){.tm-grid {grid-template-columns:minmax(0,1fr)}}
-@media(max-width:550px){.tm-metrics {gap:6px}.tm-metrics>div {padding:12px 8px}.tm-metrics>div:first-child {padding-top:10px}.tm-metrics small {font-size:.78rem}.tm-person {gap:7px;padding:8px}.tm-mini {min-width:32px}.tm-avatar {width:28px;height:28px}.tm-head {gap:12px}.tm-panel {border-radius:12px}}
+@media(max-width:550px){.tm-metrics {gap:6px}.tm-metrics>div {padding:12px 8px}.tm-metrics>div:first-child {padding-top:10px}.tm-metrics small {font-size:1rem}.tm-person {gap:7px;padding:8px}.tm-mini {min-width:32px}.tm-avatar {width:28px;height:28px}.tm-head {gap:12px}.tm-panel {border-radius:12px}}

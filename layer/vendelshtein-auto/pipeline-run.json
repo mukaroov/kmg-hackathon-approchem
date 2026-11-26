@@ -23,9 +23,12 @@
     "nodes/vendelshtein-auto.n14.json": "30fd97c74041f14e",
     "nodes/vendelshtein-auto.n15.json": "deecb72debc7bd04",
     "nodes/vendelshtein-auto.n16.json": "b749df7dabf115f2",
-    "nodes/vendelshtein-auto.n17.json": "12d4ea0ab417a4fd",
+    "nodes/vendelshtein-auto.n17.json": "6cc85ce795d562e8",
     "nodes/vendelshtein-auto.n18.json": "779b4fa15ee5fd82",
     "nodes/vendelshtein-auto.n19.json": "a359227110b25c44"
   },
-  "links": "2026-11-25T22:05:32.499Z"
+  "links": "2026-11-25T22:05:32.499Z",
+  "video": {
+    "vendelshtein-auto.n17": "2026-11-26T05:09:50.226Z"
+  }
 }

@@ -223,6 +223,19 @@
    "claim_ids": []
   },
   {
+   "id": "vendelshtein-auto.n17#video1",
+   "step_id": "vendelshtein-auto.n17",
+   "node_id": "vendelshtein-auto.n17",
+   "file": "layer/vendelshtein-auto/assets/media/n17/video.mp4",
+   "frame_class": "B",
+   "origin": "code_from_model",
+   "label": "схема",
+   "caption": "Ложный водонефтяной контакт по сопротивлениям",
+   "alt": "Ролик «Ложный водонефтяной контакт по сопротивлениям», 51 с, к шагу «Переходная зона и ложный ВНК».",
+   "source": "спецификация сцены и паспорт: layer/vendelshtein-auto/assets/media/n17/passport.json",
+   "claim_ids": []
+  },
+  {
    "id": "vendelshtein-auto.n18#fig1",
    "step_id": "vendelshtein-auto.n18",
    "node_id": "vendelshtein-auto.n18",

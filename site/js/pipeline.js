@@ -48,7 +48,7 @@
       '<div class="pl-row"><label>Страницы<input name="pages" placeholder="90-108"></label><label>Первая страница PDF<input name="pageStart" inputmode="numeric" placeholder="1"></label><label>Идентификатор<input name="id" placeholder="из имени файла"></label></div>' +
       '<div class="pl-row"><label>Автор<input name="author" placeholder="И. О. Фамилия"></label><label>Книга<input name="book"></label><label>Год<input name="year" inputmode="numeric"></label></div>' +
       '<div class="pl-row"><label>Модель<select name="provider" id="pl-provider">' + providerOptions() + '</select></label><label id="pl-cli" hidden>Модель CLI<select name="cliModel" id="pl-climodel"></select></label><label>Перезаписать ручные правки<select name="force"><option value="">нет</option><option value="1">да</option></select></label></div>' +
-      '<p class="muted" id="pl-note" style="font-size:14px"></p>' +
+      '<p class="muted" id="pl-note" style="font-size:16px"></p>' +
       '<button class="btn primary" id="pl-go" type="submit">' + icon('upload', 18) + ' Собрать конвейером</button></form>' +
       '<div id="pl-job" hidden><div class="bar" style="margin-top:14px"><i id="pl-bar" style="width:0%"></i></div><ol class="pl-stages" id="pl-stages"></ol><p id="pl-msg" class="muted"></p><pre class="pl-log" id="pl-log"></pre></div>';
     const wrap = host.querySelector('.wrap') || host;
